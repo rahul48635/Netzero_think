@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image';
 import React, { useRef, useState } from 'react';
-import {motion,   useScroll, useTransform, useMotionTemplate, useSpring, useMotionValueEvent}  from "framer-motion";
+import {motion,   useScroll, useTransform, useMotionTemplate, useMotionValueEvent}  from "framer-motion";
 import { BsBank2 } from 'react-icons/bs';
 import { TbBuildingSkyscraper } from 'react-icons/tb';
 import { FaBuildingNgo } from 'react-icons/fa6';
@@ -38,7 +38,7 @@ const Card = ({feature}:{feature:feature})=>{
         target:ref,
         offset:["start end","end start"]
     });
-    const offset=useSpring(useTransform(scrollYProgress,[0,1],[-300,100]))
+    const offset=useTransform(scrollYProgress,[0,1],[-300,100])
     const opacity=useTransform(scrollYProgress,[0,0.8,1],[0.5,1,0])
     const blur=useTransform(scrollYProgress,[0,0.1,0.6,1],[10,0,0,10])
     const scale=useTransform(scrollYProgress,[0,1],[1,0.5])
