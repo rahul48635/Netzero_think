@@ -6,9 +6,10 @@ import { Navbar } from "./components/navbar";
 import Footer from "./components/Footer";
 import Image from "next/image";
 import { DarkModeProvider } from "./context/DarkModeContext";
+import type { items } from "./components/Footer";
 
 export default function Template(
-    { children }: { children: React.ReactNode }) {
+  { children }: { children: React.ReactNode }) {
          const items=[{
     title:"Home",
     logo: IoMdHome,
@@ -30,26 +31,28 @@ export default function Template(
     href:"/contact"
   },
 ]
-const Footeritems=[
+
+const Footeritems: items = [
   {
-    head:"Legal",
-    Links:{
-      "Terms and Conditions":"/T&C",
-      "Privacy Policy":"/Privacy-Policy",
-      "Disclaimer":"/Disclaimer",
-      "Web Policies":"/Web-Policies"
-    }
+    head: "Legal",
+    Links: {
+      "Terms and Conditions": "/T&C",
+      "Privacy Policy": "/Privacy-Policy",
+      "Disclaimer": "/Disclaimer",
+      "Web Policies": "/Web-Policies",
+    },
   },
   {
-    head:"Company",
-    Links:{
-      "Home":"/",
-      "About":"/about",
-      "Blogs":"/blogs",
-      "Contact Us":"/contact"
-    }
-  }
-]
+    head: "Company",
+    Links: {
+      "Home": "/",
+      "About": "/about",
+      "Blogs": "/blogs",
+      "Contact Us": "/contact",
+    },
+  },
+];
+
  
         return (
         <div className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden">

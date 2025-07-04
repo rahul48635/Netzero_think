@@ -4,12 +4,12 @@ import React from 'react'
 import {motion} from 'framer-motion'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
 
-type items={
+export type items={
     head:string,
     Links: Record<string, string>
-}
+}[]
 
-export default function Footer({items}:{items:items[]}) {
+export default function Footer({items}:{items:items}) {
   type social={
     [key:string]:React.ReactNode
   }
@@ -29,13 +29,13 @@ export default function Footer({items}:{items:items[]}) {
         </div>
           <div className='flex justify-around p-10 items-center w-full basis-1/2 h-full'>
             {items.map((item,idx)=>(
-                <div key={idx} className='flex flex-col items-center h-full  '>
+                <div key={idx+item.head} className='flex flex-col items-center h-full  '>
                     <div className='text-slate-200 m-5 justify-self-start w-full '>
                         {item.head}
                     </div>
                     <div className='justify-self-start flex flex-col gap-1 text-gray-300 w-full'>
                         {Object.entries(item.Links).map(([linkText, linkHref], idx) => (
-                            <motion.div key={idx} whileHover={{scale:1.2}} transition={{duration:0.3}}>
+                            <motion.div key={idx+linkText} whileHover={{scale:1.2}} transition={{duration:0.3}}>
                                 <Link href={linkHref} className="hover:underline">{linkText}</Link>
                             </motion.div>
                         ))}
