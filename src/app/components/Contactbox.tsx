@@ -64,7 +64,7 @@ const ChatBox = () => {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0 }}
       transition={{ duration: 0.25 }}
-      className="w-80 h-[30rem] bg-white  shadow-xl rounded-2xl p-4 flex flex-col absolute bottom-20 right-0"
+      className="w-80 h-[30rem] bg-white dark:bg-black  shadow-xl rounded-2xl p-4 flex flex-col absolute bottom-20 right-0"
     >
       <div className="text-lg font-semibold mb-2 border-b pb-2">
         💬 Chat with us
