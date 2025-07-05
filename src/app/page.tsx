@@ -41,7 +41,7 @@ const text="Accelerating Sustainable Business for a Greener Tomorrow"
       className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden"
     > 
       <SVG/>
-      <section className="w-full flex flex-col items-center justify-center py-72"> 
+      <section className="w-full flex flex-col items-center justify-center py-[26rem]"> 
           <TextGenerateEffect words={text} className="mt-16 text-6xl font-bold bg-gradient-to-r from-emerald-400 via-blue-400 to-teal-400 
             bg-clip-text text-transparent text-center drop-shadow-lg" duration={2} filter={false}/>
         <p className=" text-2xl text-gray-500 font-semibold text-center max-w-5xl">
