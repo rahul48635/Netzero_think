@@ -9,10 +9,8 @@ import {motion} from "framer-motion"
 
 
 import SVG from "./components/SVG";
-import { useDarkMode } from "./context/DarkModeContext";
 
 export default function Home() {
- const {dark,setDark}=useDarkMode();
 const testimonials=[
   {
     quote:"Net Zero Think's innovative solutions play a critical role in the imperative task of decarbonizing ecosystems. In the process of revolutionizing our education system, there is a pressing need for comprehensive green skilling across a range of subjects. We are delighted to collaborate with Net Zero Think, supported by the generous contribution of Microsoft, in advancing the realm of Green Skilling.",
@@ -42,13 +40,6 @@ const text="Accelerating Sustainable Business for a Greener Tomorrow"
     <div
       className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden"
     > 
-    <button
-        onClick={() => setDark(!dark)}
-        className="cursor-pointer fixed top-6 right-6 z-50 px-4 py-2 rounded-xl bg-gray-200 dark:bg-gray-800 text-black dark:text-white shadow-lg transition"
-      >
-        {dark ? "Light Mode" : "Dark Mode"}
-      </button>
-
       <SVG/>
       <section className="w-full flex flex-col items-center justify-center py-72"> 
           <TextGenerateEffect words={text} className="mt-16 text-6xl font-bold bg-gradient-to-r from-emerald-400 via-blue-400 to-teal-400 
