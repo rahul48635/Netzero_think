@@ -1,5 +1,7 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss';
+import tailwindScrollbar from 'tailwind-scrollbar';
+
+const config: Config = {
   darkMode: "class",
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
@@ -21,5 +23,9 @@ module.exports = {
       },
     },
   },
-  plugins:[],
-}
+  plugins: [
+    tailwindScrollbar,
+  ],
+};
+
+export default config;

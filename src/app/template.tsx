@@ -1,5 +1,5 @@
 "use client"
-import { IoIosContact, IoMdHome, IoMdMoon } from "react-icons/io";
+import {  IoMdHome, IoMdMoon } from "react-icons/io";
 import { FaBlog } from "react-icons/fa";
 import { CiSquareQuestion } from "react-icons/ci";
 import { Navbar } from "./components/navbar";
@@ -9,10 +9,13 @@ import type { items } from "./components/Footer";
 import { useDarkMode } from "./context/DarkModeContext";
 import { IoSunny } from "react-icons/io5";
 import { AnimatePresence, motion } from "framer-motion";
+import { MobileNavbar } from "./components/mobilenavbar";
+import useMediaQuery from "./hooks/useMediaQuery";
 
 export default function Template(
   { children }: { children: React.ReactNode }) {
- const {dark,setDark}=useDarkMode();
+    const isMobile = useMediaQuery("(max-width: 768px)");
+    const {dark,setDark}=useDarkMode();
 
   const items=[{
     title:"Home",
@@ -28,12 +31,7 @@ export default function Template(
     title:"Blogs",
     logo: FaBlog,
     href:"/blogs"
-  },
-  {
-    title:"Contect Us",
-    logo: IoIosContact,
-    href:"/contact"
-  },
+  }
 ]
 
 const Footeritems: items = [
@@ -64,7 +62,7 @@ const Footeritems: items = [
               <motion.button
                       layout
                       onClick={() => setDark(!dark)}
-                      className="cursor-pointer fixed top-6 right-6 z-50 px-4 py-4 rounded-4xl  bg-gray-200 dark:bg-gray-800 text-black dark:text-white shadow-lg transition"
+                      className="sm:top-10 cursor-pointer fixed top-1/2 right-6 z-50 px-4 py-4 rounded-4xl  bg-gray-200 dark:bg-gray-800 text-black dark:text-white shadow-lg transition"
                       transition={{duration:0.3,ease:"easeInOut"}}
                     >
                       <AnimatePresence mode="wait" initial={false}>
@@ -77,7 +75,7 @@ const Footeritems: items = [
                             transition={{ duration: 0.3 }}
                             className="flex items-center"
                           >
-                            <IoMdMoon size={28} />
+                            <IoMdMoon size={20} />
                           </motion.span>
                         ) : (
                           <motion.span
@@ -94,8 +92,8 @@ const Footeritems: items = [
                       </AnimatePresence>
               </motion.button>
             <div className="">
-                <Image src={'/Netzerothink.png'} alt="logo" width={300} height={300} className="mt-30 absolute left-[5rem] top-[-5rem]"/>
-                <Navbar items={items} className="z-10"/>
+                <Image src={'/Netzerothink.png'} alt="logo" width={300} height={300} className="mt-30 absolute left-1/2 top-[-5rem] -translate-x-1/2 sm:left-[5rem] sm:translate-0"/>
+                {isMobile?<MobileNavbar items={items} className="top-1/2 left-10  fixed"/> :<Navbar items={items} className="z-10 sm:top-10 top-20"/>}
             </div>
             {children}
             <div className="w-full h-full bg-black">

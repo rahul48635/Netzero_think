@@ -135,3 +135,9 @@ body {
     }
   }
 }
+.hiddenscroll {
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.hiddenscroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}

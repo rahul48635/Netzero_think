@@ -2,7 +2,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { LuMessageSquareText } from "react-icons/lu";
 import { FaChevronDown } from "react-icons/fa";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 export const Contactbox = () => {
   const [visible, setVisible] = useState(false);
@@ -46,17 +46,7 @@ export const Contactbox = () => {
 };
 
 const ChatBox = () => {
-  const Ref = useRef<HTMLInputElement>(null);
-  const [input, setInput] = useState<string>("");
-  const [messages, setMessages] = useState<string[]>([]);
-
-  const handleOnclick = () => {
-    if (input.trim() !== "") {
-      setMessages((prev) => [...prev, input]);
-      setInput("");
-      if (Ref.current) Ref.current.value = "";
-    }
-  };
+  const whatsappNumber = "919876543210"; // <-- Replace with your number (e.g., "919876543210")
 
   return (
     <motion.div
@@ -64,39 +54,48 @@ const ChatBox = () => {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0 }}
       transition={{ duration: 0.25 }}
-      className="w-80 h-[30rem] bg-white dark:bg-black  shadow-xl rounded-2xl p-4 flex flex-col absolute bottom-20 right-0"
+      className="w-80 h-[30rem] bg-white dark:bg-black shadow-xl rounded-2xl p-4 flex flex-col absolute bottom-20 right-0"
     >
       <div className="text-lg font-semibold mb-2 border-b pb-2">
-        💬 Chat with us
+        💬 Chat with us on
       </div>
 
-      <div className="flex-1 overflow-y-auto mb-2 space-y-2">
-        {messages.map((msg, idx) => (
-          <div
-            key={idx}
-            className="bg-blue-100 dark:bg-gray-500 p-2 rounded-lg w-fit max-w-[70%] self-end ml-auto"
-          >
-            {msg}
-          </div>
-        ))}
-      </div>
 
-      <div className="flex gap-2">
-        <input
-          ref={Ref}
-          type="text"
-          placeholder="Type a message..."
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          className="flex-1 p-2 border rounded-xl text-sm focus:outline-none"
-        />
+      <div className="flex flex-col max-h-full items-center justify-around gap-5">
         <motion.button
-          className="bg-blue-500 text-white px-4 py-2 rounded-xl text-sm cursor-pointer"
-          disabled={input.trim() === ""}
+          className="bg-green-500 text-white px-4 py-2 rounded-xl text-sm cursor-pointer w-full"
           whileTap={{ scale: 1.2 }}
-          onClick={handleOnclick}
+          onClick={()=>window.open(`https://wa.me/${whatsappNumber}`)}
         >
-          Send
+          WhatsApp
+        </motion.button>
+        <motion.button
+          className="bg-blue-500 text-white px-4 py-2 rounded-xl text-sm cursor-pointer w-full"
+          whileTap={{ scale: 1.2 }}
+          onClick={()=>window.open("https://www.facebook.com/p/NET-ZERO-THINK-100078446962916/?paipv=0&eav=AfbufXp8uGtISCG_iy2czsdtQ26X2s_mPiSk8kf5sPQoy09ZH2yUGQvIi02y_AzhYFU&_rdr")}
+        >
+          FaceBook
+        </motion.button>
+        <motion.button
+          className="bg-blue-400 text-white px-4 py-2 rounded-xl text-sm cursor-pointer w-full"
+          whileTap={{ scale: 1.2 }}
+          onClick={()=>window.open("https://x.com/NetZeroThink_")}
+        >
+          Twitter
+        </motion.button>
+        <motion.button
+          className="bg-pink-600 text-white px-4 py-2 rounded-xl text-sm cursor-pointer w-full"
+          whileTap={{ scale: 1.2 }}
+          onClick={()=>window.open("https://www.instagram.com/netzerothink_india/")}
+        >
+          Instagram
+        </motion.button>
+        <motion.button
+          className="bg-blue-700 text-white px-4 py-2 rounded-xl text-sm cursor-pointer w-full"
+          whileTap={{ scale: 1.2 }}
+          onClick={()=>window.open("https://www.linkedin.com/company/net-zero-think/")}
+        >
+          LinedIn
         </motion.button>
       </div>
     </motion.div>
