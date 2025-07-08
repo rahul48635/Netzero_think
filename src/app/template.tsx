@@ -1,6 +1,5 @@
 "use client"
 import {  IoMdHome, IoMdMoon } from "react-icons/io";
-import { FaBlog } from "react-icons/fa";
 import { CiSquareQuestion } from "react-icons/ci";
 import { Navbar } from "./components/navbar";
 import Footer from "./components/Footer";
@@ -27,11 +26,6 @@ export default function Template(
     logo: CiSquareQuestion,
     href:"/about"
   },
-  {
-    title:"Blogs",
-    logo: FaBlog,
-    href:"/blogs"
-  }
 ]
 
 const Footeritems: items = [

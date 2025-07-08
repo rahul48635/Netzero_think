@@ -61,7 +61,7 @@ export default function Home() {
       {/* Earth + Stats Section */}
       <section className="w-full  flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-0 py-16 px-6 dark:bg-black ">
         <motion.div
-          initial={{ x: -350 }}
+          initial={{ x: isMobile?-200:-350 }}
           whileInView={{ x: 0 }}
           transition={{ duration: 1 }}
           className="text-transparent font-bold text-2xl sm:text-3xl md:text-4xl z-20 flex flex-col gap-10 lg:basis-1/2 text-center lg:text-left "
@@ -106,7 +106,7 @@ export default function Home() {
 
         {/* Trusted By */}
         <div className="mt-20 w-full text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-emerald-500 to-green-500 text-transparent bg-clip-text shadow-[0px_0px_40px_10px_#495057] rounded-2xl">
+          <h1 className="pb-3 text-3xl sm:text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-emerald-500 to-green-500 text-transparent bg-clip-text shadow-[0px_0px_40px_10px_#495057] rounded-2xl">
             Trusted By Leading Enterprises
           </h1>
           <Marquee />
