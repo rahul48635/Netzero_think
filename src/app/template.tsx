@@ -56,7 +56,7 @@ const Footeritems: items = [
               <motion.button
                       layout
                       onClick={() => setDark(!dark)}
-                      className="sm:top-10 cursor-pointer fixed top-1/2 right-6 z-50 px-4 py-4 rounded-4xl  bg-gray-200 dark:bg-gray-800 text-black dark:text-white shadow-lg transition"
+                      className="sm:top-10 cursor-pointer fixed top-1/2 right-6 z-50 px-3 py-3 rounded-4xl  bg-gray-200 dark:bg-gray-800 text-black dark:text-white shadow-lg transition"
                       transition={{duration:0.3,ease:"easeInOut"}}
                     >
                       <AnimatePresence mode="wait" initial={false}>

@@ -61,8 +61,8 @@ export default function Home() {
       {/* Earth + Stats Section */}
       <section className="w-full  flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-0 py-16 px-6 dark:bg-black ">
         <motion.div
-          initial={{ x: isMobile?-200:-350 }}
-          whileInView={{ x: 0 }}
+          initial={{ x: isMobile?-150:-300 }}
+          whileInView={{ x: 1 }}
           transition={{ duration: 1 }}
           className="text-transparent font-bold text-2xl sm:text-3xl md:text-4xl z-20 flex flex-col gap-10 lg:basis-1/2 text-center lg:text-left "
         >
