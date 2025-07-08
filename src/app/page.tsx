@@ -45,7 +45,7 @@ export default function Home() {
       <SVG />
 
       {/* Hero Section */}
-      <section className="w-full flex flex-col items-center justify-center px-4 sm:py-40 md:py-60 text-center">
+      <section className="w-full flex flex-col items-center justify-center px-4 sm:py-40 md:py-60 text-center relative bottom-40 sm:static sm:bottom-0">
         <TextGenerateEffect
           words={text}
           className="mt-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-emerald-400 via-blue-400 to-teal-400 bg-clip-text text-transparent drop-shadow-lg"

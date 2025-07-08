@@ -49,7 +49,7 @@ const colors = [
       animate={{opacity:1}}
       transition={{duration:1}}
       strokeWidth="10"
-      className="inset-96 top-0 -z-10 py-20 sm:py-10 sm:absolute"
+      className="inset-96 top-0 -z-10 py-30 sm:py-10 sm:absolute"
     >
       <motion.g        
       >
