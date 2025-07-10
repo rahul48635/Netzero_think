@@ -57,9 +57,9 @@ export const Earth: React.FC<EarthProps> = ({ width, height, className }) => {
 
   useEffect(() => {
     if(dark){
-      setColor("#ffffff")
-    }else{
       setColor("#000000")
+    }else{
+      setColor("#ffffff")
     }
     if (!mounted || !containerRef.current) return;
     let camera: PerspectiveCamera;

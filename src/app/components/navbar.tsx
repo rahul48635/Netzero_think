@@ -51,7 +51,7 @@ export const Navbar: React.FC<NavbarProps> = ({ items,className }) => {
             >
               <item.logo
                 size={30}
-                className="fill-black dark:fill-white stroke-black dark:stroke-white stroke-1"
+                className="fill-black dark:fill-white stroke-black dark:stroke-white stroke-1 "
               />
             <span className="mt-1">{item.title}</span>
             </Link>

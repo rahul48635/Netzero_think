@@ -1,0 +1,387 @@
+"use client"
+import {
+  Award,
+  Users,
+  Target,
+  Briefcase,
+  ClipboardList,
+  GraduationCap,
+  UserCheck,
+} from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { GiArcheryTarget } from "react-icons/gi"
+import { FaCloud } from "react-icons/fa"
+import { BsCoin } from "react-icons/bs"
+import { IoSwapHorizontal } from "react-icons/io5"
+import useMediaQuery from "../hooks/useMediaQuery"
+
+export default function ServicesPage() {
+  const services = [
+    {
+      icon: <GiArcheryTarget className="h-8 w-8" />,
+      title: "Alignment with Net Zero & ESG Standards",
+      description: "We help organizations develop robust systems to measure, report, and verify greenhouse gas (GHG) emissions in line with global standards. This ensures accuracy, transparency, and compliance in sustainability disclosures and target-setting.",
+      features: ["Systematic GHG Emissions Measurement (Scope 1, 2 & 3)","Compliance with ISO 14064-3, GHG Protocol & SBTi","Third-Party Carbon Footprint Verification","Sustainability Disclosure Support","Accurate Reporting for Climate Targets","Alignment with Net Zero & ESG Standards"],
+    },
+    {
+      icon: <FaCloud className="h-8 w-8" />,
+      title: "Greenhouse Gas (GHG) Accounting & Carbon Footprint Analysis",
+      description: "We help organizations accurately measure and analyze their greenhouse gas emissions across sectors through detailed inventories and life cycle assessments (LCA). Our service supports the creation of carbon footprints, identifies reduction opportunities, and enables businesses to transition toward net-zero through strategic roadmaps and carbon credit monetization.",
+      features: ["Sector-Specific GHG Inventories (e.g., Steel, Energy, Transport)","Life Cycle Assessment (LCA) & Environmental Product Declarations (EPD)","Corporate Carbon Footprint Assessments","Net-Zero Transition Roadmap Development","GHG Reduction Opportunity Identification","Energy Efficiency Strategy Planning","Carbon Credit Monetization Pathways"],
+    },
+    {
+      icon: <BsCoin className="h-8 w-8" />,
+      title: "Climate & Environmental Policy Advisory",
+      description: "We provide expert advisory on climate and environmental regulations to help organizations navigate compliance, carbon markets, and emerging sustainability frameworks. Our services ensure alignment with national and global climate policies, including CBAM, SEBI-BRSR, and emission trading systems (ETS).",
+      features: ["Strategic Climate Policy Compliance Guidance", "Advisory on Carbon Border Adjustment Mechanism (CBAM)", "Compliance with SEBI-BRSR, EU Taxonomy, ISSB, ESG Frameworks", "Guidance on Indian & International Carbon Trading Mechanisms","Carbon Market Feasibility Assessments","Regulatory Framework Navigation & Risk Advisory","Emission Trading Scheme (ETS) Advisory"],
+    },
+    {
+      icon: <IoSwapHorizontal className="h-8 w-8" />,
+      title: "Environmental Credits & Sustainability Finance Advisory",
+      description: "We assist organizations in unlocking value from environmental credits and sustainable finance. Our services include feasibility studies, credit verification, registry navigation, and guidance on securing green bonds, sustainability-linked loans, and other climate-related investment instruments.",
+      features:[
+          "Feasibility studies for environmental credits (Carbon, Plastic, Water, EPR, REC)",
+          "Advisory on voluntary and compliance market participation",
+          "Support in credit verification and registry selection",
+          "Transaction support on global credit platforms",
+          "Sustainable finance strategy development",
+          "Guidance on green bonds and sustainability-linked loans",
+          "Carbon-linked investment structuring"
+        ],
+    },
+    {
+      icon: <ClipboardList className="h-8 w-8" />,
+      title: "ESG Strategy & Reporting",
+      description: "We support businesses in building ESG strategies that meet global and regional standards such as SEBI-BRSR, TCFD, and GRI. Our services ensure compliance, transparency, and integration of circular economy practices for long-term sustainability.",
+      features: [
+        "Development of ESG strategy frameworks aligned with SEBI-BRSR, TCFD, and GRI",
+        "ESG risk assessment and materiality analysis",
+        "Climate impact reporting and disclosures",
+        "Sustainability disclosure compliance and documentation",
+        "Integration of circular economy principles into operations",
+        "Stakeholder engagement for ESG alignment",
+        "Support for ESG ratings and benchmarks"
+      ],
+    },
+    {
+      icon: <GraduationCap  className="h-8 w-8" />,
+      title: "Capacity Building & Professional Training",
+      description: "We design and deliver capacity-building programs and professional training workshops focused on climate action, ESG compliance, and sustainability. These programs empower organizations and professionals with the skills and certifications needed to lead decarbonization and sustainability transitions across sectors.",
+      features: [
+        "Corporate training on GHG accounting and carbon markets",
+        "Workshops on ESG strategy, compliance, and disclosures",
+        "Training on climate risk assessment and adaptation planning",
+        "Carbon and environmental credit market orientation",
+        "Sector-specific sustainability initiatives (e.g., green steel, energy transition)",
+        "Development of professional certification programs",
+        "Support for industry-wide climate transition capacity"
+      ],
+    },
+    {
+      icon: <UserCheck  className="h-8 w-8" />,
+      title: "Green Staffing Solution",
+      description: "We provide flexible and specialized green staffing solutions to help organizations meet their sustainability and ESG goals. From deploying experts and recruiting on-demand talent to building in-house teams via BOT models, we support startups, corporates, and CSR projects in scaling their climate and energy transition efforts.",
+      features: [
+        "Deployment of Sustainability & ESG Experts (Short-term/Long-term)",
+        "On-demand green talent recruitment",
+        "Build-Operate-Transfer (BOT) model for sustainability departments",
+        "Specialized experts for renewable energy and energy efficiency projects",
+        "Capacity building and staff augmentation for climate-tech startups and CSR initiatives"
+      ],
+    },
+  ]
+
+  const expertise = [
+    {
+      icon: <Award className="h-6 w-6" />,
+      title: "Technical Excellence",
+      description: "5+ years of experience in cutting-edge technologies",
+    },
+    {
+      icon: <Users className="h-6 w-6" />,
+      title: "Team Collaboration",
+      description: "Agile methodologies and cross-functional expertise",
+    },
+    {
+      icon: <Target className="h-6 w-6" />,
+      title: "Results-Driven",
+      description: "Proven track record of delivering successful projects",
+    },
+  ]
+
+ const keyProjects = [
+  {
+    title: "Green Hydrogen Ecosystem Development",
+    client: "Government of UK",
+    description: "Research study on green hydrogen ecosystem development funded by the UK government",
+    tech: ["Green Hydrogen", "Policy Research", "Decarbonization"]
+  },
+  {
+    title: "Carbon Credit Market Prefeasibility",
+    client: "Indian Market Study",
+    description: "Prefeasibility study on carbon credit market in India",
+    tech: ["Carbon Credits", "Market Analysis", "Climate Finance"]
+  },
+  {
+    title: "GHG Emissions Verification",
+    client: "Leading Renewable Energy Developer",
+    description: "Verification of GHG emissions in line with ISO 14064-3 guidelines",
+    tech: ["ISO 14064-3", "GHG Accounting", "Carbon Verification"]
+  },
+  {
+    title: "Decarbonization Training Program",
+    client: "Mining, Steel & Building Sector",
+    description: "Capacity building and training on decarbonization-focused topics",
+    tech: ["Training", "Decarbonization", "GHG Reduction"]
+  },
+  {
+    title: "ESG Reporting for Mining Company",
+    client: "Large Mining Company, Karnataka",
+    description: "ESG report development based on GRI principles",
+    tech: ["GRI", "ESG Reporting", "Sustainability"]
+  },
+  {
+    title: "Green Hydrogen Tech Prefeasibility",
+    client: "City Gas Distribution Company",
+    description: "Prefeasibility study to identify green hydrogen technologies",
+    tech: ["Green Hydrogen", "Feasibility Study", "Gas Infrastructure"]
+  },
+  {
+    title: "Japanese Tech Market Assessment",
+    client: "Indian Market",
+    description: "Assessment of Japanese technologies for renewable energy, storage, e-mobility, and efficiency in India",
+    tech: ["Tech Assessment", "Renewables", "Energy Efficiency", "e-Mobility"]
+  },
+  {
+    title: "Climate Training Content Development",
+    client: "NCVET-aligned Training Initiative",
+    description: "Content development and training on climate change, GHG accounting, and SEBI-BRSR",
+    tech: ["NCVET", "SEBI-BRSR", "Climate Change", "Sustainability Education"]
+  },
+  {
+    title: "Jeori Hydro Project",
+    client: "Hydro Developer, Himachal Pradesh",
+    description: "Lender’s Engineer role for 9.6 MW Jeori Hydro project",
+    tech: ["Hydropower", "Project Engineering", "Lender’s Engineer"]
+  },
+  {
+    title: "Wind & Solar Project Oversight",
+    client: "Various Developers, Pan India",
+    description: "Owner’s & Lender’s Engineer role for multiple wind and solar projects across India",
+    tech: ["Wind Energy", "Solar Power", "Project Management"]
+  }
+];
+const isMobile=useMediaQuery("(max-width: 768px)")
+
+
+
+  return (
+    <div className="min-h-screen min-w-screen bg-white dark:bg-black text-black">
+      {/* Introduction Section */}
+      <section className="py-20 px-4 md:px-6 lg:px-8 my-20">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent">
+                Introduction
+              </span>
+            </h1>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className={`${isMobile?"text-center":"text-left"}`}> 
+              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                Net Zero Think Pvt Ltd (NZT) is a leading consultancy firm dedicated to driving India&apos;s transition to a low-carbon economy. As a global climate-focused solutions provider, we support organizations in achieving net-zero emissions and long-term sustainability. Headquartered in Bangalore, India, our global solution centre collaborates with a network of associate partners to deliver tailored climate-centric services.
+              </p>
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                 With a mission to assist industries, government bodies, and stakeholders in meeting net-zero targets, we offer expert guidance in emissions accounting & auditing, sustainability strategy, and net zero initiatives. Additionally, we provide Green Staffing solutions, comprehensive training and capacity-building programs to equip professionals and organizations with the knowledge and skills required to navigate the evolving sustainability landscape and implement effective climate solutions
+              </p>
+              <div className="flex flex-wrap gap-2 ">
+                <div className="text-center bg-black rounded-2xl p-1 dark:bg-white ">
+                  <div className="text-3xl font-bold text-white dark:text-gray-400 ">20+</div>
+                  <div className="text-sm text-gray-300 dark:text-gray-600">Projects Completed</div>
+                </div>
+                <div className="text-center bg-black rounded-2xl p-1 dark:bg-white">
+                  <div className="text-3xl font-bold text-white dark:text-gray-400">5+</div>
+                  <div className="text-sm text-gray-300 dark:text-gray-600">Years Experience</div>
+                </div>
+                <div className="text-center bg-black rounded-2xl p-1 dark:bg-white">
+                  <div className="text-3xl font-bold text-white dark:text-gray-400">98%</div>
+                  <div className="text-sm text-gray-300 dark:text-gray-600">Client Satisfaction</div>
+                </div>
+              </div>
+            </div>
+            <div className="bg-black rounded-2xl p-8 text-white dark:text-black dark:bg-white">
+              <h3 className="text-2xl font-bold mb-4">
+                <span className="bg-gradient-to-r from-yellow-300 to-yellow-600 bg-clip-text text-transparent">
+                  Why Choose Us?
+                </span>
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <span>Proven track record of delivering high-quality solutions</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <span>Expert team with diverse technical backgrounds</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <span>Agile development process with transparent communication</span>
+                </li>
+                <li className="flex items-start">
+                  <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <span>Ongoing support and maintenance services</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Services & Solutions Section */}
+      <section className="py-20 px-4 md:px-6 lg:px-8 bg-black text-white dark:bg-white dark:text-black rounded-2xl">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-green-600 to-cyan-500 bg-clip-text text-transparent">
+                Our Services & Solutions
+              </span>
+            </h2>
+            <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+              Comprehensive services designed to elevate your business and drive growth
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <Card
+                key={index}
+                className="bg-white text-black dark:bg-black border-0 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+              >
+                <CardHeader className="pb-4">
+                  <div className="mb-4 p-3 bg-black text-white rounded-lg w-fit">{service.icon}</div>
+                  <CardTitle className="text-2xl font-bold">
+                    <span className="bg-gradient-to-r from-green-600 via-blue-500 to-green-600 bg-clip-text text-transparent">
+                      {service.title}
+                    </span>
+                  </CardTitle>
+                  <CardDescription className="text-gray-600 text-base">{service.description}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 custom-list">
+                    {service.features.map((feature, featureIndex) => (
+                      <li key={featureIndex} className="flex items-center text-sm text-gray-700 dark:text-slate-400">
+                        <div className="w-2 h-2 bg-black dark:bg-white rounded-full mr-3"></div>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Expertise & Key Reference Projects Section */}
+      <section className="py-20 px-4 md:px-6 lg:px-8 dark:bg-black bg-white ">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-purple-500  to-blue-500 bg-clip-text text-transparent">
+                Our Expertise & Key Reference Projects
+              </span>
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Showcasing our technical capabilities and successful project deliveries
+            </p>
+          </div>
+
+          {/* Expertise Section */}
+          <div className="mb-16">
+            <h3 className="text-3xl font-bold mb-8 text-center">
+              <span className="bg-gradient-to-r from-gray-800 via-gray-400 to-gray-800 bg-clip-text text-transparent">
+                Our Core Expertise
+              </span>
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {expertise.map((item, index) => (
+                <div key={index} className="text-center p-6 bg-black text-white dark:bg-white dark:text-black rounded-xl">
+                  <div className="mb-4 flex justify-center">{item.icon}</div>
+                  <h4 className="text-xl font-bold mb-2">{item.title}</h4>
+                  <p className="text-gray-300 dark:text-slate-500">{item.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Key Reference Projects */}
+          <div>
+            <h3 className="text-3xl font-bold mb-8 text-center">
+              <span className="bg-gradient-to-r from-gray-800 via-gray-400 to-gray-800 bg-clip-text text-transparent">
+                Key Reference Projects
+              </span>
+            </h3>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              {keyProjects.map((project, index) => (
+                <Card
+                  key={index}
+                  className="border-2 border-gray-200 hover:border-black transition-colors duration-300 dark:bg-white dark:text-slate-500 bg-black"
+                >
+                  <CardHeader>
+                    <div className="flex items-center mb-2">
+                      <Briefcase className="h-5 w-5 mr-2 fill-white" />
+                      <span className="text-sm text-gray-500">{project.client}</span>
+                    </div>
+                    <CardTitle className="text-xl font-bold">
+                      <span className="bg-gradient-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent">
+                        {project.title}
+                      </span>
+                    </CardTitle>
+                    <CardDescription className="dark:text-gray-500 text-gray-600 ">{project.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex flex-wrap gap-2">
+                      {project.tech.map((tech, techIndex) => (
+                        <span key={techIndex} className="px-3 py-1 bg-white text-black dark:bg-black  dark:text-white text-xs rounded-full">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* CTA Section */}
+      <section className="py-20 px-4 md:px-6 lg:px-8 bg-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <span className="bg-gradient-to-r from-black via-gray-700 to-black bg-clip-text text-transparent">
+              Ready to Start Your Project?
+            </span>
+          </h2>
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+            Let&apos;s discuss your requirements!
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-black text-white hover:bg-gray-500 px-8 py-3 text-lg cursor-pointer" onClick={()=>window.open(
+      "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Consultation+Call&details=Let%27s+discuss+your+project&location=Google+Meet&add=mksingh@netzerothink.com",
+      "_blank"
+    )}>
+              Schedule Consultation Today!
+            </Button>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}

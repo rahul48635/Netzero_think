@@ -10,6 +10,7 @@ import { IoSunny } from "react-icons/io5";
 import { AnimatePresence, motion } from "framer-motion";
 import { MobileNavbar } from "./components/mobilenavbar";
 import useMediaQuery from "./hooks/useMediaQuery";
+import { GrServices } from "react-icons/gr";
 
 export default function Template(
   { children }: { children: React.ReactNode }) {
@@ -25,6 +26,11 @@ export default function Template(
     title:"About Us",
     logo: CiSquareQuestion,
     href:"/about"
+  },
+  {
+    title:"Services",
+    logo: GrServices ,
+    href:"/services"
   },
 ]
 
@@ -43,8 +49,7 @@ const Footeritems: items = [
     Links: {
       "Home": "/",
       "About": "/about",
-      "Blogs": "/blogs",
-      "Contact Us": "/contact",
+      "Services":"/services"
     },
   },
 ];
