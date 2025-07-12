@@ -41,6 +41,7 @@ export const TextGenerateEffect = ({
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}
+              transition={{ease:"easeInOut"}}
             >
               {word}{" "}
             </motion.span>

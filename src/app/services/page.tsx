@@ -360,7 +360,6 @@ const isMobile=useMediaQuery("(max-width: 768px)")
       </section>
 
 
-
       {/* CTA Section */}
       <section className="py-20 px-4 md:px-6 lg:px-8 bg-white">
         <div className="max-w-4xl mx-auto text-center">
@@ -382,6 +381,7 @@ const isMobile=useMediaQuery("(max-width: 768px)")
           </div>
         </div>
       </section>
+
     </div>
   )
 }

@@ -77,29 +77,7 @@ const colors = [
           key={idx}
         />
       ))}
-       {paths.map((path,idx)=>(
-          <motion.path
-          d={path}
-          stroke={colors[idx]}
-          strokeWidth={1.5}
-          fill="lightblue"
-          initial={{strokeDashoffset:800,strokeDasharray:"50 800"}}
-          animate={{
-            strokeDashoffset:0,
-            strokeDasharray:"20 800",
-            opacity:[0,1,1,0]
-          }}
-          transition={{
-             duration: 10,
-             ease: "easeInOut",
-             repeat:Infinity,
-             repeatType:"loop",
-             delay:Math.floor(Math.random()*10),
-             repeatDelay:Math.floor(Math.random()*10+2)
-             }}
-          key={idx}
-        />
-      ))}
+
        
         {/* Repeat motion.path for other paths or map them dynamically */}
       </motion.g>
