@@ -23,6 +23,7 @@ import {
   MeshBasicMaterial
 } from 'three'
 import { useDarkMode } from '../context/DarkModeContext';
+import useMediaQuery from '../hooks/useMediaQuery';
 
 interface EarthProps {
   width?: number;
@@ -31,13 +32,27 @@ interface EarthProps {
 }
 
 export const Earth: React.FC<EarthProps> = ({ width, height, className }) => {
-  const ref=useRef<HTMLDivElement>(null)
-      const {scrollYProgress}=useScroll({
-        target:ref,
-        offset:["start end","end start"]
-      })
+   const isMobile = useMediaQuery('(max-width:768px)')
+  const ref = useRef<HTMLDivElement>(null)
+
+  const [enabled, setEnabled] = useState(false)
+
+  useEffect(() => {
+    // Wait for DOM hydration
+    setEnabled(true)
+  }, [])
+
+  const { scrollYProgress } = useScroll(
+    enabled && ref.current
+      ? {
+          target: ref,
+          offset: ["start end", "end start"],
+        }
+      : {}
+  )
       const {dark}=useDarkMode()
       const x=useTransform(scrollYProgress,[0,1],[-100,1000])
+      const xMob=useTransform(scrollYProgress,[0,1],[-700,2000])
       const y=useTransform(scrollYProgress,[0,1],[0,100])
       const scale=useTransform(scrollYProgress,[0,1],[1.25,0.3])
   const [size, setSize] = React.useState({ width: width ?? 400, height: height ?? 400 });
@@ -182,7 +197,7 @@ export const Earth: React.FC<EarthProps> = ({ width, height, className }) => {
   return (
     <motion.div
       ref={containerRef }
-      style={{ width:"100%", height:height,x,y,scale }}
+      style={{ width:"100%", height:height,x:isMobile?xMob:x,y,scale }}
       className={`max-w-full max-h-full overflow-hidden  ${className}`}
       initial={{ opacity: 0, rotate: initialRotate }}
       animate={{ opacity: 1, rotate: 0 }}

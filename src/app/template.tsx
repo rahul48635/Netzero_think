@@ -1,5 +1,5 @@
 "use client"
-import {  IoMdHome, IoMdMoon } from "react-icons/io";
+import {  IoMdBriefcase, IoMdHome, IoMdMoon } from "react-icons/io";
 import { CiSquareQuestion } from "react-icons/ci";
 import { Navbar } from "./components/navbar";
 import Footer from "./components/Footer";
@@ -31,6 +31,11 @@ export default function Template(
     title:"Services",
     logo: GrServices ,
     href:"/services"
+  },
+  {
+    title:"Jobs",
+    logo: IoMdBriefcase ,
+    href:"/Jobs"
   },
 ]
 

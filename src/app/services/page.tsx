@@ -15,12 +15,30 @@ import { FaCloud } from "react-icons/fa"
 import { BsCoin } from "react-icons/bs"
 import { IoSwapHorizontal } from "react-icons/io5"
 import useMediaQuery from "../hooks/useMediaQuery"
+import { Modal, ModalBody, ModalTrigger } from "@/components/ui/animated-modal"
+import { useState } from "react"
+import { motion } from 'framer-motion'
 
 export default function ServicesPage() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    org: "",
+    email: "",
+    service: ""
+  })
+   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
+  const handleSubmit = () => {
+    console.log("Form submitted:", formData)
+    window.open(`mailto:support@netzerothink.com?subject=New Service Request from ${formData.name}&body=Name: ${formData.name}%0APhone: ${formData.phone}%0AOrg: ${formData.org}%0AEmail: ${formData.email}%0AService: ${formData.service}`)
+  }
+
   const services = [
     {
       icon: <GiArcheryTarget className="h-8 w-8" />,
-      title: "Alignment with Net Zero & ESG Standards",
+      title: "Emissions Measurement, Reporting & Verification (MRV)",
       description: "We help organizations develop robust systems to measure, report, and verify greenhouse gas (GHG) emissions in line with global standards. This ensures accuracy, transparency, and compliance in sustainability disclosures and target-setting.",
       features: ["Systematic GHG Emissions Measurement (Scope 1, 2 & 3)","Compliance with ISO 14064-3, GHG Protocol & SBTi","Third-Party Carbon Footprint Verification","Sustainability Disclosure Support","Accurate Reporting for Climate Targets","Alignment with Net Zero & ESG Standards"],
     },
@@ -191,33 +209,34 @@ const isMobile=useMediaQuery("(max-width: 768px)")
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className={`${isMobile?"text-center":"text-left"}`}> 
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              <p className="text-lg text-blue-900 mb-6 leading-relaxed">
                 Net Zero Think Pvt Ltd (NZT) is a leading consultancy firm dedicated to driving India&apos;s transition to a low-carbon economy. As a global climate-focused solutions provider, we support organizations in achieving net-zero emissions and long-term sustainability. Headquartered in Bangalore, India, our global solution centre collaborates with a network of associate partners to deliver tailored climate-centric services.
               </p>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-lg text-blue-900 mb-8 leading-relaxed">
                  With a mission to assist industries, government bodies, and stakeholders in meeting net-zero targets, we offer expert guidance in emissions accounting & auditing, sustainability strategy, and net zero initiatives. Additionally, we provide Green Staffing solutions, comprehensive training and capacity-building programs to equip professionals and organizations with the knowledge and skills required to navigate the evolving sustainability landscape and implement effective climate solutions
               </p>
               <div className="flex flex-wrap gap-2 ">
-                <div className="text-center bg-black rounded-2xl p-1 dark:bg-white ">
-                  <div className="text-3xl font-bold text-white dark:text-gray-400 ">20+</div>
+                <div className="text-center bg-blue-900 rounded-2xl p-1 dark:bg-white ">
+                  <div className="text-3xl font-bold text-white dark:text-gray-400 ">10+</div>
                   <div className="text-sm text-gray-300 dark:text-gray-600">Projects Completed</div>
                 </div>
-                <div className="text-center bg-black rounded-2xl p-1 dark:bg-white">
-                  <div className="text-3xl font-bold text-white dark:text-gray-400">5+</div>
-                  <div className="text-sm text-gray-300 dark:text-gray-600">Years Experience</div>
+                <div className="text-center bg-blue-900 rounded-2xl p-1 dark:bg-white">
+                  <div className="text-3xl font-bold text-white dark:text-gray-400">100+</div>
+                  <div className="text-sm text-gray-300 dark:text-gray-600">Team&apos;s years of experience</div>
                 </div>
-                <div className="text-center bg-black rounded-2xl p-1 dark:bg-white">
-                  <div className="text-3xl font-bold text-white dark:text-gray-400">98%</div>
+                <div className="text-center bg-blue-900 rounded-2xl p-1 dark:bg-white">
+                  <div className="text-3xl font-bold text-white dark:text-gray-400">99%</div>
                   <div className="text-sm text-gray-300 dark:text-gray-600">Client Satisfaction</div>
                 </div>
               </div>
             </div>
-            <div className="bg-black rounded-2xl p-8 text-white dark:text-black dark:bg-white">
+            <div className="bg-blue-900 rounded-2xl p-8 text-white dark:text-black dark:bg-white">
               <h3 className="text-2xl font-bold mb-4">
                 <span className="bg-gradient-to-r from-yellow-300 to-yellow-600 bg-clip-text text-transparent">
                   Why Choose Us?
                 </span>
               </h3>
+
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
@@ -233,16 +252,17 @@ const isMobile=useMediaQuery("(max-width: 768px)")
                 </li>
                 <li className="flex items-start">
                   <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>Ongoing support and maintenance services</span>
+                  <span>Ongoing support and services</span>
                 </li>
               </ul>
+
             </div>
           </div>
         </div>
       </section>
 
       {/* Our Services & Solutions Section */}
-      <section className="py-20 px-4 md:px-6 lg:px-8 bg-black text-white dark:bg-white dark:text-black rounded-2xl">
+      <section className="py-20 px-4 md:px-6 lg:px-8 bg-gradient-to-b from-[#08203e] to-[#557c93] text-white dark:bg-white dark:text-black rounded-2xl">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -259,16 +279,17 @@ const isMobile=useMediaQuery("(max-width: 768px)")
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="bg-white text-black dark:bg-black border-0 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+                className="bg-white text-black dark:bg-black border-0 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative h-180" 
+                id={`${index}`}
               >
                 <CardHeader className="pb-4">
-                  <div className="mb-4 p-3 bg-black text-white rounded-lg w-fit">{service.icon}</div>
+                  <div className="mb-4 p-3 bg-blue-600 text-white rounded-lg w-fit">{service.icon}</div>
                   <CardTitle className="text-2xl font-bold">
                     <span className="bg-gradient-to-r from-green-600 via-blue-500 to-green-600 bg-clip-text text-transparent">
                       {service.title}
                     </span>
                   </CardTitle>
-                  <CardDescription className="text-gray-600 text-base">{service.description}</CardDescription>
+                  <CardDescription className="text-blue-900 text-base ">{service.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 custom-list">
@@ -283,6 +304,79 @@ const isMobile=useMediaQuery("(max-width: 768px)")
               </Card>
             ))}
           </div>
+        </div>
+        
+        
+        {/* Modal */}
+
+        <div className="w-full h-50">
+          <Modal>
+      <ModalTrigger className="w-full h-full">
+        <div className=" -translate-x-1/2 left-1/2 w-1/2 sm:w-1/3  bg-gray-400 shadow-xl shadow-white/40 hover:-translate-y-3 transition-all duration-500 text-yellow-300  rounded-xl cursor-pointer relative top-8 flex justify-center items-center p-3 tracking-widest font-bold ">
+          Select Service
+        </div>
+      </ModalTrigger>
+
+      <ModalBody>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9, y: 30 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
+          className="flex flex-col gap-4 p-6 text-black dark:bg-gray-400"
+        >
+          <h1 className="text-xl font-bold text-center">Book Your Service</h1>
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={formData.name}
+            onChange={handleChange}
+            className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-300"
+          />
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone Number"
+            value={formData.phone}
+            onChange={handleChange}
+            className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-300"
+          />
+          <input
+            type="text"
+            name="org"
+            placeholder="Organization"
+            value={formData.org}
+            onChange={handleChange}
+            className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-300"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email ID"
+            value={formData.email}
+            onChange={handleChange}
+            className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-300"
+          />
+          <textarea
+            name="service"
+            placeholder="Service Required"
+            value={formData.service}
+            onChange={handleChange}
+            className="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-300"
+          />
+
+          <motion.button
+            whileTap={{ scale: 0.95 }}
+            whileHover={{ scale: 1.05 }}
+            onClick={handleSubmit}
+            className="bg-black text-white py-2 rounded-2xl mt-4 w-full"
+          >
+            Book
+          </motion.button>
+        </motion.div>
+      </ModalBody>
+    </Modal>
         </div>
       </section>
 
@@ -303,16 +397,16 @@ const isMobile=useMediaQuery("(max-width: 768px)")
           {/* Expertise Section */}
           <div className="mb-16">
             <h3 className="text-3xl font-bold mb-8 text-center">
-              <span className="bg-gradient-to-r from-gray-800 via-gray-400 to-gray-800 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">
                 Our Core Expertise
               </span>
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {expertise.map((item, index) => (
-                <div key={index} className="text-center p-6 bg-black text-white dark:bg-white dark:text-black rounded-xl">
+                <div key={index} className="text-center p-6 bg-gradient-to-t from-blue-600 to-pink-600 text-white  dark:text-black rounded-xl" >
                   <div className="mb-4 flex justify-center">{item.icon}</div>
                   <h4 className="text-xl font-bold mb-2">{item.title}</h4>
-                  <p className="text-gray-300 dark:text-slate-500">{item.description}</p>
+                  <p className="text-gray-300 dark:text-black">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -321,7 +415,7 @@ const isMobile=useMediaQuery("(max-width: 768px)")
           {/* Key Reference Projects */}
           <div>
             <h3 className="text-3xl font-bold mb-8 text-center">
-              <span className="bg-gradient-to-r from-gray-800 via-gray-400 to-gray-800 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">
                 Key Reference Projects
               </span>
             </h3>
@@ -329,19 +423,19 @@ const isMobile=useMediaQuery("(max-width: 768px)")
               {keyProjects.map((project, index) => (
                 <Card
                   key={index}
-                  className="border-2 border-gray-200 hover:border-black transition-colors duration-300 dark:bg-white dark:text-slate-500 bg-black"
+                  className="border-2 border-gray-200 hover:border-black transition-colors duration-300 dark:bg-white dark:text-slate-500 bg-gradient-to-b from-gray-500 to-white"
                 >
                   <CardHeader>
                     <div className="flex items-center mb-2">
                       <Briefcase className="h-5 w-5 mr-2 fill-white" />
-                      <span className="text-sm text-gray-500">{project.client}</span>
+                      <span className="text-sm text-blue-900">{project.client}</span>
                     </div>
                     <CardTitle className="text-xl font-bold">
                       <span className="bg-gradient-to-r from-yellow-500 to-yellow-300 bg-clip-text text-transparent">
                         {project.title}
                       </span>
                     </CardTitle>
-                    <CardDescription className="dark:text-gray-500 text-gray-600 ">{project.description}</CardDescription>
+                    <CardDescription className="dark:text-gray-500 text-gray-800 ">{project.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="flex flex-wrap gap-2">
@@ -361,10 +455,10 @@ const isMobile=useMediaQuery("(max-width: 768px)")
 
 
       {/* CTA Section */}
-      <section className="py-20 px-4 md:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 md:px-6 lg:px-8 bg-white dark:bg-black">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-black via-gray-700 to-black bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
               Ready to Start Your Project?
             </span>
           </h2>
@@ -372,8 +466,8 @@ const isMobile=useMediaQuery("(max-width: 768px)")
             Let&apos;s discuss your requirements!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-black text-white hover:bg-gray-500 px-8 py-3 text-lg cursor-pointer" onClick={()=>window.open(
-      "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Consultation+Call&details=Let%27s+discuss+your+project&location=Google+Meet&add=mksingh@netzerothink.com",
+            <Button size="lg" className="bg-gray-400 text-white hover:bg-gray-500 px-8 py-3 text-lg cursor-pointer" onClick={()=>window.open(
+      "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Consultation+Call&details=Let%27s+discuss+your+project&location=Google+Meet&add=mksingh@netzerothink.com&add=support@netzerothink.com",
       "_blank"
     )}>
               Schedule Consultation Today!

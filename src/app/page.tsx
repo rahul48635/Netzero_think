@@ -4,10 +4,10 @@ import { Contactbox } from "./components/Contactbox";
 import Marquee from "./components/Marquee";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
-import Motion from "./components/Motion";
 import { motion } from "framer-motion";
 import SVG from "./components/SVG";
 import useMediaQuery from "./hooks/useMediaQuery";
+import Cards from "./components/Cards";
 
 export default function Home() {
   const isMobile=useMediaQuery("(max-width: 768px)")
@@ -17,26 +17,54 @@ export default function Home() {
         "Net Zero Think's innovative solutions play a critical role in the imperative task of decarbonizing ecosystems...",
       name: "",
       title: "TNS India Foundation",
+      src:"/testimonials/03.png"
     },
     {
       quote:
         "Net zero think solutions could play a critical role to decarbonise supply chain...",
       name: " ",
       title: "Mining Industry ",
+      src:"/testimonials/04.png"
     },
     {
       quote:
         "Net Zero Think is working with us onto multiple areas including Green House Gas accounting...",
       name: " ",
       title: "Skill Council For Green Jobs, India",
+      src:"/testimonials/02.png"
     },
     {
       quote:
         "Net Zero Think's expertise in the renewable energy and green hydrogen sector...",
       name: "Mr. Eric Solheim ",
       title: "Former Secretary United Nations Environment Program",
+      src:"/testimonials/01.jpg"
     },
   ];
+
+  const services=[
+    { title:"Emissions Measurement, Reporting & Verification (MRV)",
+      description:"We help organizations develop robust systems to measure, report, and verify greenhouse gas (GHG) emissions in line with global standards. This ensures accuracy, transparency, and compliance in sustainability disclosures and target-setting."
+    },
+    { title:"Greenhouse Gas (GHG) Accounting & Carbon Footprint Analysis",
+      description:"We help organizations accurately measure and analyze their greenhouse gas emissions across sectors through detailed inventories and life cycle assessments (LCA). Our service supports the creation of carbon footprints, identifies reduction opportunities, and enables businesses to transition toward net-zero through strategic roadmaps and carbon credit monetization."
+    },
+    { title:"Climate & Environmental Policy Advisory",
+      description:"We provide expert advisory on climate and environmental regulations to help organizations navigate compliance, carbon markets, and emerging sustainability frameworks. Our services ensure alignment with national and global climate policies, including CBAM, SEBI-BRSR, and emission trading systems (ETS)."
+    },
+    { title:"Environmental Credits & Sustainability Finance Advisory",
+      description:"We assist organizations in unlocking value from environmental credits and sustainable finance. Our services include feasibility studies, credit verification, registry navigation, and guidance on securing green bonds, sustainability-linked loans, and other climate-related investment instruments."
+    }, 
+    { title:"ESG Strategy & Reporting",
+      description:"We support businesses in building ESG strategies that meet global and regional standards such as SEBI-BRSR, TCFD, and GRI. Our services ensure compliance, transparency, and integration of circular economy practices for long-term sustainability."
+    },
+    { title:"Capacity Building & Professional Training",
+      description:"We design and deliver capacity-building programs and professional training workshops focused on climate action, ESG compliance, and sustainability. These programs empower organizations and professionals with the skills and certifications needed to lead decarbonization and sustainability transitions across sectors."
+    },
+    { title:"Green Staffing Solution",
+      description:"We provide flexible and specialized green staffing solutions to help organizations meet their sustainability and ESG goals. From deploying experts and recruiting on-demand talent to building in-house teams via BOT models, we support startups, corporates, and CSR projects in scaling their climate and energy transition efforts."
+    },
+  ]
 
   const text = "Accelerating Sustainable Business for a Greener Tomorrow";
 
@@ -48,32 +76,40 @@ export default function Home() {
       <section className="w-full flex flex-col items-center justify-center px-4 sm:py-40 md:py-60 sm:my-40 text-center relative bottom-40 sm:static sm:bottom-0">
         <TextGenerateEffect
           words={text}
-          className="mt-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-emerald-400 via-blue-400 to-teal-400 bg-clip-text text-transparent drop-shadow-lg"
+          className="mt-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-700  to-blue-900 bg-clip-text text-transparent drop-shadow-lg"
           duration={2}
           filter={false}
         />
-        <p className="mt-6 text-base sm:text-xl text-gray-500 font-semibold max-w-4xl">
+        <p className="md:mt-30 mt-10 text-base sm:text-3xl bg-gradient-to-r bg-clip-text text-transparent  from-20% from-yellow-400 to-blue-500 font-semibold max-w-4xl ">
           Empowering enterprises to achieve net zero with data-driven insights,
           innovative technology, and actionable strategies.
         </p>
       </section>
 
       {/* Earth + Stats Section */}
-      <section className="w-full  flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-0 py-16 px-6 dark:bg-black ">
+        <div className="w-full text-center relative md:bottom-90 m-10">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text shadow-[0px_0px_40px_10px_#495057] rounded-2xl">
+            Save Earth
+          </h1>
+        </div>
+      <section className="w-full flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-0 py-16 px-6 dark:bg-black md:-mt-100">
         <motion.div
           initial={{ x: isMobile?-150:-300 }}
           whileInView={{ x: 1 }}
           transition={{ duration: 1 }}
           className="text-transparent font-bold text-2xl sm:text-3xl md:text-4xl z-20 flex flex-col gap-10 lg:basis-1/2 text-center lg:text-left "
         >
-          <h1 className="bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-300 ">
-            120+ Companies Reduced Emissions
+          <h1 className="bg-clip-text bg-gradient-to-r from-green-600 to-blue-500 text-2xl">
+            GHG Emission reduction 1Gtonn
           </h1>
-          <h1 className="bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-300">
-            2M+ Tons CO₂ Saved
+          <h1 className="bg-clip-text bg-gradient-to-r from-green-600 to-blue-500 text-2xl">
+            Infrastructure/asset damage savings 100Bn$
           </h1>
-          <h1 className="bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-300">
-            Global Reach: 30+ Countries
+          <h1 className="bg-clip-text bg-gradient-to-r from-green-600 to-blue-500 text-2xl">
+            Employment Creation  40,000nos 
+          </h1>
+          <h1 className="bg-clip-text bg-gradient-to-r from-green-600 to-blue-500 text-2xl">
+            Addressing the need of UN SDGs
           </h1>
         </motion.div>
 
@@ -90,23 +126,23 @@ export default function Home() {
       <section className="w-full flex flex-col items-center justify-center py-16 px-4">
         {/* Our Solutions */}
         <div className="w-full text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-emerald-500 to-green-500 text-transparent bg-clip-text shadow-[0px_0px_40px_10px_#495057] rounded-2xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text shadow-[0px_0px_40px_10px_#495057] rounded-2xl">
             OUR SOLUTIONS
           </h1>
-          <Motion />
+          <Cards services={services}/>
         </div>
 
         {/* Testimonials */}
-        <div className="w-full mt-20">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-emerald-500 to-green-500 text-transparent bg-clip-text shadow-[0px_0px_40px_10px_#495057] rounded-2xl text-center">
+        <div className="w-full mt-20 text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text shadow-[0px_0px_40px_10px_#495057] rounded-2xl">
             TESTIMONIALS
           </h1>
-          <InfiniteMovingCards items={testimonials} direction="right" speed={isMobile?"slow":"normal"} />
+          <InfiniteMovingCards items={testimonials} direction="left" speed={isMobile?"slow":"normal"} />
         </div>
 
         {/* Trusted By */}
         <div className="mt-20 w-full text-center">
-          <h1 className="pb-3 text-3xl sm:text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-emerald-500 to-green-500 text-transparent bg-clip-text shadow-[0px_0px_40px_10px_#495057] rounded-2xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2">
             Trusted By Leading Enterprises
           </h1>
           <Marquee />

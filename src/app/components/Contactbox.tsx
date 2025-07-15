@@ -46,7 +46,7 @@ export const Contactbox = () => {
 };
 
 const ChatBox = () => {
-  const whatsappNumber = "919876543210"; // <-- Replace with your number (e.g., "919876543210")
+  const whatsappNumber = "919876543210";
 
   return (
     <motion.div
@@ -76,20 +76,20 @@ const ChatBox = () => {
         >
           FaceBook
         </motion.button>
-        <motion.button
+        {/* <motion.button
           className="bg-blue-400 text-white px-4 py-2 rounded-xl text-sm cursor-pointer w-full"
           whileTap={{ scale: 1.2 }}
           onClick={()=>window.open("https://x.com/NetZeroThink_")}
         >
           Twitter
-        </motion.button>
-        <motion.button
+        </motion.button> */}
+        {/* <motion.button
           className="bg-pink-600 text-white px-4 py-2 rounded-xl text-sm cursor-pointer w-full"
           whileTap={{ scale: 1.2 }}
           onClick={()=>window.open("https://www.instagram.com/netzerothink_india/")}
         >
           Instagram
-        </motion.button>
+        </motion.button> */}
         <motion.button
           className="bg-blue-700 text-white px-4 py-2 rounded-xl text-sm cursor-pointer w-full"
           whileTap={{ scale: 1.2 }}

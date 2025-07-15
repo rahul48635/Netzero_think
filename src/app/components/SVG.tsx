@@ -55,7 +55,7 @@ const renderpaths=useMemo(()=>(
           d={path}
           stroke={colors[idx]}
           strokeWidth={1.5}
-          fill="blue"
+          fill="green"
           initial={{strokeDashoffset:800,strokeDasharray:"100 800"}}
           animate={{
             strokeDashoffset:0,
