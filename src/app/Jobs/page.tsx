@@ -7,35 +7,11 @@ import { Card, CardDescription, CardTitle } from "@/components/ui/card"
 export default function JobsAndServicesPage() {
     const jobListings = [
   {
-    title: "Frontend Developer Intern",
-    description: "Work on real-world React projects with a fast-paced startup, assisting in UI/UX development.",
-    skills: ["React", "Tailwind CSS", "JavaScript", "Git"],
-    qualification: "Pursuing B.Tech / BCA or equivalent in Computer Science"
-  },
-  {
     title: "Marketing & Social Media Intern",
     description: "Assist in brand visibility through social media, content creation, and growth campaigns.",
     skills: ["Canva", "Instagram Marketing", "Copywriting", "Analytics"],
     qualification: "Any undergraduate student with an interest in marketing"
   },
-  {
-    title: "Data Analyst Intern",
-    description: "Analyze operational data to uncover patterns and contribute to actionable dashboards.",
-    skills: ["Python", "Excel", "Power BI", "SQL"],
-    qualification: "BSc / B.Tech / MBA with analytics exposure"
-  },
-  {
-    title: "Operations & Vendor Management",
-    description: "Help onboard vendors, streamline supply chain workflows, and maintain service quality.",
-    skills: ["Excel", "Communication", "Coordination", "Documentation"],
-    qualification: "Any graduate or MBA preferred"
-  },
-  {
-    title: "Full Stack Developer",
-    description: "Build scalable backend APIs and integrate them with modern frontend frameworks.",
-    skills: ["Node.js", "Express", "React", "MongoDB", "TypeScript"],
-    qualification: "B.Tech / MCA with 1+ years of experience or strong portfolio"
-  }
 ]
 
   const [formData, setFormData] = useState({
@@ -97,7 +73,7 @@ export default function JobsAndServicesPage() {
       </section>
       <section className="w-full h-full text-black">
           <motion.h1
-            className="text-4xl sm:text-5xl font-extrabold text-center bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 text-transparent bg-clip-text mb-12"
+            className="text-4xl sm:text-5xl font-extrabold text-center bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent mb-12"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}

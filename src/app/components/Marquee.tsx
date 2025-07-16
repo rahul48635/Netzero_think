@@ -9,7 +9,7 @@ export default function Marquee() {
     "/marquee/04.png",
     "/marquee/05.png",
     "/marquee/06.png",
-    "/marquee/07.png",
+    "/marquee/11.png",
     "/marquee/08.png",
     "/marquee/09.png",
      ]
@@ -17,7 +17,7 @@ export default function Marquee() {
     <div >
       <Mark autoFill direction='right' speed={200}>
         {arr.map((item,idx)=>(
-          <div key={idx}><Image src={item} alt={item} width={190} height={200} className='p-5'/></div>
+          <div key={idx}><Image src={item} alt={item} width={200} height={200} className='p-5'/></div>
         ))}
       </Mark>
     </div>

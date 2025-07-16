@@ -1,11 +1,20 @@
+"use client"
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
-import { Card, CardContent } from "@/components/ui/card"
+import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Award, Users, Target, Eye, Heart, Lightbulb, Shield} from "lucide-react"
-import DecarbonisationPillars from "../components/Pillars_sec"
 import GlobalShowcase from "../components/Showcase"
+import {motion} from 'framer-motion'
+import useMediaQuery from "../hooks/useMediaQuery"
+import Link from "next/link"
+
 
 export default function AboutPage() {
+
+  const isMobile=useMediaQuery("(max-width:768px)")
+  
+  const SDG=["/SDG/01.png","/SDG/02.png","/SDG/03.png","/SDG/04.png","/SDG/05.png","/SDG/06.png","/SDG/07.png"]
+
   const values = [
     { icon: <Lightbulb className="h-8 w-8" fill="yellow" stroke="blue" />, title: "Innovation", description: "We constantly push boundaries and embrace new technologies to deliver cutting-edge solutions." },
     { icon: <Heart className="h-8 w-8" fill="#ff0054" stroke="#ff0054" />, title: "Integrity", description: "We maintain the highest ethical standards in all our business practices and relationships." },
@@ -14,17 +23,15 @@ export default function AboutPage() {
   ]
 
   const teamMembers = [
-    { name: "Mr. M.K. Singh", role: "CEO & Founder", image: "/core_team/03.jpg", bio: "Lead Environment & Carbon Consultant Climate strategist and sustainability educator (Ph.D.) with expertise in emissions accounting, carbon finance, and green building transitions—certified trainer advancing climate literacy and actionable decarbonization solutions." },
-    { name: "Dr. Pranamika Bhuyan", role: "Lead Environment & Carbon Consultant", image: "/core_team/02.jpeg", bio: "Environmental consultant and educator with a Ph.D., specializing in GHG accounting, air quality, carbon markets, and low-carbon building transitions—11 years in academia and 2+ years in climate action, now leading capacity-building initiatives as Master Trainer and scientific writer." },
-    { name:"Ms. Pratyaksha Singh", role:"Director", image:"/core_team/04.jpg", bio:"With a Master’s in Science and 3+ years of administrative experience, Pratyaksha ensures seamless project coordination and operational efficiency at NetZero Think. Their strong analytical background supports our mission to scale decarbonization with structure, clarity, and impact."},
-    { name:"Ms. Sapna​ Bisht", role:"Consultant (BD & CRM)", image:"/core_team/06.jpg", bio:"With a B.Tech in Civil Engineering and M.Tech in Environmental Engineering, Sapna brings over a decade of expertise spanning both industry and academia. At NetZero Think Scape, she bridges technical depth with practical insights to drive sustainable infrastructure and climate-forward solutions."},
+    { name: "Mr. M.K. Singh", role: "CEO & Founder", image: "/core_team/03.jpg", link:"https://www.linkedin.com/in/dr-manoj-kumar-singh-b7480a19/", bio: "Lead Environment & Carbon Consultant Climate strategist and sustainability educator (Ph.D.) with expertise in emissions accounting, carbon finance, and green building transitions—certified trainer advancing climate literacy and actionable decarbonization solutions." },
+    { name: "Dr. Pranamika Bhuyan", role: "Lead Environment & Carbon Consultant", link:"https://www.linkedin.com/in/pranamika-bhuyan-ph-d-61505b104/", image: "/core_team/02.jpeg", bio: "Environmental consultant and educator with a Ph.D., specializing in GHG accounting, air quality, carbon markets, and low-carbon building transitions—11 years in academia and 2+ years in climate action, now leading capacity-building initiatives as Master Trainer and scientific writer." },
+    { name:"Ms. Pratyaksha Singh", role:"Director", image:"/core_team/04.jpg", link:"#", bio:"With a Master’s in Science and 3+ years of administrative experience, Pratyaksha ensures seamless project coordination and operational efficiency at NetZero Think. Their strong analytical background supports our mission to scale decarbonization with structure, clarity, and impact."},
+    { name:"Ms. Sapna​ Bisht", role:"Consultant (BD & CRM)", image:"/core_team/03.jpeg",link:"https://www.linkedin.com/in/sapna-bisht-813964104/", bio:"With a B.Tech in Civil Engineering and M.Tech in Environmental Engineering, Sapna brings over a decade of expertise spanning both industry and academia. At NetZero Think Scape, she bridges technical depth with practical insights to drive sustainable infrastructure and climate-forward solutions."},
   ]
 
   const advisors = [
-    { name: "Mr. K.S. Popili", role: "Former CMD IREDA", image: "/advisors/01.jpeg", bio: "Veteran energy finance leader and ex-CMD of IREDA with 37+ years in renewable energy, governance, and sustainable infrastructure development." },
-    { name: "Mr. R.K. Sikri", role: "Former NTPC Professional  & World Bank Consultant", image: "/advisors/02.jpeg", bio: "Veteran energy and environment executive — Managing Partner at Eleven Group and Director at IREC — with 45+ years in power-plant erection, commissioning, troubleshooting across India and abroad." },
-    { name: "Dr. Dimitrious Dimitrio ", role: "Advisor", image: "/advisors/03.jpg", bio: "With a PhD and B.Tech, Dimitrious brings over 20 years of deep domain expertise in sustainability, particularly within the steel and cement industries. At NetZero Think Scape, he leads with strategic insight and sectoral knowledge to shape high-impact decarbonization pathways for hard-to-abate sectors." },
-    { name: "Dr. Kumar Iyer ", role: "Advisor", image: "/advisors/04.jpg", bio: "With a PhD and B.Tech, Dr. Iyer brings over 30 years of expertise in Quality Control and Life Cycle Assessment across the steel and manufacturing industries. At NetZero Think Scape, he anchors our work with deep technical rigor, ensuring data-driven and standards-aligned sustainability outcomes." },
+    { name: "Dr. Dimitrious Dimitrio ", role: "Advisor", image: "/advisors/03.jpeg",link:"https://www.linkedin.com/in/drdimitriosdimitriou/" ,bio: "With a PhD and B.Tech, Dimitrious brings over 20 years of deep domain expertise in sustainability, particularly within the steel and cement industries. At NetZero Think Scape, he leads with strategic insight and sectoral knowledge to shape high-impact decarbonization pathways for hard-to-abate sectors." },
+    { name: "Dr. Kumar Iyer ", role: "Advisor", image: "/advisors/04.jpeg",link:"https://www.linkedin.com/in/kumar-value-creation-exponent/", bio: "With a PhD and B.Tech, Dr. Iyer brings over 30 years of expertise in Quality Control and Life Cycle Assessment across the steel and manufacturing industries. At NetZero Think Scape, he anchors our work with deep technical rigor, ensuring data-driven and standards-aligned sustainability outcomes." },
   ]
 
   const awards = [
@@ -32,24 +39,56 @@ export default function AboutPage() {
     { title: "Promising Startup Net Zero Sustainability Solutions", organization: "A and A Media Group and Industrial Outlook", image: "/solutions/img5.jpg" },
   ]
 
+
   return (
     <div className="min-h-screen bg-background">
       {/* Hero */}
       <section className="py-20 mt-20 px-4 sm:px-6 lg:px-8 text-center sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center">
-        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold bg-gradient-to-r from-purple-500 to-pink-500  bg-clip-text text-transparent mb-6">
-          About Our Company
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent mb-6">
+          About Net Zero Think
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-          Together we can drive the transition
-          to a cleaner and more resilient planet
+          Net Zero Think founded with the intention to decarbonising the business ecosystem; help enterprises to identify the long-term climate risks, become net-zero and move towards achieving long term sustainability.
         </p>
       </section>
 
       {/* photo showcase  */}
         <GlobalShowcase/>
       {/* demonstration pillar */}
-        <DecarbonisationPillars/>
-
+      <div className="flex flex-col md:flex-row justify-between items-baseline mx-5 ">
+        <motion.div
+            initial={{ x: isMobile?-150:-300 }}
+            whileInView={{ x: 1 }}
+            transition={{ duration: 1 }}
+            className="text-transparent font-bold text-2xl sm:text-3xl md:text-4xl z-20 flex flex-col gap-10 lg:basis-1/2 text-center lg:text-left m-5 rounded-2xl justify-center"
+          >
+                  <h1 className="text-4xl text-blue-800">Value Preposition Aimed (2030)</h1>
+                  <h1 className="bg-clip-text bg-gradient-to-r from-green-600 to-blue-500 text-2xl">
+                    GHG Emission reduction <span>{'>'}</span> 1Gtonn
+                  </h1>
+                  <h1 className="bg-clip-text bg-gradient-to-r from-green-600 to-blue-500 text-2xl">
+                    Infrastructure/asset damage savings <span>{'>'}</span> 100Bn$
+                  </h1>
+                  <h1 className="bg-clip-text bg-gradient-to-r from-green-600 to-blue-500 text-2xl">
+                    Employment Creation <span>{'>'}</span> 40,000nos
+                  </h1>  
+        </motion.div>
+        <motion.div 
+        initial={{ x: isMobile?150:300 }}
+            whileInView={{ x: 1 }}
+            transition={{ duration: 1 }}
+            className="text-transparent font-bold text-2xl sm:text-3xl md:text-4xl z-20 flex flex-col gap-10 lg:basis-1/2 text-center lg:text-left m-5 "
+        >
+          <div className="flex flex-wrap gap-10 items-center justify-center">
+          <h1 className="text-4xl text-blue-800 w-full text-center">
+            Addressing the need of UN SDGs
+          </h1>
+            {SDG.map((item,idx)=>(
+              <Image key={idx} alt={`${item}`} src={item} height={100} width={100}/>
+            ))}
+          </div>
+        </motion.div>
+      </div>
       {/* Vision */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/50 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -82,7 +121,7 @@ export default function AboutPage() {
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/50 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent mb-4">Our Core Values</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Our Core Values</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">The principles that guide our decisions and shape our culture</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -102,18 +141,21 @@ export default function AboutPage() {
       {/* Team */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center">
         <div className="max-w-7xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent mb-4">Our Core Team</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Our Core Team</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Meet the passionate individuals driving our mission forward</p>
         </div>
         <div className="flex w-full flex-wrap gap-15 items-center justify-center">
           {teamMembers.map((member, i) => (
-            <Card key={i} className={`text-center overflow-hidden hover:shadow-lg transition-shadow sm:w-1/5 h-150 bg-gradient-to-t from-gray-400 to-gray-600`}>
+            <Card key={i} className={`relative text-center overflow-hidden hover:shadow-2xl transition-shadow sm:w-1/5 h-150 bg-gradient-to-t from-gray-400 to-gray-600`}>
               <Image src={member.image} alt={member.name} width={300} height={300} className="w-full h-64  object-contain p-5" />
               <CardContent className="p-5">
                 <h3 className="text-xl font-semibold mb-2 text-gray-900">{member.name}</h3>
                 <Badge variant="secondary" className="mb-3 bg-yellow-100 dark:text-black">{member.role}</Badge>
                 <p className="text-blue-800 text-sm">{member.bio}</p>
               </CardContent>
+              <CardFooter className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-gray-300 rounded-2xl m-2 items-center justify-center">
+                <Link className="self-center justify-self-center" href={member.link}>LinkedIn</Link>
+              </CardFooter>
             </Card>
           ))}
         </div>
@@ -122,18 +164,21 @@ export default function AboutPage() {
       {/* Advisors */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/50 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center">
         <div className="max-w-7xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent mb-4">Our Advisors</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Our Advisors</h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Industry experts guiding our strategic direction</p>
         </div>
         <div className="grid md:flex md:items-center md:justify-evenly  gap-6">
           {advisors.map((advisor, i) => (
-            <Card key={i} className={`text-center overflow-hidden hover:shadow-lg transition-shadow sm:w-1/4 h-150 bg-gradient-to-t from-gray-400 to-gray-600`}>
+            <Card key={i} className={`relative text-center overflow-hidden hover:shadow-2xl transition-shadow sm:w-1/4 h-150 bg-gradient-to-t from-gray-400 to-gray-600`}>
               <Image src={advisor.image} alt={advisor.name} width={300} height={300} className="w-full h-64  object-contain" />
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-gray-900">{advisor.name}</h3>
                 <Badge variant="secondary" className="mb-3 bg-yellow-100 dark:text-black">{advisor.role}</Badge>
                 <p className="text-blue-800 text-sm text-wrap ">{advisor.bio}</p>
               </CardContent>
+              <CardFooter className="absolute bottom-0 left-1/2 -translate-x-1/2 bg-gray-300 rounded-2xl m-2 items-center justify-center">
+                <Link href={advisor.link}>LinkedIn</Link>
+              </CardFooter>
             </Card>
           ))}
         </div>
@@ -144,7 +189,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto text-center mb-12">
           <div className="flex justify-center gap-3 mb-4 items-center">
             <Award className="h-8 w-8 text-yellow-600" />
-            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">Awards & Recognition</h2>
+            <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent p-1">Awards & Recognition</h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Our achievements and recognition from industry leaders</p>
         </div>

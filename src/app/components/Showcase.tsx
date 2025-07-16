@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const images = [
   {
     src: "/showcase/01.jpg",
-    caption: "NetZero at COP28 – Dubai",
+    caption: "Net Zero at COP28 – Dubai",
   },
   {
     src: "/showcase/02.jpg",
@@ -12,31 +12,31 @@ const images = [
   },
   {
     src: "/showcase/04.jpg",
-    caption: "NetZero Team at Climate Innovation Summit",
+    caption: "Net Zero Team at Climate Innovation Summit",
   },
   {
     src: "/showcase/05.jpg",
-    caption: "NetZero Team at India Mobility Show",
+    caption: "Net Zero Team at India Mobility Show",
   },
   {
     src: "/showcase/06.jpg",
-    caption: "Addessing Doubts at CIS",
+    caption: "Delivering key note speech at Climate Innovation Summit",
   },
   {
     src: "/showcase/07.jpg",
-    caption: "Interactions with Global Leaders",
+    caption: "Chairing session on Net Zero pathways during India Energy Week",
   },
   {
     src: "/showcase/08.jpg",
-    caption: "Receiving Reward for promising startup",
+    caption: "Recognised as a most promising sustainbility startup",
   },
   {
     src: "/showcase/09.jpg",
-    caption: "Addressing Doubts at FICCI",
+    caption: "Delivering Speech on Net Zero pathways",
   },
   {
     src: "/showcase/10.jpg",
-    caption: "Receiving Reward",
+    caption: "Recognised  at Vigyaan Bhawan",
   },
 ];
 
@@ -51,7 +51,7 @@ export default function GlobalShowcase() {
           viewport={{ once: true }}
           className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-cyan-500"
         >
-          Global Showcase
+          Global Representation
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -60,7 +60,7 @@ export default function GlobalShowcase() {
           viewport={{ once: true }}
           className="mt-4 text-lg text-gray-600 dark:text-gray-300"
         >
-          Highlights from our presence at COP28 and global sustainability summits.
+          Highlights from our presence at COP, Global, Regional sustainability summits.
         </motion.p>
       </div>
 

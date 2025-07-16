@@ -8,34 +8,35 @@ import { motion } from "framer-motion";
 import SVG from "./components/SVG";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Cards from "./components/Cards";
+import DecarbonisationPillars from "./components/Pillars_sec";
 
 export default function Home() {
   const isMobile=useMediaQuery("(max-width: 768px)")
   const testimonials = [
     {
       quote:
-        "Net Zero Think's innovative solutions play a critical role in the imperative task of decarbonizing ecosystems...",
+        "Net Zero Think's innovative solutions play a critical role in the imperative task of decarbonizing ecosystems. In the process of revolutionizing our education system, there is a pressing need for comprehensive green skilling across a range of subjects. We are delighted to collaborate with Net Zero Think, supported by the generous contribution of Microsoft, in advancing the realm of Green Skilling.",
       name: "",
       title: "TNS India Foundation",
       src:"/testimonials/03.png"
     },
     {
       quote:
-        "Net zero think solutions could play a critical role to decarbonise supply chain...",
+        "Net zero think solutions could play a critical role to decarbonise supply chain. By implementing Net Zero Think solutions,  we are in the transition to bring down our process losses, reduce emissions and improve overall efficiency…..",
       name: " ",
       title: "Mining Industry ",
       src:"/testimonials/04.png"
     },
     {
       quote:
-        "Net Zero Think is working with us onto multiple areas including Green House Gas accounting...",
+        "Net Zero Think is working with us onto multiple areas including Green House Gas accounting guidelines development. We find Net Zero Think team the most professional and competent on the subject. The guidelines they developed are of international standard and are being used for developing national curriculums...",
       name: " ",
       title: "Skill Council For Green Jobs, India",
       src:"/testimonials/02.png"
     },
     {
       quote:
-        "Net Zero Think's expertise in the renewable energy and green hydrogen sector...",
+        "Net Zero Think's expertise in the renewable energy and green hydrogen sector has been instrumental in driving decarbonization efforts across industries.",
       name: "Mr. Eric Solheim ",
       title: "Former Secretary United Nations Environment Program",
       src:"/testimonials/01.jpg"
@@ -76,11 +77,11 @@ export default function Home() {
       <section className="w-full flex flex-col items-center justify-center px-4 sm:py-40 md:py-60 sm:my-40 text-center relative bottom-40 sm:static sm:bottom-0">
         <TextGenerateEffect
           words={text}
-          className="mt-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-700  to-blue-900 bg-clip-text text-transparent drop-shadow-lg"
+          className="mt-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-purple-500 drop-shadow-lg"
           duration={2}
           filter={false}
         />
-        <p className="md:mt-30 mt-10 text-base sm:text-3xl bg-gradient-to-r bg-clip-text text-transparent  from-20% from-yellow-400 to-blue-500 font-semibold max-w-4xl ">
+        <p className="md:mt-30 mt-10 text-base sm:text-3xl text-green-700 font-semibold max-w-4xl ">
           Empowering enterprises to achieve net zero with data-driven insights,
           innovative technology, and actionable strategies.
         </p>
@@ -88,8 +89,8 @@ export default function Home() {
 
       {/* Earth + Stats Section */}
         <div className="w-full text-center relative md:bottom-90 m-10">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text shadow-[0px_0px_40px_10px_#495057] rounded-2xl">
-            Save Earth
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2">
+            Decarbonization Stratergies
           </h1>
         </div>
       <section className="w-full flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-0 py-16 px-6 dark:bg-black md:-mt-100">
@@ -99,18 +100,8 @@ export default function Home() {
           transition={{ duration: 1 }}
           className="text-transparent font-bold text-2xl sm:text-3xl md:text-4xl z-20 flex flex-col gap-10 lg:basis-1/2 text-center lg:text-left "
         >
-          <h1 className="bg-clip-text bg-gradient-to-r from-green-600 to-blue-500 text-2xl">
-            GHG Emission reduction 1Gtonn
-          </h1>
-          <h1 className="bg-clip-text bg-gradient-to-r from-green-600 to-blue-500 text-2xl">
-            Infrastructure/asset damage savings 100Bn$
-          </h1>
-          <h1 className="bg-clip-text bg-gradient-to-r from-green-600 to-blue-500 text-2xl">
-            Employment Creation  40,000nos 
-          </h1>
-          <h1 className="bg-clip-text bg-gradient-to-r from-green-600 to-blue-500 text-2xl">
-            Addressing the need of UN SDGs
-          </h1>
+        <DecarbonisationPillars/>
+          
         </motion.div>
 
         <div className="lg:basis-1/2 flex justify-center  ">
@@ -126,7 +117,7 @@ export default function Home() {
       <section className="w-full flex flex-col items-center justify-center py-16 px-4">
         {/* Our Solutions */}
         <div className="w-full text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text shadow-[0px_0px_40px_10px_#495057] rounded-2xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 shadow-[0px_0px_40px_10px_#495057] rounded-2xl">
             OUR SOLUTIONS
           </h1>
           <Cards services={services}/>
@@ -134,7 +125,7 @@ export default function Home() {
 
         {/* Testimonials */}
         <div className="w-full mt-20 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text shadow-[0px_0px_40px_10px_#495057] rounded-2xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 shadow-[0px_0px_40px_10px_#495057] rounded-2xl">
             TESTIMONIALS
           </h1>
           <InfiniteMovingCards items={testimonials} direction="left" speed={isMobile?"slow":"normal"} />
@@ -142,7 +133,7 @@ export default function Home() {
 
         {/* Trusted By */}
         <div className="mt-20 w-full text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2">
             Trusted By Leading Enterprises
           </h1>
           <Marquee />

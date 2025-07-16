@@ -26,8 +26,8 @@ const pillars = [
 export default function DecarbonisationPillars() {
   return (
     <section className="justify-self-center self-center w-[70%] sm:w-[90%] px-6 py-16 bg-blue-100  text-white flex flex-col items-center rounded-4xl m-30">
-      <h2 className="text-3xl md:text-5xl font-bold mb-10 text-center text-yellow-500">
-        NZT&apos;s 3 Key Pillars of Decarbonisation
+      <h2 className="text-3xl md:text-5xl font-bold mb-10 text-center text-purple-500">
+        Net Zero Think&apos;s solutions are based on 3 Key Pillars of Decarbonisation
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
@@ -38,13 +38,12 @@ export default function DecarbonisationPillars() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
             viewport={{ once: true }}
-            className={`bg-gradient-to-br ${pillar.color} rounded-2xl p-6 shadow-xl hover:scale-105 transition-transform duration-300`}
+            className={`bg-gradient-to-br ${pillar.color} rounded-2xl p-6 shadow-xl hover:scale-105 transition-transform duration-300 w-50 self-center justify-self-center`}
           >
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 mb-4 w-50 self-center justify-self-center ">
               <CheckCircle className="w-6 h-6 text-white" />
-              <h3 className="text-xl font-semibold">{pillar.title}</h3>
+              <h3 className="text-xl font-bold text-center items-center justify-center">{pillar.title}</h3>
             </div>
-            <p className="text-sm opacity-90">{pillar.description}</p>
           </motion.div>
         ))}
       </div>

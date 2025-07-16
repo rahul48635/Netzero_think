@@ -76,13 +76,14 @@ const ChatBox = () => {
         >
           FaceBook
         </motion.button>
-        {/* <motion.button
-          className="bg-blue-400 text-white px-4 py-2 rounded-xl text-sm cursor-pointer w-full"
+        <motion.button
+          className="bg-green-800 text-white px-4 py-2 rounded-xl text-sm cursor-pointer w-full"
           whileTap={{ scale: 1.2 }}
-          onClick={()=>window.open("https://x.com/NetZeroThink_")}
+          onClick={()=>window.open(`mailto:support@netzerothink.com?subject=New Service Request from [Name]&body=Name: [Name]%0APhone: [WhatsApp Number]%0ADescription: [Why do you want to Join?]`)}
+
         >
-          Twitter
-        </motion.button> */}
+          Join Our Community
+        </motion.button>
         {/* <motion.button
           className="bg-pink-600 text-white px-4 py-2 rounded-xl text-sm cursor-pointer w-full"
           whileTap={{ scale: 1.2 }}

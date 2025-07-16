@@ -4,9 +4,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import {
   FaFacebook,
-  FaInstagram,
+  // FaInstagram,
   FaLinkedin,
-  FaTwitter,
+  // FaTwitter,
   FaYoutube,
 } from 'react-icons/fa';
 
@@ -21,8 +21,8 @@ export default function Footer({ items }: { items: items }) {
   };
 
   const socials: social = {
-    "https://www.instagram.com/netzerothink_india/": <FaInstagram fill='#ff006e'/>,
-    "https://x.com/NetZeroThink_": <FaTwitter fill='#00b4d8' />,
+    // "https://www.instagram.com/netzerothink_india/": <FaInstagram fill='#ff006e'/>,
+    // "https://x.com/NetZeroThink_": <FaTwitter fill='#00b4d8' />,
     "https://www.youtube.com/@netzerothink": <FaYoutube fill='red' />,
     "https://www.facebook.com/p/NET-ZERO-THINK-100078446962916/?paipv=0&eav=AfbufXp8uGtISCG_iy2czsdtQ26X2s_mPiSk8kf5sPQoy09ZH2yUGQvIi02y_AzhYFU&_rdr": <FaFacebook fill='blue'/>,
     "https://www.linkedin.com/company/net-zero-think/": <FaLinkedin fill='#03045e' />,

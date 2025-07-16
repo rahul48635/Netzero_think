@@ -95,13 +95,13 @@ export const InfiniteMovingCards = ({
             <blockquote>
               <div
                 aria-hidden="true"
-                className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
+                className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_40px)] w-[calc(100%_+_4px)]"
               ></div>
               <span className="relative z-20 text-sm leading-[1.6] font-normal text-blue-800 dark:text-gray-100">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
-                <Image src={item.src} alt={`${item.name}`} width={100} height={100} className="m-5 rounded-2xl" />
+                <Image src={item.src} alt={`${item.name}`} width={50} height={50} className="m-5 rounded-2xl" />
                 <span className="flex flex-col gap-1">
                   <span className="text-sm leading-[1.6] font-normal text-purple-500 dark:text-gray-400">
                     {item.name}

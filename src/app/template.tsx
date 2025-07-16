@@ -23,17 +23,17 @@ export default function Template(
     href:"/"
   },
   {
+    title:"Solutions & Services",
+    logo: GrServices ,
+    href:"/services"
+  },
+  {
     title:"About Us",
     logo: CiSquareQuestion,
     href:"/about"
   },
   {
-    title:"Services",
-    logo: GrServices ,
-    href:"/services"
-  },
-  {
-    title:"Jobs",
+    title:"Career",
     logo: IoMdBriefcase ,
     href:"/Jobs"
   },
@@ -47,6 +47,8 @@ const Footeritems: items = [
       "Privacy Policy": "/Privacy-Policy",
       "Disclaimer": "/Disclaimer",
       "Web Policies": "/Web-Policies",
+      "Code of Conduct":"/pdfs/code_of_conduct.pdf",
+      "Ethics & Sustainability Policy":"/pdfs/ethics.pdf"
     },
   },
   {
@@ -95,8 +97,8 @@ const Footeritems: items = [
                         )}
                       </AnimatePresence>
               </motion.button>
-            <div className="">
-                <Image src={'/Netzerothink.png'} alt="logo" width={300} height={300} className="mt-30 absolute left-1/2 top-[-5rem] -translate-x-1/2 sm:left-[5rem] sm:translate-0"/>
+            <div >
+                <Image src={'/Netzerothink.png'} alt="logo" width={350} height={350} className="mt-30 absolute left-1/2 top-[-5rem] -translate-x-1/2 sm:left-[5rem] sm:translate-0"/>
                 {isMobile?<MobileNavbar items={items} className="top-1/2 left-10  fixed"/> :<Navbar items={items} className="z-10 sm:top-10 top-20"/>}
             </div>
             {children}

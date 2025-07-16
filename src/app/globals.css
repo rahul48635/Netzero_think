@@ -133,17 +133,3 @@ body {
     }
   }
 }
-.hiddenscroll {
-  -ms-overflow-style: none; /* IE and Edge */
-}
-.hiddenscroll::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
-}
-.custom-list {
-  list-style: disc;
-  padding-left: 1.2em;
-}
-
-.custom-list li::marker {
-  color: green;
-}
