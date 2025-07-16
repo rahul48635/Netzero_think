@@ -89,7 +89,7 @@ export default function Home() {
 
       {/* Earth + Stats Section */}
         <div className="w-full text-center relative md:bottom-90 m-10">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2">
             Decarbonization Stratergies
           </h1>
         </div>
@@ -98,7 +98,7 @@ export default function Home() {
           initial={{ x: isMobile?-150:-300 }}
           whileInView={{ x: 1 }}
           transition={{ duration: 1 }}
-          className="text-transparent font-bold text-2xl sm:text-3xl md:text-4xl z-20 flex flex-col gap-10 lg:basis-1/2 text-center lg:text-left "
+          className="text-transparent font-bold text-2xl sm:text-3xl md:text-4xl z-20 flex flex-col gap-10 lg:basis-1/2 text-center lg:text-left -mt-50"  
         >
         <DecarbonisationPillars/>
           
@@ -117,7 +117,7 @@ export default function Home() {
       <section className="w-full flex flex-col items-center justify-center py-16 px-4">
         {/* Our Solutions */}
         <div className="w-full text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 shadow-[0px_0px_40px_10px_#495057] rounded-2xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl">
             OUR SOLUTIONS
           </h1>
           <Cards services={services}/>
@@ -125,7 +125,7 @@ export default function Home() {
 
         {/* Testimonials */}
         <div className="w-full mt-20 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 shadow-[0px_0px_40px_10px_#495057] rounded-2xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl">
             TESTIMONIALS
           </h1>
           <InfiniteMovingCards items={testimonials} direction="left" speed={isMobile?"slow":"normal"} />
@@ -133,7 +133,7 @@ export default function Home() {
 
         {/* Trusted By */}
         <div className="mt-20 w-full text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2">
             Trusted By Leading Enterprises
           </h1>
           <Marquee />

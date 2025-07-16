@@ -200,12 +200,6 @@ export default function ServicesPage() {
     tech: ["Hydropower", "Project Engineering", "Lender’s Engineer"]
   },
   {
-    title: "Wind & Solar Project Development",
-    client: "Independent Power Producers ",
-    description: "Owner’s & Lender’s Engineer role for multiple wind and solar projects across Asia Pecific Region",
-    tech: ["Wind Energy", "Solar Power", "Project Management"]
-  },
-  {
     title: "Life Cycle Assessment & EPD for Diverse Manufactured Products",
     client: "Product manufacturing organisations",
     description: "Life Cycle Assessment (LCA) and Environment Product Declaration (EPDConducted Cradle to Gate LCA of various products including furniture, garments, steel, chemicals , plastics, sustainable aviation fuel, Biofuel, FMCG products, automotive components, electronic devices and pharmaceutical drugs. ",
@@ -224,10 +218,10 @@ export default function ServicesPage() {
     tech: [ "Energy Audit", "EHS Audit", "Emissions Audit"]
   },
   {
-    title: "ESG Strategy Development for Independent Power Producers",
+    title: "ESG Implementation & Project Development Support",
     client: "Independent Power Producers",
-    description: "Transition from EHS to ESG Conducted research study and implemented solutions to set and achieve ESG goals",
-    tech: [ "ESG", "EHS", "GRI", "IFRS", "BRSR", "ISO14001", "ISO 45000"]
+    description: "Owner’s & Lender’s Engineer role for multiple wind and solar projects across Asia Pecific Region. Transition from EHS to ESG.",
+    tech: [ "ESG", "EHS", "GRI", "IFRS", "BRSR", "ISO14001", "ISO 45000","Wind Energy", "Solar Power", "Project Management"]
   },
 ];
 const isMobile=useMediaQuery("(max-width: 768px)")
@@ -235,29 +229,27 @@ const isMobile=useMediaQuery("(max-width: 768px)")
 
 
   return (
-    <div className="min-h-screen min-w-screen bg-white dark:bg-black text-black">
+    <div className="min-h-screen min-w-screen bg-white dark:bg-black text-blac mx-10">
       {/* Introduction Section */}
-      <section className="py-20 px-4 md:px-6 lg:px-8 my-20">
+      <section className="py-20 px-4 md:px-6 lg:px-8 my-20  mx-10">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2 w-full">
                 Introduction
-              </span>
             </h1>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className={`${isMobile?"text-center":"text-left"}`}> 
-              <p className="text-lg text-blue-900 mb-6 leading-relaxed">
+              <p className="text-lg text-blue-900 mb-6 leading-relaxed font-bold">
                 Net Zero Think Pvt Ltd (NZT) is a leading Solution Provider dedicated to driving low carbon economy transition. As a global climate-focused solutions provider, we support organizations in achieving net-zero emissions and long-term sustainability. Headquartered in Bangalore, India, our global solution centre collaborates with a network of associate partners to deliver tailored climate-centric solutions & services.
               </p>
-              <p className="text-lg text-blue-900 mb-8 leading-relaxed">
+              <p className="text-lg text-blue-900 mb-8 leading-relaxed font-bold">
                  With a mission to assist industries, government bodies, and stakeholders in meeting net-zero targets, we offer expert guidance in emissions accounting & auditing, sustainability strategy, and net zero initiatives. Additionally, we provide Green Staffing solutions, comprehensive training and capacity-building programs to equip professionals and organizations with the knowledge and skills required to navigate the evolving sustainability landscape and implement effective climate solutions.
               </p>
               <div className="flex flex-wrap gap-2  ">
                 <div className="text-center bg-blue-900 rounded-2xl p-2 dark:bg-white w-60 h-20 flex-1/3 ">
-                  <div className="text-3xl font-bold text-white dark:text-gray-400 ">10+</div>
+                  <div className="text-3xl font-bold text-white dark:text-gray-400 ">25+</div>
                   <div className="text-lg text-gray-300 dark:text-gray-600">Projects Completed</div>
                 </div>
                 <div className="text-center bg-blue-900 rounded-2xl p-1 dark:bg-white flex-1/3">
@@ -270,9 +262,9 @@ const isMobile=useMediaQuery("(max-width: 768px)")
                 </div>
               </div>
             </div>
-            <div className="bg-green-700 rounded-2xl p-8 text-white dark:text-black dark:bg-white">
+            <div className="bg-purple-500 rounded-2xl p-8 text-white dark:text-black dark:bg-white">
               <h3 className="text-3xl font-bold mb-4">
-                <span className="text-purple-500">
+                <span className="text-blue-800">
                   Why Choose Us?
                 </span>
               </h3>
@@ -310,23 +302,22 @@ const isMobile=useMediaQuery("(max-width: 768px)")
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              <span className=" text-blue-800">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2 w-full">
                 Our Services & Solutions
-              </span>
+              </h1>
             </h2>
-            <p className="text-blue-800 text-lg max-w-2xl mx-auto">
-              Comprehensive services designed to elevate your business and drive growth
-            </p>
           </div>
            
         {/* Modal */}
-          <div className="w-full h-50">
+          <div className="w-full h-50 -mt-20">
           <Modal>
-            <ModalTrigger  className="w-full h-full">
-              <div className=" -translate-x-1/2 left-1/2 w-1/2 sm:w-1/3  text-purple-400 shadow-xl shadow-gray-500 hover:-translate-y-3 transition-all duration-500 bg-blue-800  rounded-xl cursor-pointer relative top-8 flex justify-center items-center p-3 tracking-widest font-bold text-2xl">
-                Select Service
-              </div>
-            </ModalTrigger>
+            <div className="flex items-center justify-center w-full  h-[10rem]">
+              <ModalTrigger  className="w-[30rem] inset-2 self-center justify-self-center h-[5rem] ">
+                <div className="  text-purple-400 shadow-xl shadow-gray-500 hover:-translate-y-3 transition-all duration-500 bg-blue-800  rounded-xl cursor-pointer  flex justify-center items-center p-3 tracking-widest font-bold text-2xl">
+                  Select Service
+                </div>
+              </ModalTrigger>
+            </div>
 
             <ModalBody>
               <motion.div
@@ -426,13 +417,10 @@ const isMobile=useMediaQuery("(max-width: 768px)")
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              <span className="text-blue-800">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2 w-full">
                 Our Expertise & Key Reference Projects
-              </span>
+              </h1>
             </h2>
-            <p className="text-yellow-500 font-bold text-lg max-w-2xl mx-auto">
-              Successful project deliveries
-            </p>
           </div>
 
           {/* Expertise Section */}
@@ -469,7 +457,7 @@ const isMobile=useMediaQuery("(max-width: 768px)")
                   <CardHeader>
                     <div className="flex items-center mb-2">
                       <Briefcase className="h-5 w-5 mr-2 fill-white" />
-                      <span className="text-sm text-blue-900 font-bold">{project.client}</span>
+                      <span className="text-sm text-blue-900 font-extrabold">{project.client}</span>
                     </div>
                     <CardTitle className="text-xl font-bold">
                       <span className="text-white">
@@ -499,15 +487,15 @@ const isMobile=useMediaQuery("(max-width: 768px)")
       <section className="py-20 px-4 md:px-6 lg:px-8 bg-white dark:bg-black">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+            <span className="text-purple-500">
               Ready to Start Your Net Zero Journey?
             </span>
           </h2>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-blue-800 mb-8 max-w-2xl mx-auto font-bold">
             Let&apos;s discuss!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gray-400 text-white hover:bg-gray-500 px-8 py-3 text-lg cursor-pointer" onClick={()=>window.open(
+            <Button size="lg" className="bg-purple-400 hover:bg-purple-500 text-white  px-8 py-3 text-lg cursor-pointer" onClick={()=>window.open(
       "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Consultation+Call&details=Let%27s+discuss+your+project&location=Google+Meet&add=mksingh@netzerothink.com&add=support@netzerothink.com",
       "_blank"
     )}>

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const images = [
   {
     src: "/showcase/01.jpg",
-    caption: "Net Zero at COP28 – Dubai",
+    caption: "Net Zero Think at COP28 – Dubai",
   },
   {
     src: "/showcase/02.jpg",
@@ -12,11 +12,11 @@ const images = [
   },
   {
     src: "/showcase/04.jpg",
-    caption: "Net Zero Team at Climate Innovation Summit",
+    caption: "Net Zero Think at Climate Innovation Summit",
   },
   {
     src: "/showcase/05.jpg",
-    caption: "Net Zero Team at India Mobility Show",
+    caption: "Net Zero Think at India Mobility Show",
   },
   {
     src: "/showcase/06.jpg",
@@ -36,7 +36,7 @@ const images = [
   },
   {
     src: "/showcase/10.jpg",
-    caption: "Recognised  at Vigyaan Bhawan",
+    caption: "Recognised  at Vigyaan Bhawan (New Delhi)",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function GlobalShowcase() {
           viewport={{ once: true }}
           className="mt-4 text-lg text-gray-600 dark:text-gray-300"
         >
-          Highlights from our presence at COP, Global, Regional sustainability summits.
+          Highlights from our presence at COP, Global & Regional summits.
         </motion.p>
       </div>
 

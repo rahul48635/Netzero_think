@@ -79,7 +79,7 @@ const ChatBox = () => {
         <motion.button
           className="bg-green-800 text-white px-4 py-2 rounded-xl text-sm cursor-pointer w-full"
           whileTap={{ scale: 1.2 }}
-          onClick={()=>window.open(`mailto:support@netzerothink.com?subject=New Service Request from [Name]&body=Name: [Name]%0APhone: [WhatsApp Number]%0ADescription: [Why do you want to Join?]`)}
+          onClick={()=>window.open(`mailto:support@netzerothink.com?subject=New Service Request from [Name]&body=Name: [Name]%0APhone: [WhatsApp Number]%0AOrganistion: [Your Org]%0ADesignation: [Your Designation]%0ALinkedIn: [Link]%0ADescription: [Why do you want to Join?]`)}
 
         >
           Join Our Community

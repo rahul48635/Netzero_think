@@ -37,6 +37,11 @@ export default function Template(
     logo: IoMdBriefcase ,
     href:"/Jobs"
   },
+  {
+    title:"Climate Innovation Community",
+    logo:IoMdBriefcase ,
+    href:"mailto:support@netzerothink.com?subject=New Service Request from [Name]&body=Name: [Name]%0APhone: [WhatsApp Number]%0AOrganistion: [Your Org]%0ADesignation: [Your Designation]%0ALinkedIn: [Link]%0ADescription: [Why do you want to Join?]"
+  }
 ]
 
 const Footeritems: items = [
@@ -48,7 +53,7 @@ const Footeritems: items = [
       "Disclaimer": "/Disclaimer",
       "Web Policies": "/Web-Policies",
       "Code of Conduct":"/pdfs/code_of_conduct.pdf",
-      "Ethics & Sustainability Policy":"/pdfs/ethics.pdf"
+      "Ethics & Sustainability Policy":"/pdfs/Ethics.pdf"
     },
   },
   {
@@ -56,7 +61,7 @@ const Footeritems: items = [
     Links: {
       "Home": "/",
       "About": "/about",
-      "Services":"/services"
+      "Services":"/services",
     },
   },
 ];

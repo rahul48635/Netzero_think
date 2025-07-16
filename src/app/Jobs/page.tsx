@@ -38,8 +38,8 @@ export default function JobsAndServicesPage() {
 
   return (
     <div className="h-full w-full bg-gray-100 py-16 px-4 sm:px-10 dark:bg-black">
-      <section className="w-full h-full relative my-30 bg-gray-300 p-5 rounded-2xl shadow-gray-500 dark:shadow-gray-100 shadow-[0px_0px_30px]">
-        <h1 className="text-center  text-5xl font-bold justify-self-center p-5 m-5 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 to-blue-500 shadow-[0px_0px_10px] shadow-cyan-400 rounded-2xl">Available Jobs</h1>
+      <section className="w-full h-full relative my-30 bg-purple-500 p-5 rounded-2xl shadow-gray-500 dark:shadow-gray-100 shadow-[0px_0px_30px]">
+        <h1 className="text-center  text-5xl font-bold justify-self-center p-5 m-5 text-blue-800  rounded-2xl">Available Jobs</h1>
         <div className="flex w-full h-full gap-5 flex-wrap items-center justify-center">
             {jobListings.map((item,idx)=>(
                 <Card key={idx} className="max-w-130 h-110 sm:h-70  bg-gradient-to-r  from-slate-300 to-gray-400 p-5 ">

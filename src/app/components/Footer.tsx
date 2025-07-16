@@ -35,9 +35,9 @@ export default function Footer({ items }: { items: items }) {
           <Image
             src="/Netzerothink.png"
             alt="logo"
-            width={200}
-            height={200}
-            className="w-auto h-auto max-w-[150px] md:max-w-[200px]"
+            width={300}
+            height={300}
+            className="w-auto h-auto max-w-[150px] md:max-w-[300px]"
           />
         </div>
 
