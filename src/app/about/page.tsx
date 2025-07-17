@@ -55,7 +55,7 @@ export default function AboutPage() {
       {/* photo showcase  */}
         <GlobalShowcase/>
       {/* demonstration pillar */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2 w-full text-center mt-20">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2 w-[90%] text-center mt-20 self-center justify-self-center">
                Value Preposition Aimed (2030)
         </h1>
       <div className="flex flex-col md:flex-row justify-between items-baseline mx-5 bg-purple-500 rounded-2xl">
@@ -92,7 +92,7 @@ export default function AboutPage() {
         </motion.div>
       </div>
       {/* Vision */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-200 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-200 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center rounded-2xl sm:rounded-none">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="flex items-center gap-3 mb-6">
@@ -120,7 +120,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-200 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-200 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center rounded-2xl sm:rounded-none">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-purple-500 mb-4">Our Core Values</h2>

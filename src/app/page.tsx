@@ -74,7 +74,7 @@ export default function Home() {
       <SVG />
 
       {/* Hero Section */}
-      <section className="w-full flex flex-col items-center justify-center px-4 sm:py-40 md:py-60 sm:my-40 text-center relative bottom-40 sm:static sm:bottom-0">
+      <section className="w-full flex flex-col items-center justify-center px-4 sm:py-40 md:py-60 sm:my-40 text-center relative bottom-40 sm:static sm:bottom-0 ">
         <TextGenerateEffect
           words={text}
           className="mt-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-purple-500 drop-shadow-lg"
@@ -88,7 +88,7 @@ export default function Home() {
       </section>
 
       {/* Earth + Stats Section */}
-        <div className="w-full text-center relative md:bottom-90 m-10">
+        <div className="w-full text-center relative md:bottom-90 m-10 px-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2">
             Decarbonization Stratergies
           </h1>
