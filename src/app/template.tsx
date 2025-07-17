@@ -11,6 +11,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { MobileNavbar } from "./components/mobilenavbar";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { GrServices } from "react-icons/gr";
+import Community_logo from "./components/community_logo";
 
 export default function Template(
   { children }: { children: React.ReactNode }) {
@@ -39,7 +40,7 @@ export default function Template(
   },
   {
     title:"Climate Innovation Community",
-    logo:IoMdBriefcase ,
+    logo:Community_logo ,
     href:"mailto:support@netzerothink.com?subject=New Service Request from [Name]&body=Name: [Name]%0APhone: [WhatsApp Number]%0AOrganistion: [Your Org]%0ADesignation: [Your Designation]%0ALinkedIn: [Link]%0ADescription: [Why do you want to Join?]"
   }
 ]

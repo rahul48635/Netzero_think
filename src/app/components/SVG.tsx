@@ -1,7 +1,7 @@
 
 "use client"
 import {motion} from 'framer-motion';
-import {paths} from '@/app/components/paths'
+import {paths} from '@/app/components/svg_paths/paths'
 import { useMemo } from 'react';
 
 export default function SVG() {

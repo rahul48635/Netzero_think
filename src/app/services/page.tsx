@@ -229,9 +229,9 @@ const isMobile=useMediaQuery("(max-width: 768px)")
 
 
   return (
-    <div className="min-h-screen min-w-screen bg-white dark:bg-black text-blac mx-10">
+    <div className="min-h-screen min-w-screen bg-white dark:bg-black text-black mx-10 ">
       {/* Introduction Section */}
-      <section className="py-20 px-4 md:px-6 lg:px-8 my-20  mx-10">
+      <section className="py-20 px-4 md:px-6 lg:px-8 my-20  ">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2 w-full">
@@ -300,8 +300,8 @@ const isMobile=useMediaQuery("(max-width: 768px)")
       {/* Our Services & Solutions Section */}
       <section className="py-20 px-4 md:px-6 lg:px-8 bg-white text-white dark:bg-black dark:text-black rounded-2xl">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <div className="text-center mb-1">
+            <h2 className="text-4xl md:text-5xl font-bold ">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2 w-full">
                 Our Services & Solutions
               </h1>
@@ -309,10 +309,10 @@ const isMobile=useMediaQuery("(max-width: 768px)")
           </div>
            
         {/* Modal */}
-          <div className="w-full h-50 -mt-20">
+        <div className="w-full h-30 ">
           <Modal>
-            <div className="flex items-center justify-center w-full  h-[10rem]">
-              <ModalTrigger  className="w-[30rem] inset-2 self-center justify-self-center h-[5rem] ">
+            <div className="flex items-center justify-center w-full  ">
+              <ModalTrigger  className="sm:w-[30rem]  self-center justify-self-center h-[5rem] ">
                 <div className="  text-purple-400 shadow-xl shadow-gray-500 hover:-translate-y-3 transition-all duration-500 bg-blue-800  rounded-xl cursor-pointer  flex justify-center items-center p-3 tracking-widest font-bold text-2xl">
                   Select Service
                 </div>
