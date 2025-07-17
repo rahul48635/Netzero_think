@@ -70,7 +70,7 @@ export default function Home() {
   const text = "Accelerating Sustainable Business for a Greener Tomorrow";
 
   return (
-    <div className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden ">
       <SVG />
 
       {/* Hero Section */}
@@ -93,7 +93,7 @@ export default function Home() {
             Decarbonization Stratergies
           </h1>
         </div>
-      <section className="w-full flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-0 py-16 px-6 dark:bg-black md:-mt-100">
+      <section className="w-full flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-0 py-16 px-6 dark:bg-black ">
         <motion.div
           initial={{ x: isMobile?-150:-300 }}
           whileInView={{ x: 1 }}

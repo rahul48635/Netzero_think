@@ -231,7 +231,7 @@ const isMobile=useMediaQuery("(max-width: 768px)")
   return (
     <div className="min-h-screen min-w-screen bg-white dark:bg-black text-black mx-10 ">
       {/* Introduction Section */}
-      <section className="py-20 px-4 md:px-6 lg:px-8 my-20  ">
+      <section className="py-20 px-4 md:px-6 lg:px-8 my-20 md:my-15 md:py-0 ">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2 w-full">
@@ -301,11 +301,9 @@ const isMobile=useMediaQuery("(max-width: 768px)")
       <section className="py-20 px-4 md:px-6 lg:px-8 bg-white text-white dark:bg-black dark:text-black rounded-2xl">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-1">
-            <h2 className="text-4xl md:text-5xl font-bold ">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2 w-full">
                 Our Services & Solutions
               </h1>
-            </h2>
           </div>
            
         {/* Modal */}
@@ -416,11 +414,9 @@ const isMobile=useMediaQuery("(max-width: 768px)")
       <section className="py-20 px-4 md:px-6 lg:px-8 dark:bg-black bg-white ">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2 w-full">
                 Our Expertise & Key Reference Projects
               </h1>
-            </h2>
           </div>
 
           {/* Expertise Section */}
