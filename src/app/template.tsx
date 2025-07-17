@@ -103,9 +103,9 @@ const Footeritems: items = [
                         )}
                       </AnimatePresence>
               </motion.button>
-            <div >
-                <Image src={'/Netzerothink.png'} alt="logo" width={350} height={350} className="mt-30 absolute left-1/2 top-[-5rem] -translate-x-1/2 sm:left-[5rem] sm:translate-0"/>
-                {isMobile?<MobileNavbar items={items} className="top-1/2 left-10  fixed"/> :<Navbar items={items} className="z-10 sm:top-10 top-20"/>}
+            <div className="sm:lg:flex sm:lg:flex-col sm:md:h-[15rem]">
+                <Image src={'/Netzerothink.png'} alt="logo" width={350} height={350} className="mt-30 absolute left-1/2 top-[-5rem] -translate-x-1/2 sm:left-[5rem] sm:translate-0 sm:md:justify-self-center"/>
+                {isMobile?<MobileNavbar items={items} className="top-1/2 left-10  fixed"/> :<Navbar items={items} className="z-10 lg:top-10 top-20 sm:md:top-40"/>}
             </div>
             {children}
             <div className="w-full h-full bg-black">
