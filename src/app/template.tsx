@@ -63,6 +63,7 @@ const Footeritems: items = [
       "Home": "/",
       "About": "/about",
       "Services":"/services",
+      "Career":"/Jobs"
     },
   },
 ];
