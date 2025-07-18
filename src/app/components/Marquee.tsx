@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function Marquee() {
   const arr=[
     "/marquee/01.png",
-    "/marquee/02.png",
+    "/marquee/02.webp",
     "/marquee/03.png",
     "/marquee/04.png",
     "/marquee/05.png",

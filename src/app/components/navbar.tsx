@@ -31,7 +31,7 @@ export const Navbar: React.FC<NavbarProps> = ({ items,className }) => {
 
   return (
     <motion.nav
-      className={`fixed top-5 left-1/2 -translate-x-1/2 flex min-h-22 max-w-4xl items-center justify-around gap-7 rounded-3xl border-4 border-white/90 bg-yellow-100/50 dark:bg-white/10 dark:text-white px-10 shadow-lg shadow-gray-600/70 backdrop-blur-xl ${className}`}
+      className={`fixed top-5 left-1/2 -translate-x-1/2 flex min-h-22 max-w-4xl items-center justify-around gap-7 rounded-3xl border-4 border-white/90 bg-white/50 dark:bg-white/10 dark:text-white px-10 shadow-lg shadow-gray-600/70 backdrop-blur-xl ${className}`}
       initial={{ opacity: 0, y: 0 }}
       animate={{ opacity: 1, y: open ? 0 : -300 }}
       transition={{ duration: 0.7, type: "tween" }}

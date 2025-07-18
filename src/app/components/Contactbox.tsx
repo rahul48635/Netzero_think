@@ -96,7 +96,7 @@ const ChatBox = () => {
           whileTap={{ scale: 1.2 }}
           onClick={()=>window.open("https://www.linkedin.com/company/net-zero-think/")}
         >
-          LinedIn
+          LinkedIn
         </motion.button>
       </div>
     </motion.div>

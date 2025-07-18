@@ -12,37 +12,49 @@ const images = [
   },
   {
     src: "/showcase/04.jpg",
-    caption: "Net Zero Think at Climate Innovation Summit",
+    caption: "Participation at NewsWeek Panel Discussion during COP29-Baku",
   },
   {
     src: "/showcase/05.jpg",
-    caption: "Net Zero Think at India Mobility Show",
+    caption: "Participation at India Mobility Show (Bangaluru)",
   },
   {
     src: "/showcase/06.jpg",
-    caption: "Delivering key note speech at Climate Innovation Summit",
+    caption: "Delivering key note speech at Climate Innovation Summit (Dehradun)",
   },
   {
     src: "/showcase/07.jpg",
-    caption: "Chairing session on Net Zero pathways during India Energy Week",
+    caption: "Chairing session on Net Zero pathways during India Energy Week (New Delhi)",
   },
   {
     src: "/showcase/08.jpg",
-    caption: "Recognised as a most promising sustainbility startup",
+    caption: "Recognised as a most promising sustainbility startup (Bangaluru)",
   },
   {
     src: "/showcase/09.jpg",
-    caption: "Delivering Speech on Net Zero pathways",
+    caption: "Delivering Speech on Net Zero pathways (Bangaluru)",
   },
   {
     src: "/showcase/10.jpg",
     caption: "Recognised  at Vigyaan Bhawan (New Delhi)",
   },
+  {
+    src: "/showcase/11.jpg",
+    caption: "Participation at Alliance for Industry Decarbonisation Panel Discussion (Abu Dhabi) ",
+  },
+  {
+    src: "/showcase/12.jpg",
+    caption: "Participation at IRENA 14th General Assembly (Abu Dhabi)",
+  },
+  {
+    src: "/showcase/13.jpg",
+    caption: "Participation at India Energy Forum (New Delhi)",
+  },
 ];
 
 export default function GlobalShowcase() {
   return (
-    <section className="w-[70%] sm:w-[90%]  self-center justify-self-center px-6 py-20 bg-white dark:bg-gray-950 text-gray-900 dark:text-white border-2 rounded-4xl m-5 border-blue-600 shadow-xl shadow-gray-500 sm:flex sm:flex-col sm:flex-wrap sm:items-center sm:justify-center">
+    <section className="w-[70%] sm:w-[90%]  self-center justify-self-center px-6 py-20 bg-black/80 dark:bg-gray-950 text-gray-900 dark:text-white border-2 rounded-4xl m-5 border-blue-600 shadow-xl shadow-gray-500 sm:flex sm:flex-col sm:flex-wrap sm:items-center sm:justify-center">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -58,7 +70,7 @@ export default function GlobalShowcase() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
-          className="mt-4 text-lg text-gray-600 dark:text-gray-300"
+          className="mt-4 text-lg text-white dark:text-gray-300"
         >
           Highlights from our presence at COP, Global & Regional summits.
         </motion.p>

@@ -1,5 +1,5 @@
 "use client"
-import {  IoMdBriefcase, IoMdHome, IoMdMoon } from "react-icons/io";
+import {  IoMdBriefcase, IoMdContact, IoMdHome, IoMdMoon } from "react-icons/io";
 import { CiSquareQuestion } from "react-icons/ci";
 import { Navbar } from "./components/navbar";
 import Footer from "./components/Footer";
@@ -11,7 +11,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { MobileNavbar } from "./components/mobilenavbar";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { GrServices } from "react-icons/gr";
-import Community_logo from "./components/community_logo";
+import { RiUserCommunityFill } from "react-icons/ri";
 
 export default function Template(
   { children }: { children: React.ReactNode }) {
@@ -36,13 +36,18 @@ export default function Template(
   {
     title:"Career",
     logo: IoMdBriefcase ,
-    href:"/Jobs"
+    href:"/jobs"
+  },
+  {
+    title:"Contact Us",
+    logo:IoMdContact ,
+    href:"/contact"
   },
   {
     title:"Climate Innovation Community",
-    logo:Community_logo ,
-    href:"mailto:support@netzerothink.com?subject=New Service Request from [Name]&body=Name: [Name]%0APhone: [WhatsApp Number]%0AOrganistion: [Your Org]%0ADesignation: [Your Designation]%0ALinkedIn: [Link]%0ADescription: [Why do you want to Join?]"
-  }
+    logo:RiUserCommunityFill ,
+    href:"/community"
+  },
 ]
 
 const Footeritems: items = [
@@ -63,7 +68,7 @@ const Footeritems: items = [
       "Home": "/",
       "About": "/about",
       "Services":"/services",
-      "Career":"/Jobs"
+      "Career":"/Jobs",
     },
   },
 ];
@@ -71,7 +76,6 @@ const Footeritems: items = [
  
         return (
         <div className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden">
-            <>
               <motion.button
                       layout
                       onClick={() => setDark(!dark)}
@@ -104,14 +108,15 @@ const Footeritems: items = [
                         )}
                       </AnimatePresence>
               </motion.button>
-            <div className="sm:lg:flex sm:lg:flex-col sm:md:h-[15rem]">
-                <Image src={'/Netzerothink.png'} alt="logo" width={350} height={350} className="mt-30 absolute left-1/2 top-[-5rem] -translate-x-1/2 sm:left-[5rem] sm:translate-0 sm:md:justify-self-center"/>
-                {isMobile?<MobileNavbar items={items} className="top-1/2 left-10  fixed"/> :<Navbar items={items} className="z-10 lg:top-10 top-20 sm:md:top-40"/>}
+            <div className="sm:lg:flex sm:lg:flex-col ">
+              <div className="mt-30 absolute left-1/2 top-[-5rem] -translate-x-1/2 sm:left-[5rem] sm:translate-0 sm:md:justify-self-center z-10 bg-white/70 rounded-2xl p-2">
+                <Image src={'/Netzerothink.png'} alt="logo" width={350} height={350} />
+              </div>
+                {isMobile?<MobileNavbar items={items} className="top-1/2 left-10  fixed"/> :<Navbar items={items} className="z-10 lg:top-35 top-20 sm:md:top-40"/>}
             </div>
             {children}
             <div className="w-full h-full bg-black">
                 <Footer items={Footeritems}/>
             </div>
-            </>
         </div>)
 }

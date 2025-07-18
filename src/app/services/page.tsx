@@ -7,6 +7,7 @@ import {
   ClipboardList,
   GraduationCap,
   UserCheck,
+  CheckCircle,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -19,7 +20,30 @@ import { useState } from "react"
 import { motion } from 'framer-motion'
 import { MdOutlinePolicy } from "react-icons/md"
 
+
 export default function ServicesPage() {
+  const pillars=[
+        {
+          title: "Transparent Pricing",
+          color: "from-green-500 to-green-700",
+        },
+        {
+          title: "Deep Domain Knowledege & Experience",
+          color: "from-green-500 to-green-700",
+        },
+        {
+          title: "End to End Solutions",
+          color: "from-green-500 to-green-700",
+        },
+        {
+          title: "Certified Experts",
+          color: "from-green-500 to-green-700",
+        },
+        {
+          title: "Global Reachout",
+          color: "from-green-500 to-green-700",
+        },
+    ];
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -38,74 +62,82 @@ export default function ServicesPage() {
   const services = [
     {
       icon: <GiArcheryTarget className="h-8 w-8" />,
-      title: "Emissions Measurement, Reporting & Verification (MRV)",
-      description: "We help organizations develop robust systems to measure, report, and verify greenhouse gas (GHG) emissions in line with global standards. This ensures accuracy, transparency, and compliance in sustainability disclosures and target-setting.",
-      features: ["Systematic GHG Emissions Measurement (Scope 1, 2 & 3)","Compliance with ISO 14064-3, GHG Protocol & SBTi","Third-Party Carbon Footprint Verification","Sustainability Disclosure Support","Accurate Reporting for Climate Targets","Alignment with Net Zero & ESG Standards"],
+      title: "Emissions Measurement, Reporting & Verification (MRV)",      
+      features: [
+        "Developing systematic methodologies for accurate GHG emissions (scope 1, 2 & 3) measurement and compliance reporting.",
+        "Assisting organizations in aligning with ISO 14064-3, GHG Protocol, and Science-Based Targets Initiative (SBTi) standards.",
+        "Conducting third-party verification of carbon footprint assessments for corporate sustainability disclosures."
+      ],
     },
     {
       icon: <FaCloud className="h-8 w-8" />,
       title: "Greenhouse Gas (GHG) Accounting & Carbon Footprint Analysis",
-      description: "We help organizations accurately measure and analyze their greenhouse gas emissions across sectors through detailed inventories and life cycle assessments (LCA). Our service supports the creation of carbon footprints, identifies reduction opportunities, and enables businesses to transition toward net-zero through strategic roadmaps and carbon credit monetization.",
-      features: ["Sector-Specific GHG Inventories (e.g., Steel, Energy, Transport)","Life Cycle Assessment (LCA) & Environmental Product Declarations (EPD)","Corporate Carbon Footprint Assessments","Net-Zero Transition Roadmap Development","GHG Reduction Opportunity Identification","Energy Efficiency Strategy Planning","Carbon Credit Monetization Pathways"],
+      features: [
+        "Conducting sector-specific GHG inventories including LCA & EPD for industries (Steel, Building etc), energy sector, transportation, and heavy manufacturing.",
+        "Developing corporate carbon footprint assessments and sustainability roadmaps for net-zero transition.",
+        "Identifying GHG reduction opportunities, energy efficiency strategies, and carbon credit monetization pathways."
+      ],
     },
     {
       icon: <MdOutlinePolicy className="h-8 w-8" />,
       title: "Climate & Environmental Policy Advisory",
-      description: "We provide expert advisory on climate and environmental regulations to help organizations navigate compliance, carbon markets, and emerging sustainability frameworks. Our services ensure alignment with national and global climate policies, including CBAM, SEBI-BRSR, and emission trading systems (ETS).",
-      features: ["Strategic Climate Policy Compliance Guidance", "Advisory on Carbon Border Adjustment Mechanism (CBAM)", "Compliance with SEBI-BRSR, EU Taxonomy, ISSB, ESG Frameworks", "Guidance on Indian & International Carbon Trading Mechanisms","Carbon Market Feasibility Assessments","Regulatory Framework Navigation & Risk Advisory","Emission Trading Scheme (ETS) Advisory"],
+      features: [
+        "Providing strategic guidance on climate policy compliance, including: ",
+        "Carbon Border Adjustment Mechanism (CBAM)",
+        "SEBI-BRSR, EU Taxonomy, ISSB, and ESG disclosure frameworks",
+        "Indian and international carbon trading mechanisms",
+        "Advising clients on carbon market feasibility, regulatory frameworks, and emission trading schemes (ETS)."
+      ],
     },
     {
       icon: <BsCoin className="h-8 w-8" />,
       title: "Environmental Credits & Sustainability Finance Advisory",
-      description: "We assist organizations in unlocking value from environmental credits and sustainable finance. Our services include feasibility studies, credit verification, registry navigation, and guidance on securing green bonds, sustainability-linked loans, and other climate-related investment instruments.",
       features:[
-          "Feasibility studies for environmental credits (Carbon, Plastic, Water, EPR, REC)",
-          "Advisory on voluntary and compliance market participation",
-          "Support in credit verification and registry selection",
-          "Transaction support on global credit platforms",
-          "Sustainable finance strategy development",
-          "Guidance on green bonds and sustainability-linked loans",
-          "Carbon-linked investment structuring"
+          "Conducting feasibility studies for voluntary and compliance Environmental Credits (Carbon, Plastic, Water, EPR, REC, Green Credits).",
+          "Supporting clients in  credit verification, registry selection, and credit transactions under leading platforms.",
+          "Guiding companies on securing sustainable finance instruments, including green bonds, sustainability-linked loans, and carbon-linked investments.",
         ],
     },
     {
       icon: <ClipboardList className="h-8 w-8" />,
       title: "ESG Strategy & Reporting",
-      description: "We support businesses in building ESG strategies that meet global and regional standards such as SEBI-BRSR, TCFD, and GRI. Our services ensure compliance, transparency, and integration of circular economy practices for long-term sustainability.",
       features: [
-        "Development of ESG strategy frameworks aligned with SEBI-BRSR, TCFD, and GRI",
-        "ESG risk assessment and materiality analysis",
-        "Climate impact reporting and disclosures",
-        "Sustainability disclosure compliance and documentation",
-        "Integration of circular economy principles into operations",
-        "Stakeholder engagement for ESG alignment",
-        "Support for ESG ratings and benchmarks"
+        "Developing ESG strategy frameworks for businesses to align with SEBI-BRSR, TCFD, and GRI reporting requirements.",
+        "Assisting organizations in ESG risk assessment, climate impact reporting, and sustainability disclosure compliance.",
+        "Supporting integration of circular economy principles into business operations.",
       ],
     },
     {
       icon: <GraduationCap  className="h-8 w-8" />,
       title: "Capacity Building & Professional Training",
-      description: "We design and deliver capacity-building programs and professional training workshops focused on climate action, ESG compliance, and sustainability. These programs empower organizations and professionals with the skills and certifications needed to lead decarbonization and sustainability transitions across sectors.",
       features: [
-        "Corporate training on GHG accounting and carbon markets",
-        "Workshops on ESG strategy, compliance, and disclosures",
-        "Training on climate risk assessment and adaptation planning",
-        "Carbon and environmental credit market orientation",
-        "Sector-specific sustainability initiatives (e.g., green steel, energy transition)",
-        "Development of professional certification programs",
-        "Support for industry-wide climate transition capacity"
+        "Conducting corporate training programs and workshops on: ",
+        "GHG Accounting & Carbon Markets",
+        "ESG Strategy & Compliance",
+        "Climate Risk Assessment & Adaptation Planning",
+        "Carbon & Environment Credit(s)",
+        "Sector-Specific Sustainability Initiatives (e.g., Green Steel, Industrial Decarbonization, Energy Transition)",
+        "Developing professional certification programs to support industry-wide sustainability and climate transition goals"
       ],
     },
     {
       icon: <UserCheck  className="h-8 w-8" />,
       title: "Green Staffing Solution",
-      description: "We provide flexible and specialized green staffing solutions to help organizations meet their sustainability and ESG goals. From deploying experts and recruiting on-demand talent to building in-house teams via BOT models, we support startups, corporates, and CSR projects in scaling their climate and energy transition efforts.",
       features: [
         "Deployment of Sustainability & ESG Experts (Short-term/Long-term)",
         "On-demand green talent recruitment",
         "Build-Operate-Transfer (BOT) model for sustainability departments",
         "Specialized experts for renewable energy and energy efficiency projects",
         "Capacity building and staff augmentation for climate-tech startups and CSR initiatives"
+      ],
+    },
+    {
+      icon: <UserCheck  className="h-8 w-8" />,
+      title: "Life Cycle Assesment (LCA)",
+      features: [
+        "Life Cycle Assessment & Product Carbon Footprinting: End-to-end analysis of environmental impacts and GHG emissions across a product’s life cycle.",
+        "Environmental Product Declarations (EPDs) & Comparative LCA: Verified documentation and impact comparison to support sustainable product and process choices.",
+        "Training & Capacity Building: Customized programs to build internal expertise in LCA tools, methodologies, and applications."
       ],
     },
   ]
@@ -231,20 +263,20 @@ const isMobile=useMediaQuery("(max-width: 768px)")
   return (
     <div className="min-h-screen min-w-screen bg-white dark:bg-black text-black mx-10 ">
       {/* Introduction Section */}
-      <section className="py-20 px-4 md:px-6 lg:px-8 my-20 md:my-15 md:py-0 ">
-        <div className="max-w-6xl mx-auto">
+      <section className="bg-[url('/bg-cover/road_forest.jpg')] bg-cover bg-no-repeat bg-fixed  w-full h-full mask-b-from-99% mb-10 p-10 ">
+        <div className="max-w-6xl mx-auto mt-60">
           <div className="text-center mb-12">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2 w-full">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-slate-400/90 rounded-2xl">
                 Introduction
             </h1>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full h-full">
             <div className={`${isMobile?"text-center":"text-left"}`}> 
-              <p className="text-lg text-blue-900 mb-6 leading-relaxed font-bold">
+              <p className="text-lg text-white mb-6 leading-relaxed font-bold">
                 Net Zero Think Pvt Ltd (NZT) is a leading Solution Provider dedicated to driving low carbon economy transition. As a global climate-focused solutions provider, we support organizations in achieving net-zero emissions and long-term sustainability. Headquartered in Bangalore, India, our global solution centre collaborates with a network of associate partners to deliver tailored climate-centric solutions & services.
               </p>
-              <p className="text-lg text-blue-900 mb-8 leading-relaxed font-bold">
+              <p className="text-lg text-white mb-8 leading-relaxed font-bold">
                  With a mission to assist industries, government bodies, and stakeholders in meeting net-zero targets, we offer expert guidance in emissions accounting & auditing, sustainability strategy, and net zero initiatives. Additionally, we provide Green Staffing solutions, comprehensive training and capacity-building programs to equip professionals and organizations with the knowledge and skills required to navigate the evolving sustainability landscape and implement effective climate solutions.
               </p>
               <div className="flex flex-wrap gap-2  ">
@@ -262,46 +294,40 @@ const isMobile=useMediaQuery("(max-width: 768px)")
                 </div>
               </div>
             </div>
-            <div className="bg-purple-500 rounded-2xl p-8 text-white dark:text-black dark:bg-white">
-              <h3 className="text-3xl font-bold mb-4">
-                <span className="text-blue-800">
-                  Why Choose Us?
-                </span>
-              </h3>
-
-              <ul className="space-y-4">
-                <li className="flex items-start text-2xl">
-                  <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>Transparent Pricing</span>
-                </li>
-                <li className="flex items-start text-2xl">
-                  <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>Deep Domain Knowledege & Experience</span>
-                </li>
-                <li className="flex items-start text-2xl">
-                  <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>End to End Solutions</span>
-                </li>
-                <li className="flex items-start text-2xl">
-                  <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>Certified Experts</span>
-                </li>
-                <li className="flex items-start text-2xl">
-                  <div className="w-2 h-2 bg-white rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                  <span>Global Reachout</span>
-                </li>
-              </ul>
-
+            <div className="w-full h-full">
+              <div className="justify-self-center self-center w-full sm:w-full h-full px-6  bg-blue-100  text-white flex flex-col items-center rounded-4xl p-5">
+                    <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-12 text-blue-800 bg-transparent   rounded-2xl pb-2">
+                        Why Choose Us?
+                    </h1>
+                    <div className="flex flex-col gap-5 w-full max-w-6xl">
+                      {pillars.map((pillar, index) => (
+                        <motion.div
+                          key={pillar.title}
+                          initial={{ opacity: 0, x: 50 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          transition={{ duration: 0.6, delay: index * 0.2 }}
+                          viewport={{ once: true }}
+                          className={`bg-gradient-to-br ${pillar.color} rounded-2xl p-6 shadow-xl hover:scale-105 transition-transform duration-300 w-full self-center justify-self-center`}
+                        >
+                          <div className="flex items-center gap-3  w-full self-center justify-self-center w ">      
+                            <h3 className="text-lg font-bold text-center self-center justify-self-center w-full flex gap-2 items-center justify-center">
+                              <CheckCircle className="w-6 h-6 text-white" />
+                              {pillar.title}</h3>
+                          </div>
+                        </motion.div>
+                      ))}
+                    </div>
+                  </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Our Services & Solutions Section */}
-      <section className="py-20 px-4 md:px-6 lg:px-8 bg-white text-white dark:bg-black dark:text-black rounded-2xl">
+      <section className="py-20 px-4 md:px-6 lg:px-8  text-white dark:bg-black dark:text-black rounded-2xl bg-[url('/bg-cover/power_plant.jpg')] bg-center bg-cover bg-no-repeat bg-fixed  mask-b-from-99% mask-t-from-99% mb-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-1">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2 w-full">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-slate-400/90 rounded-2xl">
                 Our Services & Solutions
               </h1>
           </div>
@@ -382,22 +408,21 @@ const isMobile=useMediaQuery("(max-width: 768px)")
             {services.map((service, index) => (
               <Card
                 key={index}
-                className="bg-gradient-to-b from-blue-600 to-pink-600 text-white dark:bg-black border-0 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative h-180" 
+                className="bg-blue-100 text-white dark:bg-black border-0 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative h-180" 
                 id={`${index}`}
               >
                 <CardHeader className="pb-4">
-                  <div className="mb-4 p-3 bg-green-500 text-white rounded-lg w-fit">{service.icon}</div>
+                  <div className="mb-4 p-3 bg-blue-800 text-white rounded-lg w-fit">{service.icon}</div>
                   <CardTitle className="text-2xl font-bold">
-                    <span className="text-green-500">
+                    <span className="text-blue-800">
                       {service.title}
                     </span>
                   </CardTitle>
-                  <CardDescription className="text-white text-base ">{service.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 custom-list">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-sm text-white dark:text-slate-400 font-semibold">
+                      <li key={featureIndex} className="flex items-center text-md text-slate-500 dark:text-slate-400 font-semibold">
                         <div className="w-2 h-2 bg-black dark:bg-white rounded-full mr-3 "></div>
                         {feature}
                       </li>
@@ -411,10 +436,10 @@ const isMobile=useMediaQuery("(max-width: 768px)")
       </section>
 
       {/* Our Expertise & Key Reference Projects Section */}
-      <section className="py-20 px-4 md:px-6 lg:px-8 dark:bg-black bg-white ">
+      <section className="py-20 px-4 md:px-6 lg:px-8 dark:bg-black bg-[url('/bg-cover/datacenter.jpeg')] bg-center bg-cover bg-no-repeat bg-fixed  mask-b-from-99% mask-t-from-99%  mb-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-blue-800 bg-purple-500  shadow-[0px_0px_40px_10px_#495057] rounded-2xl pb-2 w-full">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-slate-400/90 rounded-2xl pb-2">
                 Our Expertise & Key Reference Projects
               </h1>
           </div>
@@ -448,19 +473,19 @@ const isMobile=useMediaQuery("(max-width: 768px)")
               {keyProjects.map((project, index) => (
                 <Card
                   key={index}
-                  className="border-2 border-gray-200 hover:border-black transition-colors duration-300 dark:bg-white dark:text-slate-500 bg-gradient-to-b from-green-500 to-yellow-500"
+                  className="border-2 border-gray-200 hover:border-black transition-colors duration-300 dark:bg-white dark:text-slate-500 bg-blue-800"
                 >
                   <CardHeader>
                     <div className="flex items-center mb-2">
                       <Briefcase className="h-5 w-5 mr-2 fill-white" />
-                      <span className="text-sm text-blue-900 font-extrabold">{project.client}</span>
+                      <span className="text-md text-yellow-200 font-bold">{project.client}</span>
                     </div>
                     <CardTitle className="text-xl font-bold">
                       <span className="text-white">
                         {project.title}
                       </span>
                     </CardTitle>
-                    <CardDescription className="dark:text-gray-500 text-gray-800 ">{project.description}</CardDescription>
+                    <CardDescription className="dark:text-gray-500 text-white ">{project.description}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <div className="flex flex-wrap gap-2">
@@ -480,7 +505,7 @@ const isMobile=useMediaQuery("(max-width: 768px)")
 
 
       {/* CTA Section */}
-      <section className="py-20 px-4 md:px-6 lg:px-8 bg-white dark:bg-black">
+      <section className="py-20 px-4 md:px-6 lg:px-8 bg-white dark:bg-black ">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="text-purple-500">

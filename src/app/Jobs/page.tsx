@@ -37,9 +37,9 @@ export default function JobsAndServicesPage() {
   }
 
   return (
-    <div className="h-full w-full bg-gray-100 py-16 px-4 sm:px-10 dark:bg-black">
-      <section className="w-full h-full relative my-30 bg-purple-500 p-5 rounded-2xl shadow-gray-500 dark:shadow-gray-100 shadow-[0px_0px_30px]">
-        <h1 className="text-center  text-5xl font-bold justify-self-center p-5 m-5 text-blue-800  rounded-2xl">Available Jobs</h1>
+    <div className="h-full w-full bg-gray-100 py-16 px-4 sm:px-10 dark:bg-black ">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-slate-400/90 rounded-2xl text-center mt-90 sm:mt-60">Available Jobs</h1>
+      <section className="w-full h-full relative my-30 bg-blue-100 p-5 rounded-2xl shadow-gray-500 dark:shadow-gray-100 shadow-[0px_0px_30px]">
         <div className="flex w-full h-full gap-5 flex-wrap items-center justify-center">
             {jobListings.map((item,idx)=>(
                 <Card key={idx} className="max-w-130 h-110 sm:h-70  bg-gradient-to-r  from-slate-300 to-gray-400 p-5 ">
@@ -73,7 +73,7 @@ export default function JobsAndServicesPage() {
       </section>
       <section className="w-full h-full text-black">
           <motion.h1
-            className="text-4xl sm:text-5xl font-extrabold text-center bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent mb-12"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-slate-400/90 rounded-2xl text-center"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -94,7 +94,7 @@ export default function JobsAndServicesPage() {
                 placeholder="Full Name"
                 onChange={handleChange}
                 required
-                className="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300"
+                className="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300 placeholder-blue-900 placeholder:font-bold"
               />
               <input
                 type="tel"
@@ -102,7 +102,7 @@ export default function JobsAndServicesPage() {
                 placeholder="Phone Number"
                 onChange={handleChange}
                 required
-                className="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300"
+                className="p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300 placeholder-blue-900 placeholder:font-bold" 
               />
             </div>
             <input
@@ -111,7 +111,7 @@ export default function JobsAndServicesPage() {
               placeholder="Email Address"
               onChange={handleChange}
               required
-              className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300"
+              className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300 placeholder-blue-900 placeholder:font-bold"
             />
             <input
               type="text"
@@ -119,7 +119,7 @@ export default function JobsAndServicesPage() {
               placeholder="Qualification (e.g., B.Tech, MBA)"
               onChange={handleChange}
               required
-              className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300"
+              className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300 placeholder-blue-900 placeholder:font-bold"
             />
             <textarea
               name="skills"
@@ -127,7 +127,7 @@ export default function JobsAndServicesPage() {
               rows={4}
               onChange={handleChange}
               required
-              className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300"
+              className="w-full p-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300 placeholder-blue-900 placeholder:font-bold"
             />
             {/* <div>
               <label className="block mb-1 font-medium text-sm text-gray-600">
