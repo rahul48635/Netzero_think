@@ -259,7 +259,7 @@ const isMobile=useMediaQuery("(max-width: 768px)")
   return (
     <div className="min-h-screen min-w-screen bg-white dark:bg-black text-black mx-10 ">
       {/* Introduction Section */}
-      <section className="bg-[url('/bg-cover/road_forest.jpg')] bg-cover bg-no-repeat bg-fixed  w-full h-full mask-b-from-99% mb-10 p-10 ">
+      <section className="bg-[url('/bg-cover/plant.png')]  bg-cover bg-no-repeat bg-fixed  w-full h-full mask-b-from-99% mb-10 p-10 ">
         <div className="max-w-6xl mx-auto mt-60">
           <div className="text-center mb-12">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl">
@@ -432,7 +432,7 @@ const isMobile=useMediaQuery("(max-width: 768px)")
       </section>
 
       {/* Our Expertise & Key Reference Projects Section */}
-      <section className="py-20 px-4 md:px-6 lg:px-8 dark:bg-black bg-[url('/bg-cover/datacenter.jpeg')] bg-center bg-cover bg-no-repeat bg-fixed  mask-b-from-99% mask-t-from-99%  mb-10">
+      <section className="py-20 px-4 md:px-6 lg:px-8 dark:bg-black bg-[url('/bg-cover/data_center.png')] bg-center bg-cover bg-no-repeat bg-fixed  mask-b-from-99% mask-t-from-99%  mb-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
               <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl pb-2">

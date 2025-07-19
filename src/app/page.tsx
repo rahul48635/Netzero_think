@@ -82,7 +82,7 @@ export default function Home() {
     <div className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden  ">
 
       {/* Hero Section */}
-      <section className="w-full flex flex-col items-center justify-center px-4  text-center relative bottom-40 sm:static sm:bottom-0 bg-[url('/bg-cover/anime.jpg')] bg-center  bg-fixed bg-cover bg-no-repeat mask-b-from-99% mb-5">
+      <section className="w-full flex flex-col items-center justify-center px-4  text-center relative bottom-40 sm:static sm:bottom-0 bg-[url('/bg-cover/hero.png')] bg-center  bg-fixed bg-cover bg-no-repeat mask-b-from-99% mb-5">
         <TextGenerateEffect
           words={text}
           className="mt-90 sm:mt-60 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg "
@@ -110,7 +110,7 @@ export default function Home() {
    
 
       {/* Solutions + Testimonials + Marquee */}
-      <section className="w-full flex flex-col items-center justify-center py-16 px-4 bg-[url('/bg-cover/corp.png')] bg-center bg-fixed bg-cover bg-no-repeat mask-t-from-99%">
+      <section className="w-full flex flex-col items-center justify-center py-16 px-4 bg-[url('/bg-cover/corp.png')] bg-bottom bg-fixed bg-cover bg-no-repeat mask-t-from-99%">
         {/* Our Solutions */}
         <div className="w-full text-center ">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl max-w-6xl mx-auto">
