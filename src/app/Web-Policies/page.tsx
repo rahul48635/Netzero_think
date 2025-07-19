@@ -39,9 +39,9 @@ export default function page() {
               {[
                 {
                   name: "Community Registration",
-                  min: "2,500",
-                  max: "12,000",
-                  remark: "One time charge",
+                  min: "10,000",
+                  max: "25,000",
+                  remark: "Annual",
                 },
                 {
                   name: "Webinar Access",

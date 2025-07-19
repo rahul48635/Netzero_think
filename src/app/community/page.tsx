@@ -62,7 +62,7 @@ export default function ClimateInnovationCommunity() {
   ]
 
   return (
-    <div className="min-h-screen min-w-screen bg-[url('/bg-cover/climate.png')] bg-fixed bg-cover bg-no-repeat">
+    <div className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-[url('/bg-cover/climate.png')] bg-fixed bg-cover bg-no-repeat">
       {/* Hero Section */}
       <section className="relative py-20 px-4 text-center  text-blue-800 overflow-hidden mt-30 sm:mt-50">
         <div className="relative max-w-6xl mx-auto">
