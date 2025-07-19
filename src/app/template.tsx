@@ -36,7 +36,7 @@ export default function Template(
   {
     title:"Career",
     logo: IoMdBriefcase ,
-    href:"/jobs"
+    href:"/Jobs"
   },
   {
     title:"Contact Us",
@@ -68,7 +68,7 @@ const Footeritems: items = [
       "Home": "/",
       "About": "/about",
       "Services":"/services",
-      "Career":"/jobs",
+      "Career":"/Jobs",
     },
   },
 ];
