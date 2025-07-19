@@ -46,7 +46,7 @@ export const Contactbox = () => {
 };
 
 const ChatBox = () => {
-  const whatsappNumber = "919876543210";
+  const whatsappNumber = "918240615694";
 
   return (
     <motion.div
@@ -54,7 +54,7 @@ const ChatBox = () => {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0 }}
       transition={{ duration: 0.5,ease:"easeInOut" }}
-      className="w-80 h-[30rem] bg-white dark:bg-black shadow-xl rounded-2xl p-4 flex flex-col absolute bottom-20 right-0"
+      className="w-80 h-[30rem] bg-white dark:bg-black shadow-xl rounded-2xl p-4 flex flex-col absolute bottom-20 right-0 z-50"
     >
       <div className="text-lg font-semibold mb-2 border-b pb-2">
         💬 Chat with us on

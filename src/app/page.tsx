@@ -56,15 +56,15 @@ export default function Home() {
     },
     { title:"Climate & Environmental Policy Advisory",
       description:"We provide expert advisory on climate and environmental regulations to help organizations navigate compliance, carbon markets, and emerging sustainability frameworks. Our services ensure alignment with national and global climate policies, including CBAM, SEBI-BRSR, and emission trading systems (ETS).",
-      url:"/cards/policy.png"
+      url:"/cards/policy.jpg"
     },
     { title:"Environmental Credits & Sustainability Finance Advisory",
       description:"We assist organizations in unlocking value from environmental credits and sustainable finance. Our services include feasibility studies, credit verification, registry navigation, and guidance on securing green bonds, sustainability-linked loans, and other climate-related investment instruments.",
-      url:"/cards/credit.cms"
+      url:"/cards/credit.jpg"
     }, 
     { title:"ESG Strategy & Reporting",
       description:"We support businesses in building ESG strategies that meet global and regional standards such as SEBI-BRSR, TCFD, and GRI. Our services ensure compliance, transparency, and integration of circular economy practices for long-term sustainability.",
-      url:"/cards/Esg.jpg"
+      url:"/cards/esg.jpeg"
     },
     { title:"Capacity Building & Professional Training",
       description:"We design and deliver capacity-building programs and professional training workshops focused on climate action, ESG compliance, and sustainability. These programs empower organizations and professionals with the skills and certifications needed to lead decarbonization and sustainability transitions across sectors.",
@@ -82,7 +82,7 @@ export default function Home() {
     <div className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden  ">
 
       {/* Hero Section */}
-      <section className="w-full flex flex-col items-center justify-center px-4  text-center relative bottom-40 sm:static sm:bottom-0 bg-[url('/bg-cover/cover.jpg')] bg-fixed bg-cover bg-no-repeat mask-b-from-99% mb-5">
+      <section className="w-full flex flex-col items-center justify-center px-4  text-center relative bottom-40 sm:static sm:bottom-0 bg-[url('/bg-cover/anime.jpg')] bg-center  bg-fixed bg-cover bg-no-repeat mask-b-from-99% mb-5">
         <TextGenerateEffect
           words={text}
           className="mt-90 sm:mt-60 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg "
@@ -98,7 +98,7 @@ export default function Home() {
           initial={{ x: isMobile?-150:-300 }}
           whileInView={{ x: 1 }}
           transition={{ duration: 1 }}
-          className="text-transparent font-bold text-2xl sm:text-3xl md:text-4xl z-20 "  
+          className="text-transparent font-bold text-2xl sm:text-3xl md:text-4xl "  
         >
         
         <DecarbonisationPillars/>
@@ -110,33 +110,35 @@ export default function Home() {
    
 
       {/* Solutions + Testimonials + Marquee */}
-      <section className="w-full flex flex-col items-center justify-center py-16 px-4 bg-[url('/bg-cover/windmill.png')] bg-bottom bg-fixed bg-cover bg-no-repeat mask-t-from-99%">
+      <section className="w-full flex flex-col items-center justify-center py-16 px-4 bg-[url('/bg-cover/corp.png')] bg-center bg-fixed bg-cover bg-no-repeat mask-t-from-99%">
         {/* Our Solutions */}
-        <div className="w-full text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-slate-400/90 rounded-2xl">
+        <div className="w-full text-center ">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl max-w-6xl mx-auto">
             OUR SOLUTIONS
           </h1>
           <Cards services={services}/>
         </div>
 
         {/* Testimonials */}
-        <div className="w-full mt-20 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-slate-400/90 rounded-2xl">
+        <div className="w-full mt-20 text-center ">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl max-w-6xl mx-auto">
             TESTIMONIALS
           </h1>
           <InfiniteMovingCards items={testimonials} direction="left" speed={isMobile?"slow":"normal"} />
         </div>
 
         {/* Trusted By */}
-        <div className="mt-20 w-full text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-slate-400/90 rounded-2xl">
+        <div className="mt-20  text-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl max-w-6xl mx-auto">
             Trusted By Leading Enterprises
           </h1>
           <Marquee />
         </div>
 
         {/* Contact Box */}
+        <div className="z-30">
         <Contactbox />
+        </div>
       </section>
     </div>
   );

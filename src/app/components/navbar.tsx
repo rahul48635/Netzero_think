@@ -53,7 +53,7 @@ export const Navbar: React.FC<NavbarProps> = ({ items,className }) => {
                 size={30}
                 className="fill-green-700 dark:fill-white stroke-green-700 dark:stroke-white stroke-1 "
               />
-            <span className="mt-1 text-center w-20 text-[12px]">{item.title}</span>
+            <span className="mt-1 text-center w-20 text-[15px]">{item.title}</span>
             </Link>
           </div>
           {active === idx && (

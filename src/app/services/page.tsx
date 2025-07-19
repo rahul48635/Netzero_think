@@ -28,7 +28,7 @@ export default function ServicesPage() {
           color: "from-green-500 to-green-700",
         },
         {
-          title: "Deep Domain Knowledege & Experience",
+          title: "Deep Domain Knowledge & Experience",
           color: "from-green-500 to-green-700",
         },
         {
@@ -111,11 +111,7 @@ export default function ServicesPage() {
       icon: <GraduationCap  className="h-8 w-8" />,
       title: "Capacity Building & Professional Training",
       features: [
-        "Conducting corporate training programs and workshops on: ",
-        "GHG Accounting & Carbon Markets",
-        "ESG Strategy & Compliance",
-        "Climate Risk Assessment & Adaptation Planning",
-        "Carbon & Environment Credit(s)",
+        "Conducting corporate training programs and workshops on: GHG Accounting & Carbon Markets, ESG Strategy & Compliance, Climate Risk Assessment & Adaptation Planning, Carbon & Environment Credit(s)",
         "Sector-Specific Sustainability Initiatives (e.g., Green Steel, Industrial Decarbonization, Energy Transition)",
         "Developing professional certification programs to support industry-wide sustainability and climate transition goals"
       ],
@@ -157,12 +153,12 @@ export default function ServicesPage() {
     {
       icon: <Target className="h-6 w-6" />,
       title: "Banking and Financial Institutions (BFSI)",
-      description: "Banks,Insurrance & Reinsurrance Company",
+      description: "Banks,Insurance & Reinsurance Company",
     },
     {
       icon: <Target className="h-6 w-6" />,
       title: "Agriculture Sector",
-      description: "Forestery & Agroforestery",
+      description: "Forestry & Agroforestry",
     },
     {
       icon: <Target className="h-6 w-6" />,
@@ -198,8 +194,8 @@ export default function ServicesPage() {
   {
     title: "Decarbonization Training Program",
     client: "Mining, Steel & Building Sector",
-    description: "Capacity building and training on decarbonization-focused topics",
-    tech: ["Training", "Decarbonization", "GHG Reduction"]
+    description: "Capacity building and training on decarbonization",
+    tech: ["Training", "Decarbonization", "GHG Reduction","Iron & Steel","Mining","Building"]
   },
   {
     title: "ESG Reporting for Mining Company",
@@ -216,7 +212,7 @@ export default function ServicesPage() {
   {
     title: "Japanese Tech Market Assessment",
     client: "Confidential Client",
-    description: "Assessment of Japanese technologies for renewable energy, storage, e-mobility, and efficiency in India",
+    description: "Assessment of Japanese technologies for renewable energy, storage, e-mobility, and energy efficiency in India",
     tech: ["Tech Assessment", "Renewables", "Energy Efficiency", "e-Mobility"]
   },
   {
@@ -234,25 +230,25 @@ export default function ServicesPage() {
   {
     title: "Life Cycle Assessment & EPD for Diverse Manufactured Products",
     client: "Product manufacturing organisations",
-    description: "Life Cycle Assessment (LCA) and Environment Product Declaration (EPDConducted Cradle to Gate LCA of various products including furniture, garments, steel, chemicals , plastics, sustainable aviation fuel, Biofuel, FMCG products, automotive components, electronic devices and pharmaceutical drugs. ",
+    description: "Conducted Cradle to Gate LCA of various products including furniture, garments, steel, chemicals , plastics, sustainable aviation fuel, Biofuel, FMCG products, automotive components, electronic devices and pharmaceutical drugs. ",
     tech: ["LCA",  "EPD"]
   },
   {
     title: "Green Building & Net Zero Advisory for Residential and Commercial Projects",
     client: "Residential & Commercial Project Developers",
-    description: "Green Building and Net Zero Solutions Provided advisory, designing, training and audit solutions to reduce embedded & operational emissions of buildings. ",
+    description: "Provided advisory, designing, training and audit solutions to reduce embedded & operational emissions. ",
     tech: ["Embedded Emission", "Green Building", "Net Zero Building", "Net Zero Water", "Net Zero Energy", "Net Zero Waste "]
   },
   {
-    title: "Energy, Emissions & EHS Audits with IoT-Based Decarbonisation for Industries",
+    title: "Energy, Emissions & EHS Audits for Industries",
     client: "Manufacturing & IT Organisations",
-    description: "Audit & Decarbonisation Solutions Implementation Conducted Energy, Emissions and EHS audit at various facilities and implemented IOT enabled solutions",
+    description: "Conducted Energy, Emissions and EHS audit at various facilities and implemented IOT enabled solutions",
     tech: [ "Energy Audit", "EHS Audit", "Emissions Audit"]
   },
   {
     title: "ESG Implementation & Project Development Support",
     client: "Independent Power Producers",
-    description: "Owner’s & Lender’s Engineer role for multiple wind and solar projects across Asia Pecific Region. Transition from EHS to ESG.",
+    description: "Owner’s & Lender’s Engineer role for multiple wind and solar projects across Asia Pecific Region. ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  Supporting Transition from EHS to ESG.",
     tech: [ "ESG", "EHS", "GRI", "IFRS", "BRSR", "ISO14001", "ISO 45000","Wind Energy", "Solar Power", "Project Management"]
   },
 ];
@@ -266,7 +262,7 @@ const isMobile=useMediaQuery("(max-width: 768px)")
       <section className="bg-[url('/bg-cover/road_forest.jpg')] bg-cover bg-no-repeat bg-fixed  w-full h-full mask-b-from-99% mb-10 p-10 ">
         <div className="max-w-6xl mx-auto mt-60">
           <div className="text-center mb-12">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-slate-400/90 rounded-2xl">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl">
                 Introduction
             </h1>
           </div>
@@ -327,8 +323,8 @@ const isMobile=useMediaQuery("(max-width: 768px)")
       <section className="py-20 px-4 md:px-6 lg:px-8  text-white dark:bg-black dark:text-black rounded-2xl bg-[url('/bg-cover/power_plant.jpg')] bg-center bg-cover bg-no-repeat bg-fixed  mask-b-from-99% mask-t-from-99% mb-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-1">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-slate-400/90 rounded-2xl">
-                Our Services & Solutions
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl">
+                Services & Solutions
               </h1>
           </div>
            
@@ -337,7 +333,7 @@ const isMobile=useMediaQuery("(max-width: 768px)")
           <Modal>
             <div className="flex items-center justify-center w-full  ">
               <ModalTrigger  className="sm:w-[30rem]  self-center justify-self-center h-[5rem] ">
-                <div className="  text-purple-400 shadow-xl shadow-gray-500 hover:-translate-y-3 transition-all duration-500 bg-blue-800  rounded-xl cursor-pointer  flex justify-center items-center p-3 tracking-widest font-bold text-2xl">
+                <div className="  text-white shadow-xl shadow-gray-500 hover:-translate-y-3 transition-all duration-500 bg-green-500  rounded-xl cursor-pointer  flex justify-center items-center p-3 tracking-widest font-bold text-2xl">
                   Select Service
                 </div>
               </ModalTrigger>
@@ -420,10 +416,10 @@ const isMobile=useMediaQuery("(max-width: 768px)")
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <ul className="space-y-2 custom-list">
+                  <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-md text-slate-500 dark:text-slate-400 font-semibold">
-                        <div className="w-2 h-2 bg-black dark:bg-white rounded-full mr-3 "></div>
+                      <li key={featureIndex} className="flex text-md text-slate-500 dark:text-slate-400 font-semibold h-full">
+                        <span className=" text-black text-3xl self-baseline relative bottom-2 h-full">•</span> 
                         {feature}
                       </li>
                     ))}
@@ -439,16 +435,16 @@ const isMobile=useMediaQuery("(max-width: 768px)")
       <section className="py-20 px-4 md:px-6 lg:px-8 dark:bg-black bg-[url('/bg-cover/datacenter.jpeg')] bg-center bg-cover bg-no-repeat bg-fixed  mask-b-from-99% mask-t-from-99%  mb-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-slate-400/90 rounded-2xl pb-2">
-                Our Expertise & Key Reference Projects
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl pb-2">
+                Expertise & Key Reference Projects
               </h1>
           </div>
 
           {/* Expertise Section */}
           <div className="mb-16">
-            <h3 className="text-3xl font-bold mb-8 text-center">
-              <span className="text-blue-800">
-                Our Core Expertise
+            <h3 className="text-4xl font-bold mb-8 text-center">
+              <span className="text-white">
+                 Core Expertise
               </span>
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -464,8 +460,8 @@ const isMobile=useMediaQuery("(max-width: 768px)")
 
           {/* Key Reference Projects */}
           <div>
-            <h3 className="text-3xl font-bold mb-8 text-center">
-              <span className="text-blue-800">
+            <h3 className="text-4xl font-bold mb-8 text-center">
+              <span className="text-white">
                 Key Reference Projects
               </span>
             </h3>
@@ -508,7 +504,7 @@ const isMobile=useMediaQuery("(max-width: 768px)")
       <section className="py-20 px-4 md:px-6 lg:px-8 bg-white dark:bg-black ">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-purple-500">
+            <span className="text-green-500">
               Ready to Start Your Net Zero Journey?
             </span>
           </h2>
@@ -516,7 +512,7 @@ const isMobile=useMediaQuery("(max-width: 768px)")
             Let&apos;s discuss!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-purple-400 hover:bg-purple-500 text-white  px-8 py-3 text-lg cursor-pointer" onClick={()=>window.open(
+            <Button size="lg" className="bg-green-400 hover:bg-green-500 text-white  px-8 py-3 text-lg cursor-pointer" onClick={()=>window.open(
       "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Consultation+Call&details=Let%27s+discuss+your+project&location=Google+Meet&add=mksingh@netzerothink.com&add=support@netzerothink.com",
       "_blank"
     )}>

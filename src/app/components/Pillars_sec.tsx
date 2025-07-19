@@ -27,7 +27,7 @@ export default function DecarbonisationPillars() {
   return (
     <section className="justify-self-center self-center w-[70%] sm:w-[90%] px-6 py-16 bg-blue-100  text-white flex flex-col items-center rounded-4xl m-30">
       <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-12 text-blue-800 bg-transparent   rounded-2xl pb-2">
-          Decarbonization Stratergies
+          Decarbonization Strategies
       </h1>
       <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-purple-500">
         Net Zero Think&apos;s solutions are based on 3 Key Pillars of Decarbonisation

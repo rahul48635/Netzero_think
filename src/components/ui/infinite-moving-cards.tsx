@@ -89,7 +89,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item) => (
           <li
-            className="relative w-[350px] max-w-full shrink-0 rounded-2xl border border-b-0 border-zinc-200 bg-blue-100 px-8 py-6 md:w-[450px] dark:border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)]"
+            className="relative w-[350px] max-w-full shrink-0 rounded-2xl border border-b-0   px-8 py-6 md:w-[450px] bg-white text-blue-800 border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)]"
             key={item.name}
           >
             <blockquote>
@@ -97,16 +97,16 @@ export const InfiniteMovingCards = ({
                 aria-hidden="true"
                 className="user-select-none pointer-events-none absolute -top-0.5 -left-0.5 -z-1 h-[calc(100%_+_40px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className="relative z-20 text-sm leading-[1.6] font-normal text-blue-800 dark:text-gray-100">
+              <span className="relative z-20 text-sm leading-[1.6] font-normal  text-blue-800">
                 {item.quote}
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
-                <Image src={item.src} alt={`${item.name}`} width={50} height={50} className="m-5 rounded-2xl" />
+                <Image src={item.src} alt={`${item.name}`} width={100} height={100} className="m-5 rounded-2xl" />
                 <span className="flex flex-col gap-1">
-                  <span className="text-sm leading-[1.6] text-purple-500 font-semibold dark:text-gray-400">
+                  <span className="text-sm leading-[1.6] font-semibold text-blue-800">
                     {item.name}
                   </span>
-                  <span className="text-sm leading-[1.6]  text-purple-500 font-bold dark:text-gray-400">
+                  <span className="text-sm leading-[1.6]   font-bold text-blue-800">
                     {item.title}
                   </span>
                 </span>

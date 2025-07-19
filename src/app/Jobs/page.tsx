@@ -33,13 +33,13 @@ export default function JobsAndServicesPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    window.open(`mailto:support@netzerothink.com?subject=New Service Request from ${formData.name}&body=Name: ${formData.name}%0APhone: ${formData.phone}%0AEmail: ${formData.email}%0AQualifications: ${formData.qualification}%0ASkills: ${formData.skills}`)
+    window.open(`mailto:support@netzerothink.com?subject=New Service Request from ${formData.name}&body=Name: ${formData.name}%0APhone: ${formData.phone}%0AEmail: ${formData.email}%0AQualifications: ${formData.qualification}%0ASkills: ${formData.skills}%0AAttach_CV: [Attach Your CV]`)
   }
 
   return (
-    <div className="h-full w-full bg-gray-100 py-16 px-4 sm:px-10 dark:bg-black ">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-slate-400/90 rounded-2xl text-center mt-90 sm:mt-60">Available Jobs</h1>
-      <section className="w-full h-full relative my-30 bg-blue-100 p-5 rounded-2xl shadow-gray-500 dark:shadow-gray-100 shadow-[0px_0px_30px]">
+    <div className="h-full w-full bg-gray-100 py-16 px-4 sm:px-10 dark:bg-black bg-[url('/bg-cover/corp_2.png')]   bg-fixed bg-cover bg-no-repeat ">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl text-center mt-30 sm:mt-60 max-w-6xl mx-auto">Available Jobs</h1>
+      <section className="w-full h-full relative my-30  p-5 rounded-2xl ">
         <div className="flex w-full h-full gap-5 flex-wrap items-center justify-center">
             {jobListings.map((item,idx)=>(
                 <Card key={idx} className="max-w-130 h-110 sm:h-70  bg-gradient-to-r  from-slate-300 to-gray-400 p-5 ">
@@ -60,7 +60,7 @@ export default function JobsAndServicesPage() {
                             </span>
                             ))}
                         </div>
-                        <h1 className="font-semibold">
+                        <h1 className="font-semibold ">
                             • Qualification Required
                         </h1>
                         <div className="text-wrap relative left-3  w-full  h-full">
@@ -73,7 +73,7 @@ export default function JobsAndServicesPage() {
       </section>
       <section className="w-full h-full text-black">
           <motion.h1
-            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-slate-400/90 rounded-2xl text-center"
+            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl text-center max-w-6xl mx-auto"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -147,7 +147,7 @@ export default function JobsAndServicesPage() {
               type="submit"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="w-full py-3 bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold rounded-md cursor-pointer"
+              className="w-full py-3 bg-green-500 text-white font-semibold rounded-md cursor-pointer text-2xl"
               onClick={handleSubmit}
             >
               Submit Application

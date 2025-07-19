@@ -12,7 +12,7 @@ const images = [
   },
   {
     src: "/showcase/04.jpg",
-    caption: "Participation at NewsWeek Panel Discussion during COP29-Baku",
+    caption: "Participation at Newsweek Panel Discussion during COP29-Baku",
   },
   {
     src: "/showcase/05.jpg",
@@ -61,7 +61,7 @@ export default function GlobalShowcase() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-cyan-500"
+          className="text-4xl md:text-5xl font-bold  text-white"
         >
           Global Representation
         </motion.h2>

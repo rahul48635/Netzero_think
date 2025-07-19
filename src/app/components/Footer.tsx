@@ -50,7 +50,7 @@ export default function Footer({ items }: { items: items }) {
               <div className="text-blue-800 mb-2 font-semibold text-lg text-left self-start md:text-left">
                 {item.head}
               </div>
-              <div className="flex flex-col gap-1 text-blue-800 text-sm">
+              <div className="flex flex-col gap-1 text-blue-800 text-sm font-bold">
                 {Object.entries(item.Links).map(([linkText, linkHref], idx) => (
                   <motion.div
                     key={idx + linkText}
@@ -69,10 +69,10 @@ export default function Footer({ items }: { items: items }) {
       </div>
 
       <div className="flex flex-col sm:flex-row justify-between items-center gap-4 px-6 py-4 border-t border-gray-400 text-sm text-blue-800">
-        <h1 className="text-center">
-          © 2022 Net – Zero Think. All rights reserved
+        <h1 className="text-center font-bold">
+          © 2022 Net Zero Think. All rights reserved
         </h1>
-        <div className="flex gap-4 text-white text-xl">
+        <div className="flex gap-4 text-xl ">
           {Object.entries(socials).map(([key, value], idx) => (
             <Link href={key} key={idx}  target="_blank">
               {value}

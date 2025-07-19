@@ -26,8 +26,8 @@ export default function AboutPage() {
   const teamMembers = [
     { name: "Dr. M.K. Singh", role: "CEO & Founder", image: "/core_team/03.jpg", link:"https://www.linkedin.com/in/dr-manoj-kumar-singh-b7480a19/", bio: "Dr. M.K. is a founder of Net Zero Think Private Limited. He is a visionary leader with a passion for sustainability and innovation. He has extensive experience in the field of renewable energy, energy-efficient solutions and sustainable engineering. " },
     { name:"Ms. Pratyaksha Singh", role:"Director", image:"/core_team/04.jpg", link:"#", bio:"With a Master’s in Science. Her strong analytical background supports our mission to scale decarbonization with structure, clarity, and impact."},
-    { name: "Dr. Pranamika Bhuyan", role: "Lead Environment & Carbon Consultant", link:"https://www.linkedin.com/in/pranamika-bhuyan-ph-d-61505b104/", image: "/core_team/05.jpg", bio: "Environmental consultant and educator with a Ph.D., specializing in GHG accounting, air quality, carbon markets, and low-carbon building transitions—11 years in academia and 2+ years in climate action, now leading capacity-building initiatives as Master Trainer and scientific writer." },
-    { name:"Ms. Sapna​ Bisht", role:"Consultant (BD & CRM)", image:"/core_team/06.jpg",link:"https://www.linkedin.com/in/sapna-bisht-813964104/", bio:"With a B.Tech in Civil Engineering and M.Tech in Environmental Engineering, Sapna brings over a decade of expertise spanning both industry and academia. At NetZero Think Scape, she bridges technical depth with practical insights to drive sustainable infrastructure and climate-forward solutions."},
+    { name: "Dr. Pranamika Bhuyan", role: "Lead Consultant", link:"https://www.linkedin.com/in/pranamika-bhuyan-ph-d-61505b104/", image: "/core_team/05.jpg", bio: "Environmental consultant and educator with a Ph.D., specializing in GHG accounting, air quality, carbon markets, and low-carbon building transitions—11 years in academia and 2+ years in climate action, now leading capacity-building initiatives as Master Trainer and scientific writer." },
+    { name:"Ms. Sapna​ Bisht", role:"Consultant", image:"/core_team/06.jpg",link:"https://www.linkedin.com/in/sapna-bisht-813964104/", bio:"With a B.Tech in Civil Engineering and M.Tech in Environmental Engineering, Sapna brings over a decade of expertise spanning both industry and academia. At NetZero Think Scape, she bridges technical depth with practical insights to drive sustainable infrastructure and climate-forward solutions."},
   ]
 
   const advisors = [
@@ -45,14 +45,14 @@ export default function AboutPage() {
     <div className="min-h-screen min-w-screen">
       {/* Hero */}
       <section className=" px-10 text-center flex flex-col items-center justify-center w-full  self-center justify-self-center bg-[url('/bg-cover/earth.jpg')] bg-top bg-fixed bg-cover bg-no-repeat mask-b-from-99% mb-20">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-slate-400/90 rounded-2xl w-full mt-50  md:mt-75">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl w-full mt-50  md:mt-75 max-w-6xl mx-auto">
                 About Net Zero Think
         </h1>
-        <p className="text-base sm:text-lg md:text-xl  max-w-3xl mx-auto leading-relaxed text-white font-bold">
+        <p className="text-base sm:text-lg md:text-xl  max-w-3xl mx-auto leading-relaxed text-black font-bold">
           About Us
           Net Zero Think is a climate solutions company enabling businesses, governments, and institutions to achieve their net-zero and sustainability goals. Since 2022, we’ve delivered cutting-edge services in GHG accounting, ESG strategy, decarbonization, and carbon markets.
 
-          Through our global Climate Innovation Community, certified training programs, and sector-specific research, we drive impactful climate action and build long-term capabilities. With a presence across India and beyond, we turn climate ambition into measurable progress
+          Through our global Climate Innovation Community, certified training programs, and sector-specific research, we drive impactful climate action and build long-term capabilities. With a presence across India and other nations , we turn climate ambition into measurable progress
         </p>
           <GlobalShowcase/>
       </section>
@@ -60,7 +60,7 @@ export default function AboutPage() {
       <section className="py-20 mt-20 md:py-0 md:mt-15 px-4 sm:px-6 lg:px-8 text-center sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center" >
         {/* photo showcase  */}
         {/* demonstration pillar */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-slate-400/90 rounded-2xl text-center w-full">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl text-center w-full max-w-6xl mx-auto">
                  Value Preposition Aimed (2030)
           </h1>
         <div className="flex flex-col md:flex-row justify-between items-baseline mx-5 bg-blue-900 rounded-2xl">
@@ -98,7 +98,7 @@ export default function AboutPage() {
         </div>
         {/* Vision */}
       </section>
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-200 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center rounded-2xl sm:rounded-none">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-200 dark:bg-gray-800 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center rounded-2xl sm:rounded-none">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="flex items-center gap-3 mb-6">
@@ -126,7 +126,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-200 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center rounded-2xl sm:rounded-none">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-200 dark:bg-gray-800 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center rounded-2xl sm:rounded-none">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-purple-500 mb-4">Core Values</h2>
@@ -149,7 +149,7 @@ export default function AboutPage() {
       {/* Team */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center">
         <div className="max-w-7xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-purple-500 mb-4">Core Team</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-purple-500 mb-4">Team</h2>
           <p className="text-lg  max-w-2xl mx-auto font-bold text-blue-800">Meet the passionate individuals driving our mission forward</p>
         </div>
         <div className="flex w-full flex-wrap gap-15 items-center justify-center">
@@ -158,7 +158,7 @@ export default function AboutPage() {
               <Image src={member.image} alt={member.name} width={300} height={300} className="w-full h-64  object-contain p-5" />
               <CardContent className="p-5">
                 <h3 className="text-xl font-semibold mb-2 text-blue-800">{member.name}</h3>
-                <Badge variant="secondary" className="mb-3 bg-yellow-100 dark:text-black">{member.role}</Badge>
+                <Badge variant="secondary" className="mb-3 bg-gray-600 text-white dark:text-black">{member.role}</Badge>
               </CardContent>
               <CardFooter className="absolute bottom-0 left-1/2 -translate-x-1/2  rounded-2xl  items-center justify-center p-1">
                 <Link className="self-center justify-self-center" href={member.link}><FaLinkedin size={30} fill="blue" stroke="white"/></Link>
@@ -171,7 +171,7 @@ export default function AboutPage() {
       {/* Advisors */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/50 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center">
         <div className="max-w-7xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-purple-500 mb-4">Our Advisors</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-purple-500 mb-4">Advisors</h2>
           <p className="text-lg  max-w-2xl mx-auto font-bold text-blue-800">Industry experts guiding our strategic direction</p>
         </div>
         <div className="grid md:flex md:items-center md:justify-evenly w-full  gap-6">
@@ -180,7 +180,7 @@ export default function AboutPage() {
               <Image src={advisor.image} alt={advisor.name} width={300} height={300} className="w-full h-64  object-contain p-5" />
               <CardContent className="p-5">
                 <h3 className="text-xl font-semibold mb-2 text-blue-800">{advisor.name}</h3>
-                <Badge variant="secondary" className="mb-3 bg-yellow-100 dark:text-black">{advisor.role}</Badge>
+                <Badge variant="secondary" className="mb-3 bg-gray-600 text-white dark:text-black">{advisor.role}</Badge>
               </CardContent>
               <CardFooter className="absolute bottom-0 left-1/2 -translate-x-1/2  rounded-2xl  items-center justify-center p-1">
                 <Link className="self-center justify-self-center" href={advisor.link}><FaLinkedin size={30} fill="blue" stroke="white"/></Link>

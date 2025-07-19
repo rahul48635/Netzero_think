@@ -24,7 +24,7 @@ export default function Template(
     href:"/"
   },
   {
-    title:"Solutions & Services",
+    title:"Services",
     logo: GrServices ,
     href:"/services"
   },
@@ -44,7 +44,7 @@ export default function Template(
     href:"/contact"
   },
   {
-    title:"Climate Innovation Community",
+    title:"Climate Innovation",
     logo:RiUserCommunityFill ,
     href:"/community"
   },
