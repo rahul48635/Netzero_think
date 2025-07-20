@@ -79,7 +79,7 @@ const Footeritems: items = [
               <motion.button
                       layout
                       onClick={() => setDark(!dark)}
-                      className="sm:top-10 cursor-pointer fixed top-1/2 right-6 z-50 px-3 py-3 rounded-4xl  bg-gray-200 dark:bg-gray-800 text-black dark:text-white shadow-lg transition"
+                      className="sm:top-10 cursor-pointer fixed top-[calc(50%_+_5rem)] right-6 z-50 px-3 py-3 rounded-4xl  bg-gray-200 dark:bg-gray-800 text-black dark:text-white shadow-lg transition"
                       transition={{duration:0.3,ease:"easeInOut"}}
                     >
                       <AnimatePresence mode="wait" initial={false}>
@@ -112,7 +112,7 @@ const Footeritems: items = [
               <div className="mt-30 absolute left-1/2 top-[-5rem] -translate-x-1/2 sm:left-[5rem] sm:translate-0 sm:md:justify-self-center z-10 bg-white/70 rounded-2xl p-2">
                 <Image src={'/Netzerothink.png'} alt="logo" width={350} height={350} />
               </div>
-                {isMobile?<MobileNavbar items={items} className="top-1/2 left-10  fixed"/> :<Navbar items={items} className="z-10 lg:top-35 top-20 sm:md:top-40"/>}
+                {isMobile?<MobileNavbar items={items} className="top-[calc(50%_+_5rem)] left-10  fixed"/> :<Navbar items={items} className="z-10 lg:top-35 top-20 sm:md:top-40"/>}
             </div>
             {children}
             <div className="w-full h-full bg-black">

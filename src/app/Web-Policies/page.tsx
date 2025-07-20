@@ -41,7 +41,7 @@ export default function page() {
                   name: "Community Registration",
                   min: "10,000",
                   max: "25,000",
-                  remark: "Annual",
+                  remark: "Annual`",
                 },
                 {
                   name: "Webinar Access",

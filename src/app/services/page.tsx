@@ -254,6 +254,19 @@ export default function ServicesPage() {
 ];
 const isMobile=useMediaQuery("(max-width: 768px)")
 
+  const containerVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  }
+
+  const itemVariants = {
+    hidden: { opacity: 0, x: 40 },
+    visible: { opacity: 1, x: 0 },
+  }
 
 
   return (
@@ -296,22 +309,28 @@ const isMobile=useMediaQuery("(max-width: 768px)")
                         Why Choose Us?
                     </h1>
                     <div className="flex flex-col gap-5 w-full max-w-6xl">
-                      {pillars.map((pillar, index) => (
-                        <motion.div
-                          key={pillar.title}
-                          initial={{ opacity: 0, x: 50 }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          transition={{ duration: 0.6, delay: index * 0.2 }}
-                          viewport={{ once: true }}
-                          className={`bg-gradient-to-br ${pillar.color} rounded-2xl p-6 shadow-xl hover:scale-105 transition-transform duration-300 w-full self-center justify-self-center`}
-                        >
-                          <div className="flex items-center gap-3  w-full self-center justify-self-center w ">      
-                            <h3 className="text-lg font-bold text-center self-center justify-self-center w-full flex gap-2 items-center justify-center">
-                              <CheckCircle className="w-6 h-6 text-white" />
-                              {pillar.title}</h3>
-                          </div>
-                        </motion.div>
-                      ))}
+                      <motion.div
+                            className="flex flex-col gap-5 w-full max-w-6xl"
+                            variants={containerVariants}
+                            initial="hidden"
+                            animate="visible"
+                            viewport={{ once: true, amount: 0.2 }}
+                          >
+                            {pillars.map((pillar) => (
+                              <motion.div
+                                key={pillar.title}
+                                variants={itemVariants}
+                                className={`bg-gradient-to-br ${pillar.color} rounded-2xl p-6 shadow-xl hover:scale-105 transition-transform duration-300 w-full`}
+                              >
+                                <div className="flex items-center gap-3 w-full">
+                                  <h3 className="text-lg font-bold text-center w-full flex gap-2 items-center justify-center">
+                                    <CheckCircle className="w-6 h-6 text-white" />
+                                    {pillar.title}
+                                  </h3>
+                                </div>
+                              </motion.div>
+                            ))}
+                      </motion.div>
                     </div>
                   </div>
             </div>

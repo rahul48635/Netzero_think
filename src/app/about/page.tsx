@@ -49,7 +49,6 @@ export default function AboutPage() {
                 About Net Zero Think
         </h1>
         <p className="text-base sm:text-lg md:text-xl  max-w-3xl mx-auto leading-relaxed text-black font-bold">
-          About Us
           Net Zero Think is a climate solutions company enabling businesses, governments, and institutions to achieve their net-zero and sustainability goals. Since 2022, we’ve delivered cutting-edge services in GHG accounting, ESG strategy, decarbonization, and carbon markets.
 
           Through our global Climate Innovation Community, certified training programs, and sector-specific research, we drive impactful climate action and build long-term capabilities. With a presence across India and other nations , we turn climate ambition into measurable progress
