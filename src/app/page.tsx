@@ -85,11 +85,11 @@ export default function Home() {
       <section className="w-full flex flex-col items-center justify-center px-4  text-center relative bottom-40 sm:static sm:bottom-0 bg-[url('/bg-cover/hero.png')] bg-center  bg-fixed bg-cover bg-no-repeat mask-b-from-99% mb-5">
         <TextGenerateEffect
           words={text}
-          className="mt-90 sm:mt-60 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-lg "
+          className="mt-90 sm:mt-60 text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-extra bold text-white drop-shadow-lg "
           duration={2}
           filter={false}
         />
-        <p className="md:mt-30 mt-10 text-base sm:text-3xl text-white rounded-2xl p-3 font-semibold max-w-4xl ">
+        <p className="md:mt-30 mt-10 text-base sm:text-3xl text-white rounded-2xl p-3 font-bold max-w-4xl ">
           Empowering enterprises to achieve net zero with data-driven insights,
           innovative technology, and actionable strategies.
         </p>
