@@ -8,7 +8,7 @@ export const Contactbox = () => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 dark:bg-transparent">
+    <div className=" dark:bg-transparent relative">
       <AnimatePresence>{visible && <ChatBox />}</AnimatePresence>
 
       <motion.button
@@ -54,7 +54,7 @@ const ChatBox = () => {
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0 }}
       transition={{ duration: 0.5,ease:"easeInOut" }}
-      className="w-80 h-[30rem] bg-white dark:bg-black shadow-xl rounded-2xl p-4 flex flex-col absolute bottom-20 right-0 z-50"
+      className="w-80 h-[30rem] bg-white dark:bg-black shadow-xl rounded-2xl p-4 flex flex-col absolute bottom-20 right-0 z-100"
     >
       <div className="text-lg font-semibold mb-2 border-b pb-2">
         💬 Chat with us on

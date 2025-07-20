@@ -12,6 +12,7 @@ import { MobileNavbar } from "./components/mobilenavbar";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { GrServices } from "react-icons/gr";
 import { RiUserCommunityFill } from "react-icons/ri";
+import { Contactbox } from "./components/Contactbox";
 
 export default function Template(
   { children }: { children: React.ReactNode }) {
@@ -76,6 +77,7 @@ const Footeritems: items = [
  
         return (
         <div className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden">
+          
               <motion.button
                       layout
                       onClick={() => setDark(!dark)}
@@ -115,8 +117,12 @@ const Footeritems: items = [
                 {isMobile?<MobileNavbar items={items} className="top-[calc(50%_+_5rem)] left-10  fixed"/> :<Navbar items={items} className="z-10 lg:top-35 top-20 sm:md:top-40"/>}
             </div>
             {children}
+            
             <div className="w-full h-full bg-black">
                 <Footer items={Footeritems}/>
+            </div>
+            <div className="sm:top-[40rem] h-screen cursor-pointer fixed top-[90%] right-6 z-50 px-3 py-3">
+              <Contactbox/>
             </div>
         </div>)
 }

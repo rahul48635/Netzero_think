@@ -1,5 +1,4 @@
 "use client";
-import { Contactbox } from "./components/Contactbox";
 import Marquee from "./components/Marquee";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards";
@@ -136,9 +135,7 @@ export default function Home() {
         </div>
 
         {/* Contact Box */}
-        <div className="z-30">
-        <Contactbox />
-        </div>
+        
       </section>
     </div>
   );
