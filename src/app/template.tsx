@@ -121,7 +121,7 @@ const Footeritems: items = [
             <div className="w-full h-full bg-black">
                 <Footer items={Footeritems}/>
             </div>
-            <div className="sm:top-[40rem] h-screen cursor-pointer fixed top-[90%] right-6 z-50 px-3 py-3">
+            <div className="sm:top-[40rem] h-screen cursor-pointer fixed top-[80%] right-6 z-50 px-3 py-3">
               <Contactbox/>
             </div>
         </div>)

@@ -54,7 +54,7 @@ const images = [
 
 export default function GlobalShowcase() {
   return (
-    <section className="w-[70%] sm:w-[90%]  self-center justify-self-center px-6 py-20 bg-black/80 dark:bg-gray-950 text-gray-900 dark:text-white border-2 rounded-4xl m-5 border-blue-600 shadow-xl shadow-gray-500 sm:flex sm:flex-col sm:flex-wrap sm:items-center sm:justify-center">
+    <section className="w-[95%] sm:w-[90%]  self-center justify-self-center px-6 py-20 bg-black/80 dark:bg-gray-950 text-gray-900 dark:text-white border-2 rounded-4xl m-5 border-blue-600 shadow-xl shadow-gray-500 sm:flex sm:flex-col sm:flex-wrap sm:items-center sm:justify-center">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}

@@ -1,8 +1,19 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Geist, Geist_Mono } from "next/font/google";
 import { DarkModeProvider } from "./context/DarkModeContext";
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
 
 export const metadata: Metadata = {
@@ -20,7 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body
+       className={`${geistSans.variable} ${geistMono.variable} antialiased  `}
+      >
         <DarkModeProvider>
         {children}
         <Analytics/>

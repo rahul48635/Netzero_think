@@ -31,6 +31,7 @@ export default function ContactPage() {
     const message = encodeURIComponent("Hi! I'm interested in your NET ZERO solutions. Please get back to me.")
     window.open(`https://wa.me/+918240615694?text=${message}`, "_blank")
   }
+  const truncate:(text:string,max:number)=>string = (text, max = 25) =>(text.length > max ? text.slice(0, max) + "..." : text);
 
   return (
     <div className="min-h-screen min-w-screen bg-[url('/bg-cover/meeting.png')] bg-center bg-fixed bg-cover bg-no-repeat">
@@ -120,22 +121,26 @@ export default function ContactPage() {
                     </div>
                   </div>
 
-                  <div className="space-y-2">
+                  <div className="space-y-2 max-w-full">
                     <Label>FOR QUESTIONS OR QUOTES - Select a solution</Label>
                     <Select
                       value={formData.solution}
                       onValueChange={(value) => setFormData({ ...formData, solution: value })}
                     >
-                      <SelectTrigger className="text-blue-800" >
-                        <SelectValue placeholder="Choose a solution" />
+                      <SelectTrigger className="text-blue-800 max-w-full" >
+                        <SelectValue placeholder="Choose a solution" >
+                          {formData.solution ? truncate(formData.solution, 30) : ""}
+                        </SelectValue>
                       </SelectTrigger>
-                      <SelectContent className="text-blue-800">
-                        <SelectItem value="carbon-footprint">Carbon Footprint Assessment</SelectItem>
-                        <SelectItem value="renewable-energy">Renewable Energy Solutions</SelectItem>
-                        <SelectItem value="sustainability-consulting">Sustainability Consulting</SelectItem>
-                        <SelectItem value="net-zero-strategy">NET ZERO Strategy Development</SelectItem>
-                        <SelectItem value="green-technology">Green Technology Implementation</SelectItem>
-                        <SelectItem value="environmental-compliance">Environmental Compliance</SelectItem>
+                      <SelectContent className="text-blue-800 w-[80%]">
+                        <SelectItem value="Emissions Measurement, Reporting & Verification (MRV)">Emissions Measurement, Reporting & Verification (MRV)</SelectItem>
+                        <SelectItem value="Greenhouse Gas (GHG) Accounting & Carbon Footprint Analysis">Greenhouse Gas (GHG) Accounting & Carbon Footprint Analysis</SelectItem>
+                        <SelectItem value="Climate & Environmental Policy Advisory">Climate & Environmental Policy Advisory</SelectItem>
+                        <SelectItem value="Environmental Credits & Sustainability Finance Advisory">Environmental Credits & Sustainability Finance Advisory</SelectItem>
+                        <SelectItem value="ESG Strategy & Reporting">ESG Strategy & Reporting</SelectItem>
+                        <SelectItem value="Capacity Building & Professional Training">Capacity Building & Professional Training</SelectItem>
+                        <SelectItem value="Green Staffing Solution">Green Staffing Solution</SelectItem>
+                        <SelectItem value="Life Cycle Assesment (LCA)">Life Cycle Assesment (LCA)</SelectItem>
                         <SelectItem value="other">Other</SelectItem>
                       </SelectContent>
                     </Select>
@@ -162,8 +167,8 @@ export default function ContactPage() {
 
             {/* WhatsApp Section */}
             <Card className="bg-green-50 border-green-200">
-              <CardContent className="p-6">
-                <div className="flex items-center space-x-4">
+              <CardContent className="p-6 ">
+                <div className="flex flex-col gap-10 sm:flex-row items-center space-x-4">
                   <div className="bg-green-500 p-3 rounded-full">
                     <MessageCircle className="h-6 w-6 text-white" />
                   </div>

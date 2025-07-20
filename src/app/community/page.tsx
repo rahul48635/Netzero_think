@@ -17,8 +17,10 @@ import {
 import { motion } from 'framer-motion'
 import Image from "next/image"
 import useMediaQuery from "../hooks/useMediaQuery"
+import { useState } from "react"
 
 export default function ClimateInnovationCommunity() {
+  const [loaded,setLoaded]=useState(false);
   const isMobile=useMediaQuery('(max-width:768px)')
 
   const handleJoinCommunity = () => {
@@ -120,7 +122,7 @@ export default function ClimateInnovationCommunity() {
           </div>
 
           {/* Community Stats */}
-          <div className="flex items-center justify-center gap-10 max-w-4xl mx-auto text-green-500">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 mt-5  text-green-500">
             {communityStats.map((stat, index) => (
               <div key={index} className="bg-white/80 backdrop-blur-xl rounded-lg p-4">
                 <stat.icon className="h-8 w-8 mx-auto mb-2" />
@@ -234,8 +236,31 @@ export default function ClimateInnovationCommunity() {
           </div>
 
           <div className="flex flex-col sm:flex-row justify-center items-center gap-5">
-            {Posts.map((Post,idx)=>(<iframe key={idx} className="rounded-xl" src={Post} height="636" width={isMobile?300:"504px"}  title="Embedded post"></iframe>))}
+            <div className="relative flex flex-col sm:flex-row justify-center items-center gap-5 w-full ">
+              {!loaded && (
+                <div className="absolute inset-0 z-10 flex items-center justify-center bg-white/20 backdrop-blur-2xl bg-opacity-50 rounded-2xl mb-10">
+                  <div className="text-white text-2xl font-bold p-6 bg-gray-800 rounded-xl shadow-lg">
+                    Loading Posts...
+                  </div>
+                </div>
+              )}
+
+              {Posts.map((Post, idx) => (
+                <iframe
+                  key={idx}
+                  className="rounded-xl"
+                  src={Post}
+                  height="636"
+                  width={isMobile ? 300 : "504px"}
+                  title="Embedded post"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  onLoad={() => setLoaded(true)}
+                />
+              ))}
+            </div>
           </div>
+            <button className="rounded-2xl bg-green-500 font-blold w-full cursor-pointer p-5 self-center justify-self-center" onClick={()=>window.open('https://www.linkedin.com/newsletters/net-zero-think-private-limited-6964091907949948928/')}>SUBSCRIBE US</button>
         </section>
       </div>
     </div>

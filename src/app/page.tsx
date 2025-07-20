@@ -127,7 +127,7 @@ export default function Home() {
         </div>
 
         {/* Trusted By */}
-        <div className="mt-20  text-center">
+        <div className="mt-20 text-center w-full">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl max-w-6xl mx-auto">
             Trusted By Leading Enterprises
           </h1>
