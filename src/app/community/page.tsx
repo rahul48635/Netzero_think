@@ -15,8 +15,11 @@ import {
   Zap,
 } from "lucide-react"
 import { motion } from 'framer-motion'
+import Image from "next/image"
+import useMediaQuery from "../hooks/useMediaQuery"
 
 export default function ClimateInnovationCommunity() {
+  const isMobile=useMediaQuery('(max-width:768px)')
 
   const handleJoinCommunity = () => {
     window.open("mailto:support@netzerothink.com?subject=New Service Request from [Name]&body=Name: [Name]%0APhone: [WhatsApp Number]%0AOrganistion: [Your Org]%0ADesignation: [Your Designation]%0ALinkedIn: [Link]%0ADescription: [Why do you want to Join?]")
@@ -61,6 +64,27 @@ export default function ClimateInnovationCommunity() {
     },
   ]
 
+  const academia_card=[
+    {
+      title:"upcoming Course",
+      pic:"/bg-cover/corp.png"
+    },
+    
+  ]
+
+  const Event_card=[
+    {
+      title:"Climate Innovation summit 2025",
+      description:"A global gathering of climate leaders, innovators, and changemakers."
+    }
+  ]
+
+  const Posts=[
+    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7342056302522572802?collapsed=1",
+    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7345749609735929858?collapsed=1",
+    "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7292953380983881728?collapsed=1"
+  ]
+
   return (
     <div className="relative min-h-screen w-full  overflow-hidden bg-[url('/bg-cover/climate.png')] bg-fixed bg-cover bg-no-repeat">
       {/* Hero Section */}
@@ -75,8 +99,8 @@ export default function ClimateInnovationCommunity() {
             Climate Innovation Community
           </motion.h1>
 
-          <div className="w-full bg-white/10 backdrop-blur-xl rounded-2xl text-white font-bold">
-            <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 leading-relaxed  ">
+          <div className="w-full bg-white/10 backdrop-blur-xl rounded-2xl text-white font-bold p-3">
+            <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 leading-relaxed pt-5 ">
               Climate Innovation Community
               Connecting Global Minds for Local and Global Climate Impact.
             </p>
@@ -84,7 +108,7 @@ export default function ClimateInnovationCommunity() {
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 leading-relaxed ">The community brings together like-minded experts, innovators, entrepreneurs, policy professionals, financiers, insurers, and development practitioners who are passionate about advancing climate and sustainability solutions.</p>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 leading-relaxed">Be a part of the movement, Connect, Collaborate, Co-create a sustainable tomorrow. To join the community send the expression of interest.</p>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12 mt-5">
             <Button
               size="lg"
               className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-8 py-4 text-lg"
@@ -138,6 +162,81 @@ export default function ClimateInnovationCommunity() {
 
         {/* Recent Projects Section */}
         
+        {/* Academia Section */}
+        <section className="mb-20">
+          <div className="text-center w-full bg-white/50 backdrop-blur-xl rounded-2xl">
+            <motion.h1
+            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 w-full text-white bg-green-500 rounded-2xl text-center " 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            Academia
+          </motion.h1>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {academia_card.map((item,idx)=>(
+              <Card key={idx} className="hover:shadow-[0px_0px_10px_5px] shadow-black/50 transition-shadow  bg-white/50 backdrop-blur-2xl">
+              <CardHeader>
+                <CardTitle className="text-xl text-blue-800 font-bold capitalize underline">{item.title}</CardTitle>
+              </CardHeader>
+              <CardContent className="">
+                <Image src={item.pic} alt={item.pic} width={200} height={200}  className="rounded self-center justify-self-center w-full" />
+                <Button variant={"default"} className="self-center justify-self-center w-full mt-5 bg-green-500 cursor-pointer">Learn More</Button>
+              </CardContent>
+            </Card>))}
+          </div>
+        </section>
+
+        {/* Events Section */}
+        <section className="mb-20">
+          <div className="text-center mb-12 bg-white/50 backdrop-blur-xl rounded-2xl">
+          <motion.h1
+            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 pb-2 text-white bg-green-500 rounded-2xl text-center " 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            Upcoming Events
+          </motion.h1>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {Event_card.map((item,idx)=>(
+              <Card key={idx} className="hover:shadow-lg transition-shadow bg-white/30 backdrop-blur-2xl">
+              <CardHeader>
+                <CardTitle className="text-xl text-blue-800 font-bold">{item.title}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <CardDescription className="text-blue-800 leading-relaxed mb-4">
+                  {item.description}
+                </CardDescription>
+                <Button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold">
+                  Learn More
+                </Button>
+              </CardContent>
+            </Card>))}
+          </div>
+        </section>
+
+        {/* Newsletter Section */}
+        <section className="mb-20">
+          <div className="text-center mb-12 bg-white/50 backdrop-blur-xl rounded-2xl">
+          <motion.h1
+            className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl text-center  " 
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            News Letter
+          </motion.h1>
+          </div>
+
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-5">
+            {Posts.map((Post,idx)=>(<iframe key={idx} className="rounded-xl" src={Post} height="636" width={isMobile?300:"504px"}  title="Embedded post"></iframe>))}
+          </div>
+        </section>
       </div>
     </div>
   )
