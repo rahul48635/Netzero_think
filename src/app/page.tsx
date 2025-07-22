@@ -81,7 +81,7 @@ export default function Home() {
     <div className="relative min-h-screen w-full flex flex-col items-center justify-center overflow-hidden  ">
 
       {/* Hero Section */}
-      <section className="w-full flex flex-col items-center justify-center px-4  text-center relative bottom-40 sm:static sm:bottom-0 bg-[url('/bg-cover/hero.png')] bg-center  bg-fixed bg-cover bg-no-repeat mask-b-from-99% mb-5">
+      <section className="w-full flex flex-col items-center justify-center px-4  text-center relative  sm:static sm:bottom-0 bg-[url('/bg-cover/hero.png')] bg-center  bg-fixed bg-cover bg-no-repeat mask-b-from-99% ">
       <div className="absolute inset-0 bg-black/30 -z-10"></div>
 
         <TextGenerateEffect

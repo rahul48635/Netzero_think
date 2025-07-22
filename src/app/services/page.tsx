@@ -290,7 +290,7 @@ const isMobile=useMediaQuery("(max-width: 768px)")
                  With a mission to assist industries, government bodies, and stakeholders in meeting net-zero targets, we offer expert guidance in emissions accounting & auditing, sustainability strategy, and net zero initiatives. Additionally, we provide Green Staffing solutions, comprehensive training and capacity-building programs to equip professionals and organizations with the knowledge and skills required to navigate the evolving sustainability landscape and implement effective climate solutions.
               </p>
               <div className="flex flex-wrap gap-2  ">
-                <div className="text-center bg-blue-900 rounded-2xl p-2 dark:bg-white w-60 h-20 flex-1/3 ">
+                <div className="text-center bg-blue-900 rounded-2xl p-2 dark:bg-white flex-1/3 ">
                   <div className="text-3xl font-bold text-white dark:text-gray-400 ">25+</div>
                   <div className="text-lg text-gray-300 dark:text-gray-600">Projects Completed</div>
                 </div>

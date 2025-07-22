@@ -89,6 +89,8 @@ export default function ClimateInnovationCommunity() {
 
   return (
     <div className="relative min-h-screen w-full  overflow-hidden bg-[url('/bg-cover/climate.png')] bg-fixed bg-cover bg-no-repeat">
+      <div className="absolute inset-0 bg-black/40 "></div>
+
       {/* Hero Section */}
       <section className="relative py-20 px-4 text-center  text-blue-800 overflow-hidden mt-30 sm:mt-50">
         <div className="relative max-w-6xl mx-auto">
@@ -132,8 +134,6 @@ export default function ClimateInnovationCommunity() {
             ))}
           </div>
         </div>
-      </section>
-
       <div className="max-w-7xl mx-auto px-4 py-16">
         {/* What We Do Section */}
         <section className="mb-20">
@@ -265,6 +265,8 @@ export default function ClimateInnovationCommunity() {
           </div>
         </section>
       </div>
+      </section>
+
     </div>
   )
 }

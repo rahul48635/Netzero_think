@@ -34,7 +34,9 @@ export default function ContactPage() {
   const truncate:(text:string,max:number)=>string = (text, max = 25) =>(text.length > max ? text.slice(0, max) + "..." : text);
 
   return (
-    <div className="min-h-screen min-w-screen bg-[url('/bg-cover/meeting.png')] bg-center bg-fixed bg-cover bg-no-repeat">
+    <div className="min-h-screen min-w-screen bg-[url('/bg-cover/meeting.png')] bg-center bg-fixed bg-cover bg-no-repeat relative">
+      <div className="absolute inset-0 bg-black/40 "></div>
+
       {/* Hero Section */}
       <section className="relative py-20 px-4 text-center text-blue-800 mt-30 sm:mt-50">
         <motion.h1
@@ -52,14 +54,12 @@ export default function ContactPage() {
             “If Reaching ‘NET ZERO’ Is Your Ultimate Goal, We’re There To Make This Journey Memorable And Remarkable”.
           </h1>
           <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 inline-block">
-            <p className="text-lg opacity-90 text-black">
+            <p className="text-lg opacity-90 text-white">
               Tell us about your business requirements, we will get back to you as soon as possible.
             </p>
           </div>
         </div>
-      </section>
-
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto px-4 py-16 ">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="space-y-8">
@@ -253,12 +253,9 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-
-      {/* Footer CTA */}
-      <section className=" text-blue-800 py-16 px-4 text-center">
-        <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Start Your NET ZERO Journey?</h2>
-          <p className="text-xl mb-8 opacity-90 text-black">
+          <p className="text-xl mb-8 opacity-90 text-white">
             Let&apos;s work together to create a sustainable future for your business and our planet.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
