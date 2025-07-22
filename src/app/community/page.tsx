@@ -24,7 +24,7 @@ export default function ClimateInnovationCommunity() {
   const isMobile=useMediaQuery('(max-width:768px)')
 
   const handleJoinCommunity = () => {
-    window.open("mailto:support@netzerothink.com?subject=New Service Request from [Name]&body=Name: [Name]%0APhone: [WhatsApp Number]%0AOrganistion: [Your Org]%0ADesignation: [Your Designation]%0ALinkedIn: [Link]%0ADescription: [Why do you want to Join?]")
+    window.open("mailto:support@netzerothink.com?subject=New Service Request from [Name]&body=Name: [Name]%0APhone: [WhatsApp Number]%0AOrganisation: [Your Org]%0ADesignation: [Your Designation]%0ALinkedIn: [Link]%0ADescription: [Why do you want to Join?]")
   }
 
   const communityStats = [
@@ -106,7 +106,7 @@ export default function ClimateInnovationCommunity() {
               Climate Innovation Community
               Connecting Global Minds for Local and Global Climate Impact.
             </p>
-            <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 leading-relaxed ">The Climate Innovation Community is a social initiative of Net Zero Think conneting over 500 professionals from 30+ countries, united by a shared purpose—to drive real, sustainable change in business, the environment, society, and people’s lives.</p>
+            <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 leading-relaxed ">The Climate Innovation Community is a social initiative of Net Zero Think connecting over 500 professionals from 30+ countries, united by a shared purpose—to drive real, sustainable change in business, the environment, society, and people’s lives.</p>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 leading-relaxed ">The community brings together like-minded experts, innovators, entrepreneurs, policy professionals, financiers, insurers, and development practitioners who are passionate about advancing climate and sustainability solutions.</p>
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 leading-relaxed">Be a part of the movement, Connect, Collaborate, Co-create a sustainable tomorrow. To join the community send the expression of interest.</p>
           </div>
@@ -260,7 +260,9 @@ export default function ClimateInnovationCommunity() {
               ))}
             </div>
           </div>
-            <button className="rounded-2xl bg-green-500 font-blold w-full cursor-pointer p-5 self-center justify-self-center" onClick={()=>window.open('https://www.linkedin.com/newsletters/net-zero-think-private-limited-6964091907949948928/')}>SUBSCRIBE US</button>
+          <div className="w-full flex justify-center items-center">
+            <button className="rounded-2xl bg-yellow-400 text-white font-bold w-[10rem] cursor-pointer py-2 self-center justify-self-center" onClick={()=>window.open('https://www.linkedin.com/newsletters/net-zero-think-private-limited-6964091907949948928/')}>SUBSCRIBE</button>
+          </div>
         </section>
       </div>
     </div>

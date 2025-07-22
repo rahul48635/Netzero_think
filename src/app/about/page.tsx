@@ -44,14 +44,17 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen min-w-screen">
       {/* Hero */}
-      <section className=" px-10 text-center flex flex-col items-center justify-center w-full  self-center justify-self-center bg-[url('/bg-cover/earth.jpg')] bg-top bg-fixed bg-cover bg-no-repeat mask-b-from-99% mb-20">
+      <section className=" px-10 text-center flex flex-col items-center justify-center w-full  self-center justify-self-center bg-[url('/bg-cover/earth.jpg')] bg-center bg-fixed bg-cover bg-no-repeat mask-b-from-99% mb-20 relative">
+      <div className="absolute inset-0 bg-black/40 -z-10"></div>
+
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl w-full mt-50  md:mt-75 max-w-6xl mx-auto">
                 About Net Zero Think
         </h1>
-        <p className="text-base sm:text-lg md:text-xl  max-w-3xl mx-auto leading-relaxed text-black font-bold">
-          Net Zero Think is a climate solutions company enabling businesses, governments, and institutions to achieve their net-zero and sustainability goals. Since 2022, we’ve delivered cutting-edge services in GHG accounting, ESG strategy, decarbonization, and carbon markets.
+        <p className="font-sans  sm:text-lg md:text-xl  max-w-3xl mx-auto leading-relaxed text-white font-bold">
+          Net Zero Think is a climate solutions company enabling businesses, governments, and institutions to achieve their net-zero and sustainability goals. Since 2022, we’ve delivered cutting-edge solutions in the areas of research, GHG accounting and auditing, ESG strategy, decarbonization, and carbon markets. Through our global Climate Innovation Community, certified training programs, and sector-specific research, we drive impactful climate action and build long-term capabilities. With a presence across India and other nations, we turn climate ambition into measurable progress.
+          Gender Equality, Diversity, and Inclusion (EDI)
+          Net Zero Think is committed to addressing gender inequalities and promoting broader equality, diversity, and inclusion. We have more than 50% women in the workforce who are driving net-zero and sustainability solutions. 
 
-          Through our global Climate Innovation Community, certified training programs, and sector-specific research, we drive impactful climate action and build long-term capabilities. With a presence across India and other nations , we turn climate ambition into measurable progress
         </p>
           <GlobalShowcase/>
       </section>
@@ -60,7 +63,7 @@ export default function AboutPage() {
         {/* photo showcase  */}
         {/* demonstration pillar */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl text-center w-full max-w-6xl mx-auto">
-                 Value Preposition Aimed (2030)
+                 Value Proposition Aimed (2030)
           </h1>
         <div className="flex flex-col md:flex-row justify-between items-baseline mx-5 bg-blue-900 rounded-2xl">
           <motion.div

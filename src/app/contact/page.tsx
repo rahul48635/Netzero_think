@@ -158,7 +158,7 @@ export default function ContactPage() {
                     />
                   </div>
 
-                  <Button type="submit" className="w-full bg-green-600 hover:bg-green-700">
+                  <Button type="submit" className="w-full bg-green-600 hover:bg-green-700" onClick={()=>window.open(`mailto:support@netzerothink.com?subject=New Service Request from ${formData.name}&body=Name: ${formData.name}%0APhone: ${formData.phone}%0AOrg: ${formData.company}%0AEmail: ${formData.email}%0AService: ${formData.solution}%0AService: ${formData.message}`)}>
                     Submit
                   </Button>
                 </form>

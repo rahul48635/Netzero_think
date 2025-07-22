@@ -272,7 +272,8 @@ const isMobile=useMediaQuery("(max-width: 768px)")
   return (
     <div className="min-h-screen min-w-screen bg-white dark:bg-black text-black mx-10 ">
       {/* Introduction Section */}
-      <section className="bg-[url('/bg-cover/plant.png')]  bg-cover bg-no-repeat bg-fixed  w-full h-full mask-b-from-99% mb-10 p-10 ">
+      <section className="bg-[url('/bg-cover/plant.png')]  bg-cover bg-no-repeat bg-fixed   w-full h-full mask-b-from-99% mb-10 p-10 relative ">
+      <div className="absolute inset-0 bg-black/40 -z-10"></div>
         <div className="max-w-6xl mx-auto mt-60">
           <div className="text-center mb-12">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl">
@@ -348,22 +349,22 @@ const isMobile=useMediaQuery("(max-width: 768px)")
           </div>
            
         {/* Modal */}
-        <div className="w-full h-30 ">
+        <div className="w-full h-30 relative">
           <Modal>
             <div className="flex items-center justify-center w-full  ">
               <ModalTrigger  className="sm:w-[30rem]  self-center justify-self-center h-[5rem] ">
-                <div className="  text-white shadow-xl shadow-gray-500 hover:-translate-y-3 transition-all duration-500 bg-green-500  rounded-xl cursor-pointer  flex justify-center items-center p-3 tracking-widest font-bold text-2xl">
-                  Select Service
+                <div className="  text-white shadow-xl shadow-gray-500 hover:-translate-y-3 transition-all duration-500 bg-yellow-400 rounded-xl cursor-pointer  flex justify-center items-center p-3 tracking-widest font-bold text-2xl">
+                  Enquire
                 </div>
               </ModalTrigger>
             </div>
 
-            <ModalBody>
+            <ModalBody >
               <motion.div
                 initial={{ opacity: 0, scale: 0.9, y: 30 }}
                 animate={{ opacity: 1, scale: 1, y: 0 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
-                className="flex flex-col gap-4 p-6 text-black dark:bg-gray-400"
+                className="flex flex-col gap-4 p-6 text-black dark:bg-gray-400 "
               >
                 <h1 className="text-xl font-bold text-center">Book Your Service</h1>
 

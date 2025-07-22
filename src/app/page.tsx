@@ -47,7 +47,7 @@ export default function Home() {
     },
     { title:"Life Cycle Assesment (LCA)",
       description:"We provide flexible and specialized green staffing solutions to help organizations meet their sustainability and ESG goals. From deploying experts and recruiting on-demand talent to building in-house teams via BOT models, we support startups, corporates, and CSR projects in scaling their climate and energy transition efforts.",
-      url:"/cards/Lca.webp"
+      url:"/cards/lca4.png"
     },
     { title:"Greenhouse Gas (GHG) Accounting & Carbon Footprint Analysis",
       description:"We help organizations accurately measure and analyze their greenhouse gas emissions across sectors through detailed inventories and life cycle assessments (LCA). Our service supports the creation of carbon footprints, identifies reduction opportunities, and enables businesses to transition toward net-zero through strategic roadmaps and carbon credit monetization.",
@@ -82,6 +82,8 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="w-full flex flex-col items-center justify-center px-4  text-center relative bottom-40 sm:static sm:bottom-0 bg-[url('/bg-cover/hero.png')] bg-center  bg-fixed bg-cover bg-no-repeat mask-b-from-99% mb-5">
+      <div className="absolute inset-0 bg-black/30 -z-10"></div>
+
         <TextGenerateEffect
           words={text}
           className="mt-90 sm:mt-60 text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-extra bold text-white drop-shadow-lg "
@@ -109,7 +111,9 @@ export default function Home() {
    
 
       {/* Solutions + Testimonials + Marquee */}
-      <section className="w-full flex flex-col items-center justify-center py-16 px-4 bg-[url('/bg-cover/corp.png')] bg-bottom bg-fixed bg-cover bg-no-repeat mask-t-from-99%">
+      <section className="relative w-full flex flex-col items-center justify-center py-16 px-4 bg-[url('/bg-cover/corp.png')] bg-bottom bg-fixed bg-cover bg-no-repeat mask-t-from-99%">
+      <div className="absolute inset-0 bg-black/30 -z-10"></div>
+
         {/* Our Solutions */}
         <div className="w-full text-center ">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl max-w-6xl mx-auto">

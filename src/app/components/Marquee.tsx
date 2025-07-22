@@ -14,7 +14,7 @@ export default function Marquee() {
     "/marquee/09.png",
      ]
   return (
-    <div >
+    <div className='bg-white/50 backdrop-blur-2xl rounded-2xl'>
       <Mark autoFill direction='right' speed={200}>
         {arr.map((item,idx)=>(
           <div key={idx}><Image src={item} alt={item} width={200} height={200} className='p-5'/></div>

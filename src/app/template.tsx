@@ -70,6 +70,8 @@ const Footeritems: items = [
       "About": "/about",
       "Services":"/services",
       "Career":"/Jobs",
+      "Contact Us":"/contact",
+      "Climate Innovation":"/community",
     },
   },
 ];
