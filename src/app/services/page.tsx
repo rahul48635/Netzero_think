@@ -12,7 +12,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { GiArcheryTarget } from "react-icons/gi"
-import { FaCloud } from "react-icons/fa"
+import { FaCloud, FaRecycle } from "react-icons/fa"
 import { BsCoin } from "react-icons/bs"
 import useMediaQuery from "../hooks/useMediaQuery"
 import { Modal, ModalBody, ModalTrigger } from "@/components/ui/animated-modal"
@@ -128,7 +128,7 @@ export default function ServicesPage() {
       ],
     },
     {
-      icon: <UserCheck  className="h-8 w-8" />,
+      icon: <FaRecycle className="h-8 w-8" />,
       title: "Life Cycle Assesment (LCA)",
       features: [
         "Life Cycle Assessment & Product Carbon Footprinting: End-to-end analysis of environmental impacts and GHG emissions across a product’s life cycle.",
@@ -272,7 +272,7 @@ const isMobile=useMediaQuery("(max-width: 768px)")
   return (
     <div className="min-h-screen min-w-screen bg-white dark:bg-black text-black mx-10 ">
       {/* Introduction Section */}
-      <section className="bg-[url('/bg-cover/plant.png')]  bg-cover bg-no-repeat bg-fixed   w-full h-full mask-b-from-99% mb-10 p-10 relative ">
+      <section className="bg-[url('/bg-cover/services.png')]   bg-cover bg-no-repeat bg-fixed   w-full h-full mask-b-from-99% mb-10 p-10 relative ">
       <div className="absolute inset-0 bg-black/40 -z-10"></div>
         <div className="max-w-6xl mx-auto mt-60">
           <div className="text-center mb-12">
@@ -428,7 +428,7 @@ const isMobile=useMediaQuery("(max-width: 768px)")
                 id={`${index}`}
               >
                 <CardHeader className="pb-4">
-                  <div className="mb-4 p-3 bg-blue-800 text-white rounded-lg w-fit">{service.icon}</div>
+                  <div className="mb-4 p-3 bg-green-500 text-white rounded-lg w-fit">{service.icon}</div>
                   <CardTitle className="text-2xl font-bold">
                     <span className="text-blue-800">
                       {service.title}
@@ -532,10 +532,7 @@ const isMobile=useMediaQuery("(max-width: 768px)")
             Let&apos;s discuss!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-green-400 hover:bg-green-500 text-white  px-8 py-3 text-lg cursor-pointer" onClick={()=>window.open(
-      "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Consultation+Call&details=Let%27s+discuss+your+project&location=Google+Meet&add=mksingh@netzerothink.com&add=support@netzerothink.com",
-      "_blank"
-    )}>
+            <Button size="lg" className="bg-green-400 hover:bg-green-500 text-white  px-8 py-3 text-lg cursor-pointer" onClick={()=>window.open(`https://wa.me/+918240615694?text=I am interested in [Enter Service Name]`, "_blank")}>
               Schedule Consultation Today!
             </Button>
           </div>

@@ -139,7 +139,7 @@ export default function ClimateInnovationCommunity() {
         <section className="mb-20">
           <div className="text-center mb-12 bg-white/50 backdrop-blur-xl rounded-2xl">
             <h2 className="text-4xl font-bold text-blue-800 mb-4">What Makes Us Different</h2>
-            <p className="text-xl text- max-w-3xl mx-auto text-blue-800">
+            <p className="text-xl text- max-w-3xl mx-auto text-green-800 font-bold">
               We&apos;re not just another network. We&apos;re a catalyst for climate action, bringing together the brightest minds
               to solve humanity&apos;s greatest challenge.
             </p>

@@ -65,7 +65,7 @@ export default function ContactPage() {
           <div className="space-y-8">
             <Card>
               <CardHeader>
-                <CardTitle className="text-2xl text-green-700">Get In Touch</CardTitle>
+                <CardTitle className="text-2xl text-blue-700">Get In Touch</CardTitle>
                 <CardDescription className="text-blue-800 font-bold">
                   Share your business requirements and let&apos;s start your NET ZERO journey.
                 </CardDescription>
@@ -74,7 +74,7 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="name">Full Name *</Label>
+                      <Label htmlFor="name" className="text-green-500">Full Name *</Label>
                       <Input
                         id="name"
                         value={formData.name}
@@ -85,7 +85,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="email">Email Address *</Label>
+                      <Label htmlFor="email" className="text-green-500">Email Address *</Label>
                       <Input
                         id="email"
                         type="email"
@@ -100,7 +100,7 @@ export default function ContactPage() {
 
                   <div className="grid md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="phone">Phone Number</Label>
+                      <Label htmlFor="phone" className="text-green-500">Phone Number</Label>
                       <Input
                         id="phone"
                         value={formData.phone}
@@ -110,7 +110,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="company">Company Name</Label>
+                      <Label htmlFor="company" className="text-green-500">Company Name</Label>
                       <Input
                         id="company"
                         value={formData.company}
@@ -122,7 +122,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="space-y-2 max-w-full">
-                    <Label>FOR QUESTIONS OR QUOTES - Select a solution</Label>
+                    <Label className="text-green-500">FOR QUESTIONS OR QUOTES - Select a solution</Label>
                     <Select
                       value={formData.solution}
                       onValueChange={(value) => setFormData({ ...formData, solution: value })}
@@ -147,7 +147,7 @@ export default function ContactPage() {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message">Business Requirements *</Label>
+                    <Label htmlFor="message" className="text-green-500">Business Requirements *</Label>
                     <Textarea
                       id="message"
                       value={formData.message}
@@ -192,11 +192,11 @@ export default function ContactPage() {
                 <CardDescription className="text-blue-800">Your Climate Solution Partner</CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
-                <div className="flex items-start space-x-3 ">
+                <div className="flex items-start space-x-3 text-left">
                   <MapPin className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
-                  <div>
-                    <h4 className="font-semibold text-blue-800">Office Address</h4>
-                    <p className="text-blue-800 leading-relaxed">
+                  <div >
+                    <h4 className="font-semibold text-green-500">Office Address</h4>
+                    <p className="text-blue-800 leading-relaxed text-left">
                       Kokarya Business Synergy Centre,
                       <br />
                       Nagananda Commercial Complex, No.07/3,
@@ -210,20 +210,20 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-3">
+                <div className="flex items-start space-x-3 text-left">
                   <Phone className="h-5 w-5 text-blue-600" />
                   <div>
-                    <h4 className="font-semibold text-blue-800">Phone</h4>
+                    <h4 className="font-semibold text-green-500">Phone</h4>
                     <p className="text-blue-800">+91 82406 15694</p>
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-3">
+                <div className="flex items-start space-x-3 text-left">
                   <Mail className="h-5 w-5 text-blue-600" />
                   <div>
-                    <h4 className="font-semibold text-blue-800">Email</h4>
-                    <p className="text-blue-800">For Solutions & Services - support@netzerothink.com</p>
-                    <p className="text-blue-800">For Training & Capacity Building - academia@netzerothink.com</p>
+                    <h4 className="font-semibold text-green-500">Email</h4>
+                    <p className="text-blue-800">For Solutions & Services <b> - support@netzerothink.com</b></p>
+                    <p className="text-blue-800">For Training & Capacity Building <b> - academia@netzerothink.com</b></p>
                   </div>
                 </div>
               </CardContent>

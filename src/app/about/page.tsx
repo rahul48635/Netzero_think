@@ -52,10 +52,11 @@ export default function AboutPage() {
         </h1>
         <p className="font-sans  sm:text-lg md:text-xl  max-w-3xl mx-auto leading-relaxed text-white font-bold">
           Net Zero Think is a climate solutions company enabling businesses, governments, and institutions to achieve their net-zero and sustainability goals. Since 2022, we’ve delivered cutting-edge solutions in the areas of research, GHG accounting and auditing, ESG strategy, decarbonization, and carbon markets. Through our global Climate Innovation Community, certified training programs, and sector-specific research, we drive impactful climate action and build long-term capabilities. With a presence across India and other nations, we turn climate ambition into measurable progress.
-          
-          Net Zero Think is committed to addressing gender inequalities and promoting broader equality, diversity, and inclusion. We have more than 50% women in the workforce who are driving net-zero and sustainability solutions. 
-
         </p>
+        <p className="font-sans  sm:text-lg md:text-xl  max-w-3xl mx-auto leading-relaxed text-white font-bold">
+          Net Zero Think is committed to addressing gender inequalities and promoting broader equality, diversity, and inclusion. We have more than 50% women in the workforce who are driving net-zero and sustainability solutions. 
+        </p>
+
           <GlobalShowcase/>
       </section>
 
@@ -122,7 +123,7 @@ export default function AboutPage() {
               <Target className="h-8 w-8 text-purple-500" />
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-purple-500">Mission</h2>
             </div>
-            <p className="text-base sm:text-lg text-blue-800 leading-relaxed mb-6 font-bold">To transform the various industries and help our clients & partners to become net zero and achieve long term profitability in a climate friendly manner.</p>
+            <p className="text-base sm:text-lg text-blue-800 leading-relaxed mb-6 font-bold">To transform the various industries and help our clients & partners achieve net zero and sustainability goals.</p>
           </div>
         </div>
       </section>
