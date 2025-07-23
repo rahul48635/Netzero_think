@@ -58,7 +58,7 @@ export default function ServicesPage() {
     console.log("Form submitted:", formData)
     window.open(`mailto:support@netzerothink.com,mksingh@netzerothink.com?subject=New Service Request from ${formData.name}&body=Name: ${formData.name}%0APhone: ${formData.phone}%0AOrg: ${formData.org}%0AEmail: ${formData.email}%0AService: ${formData.service}`)
   }
-
+  
   const services = [
     {
       icon: <GiArcheryTarget className="h-8 w-8" />,
@@ -67,6 +67,15 @@ export default function ServicesPage() {
         "Developing systematic methodologies for accurate GHG emissions (scope 1, 2 & 3) measurement and compliance reporting.",
         "Assisting organizations in aligning with ISO 14064-3, GHG Protocol, and Science-Based Targets Initiative (SBTi) standards.",
         "Conducting third-party verification of carbon footprint assessments for corporate sustainability disclosures."
+      ],
+    },
+    {
+      icon: <FaRecycle className="h-8 w-8" />,
+      title: "Life Cycle Assesment (LCA)",
+      features: [
+        "Life Cycle Assessment & Product Carbon Footprinting: End-to-end analysis of environmental impacts and GHG emissions across a product’s life cycle.",
+        "Environmental Product Declarations (EPDs) & Comparative LCA: Verified documentation and impact comparison to support sustainable product and process choices.",
+        "Training & Capacity Building: Customized programs to build internal expertise in LCA tools, methodologies, and applications."
       ],
     },
     {
@@ -125,15 +134,6 @@ export default function ServicesPage() {
         "Build-Operate-Transfer (BOT) model for sustainability departments",
         "Specialized experts for renewable energy and energy efficiency projects",
         "Capacity building and staff augmentation for climate-tech startups and CSR initiatives"
-      ],
-    },
-    {
-      icon: <FaRecycle className="h-8 w-8" />,
-      title: "Life Cycle Assesment (LCA)",
-      features: [
-        "Life Cycle Assessment & Product Carbon Footprinting: End-to-end analysis of environmental impacts and GHG emissions across a product’s life cycle.",
-        "Environmental Product Declarations (EPDs) & Comparative LCA: Verified documentation and impact comparison to support sustainable product and process choices.",
-        "Training & Capacity Building: Customized programs to build internal expertise in LCA tools, methodologies, and applications."
       ],
     },
   ]
