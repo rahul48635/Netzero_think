@@ -142,7 +142,7 @@ export default function ServicesPage() {
     {
       icon: <Award className="h-6 w-6" />,
       title: "Energy Sector",
-      description: "Power ,Oil & Gas,Renewable Energy,Storage",
+      description: "Power,Oil & Gas,Renewable Energy,Storage",
 
     },
     {

@@ -30,7 +30,7 @@ export default function DecarbonisationPillars() {
           Decarbonization Strategies
       </h1>
       <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-purple-500">
-        Net Zero Think&apos;s solutions are based on 3 Key Pillars of Decarbonisation
+        Net Zero Think&apos;s solutions are based on 3 Key Pillars of Decarbonization
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">

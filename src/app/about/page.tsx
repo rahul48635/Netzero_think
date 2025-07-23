@@ -31,7 +31,7 @@ export default function AboutPage() {
   ]
 
   const advisors = [
-    { name: "Dr. Dimitrious Dimitrio ", role: "Advisor", image: "/advisors/03.jpeg",link:"https://www.linkedin.com/in/drdimitriosdimitriou/" ,bio: "With a PhD and B.Tech, Dimitrious brings over 20 years of deep domain expertise in sustainability, particularly within the steel and cement industries. At NetZero Think Scape, he leads with strategic insight and sectoral knowledge to shape high-impact decarbonization pathways for hard-to-abate sectors." },
+    { name: "Dr. Dimitrios Dimitriou ", role: "Advisor", image: "/advisors/03.jpeg",link:"https://www.linkedin.com/in/drdimitriosdimitriou/" ,bio: "With a PhD and B.Tech, Dimitrious brings over 20 years of deep domain expertise in sustainability, particularly within the steel and cement industries. At NetZero Think Scape, he leads with strategic insight and sectoral knowledge to shape high-impact decarbonization pathways for hard-to-abate sectors." },
     { name: "Dr. Kumar Iyer ", role: "Advisor", image: "/advisors/04.jpeg",link:"https://www.linkedin.com/in/kumar-value-creation-exponent/", bio: "With a PhD and B.Tech, Dr. Iyer brings over 30 years of expertise in Quality Control and Life Cycle Assessment across the steel and manufacturing industries. At NetZero Think Scape, he anchors our work with deep technical rigor, ensuring data-driven and standards-aligned sustainability outcomes." },
   ]
 
@@ -44,7 +44,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen min-w-screen">
       {/* Hero */}
-      <section className=" px-10 text-center flex flex-col items-center justify-center w-full  self-center justify-self-center bg-[url('/bg-cover/earth.jpg')] bg-center bg-fixed bg-cover bg-no-repeat mask-b-from-99% mb-20 relative">
+      <section className=" px-15  text-center flex flex-col items-center justify-center w-full  self-center justify-self-center bg-[url('/bg-cover/earth.jpg')] bg-center bg-fixed bg-cover bg-no-repeat mask-b-from-99% mb-20 relative">
       <div className="absolute inset-0 bg-black/40 -z-10"></div>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl w-full mt-50  md:mt-75 max-w-6xl mx-auto">
@@ -59,10 +59,10 @@ export default function AboutPage() {
           <GlobalShowcase/>
       </section>
 
-      <section className="py-20  mt-20 md:py-0 md:mt-15 px-4 sm:px-6 lg:px-8 text-center sm:w-full flex flex-col items-center justify-center w-[95%] m-15 self-center justify-self-center" >
+      <section className=" px-10  mt-20 text-center sm:w-full flex flex-col items-center justify-center  m-15 self-center justify-self-center" >
         {/* photo showcase  */}
         {/* demonstration pillar */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl text-center w-full max-w-6xl mx-auto">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl text-center md:w-full max-w-6xl mx-auto">
                  Value Proposition Aimed (2030)
           </h1>
         <div className="flex flex-col md:flex-row justify-between items-baseline mx-5 bg-blue-900 rounded-2xl">
@@ -100,7 +100,7 @@ export default function AboutPage() {
         </div>
         {/* Vision */}
       </section>
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-200 dark:bg-gray-800 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center rounded-2xl sm:rounded-none">
+      <section className=" px-4 sm:px-6 lg:px-8 bg-gray-200 dark:bg-gray-800 sm:w-full flex flex-col items-center justify-center  m-15 self-center justify-self-center rounded-2xl sm:rounded-none">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <div className="flex items-center gap-3 mb-6">
@@ -114,7 +114,7 @@ export default function AboutPage() {
       </section>
 
       {/* Mission */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center">
+      <section className=" px-4 sm:px-6 lg:px-8 sm:w-full flex flex-col items-center justify-center m-15 self-center justify-self-center">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <Image src="/vision/people.jpg" alt="Mission" width={600} height={400} className="rounded-lg shadow-lg w-full max-w-md mx-auto order-2 lg:order-1" />
           <div className="order-1 lg:order-2">
@@ -128,7 +128,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-200 dark:bg-gray-800 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center rounded-2xl sm:rounded-none">
+      <section className=" px-4 sm:px-6 lg:px-8 bg-gray-200 dark:bg-gray-800 sm:w-full flex flex-col items-center justify-center  m-15 self-center justify-self-center rounded-2xl sm:rounded-none">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-purple-500 mb-4">Core Values</h2>
@@ -149,12 +149,12 @@ export default function AboutPage() {
       </section>
 
       {/* Team */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center">
+      <section className=" px-4 sm:px-6 lg:px-8 bg-muted/50 sm:w-full flex flex-col items-center justify-center  m-15 self-center justify-self-center">
         <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-purple-500 mb-4">Team</h2>
           <p className="text-lg  max-w-2xl mx-auto font-bold text-blue-800">Meet the passionate individuals driving our mission forward</p>
         </div>
-        <div className="flex w-full flex-wrap gap-15 items-center justify-center">
+        <div className="grid md:flex md:items-center md:justify-evenly w-full  gap-6">
           {teamMembers.map((member, i) => (
             <Card key={i} className={`relative text-center overflow-hidden hover:shadow-2xl transition-shadow sm:w-1/5 h-110 bg-blue-100`}>
               <Image src={member.image} alt={member.name} width={300} height={300} className="w-full h-64  object-contain p-5" />
@@ -171,7 +171,7 @@ export default function AboutPage() {
       </section>
 
       {/* Advisors */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/50 sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center">
+      <section className=" px-4 sm:px-6 lg:px-8 bg-muted/50 sm:w-full flex flex-col items-center justify-center  m-15 self-center justify-self-center">
         <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-purple-500 mb-4">Advisors</h2>
           <p className="text-lg  max-w-2xl mx-auto font-bold text-blue-800">Industry experts guiding our strategic direction</p>
@@ -193,7 +193,7 @@ export default function AboutPage() {
       </section>
 
       {/* Awards */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8  sm:w-full flex flex-col items-center justify-center w-[70%] m-15 self-center justify-self-center ">
+      <section className="px-4 sm:px-6 lg:px-8  sm:w-full flex flex-col items-center justify-center  m-15 self-center justify-self-center ">
         <div className="max-w-7xl mx-auto text-center mb-12">
           <div className="flex justify-center gap-3 mb-4 items-center">
             <Award className="h-8 w-8 text-yellow-500" />
