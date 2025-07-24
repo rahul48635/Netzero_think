@@ -45,7 +45,7 @@ export default function Home() {
       description:"We help organizations develop robust systems to measure, report, and verify greenhouse gas (GHG) emissions in line with global standards. This ensures accuracy, transparency, and compliance in sustainability disclosures and target-setting.",
       url:"/cards/Mrv.png"
     },
-    { title:"Life Cycle Assesment (LCA)",
+    { title:"Life Cycle Assessment (LCA)",
       description:"We provide flexible and specialized green staffing solutions to help organizations meet their sustainability and ESG goals. From deploying experts and recruiting on-demand talent to building in-house teams via BOT models, we support startups, corporates, and CSR projects in scaling their climate and energy transition efforts.",
       url:"/cards/lca4.png"
     },

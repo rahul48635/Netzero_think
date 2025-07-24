@@ -123,7 +123,7 @@ export default function AboutPage() {
               <Target className="h-8 w-8 text-purple-500" />
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-purple-500">Mission</h2>
             </div>
-            <p className="text-base sm:text-lg text-blue-800 leading-relaxed mb-6 font-bold">To transform the various industries and help our clients & partners achieve net zero and sustainability goals.</p>
+            <p className="text-base sm:text-lg text-blue-800 leading-relaxed mb-6 font-bold">To transform the various industries and help our clients & partners, achieve net zero and sustainability goals.</p>
           </div>
         </div>
       </section>
