@@ -91,7 +91,7 @@ export default function Home() {
           filter={false}
         />
         <p className=" mt-10 text-base sm:text-3xl text-white rounded-2xl p-3 font-bold max-w-6xl ">
-          Net Zero Think Pvt Ltd is a global climate solutions company driving the transition to a low-carbon, sustainable future. Headquartered in Bangalore, we partner with industries, governments, and institutions to accelerate their journey to net-zero through expert-led emissions accounting, sustainability strategy, and climate action planning. Backed by a global network of experts, we also offer green staffing and cutting-edge training programs to build the capabilities needed for lasting climate impact.
+          Net Zero Think Pvt Ltd is a global climate solutions company driving the transition to a low-carbon, sustainable future. Headquartered in Bengaluru, we partner with industries, governments, and institutions to accelerate their journey to net-zero through expert-led emissions accounting, sustainability strategy, and climate action planning. Backed by a global network of experts, we also offer green staffing and cutting-edge training programs to build the capabilities needed for lasting climate impact.
         </p>
   
         <motion.div

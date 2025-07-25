@@ -16,7 +16,7 @@ const images = [
   },
   {
     src: "/showcase/05.jpg",
-    caption: "Participation at India Mobility Show (Bangaluru)",
+    caption: "Participation at India Mobility Show (Bengaluru)",
   },
   {
     src: "/showcase/06.jpg",
@@ -28,11 +28,11 @@ const images = [
   },
   {
     src: "/showcase/08.jpg",
-    caption: "Recognised as a most promising sustainbility startup (Bangaluru)",
+    caption: "Recognised as a most promising sustainbility startup (Bengaluru)",
   },
   {
     src: "/showcase/09.jpg",
-    caption: "Delivering Speech on Net Zero pathways (Bangaluru)",
+    caption: "Delivering Speech on Net Zero pathways (Bengaluru)",
   },
   {
     src: "/showcase/10.jpg",
