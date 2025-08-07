@@ -60,7 +60,7 @@ export default function AboutPage() {
           <GlobalShowcase/>
       </section>
 
-      <section className=" px-10  mt-20 text-center sm:w-full flex flex-col items-center justify-center  m-15 self-center justify-self-center" >
+      <section className=" px-10  mt-20 text-center sm:w-full flex flex-col items-center justify-center  self-center justify-self-center w-full" >
         {/* photo showcase  */}
         {/* demonstration pillar */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl text-center md:w-full max-w-6xl mx-auto">
