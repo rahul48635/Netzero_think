@@ -60,15 +60,15 @@ export default function AboutPage() {
           <GlobalShowcase/>
       </section>
 
-      <section className=" px-10  mt-20 text-center sm:w-full flex flex-col items-center justify-center  self-center justify-self-center w-full" >
+      <section className=" px-15  mt-20 text-center sm:w-full flex flex-col items-center justify-center  self-center justify-self-center w-full" >
         {/* photo showcase  */}
         {/* demonstration pillar */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl text-center md:w-full max-w-6xl mx-auto">
                  Value Proposition Aimed (2030)
           </h1>
-        <div className="flex flex-col md:flex-row justify-between items-baseline mx-5 bg-blue-900 rounded-2xl">
+        <div className="flex flex-col md:flex-row justify-between items-baseline  bg-blue-900 rounded-2xl">
           <motion.div
-              initial={{ x: isMobile?-10:-300 }}
+              initial={{ x: isMobile?-150:-300 }}
               whileInView={{ x: 1 }}
               transition={{ duration: 0.7 }}
               className="text-transparent font-bold text-2xl sm:text-3xl md:text-4xl z-20 flex flex-col gap-10 lg:basis-1/2 text-center lg:text-left m-5 rounded-2xl justify-center"
@@ -84,7 +84,7 @@ export default function AboutPage() {
                     </h1>
           </motion.div>
           <motion.div
-          initial={{ x: isMobile?10:300 }}
+          initial={{ x: isMobile?100:300 }}
               whileInView={{ x: 1 }}
               transition={{ duration: 0.7 }}
               className="text-transparent font-bold text-2xl sm:text-3xl md:text-4xl z-20 flex flex-col gap-10 lg:basis-1/2 text-center lg:text-left m-5 "
