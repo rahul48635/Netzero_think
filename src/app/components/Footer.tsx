@@ -41,16 +41,16 @@ export default function Footer({ items }: { items: items }) {
           />
         </div>
 
-        <div className="flex flex-wrap justify-center md:justify-evenly gap-10 w-full">
+        <div className="flex flex-wrap justify-center md:justify-evenly gap-10">
           {items.map((item, idx) => (
             <div
               key={idx + item.head}
-              className="flex flex-col items-center md:items-start"
+              className="flex flex-col items-center md:items-start w-full sm:w-fit"
             >
               <div className="text-blue-800 mb-2 font-semibold text-lg text-left self-start md:text-left">
                 {item.head}
               </div>
-              <div className="flex flex-col gap-1 text-blue-800 text-sm font-bold">
+              <div className="flex flex-col gap-1 text-blue-800 text-sm font-bold ">
                 {Object.entries(item.Links).map(([linkText, linkHref], idx) => (
                   <motion.div
                     key={idx + linkText}
