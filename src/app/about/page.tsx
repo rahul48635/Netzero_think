@@ -26,14 +26,12 @@ export default function AboutPage() {
   const teamMembers = [
     { name: "Dr. M.K. Singh", role: "CEO & Founder", image: "/core_team/03.jpg", link:"https://www.linkedin.com/in/dr-manoj-kumar-singh-b7480a19/", bio: "Dr. M.K. is a founder of Net Zero Think Private Limited. He is a visionary leader with a passion for sustainability and innovation. He has extensive experience in the field of renewable energy, energy-efficient solutions and sustainable engineering. " },
     { name:"Ms. Pratyaksha Singh", role:"Director", image:"/core_team/04.jpg", link:"https://www.linkedin.com/in/pratyaksha-singh-96aa56375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", bio:"With a Master’s in Science. Her strong analytical background supports our mission to scale decarbonization with structure, clarity, and impact."},
+    { name: "Dr. Kumar Iyer ", role: "Advisor", image: "/advisors/04.jpeg",link:"https://www.linkedin.com/in/kumar-value-creation-exponent/", bio: "With a PhD and B.Tech, Dr. Iyer brings over 30 years of expertise in Quality Control and Life Cycle Assessment across the steel and manufacturing industries. At NetZero Think Scape, he anchors our work with deep technical rigor, ensuring data-driven and standards-aligned sustainability outcomes." },
+    { name: "Dr. Kurian Joseph", role: "Advisor", link:"https://www.linkedin.com/in/kurian-joseph-ba160331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", image: "/core_team/05.jpg", bio: "Environmental consultant and educator with a Ph.D., specializing in GHG accounting, air quality, carbon markets, and low-carbon building transitions—11 years in academia and 2+ years in climate action, now leading capacity-building initiatives as Master Trainer and scientific writer." },
+    { name:"Mr. Arne Lorenzen", role:"Advisor", image:"/core_team/06.jpeg",link:"https://www.linkedin.com/in/arne-lorenzen-mba/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", bio:"With a B.Tech in Civil Engineering and M.Tech in Environmental Engineering, Sapna brings over a decade of expertise spanning both industry and academia. At NetZero Think Scape, she bridges technical depth with practical insights to drive sustainable infrastructure and climate-forward solutions."},
   ]
 
-  const advisors = [
-    { name: "Dr. Dimitrios Dimitriou ", role: "Advisor", image: "/advisors/03.jpeg",link:"https://www.linkedin.com/in/drdimitriosdimitriou/" ,bio: "With a PhD and B.Tech, Dimitrious brings over 20 years of deep domain expertise in sustainability, particularly within the steel and cement industries. At NetZero Think Scape, he leads with strategic insight and sectoral knowledge to shape high-impact decarbonization pathways for hard-to-abate sectors." },
-    { name: "Dr. Kumar Iyer ", role: "Advisor", image: "/advisors/04.jpeg",link:"https://www.linkedin.com/in/kumar-value-creation-exponent/", bio: "With a PhD and B.Tech, Dr. Iyer brings over 30 years of expertise in Quality Control and Life Cycle Assessment across the steel and manufacturing industries. At NetZero Think Scape, he anchors our work with deep technical rigor, ensuring data-driven and standards-aligned sustainability outcomes." },
-    { name: "Dr. Kurian Joseph", role: "Lead Consultant", link:"https://www.linkedin.com/in/kurian-joseph-ba160331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", image: "/core_team/05.jpg", bio: "Environmental consultant and educator with a Ph.D., specializing in GHG accounting, air quality, carbon markets, and low-carbon building transitions—11 years in academia and 2+ years in climate action, now leading capacity-building initiatives as Master Trainer and scientific writer." },
-    { name:"Mr. Arne Lorenzen", role:"Consultant", image:"/core_team/06.jpeg",link:"https://www.linkedin.com/in/arne-lorenzen-mba/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", bio:"With a B.Tech in Civil Engineering and M.Tech in Environmental Engineering, Sapna brings over a decade of expertise spanning both industry and academia. At NetZero Think Scape, she bridges technical depth with practical insights to drive sustainable infrastructure and climate-forward solutions."},
-  ]
+
 
   const awards = [
     { title: "Startup India Recognisition", organization: "Government of India/Ministry of Commerce and Industry", image: "/solutions/img4.png" },
@@ -172,7 +170,7 @@ export default function AboutPage() {
       </section>
 
       {/* Advisors */}
-      <section className=" px-4 sm:px-6 lg:px-8 bg-muted/50 sm:w-full flex flex-col items-center justify-center  m-15 self-center justify-self-center">
+      {/* <section className=" px-4 sm:px-6 lg:px-8 bg-muted/50 sm:w-full flex flex-col items-center justify-center  m-15 self-center justify-self-center">
         <div className="max-w-7xl mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-purple-500 mb-4">Advisors</h2>
           <p className="text-lg  max-w-2xl mx-auto font-bold text-blue-800">Industry experts guiding our strategic direction</p>
@@ -191,7 +189,7 @@ export default function AboutPage() {
             </Card>
           ))}
         </div>
-      </section>
+      </section> */}
 
       {/* Awards */}
       <section className="px-4 sm:px-6 lg:px-8  sm:w-full flex flex-col items-center justify-center  m-15 self-center justify-self-center ">
