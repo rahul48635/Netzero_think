@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import useMediaQuery from "./hooks/useMediaQuery";
 import Cards from "./components/Cards";
 import DecarbonisationPillars from "./components/Pillars_sec";
+import AnnouncementSection from "./components/Announcement";
 
 export default function Home() {
   const isMobile=useMediaQuery("(max-width: 768px)")
@@ -105,7 +106,6 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {/* Earth + Stats Section */}
 
    
 
@@ -128,6 +128,13 @@ export default function Home() {
           </h1>
           <InfiniteMovingCards items={testimonials} direction="left" speed={isMobile?"slow":"normal"} />
         </div>
+
+        <div className="w-full mt-20 text-center ">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl max-w-6xl mx-auto">
+            Announcements
+          </h1>
+          <AnnouncementSection/>
+        </div>        
 
         {/* Trusted By */}
         <div className="mt-20 text-center w-full">
