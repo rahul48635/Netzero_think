@@ -14,7 +14,7 @@ export const AnnouncementSection = () => {
       image: "/core_team/06.jpeg",
       announcement: "Welcome Mr. Arne Lorenzen",
       description: "We are pleased to announce that Mr. Arne Lorenzen, an internationally respected leader in the clean energy sector, has joined the Advisory Board of Net Zero Think.",
-      details: "With his vast experience and strategic vision, Mr. Lorenzen will help grow & strengthen our company delivering decarbonisation solutions, and supporting industries worldwide in their net zero journey.",
+      details: "With his vast experience and strategic vision, Mr. Lorenzen will strengthen delivering decarbonisation solutions, and supporting industries worldwide in their net zero journey.",
       welcomeMessage: "Join us in warmly welcoming Mr. Arne Lorenzen to the Net Zero Think family."
     },
     {
@@ -22,9 +22,9 @@ export const AnnouncementSection = () => {
       name: "Marketing & Social Media Intern",
       image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='grad2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23059669;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='200' height='200' fill='url(%23grad2)'/%3E%3Ccircle cx='100' cy='75' r='25' fill='%23374151'/%3E%3Cpath d='M100 110 C85 110, 70 125, 70 140 L70 160 L130 160 L130 140 C130 125, 115 110, 100 110 Z' fill='%23374151'/%3E%3C/svg%3E",
       announcement: "Hiring for Marketing & Social Media Intern",
-      description: "We are looking for a creative and motivated Marketing & Social Media Intern to join our team. As an intern, you will help us build our online presence, engage with our audience, and support marketing initiatives. This is a great opportunity to gain hands-on experience in digital marketing, content creation, and brand strategy.",
+      description: "We are looking for a creative and motivated Marketing & Social Media Intern to join our team. As an intern, you will build our online presence, engage with audience, and support marketing initiatives. This is a great opportunity to gain hands-on experience in digital marketing, content creation, and brand strategy.",
       details: " ",
-      welcomeMessage: "Please Apply through Career Section"
+      welcomeMessage: "Apply through Career Section"
     },
   
   ];
@@ -36,7 +36,7 @@ export const AnnouncementSection = () => {
       setCurrentIndex((prevIndex) => 
         prevIndex === teamMembers.length - 1 ? 0 : prevIndex + 1
       );
-    }, 5000); // Change slide every 5 seconds
+    }, 50000); // Change slide every 5 seconds
 
     return () => clearInterval(interval);
   }, [teamMembers.length]);
@@ -104,7 +104,7 @@ export const AnnouncementSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-blue-900 mb-4">
             Announcements
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -154,17 +154,17 @@ export const AnnouncementSection = () => {
               className="flex flex-col lg:flex-row min-h-[400px]"
             >
               {/* Left Content Section */}
-              <div className="bg-yellow-400 p-8 lg:w-2/3 flex flex-col justify-center">
+              <div className="bg-green-500 p-8 lg:w-2/3 flex flex-col justify-center">
                 <motion.h1 
                   variants={textVariants}
                   initial="hidden"
                   animate="visible"
-                  className="text-2xl lg:text-3xl font-bold text-gray-800 mb-4"
+                  className="text-2xl lg:text-3xl font-bold text-white mb-4"
                 >
                   {currentMember.announcement}
                 </motion.h1>
                 
-                <div className="text-gray-800 space-y-4">
+                <div className="text-blue-950 space-y-4">
                   <motion.p 
                     variants={textVariants}
                     initial="hidden"
@@ -198,7 +198,7 @@ export const AnnouncementSection = () => {
               </div>
               
               {/* Right Profile Section */}
-              <div className="bg-slate-800 p-8 lg:w-1/3 flex flex-col items-center justify-center text-center">
+              <div className="bg-blue-900 p-8 lg:w-1/3 flex flex-col items-center justify-center text-center">
                 {/* Profile Image Container */}
                 <motion.div 
                   variants={imageVariants}
