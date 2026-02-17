@@ -208,18 +208,18 @@ export default function Climate_Innovation_Summmit() {
           Contact Information
         </motion.h1>
         <div className="w-full mx-auto bg-white/10 backdrop-blur-xl rounded-2xl text-white font-bold p-3">
-          <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 leading-relaxed pt-5 text-left ">
+          <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto opacity-90 leading-relaxed pt-5 ">
             For Partnership and Speaking Opportunities:
-            <h6>
-              &bull; Email: climateinnovation@netzerothink.com ;
-              cis2026@iimb.ac.in
-            </h6>
-            <h6>&bull; Phone: +91 82406 15694</h6>
-            <h6>
-              &bull; Website: https://www.netzerothink.com/community ;
-              https://www.iimb.ac.in/iimb_conferences
-            </h6>
           </p>
+          <h6>
+            &bull; Email: climateinnovation@netzerothink.com ;
+            cis2026@iimb.ac.in
+          </h6>
+          <h6>&bull; Phone: +91 82406 15694</h6>
+          <h6>
+            &bull; Website: https://www.netzerothink.com/community ;
+            https://www.iimb.ac.in/iimb_conferences
+          </h6>
         </div>
       </section>
     </div>
