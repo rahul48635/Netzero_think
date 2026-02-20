@@ -50,11 +50,11 @@ export default function Template({ children }: { children: React.ReactNode }) {
       logo: RiUserCommunityFill,
       href: "/community",
     },
-    {
-      title: "CIS 2026",
-      logo: GiSummits,
-      href: "/climate_innovation_summit",
-    },
+    // {
+    //   title: "CIS 2026",
+    //   logo: GiSummits,
+    //   href: "/climate_innovation_summit",
+    // },
   ];
 
   const Footeritems: items = [
