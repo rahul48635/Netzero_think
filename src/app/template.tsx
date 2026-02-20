@@ -1,6 +1,6 @@
 "use client";
 import { IoMdBriefcase, IoMdContact, IoMdHome, IoMdMoon } from "react-icons/io";
-import { GiSummits } from "react-icons/gi";
+// import { GiSummits } from "react-icons/gi";
 import { CiSquareQuestion } from "react-icons/ci";
 import { Navbar } from "./components/navbar";
 import Footer from "./components/Footer";
