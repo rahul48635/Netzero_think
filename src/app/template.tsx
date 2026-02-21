@@ -1,6 +1,6 @@
 "use client";
 import { IoMdBriefcase, IoMdContact, IoMdHome, IoMdMoon } from "react-icons/io";
-// import { GiSummits } from "react-icons/gi";
+import { GiSummits } from "react-icons/gi";
 import { CiSquareQuestion } from "react-icons/ci";
 import { Navbar } from "./components/navbar";
 import Footer from "./components/Footer";
@@ -50,11 +50,11 @@ export default function Template({ children }: { children: React.ReactNode }) {
       logo: RiUserCommunityFill,
       href: "/community",
     },
-    // {
-    //   title: "CIS 2026",
-    //   logo: GiSummits,
-    //   href: "/climate_innovation_summit",
-    // },
+    {
+      title: "CIS 2026",
+      logo: GiSummits,
+      href: "/climate_innovation_summit",
+    },
   ];
 
   const Footeritems: items = [

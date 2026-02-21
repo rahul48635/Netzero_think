@@ -48,6 +48,7 @@ export default function Climate_Innovation_Summmit() {
     Dr_Kurian_Joseph: "/speakers_partners/Dr.Kurian_Joseph.jpeg",
     Dr_Saurabh_Kundu: "/speakers_partners/Dr_Saurabh_Kundu.jpeg",
     Mr_Sanjeev_Paul: "/speakers_partners/Mr_Sanjeev_Paul.jpeg",
+    Mr_Manu_Srivastava: "/speakers_partners/Mr_Manu_Srivastav.jpeg",
   };
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-[url('/bg-cover/CLS_copy.png')] bg-fixed bg-cover bg-no-repeat">
