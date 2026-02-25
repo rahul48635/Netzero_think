@@ -32,6 +32,8 @@ function Section({
 export default function Climate_Innovation_Summmit() {
   const speakers: Record<string, string> = {
     Media_Partner: "/speakers_partners/media_partner.jpeg",
+    Knowledge_Partner: "/speakers_partners/Knowledge_partner.jpeg",
+    SDG_Partner: "/speakers_partners/SDG_Partner.jpeg",
   };
   const banner: Record<string, string> = {
     NetZeroThink: "/speakers_partners/organising_partner.jpeg",
@@ -49,6 +51,7 @@ export default function Climate_Innovation_Summmit() {
     Dr_Saurabh_Kundu: "/speakers_partners/Dr_Saurabh_Kundu.jpeg",
     Mr_Sanjeev_Paul: "/speakers_partners/Mr_Sanjeev_Paul.jpeg",
     Mr_Manu_Srivastava: "/speakers_partners/Mr_Manu_Srivastav.jpeg",
+    Mr_Ratnesh_Jha: "/speakers_partners/Mr_Ratnesh_Jha.jpeg",
   };
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-[url('/bg-cover/CLS_copy.png')] bg-fixed bg-cover bg-no-repeat">
