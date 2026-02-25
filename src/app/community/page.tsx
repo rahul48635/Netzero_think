@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 import {
   Card,
   CardContent,
@@ -25,6 +26,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { useState } from "react";
 
 export default function ClimateInnovationCommunity() {
+  const Router = useRouter();
   const [loaded, setLoaded] = useState(false);
   const isMobile = useMediaQuery("(max-width:768px)");
 
@@ -88,7 +90,7 @@ export default function ClimateInnovationCommunity() {
 
   const Event_card = [
     {
-      title: "Climate Innovation summit 2025",
+      title: "Climate Innovation summit 2026",
       description:
         "A global gathering of climate leaders, innovators, and changemakers.",
     },
@@ -275,7 +277,10 @@ export default function ClimateInnovationCommunity() {
                     <CardDescription className="text-blue-800 leading-relaxed mb-4">
                       {item.description}
                     </CardDescription>
-                    <Button className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold">
+                    <Button
+                      className="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold"
+                      onClick={() => Router.push("/climate_innovation_summit")}
+                    >
                       Learn More
                     </Button>
                   </CardContent>
