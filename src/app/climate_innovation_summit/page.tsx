@@ -33,7 +33,7 @@ export default function Climate_Innovation_Summmit() {
   const speakers: Record<string, string> = {
     Media_Partner: "/speakers_partners/media_partner.jpeg",
     Knowledge_Partner: "/speakers_partners/Knowledge_partner.jpeg",
-    SDG_Partner: "/speakers_partners/SDG_Partner.jpeg",
+    SDG_Partner: "/speakers_partners/SDG_partner.jpeg",
   };
   const banner: Record<string, string> = {
     NetZeroThink: "/speakers_partners/organising_partner.jpeg",
