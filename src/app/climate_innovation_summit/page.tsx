@@ -35,6 +35,7 @@ export default function Climate_Innovation_Summmit() {
     Knowledge_Partner: "/speakers_partners/Knowledge_partner.jpeg",
     SDG_Partner: "/speakers_partners/SDG_partner.jpeg",
     Cause_Partner: "/speakers_partners/Cause_Partner.jpg",
+    Supporting_Partner: "/speakers_partners/Supporting_partner_.jpeg",
   };
   const banner: Record<string, string> = {
     NetZeroThink: "/speakers_partners/organising_partner.jpeg",
