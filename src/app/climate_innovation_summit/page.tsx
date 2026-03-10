@@ -95,11 +95,11 @@ export default function Climate_Innovation_Summmit() {
 
         {/* Summit Agenda */}
         <Section title="Summit Agenda & Focus Areas">
-          <p className="section-text">
+          <p className="section-text text-blue-500 font-extrabold text-xl">
             Building on the successful sessions from our previous year, the 2026
             agenda focuses on high-impact sectors:
           </p>
-
+          <br />
           <ul className="section-list">
             <li>
               &bull; Power Sector Transformation – Renewables, Storage & Grid
@@ -120,10 +120,7 @@ export default function Climate_Innovation_Summmit() {
               &bull; Climate Finance & Carbon Markets for India’s Net-Zero
               Vision
             </li>
-            <li>
-              &bull; Climate Innovation, Startups & Green Jobs for Viksit Bharat
-              2047
-            </li>
+            <li>&bull; Sustainable Transportation for Net Zero World</li>
           </ul>
         </Section>
 
@@ -140,7 +137,7 @@ export default function Climate_Innovation_Summmit() {
 
         {/* Speakers */}
         <Section title="Invited  Speakers & Thought Leaders ">
-          <p className="section-text text-left">
+          <p className="section-text text-left text-xl text-blue-500">
             Join 30+ global speakers and industry pioneers.
           </p>
 
@@ -168,12 +165,12 @@ export default function Climate_Innovation_Summmit() {
 
         {/* Strategic Milestones */}
         <Section title="Strategic Milestones & Recognitions">
-          <p className="section-text text-left">
+          <p className="section-text text-left text-xl text-blue-500">
             The Climate Innovation Summit 2026 provides a high-profile stage for
             organizations to move from commitment to action. This dedicated
             segment celebrates progress and catalyzes future breakthroughs.
           </p>
-
+          <br />
           <ul className="section-list">
             <li>&bull; Knowledge & Research Launches</li>
             <li>&bull; Corporate Announcements & Partnerships</li>
@@ -192,25 +189,25 @@ export default function Climate_Innovation_Summmit() {
 
         {/* Partner with Us */}
         <Section title="Partner with Us">
-          <p className="section-text text-left">
+          <p className="section-text text-left text-xl text-blue-500">
             Position your organization at the forefront of the climate movement.
           </p>
           <br />
 
           <ul className="section-list">
             <li>
-              Opportunities: Title & Co-Title Partner , Knowledge Partner ,
-              Sector Theme Partner (Power, Buildings, Mining, Nature-based,
-              Climate Finance) ,Technology & Innovation Partner ,ESG/Climate
-              Leadership Partner ,University & Research Collaborators ,Media &
-              Outreach Partners.
+              <b className="text-blue-500 text-lg"> Opportunities:</b> Lead
+              Partner , Knowledge Partner , Sector Theme Partner (Power,
+              Buildings, Mining, Nature-based, Climate Finance) ,Technology &
+              Innovation Partner ,ESG/Climate Leadership Partner ,University &
+              Research Collaborators ,Media & Outreach Partners.
             </li>
             <br />
             <li>
-              Who Attends: Ministries ,Regulators , Think Tanks , Global Climate
-              Institutions ,Fortune 500 & Large Indian Corporates , MSMEs ,
-              Climate-Tech Startups , Investors , NGOs , Researchers , Youth
-              Leaders , Media
+              <b className="text-blue-500 text-lg"> Who Attends:</b> Ministries
+              ,Regulators , Think Tanks , Global Climate Institutions ,
+              Corporates , MSMEs , Climate-Tech Startups , Investors , NGOs ,
+              Researchers , Youth Leaders , Media
             </li>
           </ul>
 
@@ -237,18 +234,40 @@ export default function Climate_Innovation_Summmit() {
 
         {/* Registration */}
         <Section title="Registration">
-          <p className="section-text text-left">
-            Early-Bird Registration (Exclusive GST) : Available until 15th April
+          <p className="section-text text-left text-xl text-blue-500">
+            Early-Bird Registration (Exclusive GST) : Available until 30th March
             2026.
           </p>
-
+          <br />
           <ul className="section-list">
-            <li>1 Delegate: ₹25,000/-</li>
-            <li>2 Delegates: ₹40,000/-</li>
-            <li>3+ Delegates: Special group rates available.</li>
+            <li>Industry Delegate: ₹12,500/-</li>
+            <li>NGO , Researchers & Acadmia Delegates: ₹5,000/-</li>
+            <li>2+ Delegates: Special group rates available.</li>
           </ul>
+          <br />
+          <div className="flex flex-col md:flex md:flex-row justify-center items-center">
+            <p className="basis-1/2">
+              <span className="text-lg text-blue-500">
+                For Account Payment Transfer
+              </span>{" "}
+              <br /> Account Name: Net Zero Think Private Limited <br /> Bank
+              Name: RBL Bank Limited <br /> Branch: Peenya Branch, Bengaluru{" "}
+              <br /> Account Number: 409001681438 <br /> IFSC Code: RATN0000352{" "}
+              <br /> SWIFT Code: RATNINBB <br />
+              Account Type: Current Account
+            </p>
+            <br />
+            <Image
+              src={"/payments/QR.png"}
+              width={200}
+              height={200}
+              alt="Qr Image"
+            />
+          </div>
 
-          <p className="section-text mt-6">Fill the registration form.</p>
+          <p className="section-text mt-6 text-lg text-blue-500">
+            Fill the registration form.
+          </p>
 
           <div className="text-center mt-4">
             <a
@@ -260,16 +279,18 @@ export default function Climate_Innovation_Summmit() {
           </div>
 
           <p className="section-text mt-6">
-            Payment transfer details shall be shared over the email.
+            After completing the payment transfer, kindly share the payment
+            confirmation/UTR details with the name, designation, email ID, and
+            WhatsApp number of delegates at: climateinnovation@netzerothink.com
           </p>
         </Section>
 
         {/* Contact */}
         <Section title="Contact Information">
-          <p className="section-text">
+          <p className="section-text text-xl text-blue-500">
             For Partnership and Speaking Opportunities:
           </p>
-
+          <br />
           <ul className="section-list">
             <li>
               &bull; Dr. Aditya Gupta: Aditya.gupta@iimb.ac.in , +919289123456
