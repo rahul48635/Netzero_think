@@ -42,6 +42,8 @@ export default function Climate_Innovation_Summmit() {
     IIM_Bangalore: "/speakers_partners/Event-Logos.png",
   };
   const partner: Record<string, string> = {
+    Dr_VK_Saraswat_Niti_Aayog:
+      "/speakers_partners/Dr_VK_Saraswat(Niti_Aayog).jpeg",
     Mr_Upendra_Tripathy: "/speakers_partners/Mr_Upendra_Tripathy.jpeg",
     Mr_Erik_Solheim: "/speakers_partners/Erik_Solheim.jpeg",
     Mr_Arne_Lorenzen: "/speakers_partners/Mr_Arne_Lorenzen.jpeg",
