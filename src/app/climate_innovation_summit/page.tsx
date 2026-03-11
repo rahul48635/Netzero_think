@@ -42,21 +42,20 @@ export default function Climate_Innovation_Summmit() {
     IIM_Bangalore: "/speakers_partners/Event-Logos.png",
   };
   const partner: Record<string, string> = {
-    Dr_VK_Saraswat_Niti_Aayog:
-      "/speakers_partners/Dr_VK_Saraswat(Niti_Aayog).jpeg",
-    Mr_Upendra_Tripathy: "/speakers_partners/Mr_Upendra_Tripathy.jpeg",
-    Mr_Erik_Solheim: "/speakers_partners/Erik_Solheim.jpeg",
-    Mr_Arne_Lorenzen: "/speakers_partners/Mr_Arne_Lorenzen.jpeg",
-    Mr_Parobodha_Archya: "/speakers_partners/Mr_Parobodha_Archya.jpeg",
-    Dr_Umakant_Panda: "/speakers_partners/Dr_Umakant_Panda.jpeg",
-    Mr_D_Radhakrishna: "/speakers_partners/Mr_D.Radhakhrishnan.jpeg",
-    Dr_Vibha_Dhavan: "/speakers_partners/Dr_Vibha_Dhavan.jpeg",
-    Dr_Kurian_Joseph: "/speakers_partners/Dr.Kurian_Joseph.jpeg",
-    Dr_Saurabh_Kundu: "/speakers_partners/Dr_Saurabh_Kundu.jpeg",
-    Mr_Sanjeev_Paul: "/speakers_partners/Mr_Sanjeev_Paul.jpeg",
-    Mr_Manu_Srivastava: "/speakers_partners/Mr_Manu_Srivastav.jpeg",
-    Mr_Ratnesh_Jha: "/speakers_partners/Mr_Ratnesh_Jha.jpeg",
-    Mr_Karunakar_Mardi_Reddy:
+    "Dr VK Saraswat": "/speakers_partners/Dr_VK_Saraswat(Niti_Aayog).jpeg",
+    "Mr Upendra Tripathy": "/speakers_partners/Mr_Upendra_Tripathy.jpeg",
+    "Mr Erik Solheim": "/speakers_partners/Erik_Solheim.jpeg",
+    "Mr Arne Lorenzen": "/speakers_partners/Mr_Arne_Lorenzen.jpeg",
+    "Mr Parobodha Archya": "/speakers_partners/Mr_Parobodha_Archya.jpeg",
+    "Dr Umakant Panda": "/speakers_partners/Dr_Umakant_Panda.jpeg",
+    "Mr D Radhakrishna": "/speakers_partners/Mr_D.Radhakhrishnan.jpeg",
+    "Dr Vibha Dhavan": "/speakers_partners/Dr_Vibha_Dhavan.jpeg",
+    "Dr Kurian Joseph": "/speakers_partners/Dr.Kurian_Joseph.jpeg",
+    "Dr Saurabh Kundu": "/speakers_partners/Dr_Saurabh_Kundu.jpeg",
+    "Mr Sanjeev Paul": "/speakers_partners/Mr_Sanjeev_Paul.jpeg",
+    "Mr Manu Srivastava": "/speakers_partners/Mr_Manu_Srivastav.jpeg",
+    "Mr Ratnesh Jha": "/speakers_partners/Mr_Ratnesh_Jha.jpeg",
+    "Mr Karunakar Mardi Reddy":
       "/speakers_partners/Mr_Karunakar_Mardi_Reddy.jpeg",
   };
   return (
