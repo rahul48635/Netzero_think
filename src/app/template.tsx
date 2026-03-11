@@ -87,7 +87,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
       <motion.button
         layout
         onClick={() => setDark(!dark)}
-        className="sm:top-10 cursor-pointer fixed top-[calc(50%_+_5rem)] right-6 z-50 px-3 py-3 rounded-4xl  bg-gray-200 dark:bg-gray-800 text-black dark:text-white shadow-lg transition"
+        className="sm:top-10 cursor-pointer fixed top-[calc(50%_+_10rem)] right-6 z-50 px-3 py-3 rounded-4xl  bg-gray-200 dark:bg-gray-800 text-black dark:text-white shadow-lg transition"
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
         <AnimatePresence mode="wait" initial={false}>
@@ -128,7 +128,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
         {isMobile ? (
           <MobileNavbar
             items={items}
-            className="top-[calc(50%_+_5rem)] left-10  fixed"
+            className="top-[calc(50%_+_10rem)] left-10  fixed"
           />
         ) : (
           <Navbar

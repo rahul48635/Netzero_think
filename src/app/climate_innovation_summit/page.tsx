@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 /* Reusable Section */
 function Section({
@@ -58,6 +59,7 @@ export default function Climate_Innovation_Summmit() {
     "Mr Karunakar Mardi Reddy":
       "/speakers_partners/Mr_Karunakar_Mardi_Reddy.jpeg",
   };
+  const isMobile = useMediaQuery("(max-width: 768px)");
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-[url('/bg-cover/CLS_copy.png')] bg-fixed bg-cover bg-no-repeat">
       {/* Overlay */}
@@ -85,6 +87,7 @@ export default function Climate_Innovation_Summmit() {
               </div>
             ))}
           </div>
+          <br />
           <p className="section-text w-full">
             The Climate Innovation Summit 2026 at IIM Bangalore is a premier
             two-day event designed to accelerate India’s journey toward Viksit
@@ -144,23 +147,39 @@ export default function Climate_Innovation_Summmit() {
 
           {/* IMAGE GRID (for adding leaders/speakers) */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-12">
-            {Object.entries(partner).map(([key, val], idx) => (
-              <div
-                key={idx}
-                className="relative group overflow-hidden rounded-2xl border border-white/20"
-              >
-                <Image
-                  src={val}
-                  alt={key}
-                  width={300}
-                  height={300}
-                  className="w-full h-60 object-cover transition duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-bold">
-                  {key}
+            {Object.entries(partner).map(([key, val], idx) =>
+              isMobile ? (
+                <div
+                  key={idx}
+                  className="relative group overflow-hidden rounded-2xl border border-white/20 flex-col flex"
+                >
+                  <Image
+                    src={val}
+                    alt={key}
+                    width={300}
+                    height={300}
+                    className="w-full h-60 object-cover transition duration-500 group-hover:scale-110"
+                  />
+                  <div className="text-xl text-white text-center">{key}</div>
                 </div>
-              </div>
-            ))}
+              ) : (
+                <div
+                  key={idx}
+                  className="relative group overflow-hidden rounded-2xl border border-white/20"
+                >
+                  <Image
+                    src={val}
+                    alt={key}
+                    width={300}
+                    height={300}
+                    className="w-full h-60 object-cover transition duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-bold">
+                    {key}
+                  </div>
+                </div>
+              ),
+            )}
           </div>
         </Section>
 
@@ -213,23 +232,41 @@ export default function Climate_Innovation_Summmit() {
           </ul>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-12">
-            {Object.entries(speakers).map(([key, item], idx) => (
-              <div
-                key={idx}
-                className="relative group overflow-hidden rounded-2xl border border-white/20"
-              >
-                <Image
-                  src={item}
-                  alt={`Speaker ${item}`}
-                  width={300}
-                  height={300}
-                  className="w-full h-60 object-contain transition duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-bold">
-                  {key}
+            {Object.entries(speakers).map(([key, item], idx) =>
+              isMobile ? (
+                <div
+                  key={idx}
+                  className="relative group overflow-hidden rounded-2xl border border-white/20 flex-col flex wrap-anywhere"
+                >
+                  <Image
+                    src={item}
+                    alt={key}
+                    width={200}
+                    height={200}
+                    className="w-full h-60 object-contain"
+                  />
+                  <div className="text-md text-white text-center basis-1/2 ">
+                    {key}
+                  </div>
                 </div>
-              </div>
-            ))}
+              ) : (
+                <div
+                  key={idx}
+                  className="relative group overflow-hidden rounded-2xl border border-white/20"
+                >
+                  <Image
+                    src={item}
+                    alt={`Speaker ${item}`}
+                    width={300}
+                    height={300}
+                    className="w-full h-60 object-contain transition duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-bold">
+                    {key}
+                  </div>
+                </div>
+              ),
+            )}
           </div>
         </Section>
 
