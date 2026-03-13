@@ -32,11 +32,11 @@ function Section({
 
 export default function Climate_Innovation_Summmit() {
   const speakers: Record<string, string> = {
-    Media_Partner: "/speakers_partners/media_partner.jpeg",
-    Knowledge_Partner: "/speakers_partners/Knowledge_partner.jpeg",
-    SDG_Partner: "/speakers_partners/SDG_partner.jpeg",
-    Cause_Partner: "/speakers_partners/Cause_Partner.jpg",
-    Supporting_Partner: "/speakers_partners/Supporting_partner_.jpeg",
+    "Media Partner": "/speakers_partners/media_partner.jpeg",
+    "Knowledge Partner": "/speakers_partners/Knowledge_partner.jpeg",
+    "SDG Partner": "/speakers_partners/SDG_partner.jpeg",
+    "Cause Partner": "/speakers_partners/Cause_Partner.jpg",
+    "Supporting Partner": "/speakers_partners/Supporting_partner_.jpeg",
   };
   const banner: Record<string, string> = {
     NetZeroThink: "/speakers_partners/organising_partner.jpeg",
@@ -44,6 +44,13 @@ export default function Climate_Innovation_Summmit() {
   };
   const partner: Record<string, string> = {
     "Dr VK Saraswat": "/speakers_partners/Dr_VK_Saraswat(Niti_Aayog).jpeg",
+    "Mr Krushna Chandra Panigraphy":
+      "/speakers_partners/Mr_krushna_Chandra_Panigrahy.jpeg",
+    "Mr Naveen Khandelwal": "/speakers_partners/Mr_Naveen_Khandelwal.jpeg",
+    "Mr Bhupender Singh Bodh":
+      "/speakers_partners/Mr_Bhupender_Singh_Bodh.jpeg",
+    "Dr Sunil Duggal": "/speakers_partners/Dr_Sunnil_Duggal.jpeg",
+    "Mr Bharat Saxena": "/speakers_partners/Mr_Bharat_Saxena.jpeg",
     "Mr Upendra Tripathy": "/speakers_partners/Mr_Upendra_Tripathy.jpeg",
     "Mr Erik Solheim": "/speakers_partners/Erik_Solheim.jpeg",
     "Mr Arne Lorenzen": "/speakers_partners/Mr_Arne_Lorenzen.jpeg",
