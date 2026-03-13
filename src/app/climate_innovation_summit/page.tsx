@@ -46,7 +46,7 @@ export default function Climate_Innovation_Summmit() {
     "Dr VK Saraswat": "/speakers_partners/Dr_VK_Saraswat(Niti_Aayog).jpeg",
     "Mr Krushna Chandra Panigraphy":
       "/speakers_partners/Mr_krushna_Chandra_Panigrahy.jpeg",
-    "Mr Naveen Khandelwal": "/speakers_partners/Mr_Naveen_Khandelwal.jpeg",
+    "Mr Naveen Khandelwal": "/speakers_partners/Mr_Naveen_khandelwal.jpeg",
     "Mr Bhupender Singh Bodh":
       "/speakers_partners/Mr_Bhupender_Singh_Bodh.jpeg",
     "Dr Sunil Duggal": "/speakers_partners/Dr_Sunnil_Duggal.jpeg",
