@@ -32,44 +32,174 @@ function Section({
 
 export default function Climate_Innovation_Summmit() {
   const speakers: Record<string, string> = {
+    "Associate Partner": "/speakers_partners/Associate_Partner.jpeg",
     "Media Partner": "/speakers_partners/media_partner.jpeg",
     "Knowledge Partner": "/speakers_partners/Knowledge_partner.jpeg",
     "SDG Partner": "/speakers_partners/SDG_partner.jpeg",
     "Cause Partner": "/speakers_partners/Cause_Partner.jpg",
     "Supporting Partner": "/speakers_partners/Supporting_partner_.jpeg",
-    "Associate Partner": "/speakers_partners/Associate_Partner.jpeg",
   };
   const banner: Record<string, string> = {
     NetZeroThink: "/speakers_partners/organising_partner.jpeg",
     IIM_Bangalore: "/speakers_partners/Event-Logos.png",
   };
-  const partner: Record<string, string> = {
-    "Dr VK Saraswat": "/speakers_partners/Dr_VK_Saraswat(Niti_Aayog).jpeg",
-    "Mr Krushna Chandra Panigraphy":
-      "/speakers_partners/Mr_krushna_Chandra_Panigrahy.jpeg",
-    "Mr Naveen Khandelwal": "/speakers_partners/Mr_Naveen_khandelwal.jpeg",
-    "Mr Bhupender Singh Bodh":
-      "/speakers_partners/Mr_Bhupender_Singh_Bodh.jpeg",
-    "Dr Sunil Duggal": "/speakers_partners/Dr_Sunnil_Duggal.jpeg",
-    "Mr Bharat Saxena": "/speakers_partners/Mr_Bharat_Saxena.jpeg",
-    "Mr Upendra Tripathy": "/speakers_partners/Mr_Upendra_Tripathy.jpeg",
-    "Mr Erik Solheim": "/speakers_partners/Erik_Solheim.jpeg",
-    "Mr Arne Lorenzen": "/speakers_partners/Mr_Arne_Lorenzen.jpeg",
-    "Mr Parobodha Archya": "/speakers_partners/Mr_Parobodha_Archya.jpeg",
-    "Dr Umakant Panda": "/speakers_partners/Dr_Umakant_Panda.jpeg",
-    "Mr D Radhakrishna": "/speakers_partners/Mr_D.Radhakhrishnan.jpeg",
-    "Dr Vibha Dhavan": "/speakers_partners/Dr_Vibha_Dhavan.jpeg",
-    "Dr Kurian Joseph": "/speakers_partners/Dr.Kurian_Joseph.jpeg",
-    "Dr Saurabh Kundu": "/speakers_partners/Dr_Saurabh_Kundu.jpeg",
-    "Mr Sanjeev Paul": "/speakers_partners/Mr_Sanjeev_Paul.jpeg",
-    "Mr Manu Srivastava": "/speakers_partners/Mr_Manu_Srivastav.jpeg",
-    "Mr Ratnesh Jha": "/speakers_partners/Mr_Ratnesh_Jha.jpeg",
-    "Mr Karunakar Mardi Reddy":
-      "/speakers_partners/Mr_Karunakar_Mardi_Reddy.jpeg",
-    "Dr PKC BOSE": "/speakers_partners/Dr_PKC_BOSE.jpeg",
-    "Mr Naveen Ahlawat": "/speakers_partners/Mr_Naveen_Ahlawat.jpeg",
-    "Dr Vikram Vishal": "/speakers_partners/Dr_Vikram_Vishal.jpeg",
-  };
+
+  const Speaker_Details: Map<string, { url: string; org: string }> = new Map([
+    [
+      "Dr VK Saraswat",
+      {
+        url: "/speakers_partners/Dr_VK_Saraswat(Niti_Aayog).jpeg",
+        org: "Niti Aayog",
+      },
+    ],
+    [
+      "Mr Krushna Chandra Panigraphy",
+      {
+        url: "/speakers_partners/Mr_krushna_Chandra_Panigrahy.jpeg",
+        org: "Bureau of Energy Efficiency",
+      },
+    ],
+    [
+      "Mr Naveen Khandelwal",
+      {
+        url: "/speakers_partners/Mr_Naveen_khandelwal.jpeg",
+        org: "Yanara",
+      },
+    ],
+    [
+      "Mr Bhupender Singh Bodh",
+      {
+        url: "/speakers_partners/Mr_Bhupender_Singh_Bodh.jpeg",
+        org: "REMC Ltd.",
+      },
+    ],
+    [
+      "Dr Sunil Duggal",
+      {
+        url: "/speakers_partners/Dr_Sunnil_Duggal.jpeg",
+        org: "Bhumi Ventures",
+      },
+    ],
+    [
+      "Mr Bharat Saxena",
+      {
+        url: "/speakers_partners/Mr_Bharat_Saxena.jpeg",
+        org: "Inox Clean Energy",
+      },
+    ],
+    [
+      "Mr Upendra Tripathy",
+      {
+        url: "/speakers_partners/Mr_Upendra_Tripathy.jpeg",
+        org: "International Solar Alliance",
+      },
+    ],
+    [
+      "Mr Erik Solheim",
+      {
+        url: "/speakers_partners/Erik_Solheim.jpeg",
+        org: "UNEP",
+      },
+    ],
+    [
+      "Mr Arne Lorenzen",
+      {
+        url: "/speakers_partners/Mr_Arne_Lorenzen.jpeg",
+        org: "EDF",
+      },
+    ],
+    [
+      "Mr Parobodha Archya",
+      {
+        url: "/speakers_partners/Mr_Parobodha_Archya.jpeg",
+        org: "JSW Steel",
+      },
+    ],
+    [
+      "Dr Umakant Panda",
+      {
+        url: "/speakers_partners/Dr_Umakant_Panda.jpeg",
+        org: "M.P. Electricity Regulatory Comission",
+      },
+    ],
+    [
+      "Mr D Radhakrishna",
+      {
+        url: "/speakers_partners/Mr_D.Radhakhrishnan.jpeg",
+        org: "Tripura Electricity Regulatory Comission",
+      },
+    ],
+    [
+      "Dr Vibha Dhavan",
+      {
+        url: "/speakers_partners/Dr_Vibha_Dhavan.jpeg",
+        org: "TERI",
+      },
+    ],
+    [
+      "Dr Kurian Joseph",
+      {
+        url: "/speakers_partners/Dr.Kurian_Joseph.jpeg",
+        org: "IIT Madras",
+      },
+    ],
+    [
+      "Dr Saurabh Kundu",
+      {
+        url: "/speakers_partners/Dr_Saurabh_Kundu.jpeg",
+        org: "TATA Steel",
+      },
+    ],
+    [
+      "Mr Sanjeev Paul",
+      {
+        url: "/speakers_partners/Mr_Sanjeev_Paul.jpeg",
+        org: "TATA Steel",
+      },
+    ],
+    [
+      "Mr Manu Srivastava",
+      {
+        url: "/speakers_partners/Mr_Manu_Srivastav.jpeg",
+        org: "Govt. Of Madhaya Pradesh",
+      },
+    ],
+    [
+      "Mr Ratnesh Jha",
+      {
+        url: "/speakers_partners/Mr_Ratnesh_Jha.jpeg",
+        org: "UN Gobal Compact",
+      },
+    ],
+    [
+      "Mr Karunakar Mardi Reddy",
+      {
+        url: "/speakers_partners/Mr_Karunakar_Mardi_Reddy.jpeg",
+        org: "Igniting Mind",
+      },
+    ],
+    [
+      "Dr PKC BOSE",
+      {
+        url: "/speakers_partners/Dr_PKC_BOSE.jpeg",
+        org: "Enrego",
+      },
+    ],
+    [
+      "Mr Naveen Ahlawat",
+      {
+        url: "/speakers_partners/Mr_Naveen_Ahlawat.jpeg",
+        org: "Jindal Steel",
+      },
+    ],
+    [
+      "Dr Vikram Vishal",
+      {
+        url: "/speakers_partners/Dr_Vikram_Vishal.jpeg",
+        org: "IIT Bombay",
+      },
+    ],
+  ]);
   const isMobile = useMediaQuery("(max-width: 768px)");
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-[url('/bg-cover/CLS_copy.png')] bg-fixed bg-cover bg-no-repeat">
@@ -125,15 +255,14 @@ export default function Climate_Innovation_Summmit() {
               &bull; Metal & Mining Transition – Pathways to Low-Carbon Steel,
               Aluminium & Critical Minerals
             </li>
-            <li>&bull; Innovation in Wind, Solar, Hydrogen & Bioenergy</li>
+            <li>
+              &bull; Innovation in Wind, Solar, Hydrogen, CCUS, Battery &
+              Bioenergy
+            </li>
             <li>&bull; Digital Technology, AI & Robotics in Decarbonisation</li>
             <li>
               &bull; Scaling Forestry, Agroforestry & Nature-Based Carbon
               Removal
-            </li>
-            <li>
-              &bull; Climate Finance & Carbon Markets for India’s Net-Zero
-              Vision
             </li>
             <li>&bull; Sustainable Transportation for Net Zero World</li>
           </ul>
@@ -146,7 +275,11 @@ export default function Climate_Innovation_Summmit() {
             Matchmaking designed for strategic public-private partnerships.
             These sessions bring together a premium network of CXOs,
             Professionals, Researchers, and Regulators to shape the discourse
-            for India&apos;s Net-Zero transformation.
+            for India&apos;s Net-Zero transformation. <br /> <br />
+            Highlevel Roundtable 1: Role of Storage for C&I Consumers.
+            <br />
+            Highlevel Roundtable 2: Climate Finance & Carbon Markets for India’s
+            Net-Zero Vision.
           </p>
         </Section>
 
@@ -158,14 +291,14 @@ export default function Climate_Innovation_Summmit() {
 
           {/* IMAGE GRID (for adding leaders/speakers) */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-12">
-            {Object.entries(partner).map(([key, val], idx) =>
+            {[...Speaker_Details].map(([key, val], idx) =>
               isMobile ? (
                 <div
                   key={idx}
                   className="relative group overflow-hidden rounded-2xl border border-white/20 flex-col flex"
                 >
                   <Image
-                    src={val}
+                    src={val.url}
                     alt={key}
                     width={300}
                     height={300}
@@ -174,20 +307,22 @@ export default function Climate_Innovation_Summmit() {
                   <div className="text-xl text-white text-center">{key}</div>
                 </div>
               ) : (
-                <div
-                  key={idx}
-                  className="relative group overflow-hidden rounded-2xl border border-white/20"
-                >
-                  <Image
-                    src={val}
-                    alt={key}
-                    width={300}
-                    height={300}
-                    className="w-full h-60 object-cover transition duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-bold">
-                    {key}
+                <div key={idx}>
+                  <div className="relative group overflow-hidden rounded-2xl border border-white/20">
+                    <Image
+                      src={val.url}
+                      alt={key}
+                      width={300}
+                      height={300}
+                      className="w-full h-60 object-cover transition duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-bold">
+                      {key}
+                    </div>
                   </div>
+                  <span className="text-center w-full block text-white text-xl">
+                    {val.org}
+                  </span>
                 </div>
               ),
             )}
