@@ -37,6 +37,7 @@ export default function Climate_Innovation_Summmit() {
     "SDG Partner": "/speakers_partners/SDG_partner.jpeg",
     "Cause Partner": "/speakers_partners/Cause_Partner.jpg",
     "Supporting Partner": "/speakers_partners/Supporting_partner_.jpeg",
+    "Associate Partner": "/speakers_partners/Associate_Partner.jpeg",
   };
   const banner: Record<string, string> = {
     NetZeroThink: "/speakers_partners/organising_partner.jpeg",
@@ -65,6 +66,9 @@ export default function Climate_Innovation_Summmit() {
     "Mr Ratnesh Jha": "/speakers_partners/Mr_Ratnesh_Jha.jpeg",
     "Mr Karunakar Mardi Reddy":
       "/speakers_partners/Mr_Karunakar_Mardi_Reddy.jpeg",
+    "Dr PKC BOSE": "/speakers_partners/Dr_PKC_BOSE.jpeg",
+    "Mr Naveen Ahlawat": "/speakers_partners/Mr_Naveen_Ahlawat.jpeg",
+    "Dr Vikram Vishal": "/speakers_partners/Dr_Vikram_Vishal.jpeg",
   };
   const isMobile = useMediaQuery("(max-width: 768px)");
   return (
