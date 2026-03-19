@@ -60,10 +60,10 @@ export default function Climate_Innovation_Summmit() {
       },
     ],
     [
-      "Mr Naveen Khandelwal",
+      "Mr Manu Srivastava",
       {
-        url: "/speakers_partners/Mr_Naveen_khandelwal.jpeg",
-        org: "Yanara",
+        url: "/speakers_partners/Mr_Manu_Srivastav.jpeg",
+        org: "Govt. Of Madhaya Pradesh",
       },
     ],
     [
@@ -158,10 +158,10 @@ export default function Climate_Innovation_Summmit() {
       },
     ],
     [
-      "Mr Manu Srivastava",
+      "Mr Naveen Khandelwal",
       {
-        url: "/speakers_partners/Mr_Manu_Srivastav.jpeg",
-        org: "Govt. Of Madhaya Pradesh",
+        url: "/speakers_partners/Mr_Naveen_khandelwal.jpeg",
+        org: "Yanara",
       },
     ],
     [
