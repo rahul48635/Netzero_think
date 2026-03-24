@@ -37,7 +37,8 @@ export default function Climate_Innovation_Summmit() {
     "Knowledge Partner": "/speakers_partners/Knowledge_partner.jpeg",
     "SDG Partner": "/speakers_partners/SDG_partner.jpeg",
     "Cause Partner": "/speakers_partners/Cause_Partner.jpg",
-    "Supporting Partner": "/speakers_partners/Supporting_partner_.jpeg",
+    "Supporting Partner 1": "/speakers_partners/Supporting_partner_.jpeg",
+    "Supporting Partner 2": "/speakers_partners/supporting_partner_2.jpeg",
   };
   const banner: Record<string, string> = {
     NetZeroThink: "/speakers_partners/organising_partner.jpeg",
@@ -109,7 +110,7 @@ export default function Climate_Innovation_Summmit() {
       },
     ],
     [
-      "Mr Parobodha Archya",
+      "Mr. Prabodha Acharya",
       {
         url: "/speakers_partners/Mr_Parobodha_Archya.jpeg",
         org: "JSW Steel",
@@ -197,6 +198,13 @@ export default function Climate_Innovation_Summmit() {
       {
         url: "/speakers_partners/Dr_Vikram_Vishal.jpeg",
         org: "IIT Bombay",
+      },
+    ],
+    [
+      "Mr.Yuvaraj Dinesh Babu Nityanandam",
+      {
+        url: "/speakers_partners/Mr_Yuvaraj_Dinesh_Babu_Nityanandam.jpeg",
+        org: "UNMAI Carbon Solutions",
       },
     ],
   ]);
@@ -304,7 +312,10 @@ export default function Climate_Innovation_Summmit() {
                     height={300}
                     className="w-full h-60 object-cover transition duration-500 group-hover:scale-110"
                   />
-                  <div className="text-xl text-white text-center">{key}</div>
+                  <div className="text-xl text-white text-center">
+                    {key}
+                    <span className="text-center text-wrap">{`(${val.org})`}</span>
+                  </div>
                 </div>
               ) : (
                 <div key={idx}>
