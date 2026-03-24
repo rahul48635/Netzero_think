@@ -313,7 +313,7 @@ export default function Climate_Innovation_Summmit() {
                     className="w-full h-60 object-cover transition duration-500 group-hover:scale-110"
                   />
                   <div className="text-xl text-white text-center">
-                    {key}
+                    {key} <br />
                     <span className="text-center text-wrap">{`(${val.org})`}</span>
                   </div>
                 </div>
