@@ -106,7 +106,7 @@ export default function Climate_Innovation_Summmit() {
       "Mr Arne Lorenzen",
       {
         url: "/speakers_partners/Mr_Arne_Lorenzen.jpeg",
-        org: "EDF",
+        org: "PowerCurve ApS",
       },
     ],
     [
@@ -216,7 +216,7 @@ export default function Climate_Innovation_Summmit() {
 
       <div className="relative max-w-6xl mx-auto px-6 sm:my-50 my-10">
         {/* About the Summit */}
-        <Section title="Climate Innovation Summit 2026">
+        <Section title="Climate Innovation Summit (28ᵗʰ-29ᵗʰ May 2026)">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-6 mt-12">
             {Object.entries(banner).map(([key, item], idx) => (
               <div
@@ -238,11 +238,11 @@ export default function Climate_Innovation_Summmit() {
           </div>
           <br />
           <p className="section-text w-full">
-            The Climate Innovation Summit 2026 at IIM Bangalore is a premier
-            two-day event designed to accelerate India’s journey toward Viksit
-            Bharat 2047 and Net Zero 2070. This summit serves as a critical
-            catalyst for clean technology adoption, industrial decarbonization,
-            and green economic growth.
+            The Climate Innovation Summit 2026 on 28ᵗʰ-29ᵗʰ of May at IIM
+            Bangalore is a premier two-day event designed to accelerate India’s
+            journey toward Viksit Bharat 2047 and Net Zero 2070. This summit
+            serves as a critical catalyst for clean technology adoption,
+            industrial decarbonization, and green economic growth.
           </p>
         </Section>
 
