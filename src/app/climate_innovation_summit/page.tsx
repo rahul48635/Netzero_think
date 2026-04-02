@@ -34,7 +34,7 @@ function Section({
 export default function Climate_Innovation_Summmit() {
   const speakers: Record<string, string> = {
     "Associate Partner 1": "/speakers_partners/Associate_Partner.jpeg",
-    "Associate Partner 2": "/speakers_partners/Associate_Partner_1.jpeg",
+    "Associate Partner 2": "/speakers_partners/Associate_partner_1.jpeg",
     "Media Partner": "/speakers_partners/media_partner.jpeg",
     "Knowledge Partner": "/speakers_partners/Knowledge_partner.jpeg",
     "SDG Partner": "/speakers_partners/SDG_partner.jpeg",
