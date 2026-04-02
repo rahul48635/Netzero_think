@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
+import Link from "next/link";
 
 /* Reusable Section */
 function Section({
@@ -43,8 +44,8 @@ export default function Climate_Innovation_Summmit() {
     "Supporting Partner 3": "/speakers_partners/IACCIA.jpeg",
   };
   const banner: Record<string, string> = {
-    NetZeroThink: "/speakers_partners/organising_partner.jpeg",
-    IIM_Bangalore: "/speakers_partners/Event-Logos.png",
+    Organiser_1: "/speakers_partners/organising_partner.jpeg",
+    Organiser_2: "/speakers_partners/Event-Logos.png",
   };
 
   const Speaker_Details: Map<string, { url: string; org: string }> = new Map([
@@ -244,16 +245,23 @@ export default function Climate_Innovation_Summmit() {
         org: "Varhad Capital",
       },
     ],
+    [
+      "Ms. Suchi Malhotra",
+      {
+        url: "/speakers_partners/Ms_Suchi_Malhotra.jpeg",
+        org: "Environmental Defense Fund (EDF)",
+      },
+    ],
   ]);
   const isMobile = useMediaQuery("(max-width: 768px)");
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-[url('/bg-cover/CLS_copy.png')] bg-fixed bg-cover bg-no-repeat">
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40 "></div>
+      <div className="absolute inset-0 bg-black/70 "></div>
 
       <div className="relative max-w-6xl mx-auto px-6 sm:my-50 my-10">
         {/* About the Summit */}
-        <Section title="Climate Innovation Summit (28ᵗʰ-29ᵗʰ May 2026)">
+        <Section title="Climate Innovation Summit 2026">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-6 mt-12">
             {Object.entries(banner).map(([key, item], idx) => (
               <div
@@ -275,56 +283,30 @@ export default function Climate_Innovation_Summmit() {
           </div>
           <br />
           <p className="section-text w-full">
-            The Climate Innovation Summit 2026 on 28ᵗʰ-29ᵗʰ of May at IIM
-            Bangalore is a premier two-day event designed to accelerate India’s
-            journey toward Viksit Bharat 2047 and Net Zero 2070. This summit
-            serves as a critical catalyst for clean technology adoption,
-            industrial decarbonization, and green economic growth.
+            The Climate Innovation Summit 2026 is a premier two-day event
+            designed to accelerate India’s pathway toward Net Zero for Viksit
+            Bharat. This summit serves as a critical catalyst for clean
+            technology adoption, industrial decarbonization, and green economic
+            growth.
+          </p>
+          <br />
+
+          <p className="text-green-300 ">
+            <li>Dates: 28–29 May 2026</li>
+            <li>
+              Venue: Indian Institute of Management Bangalore (IIM Bangalore)
+            </li>
+            <li>Hosts: Net Zero Think & IIM Bangalore </li>
           </p>
         </Section>
 
         {/* Summit Agenda */}
         <Section title="Summit Agenda & Focus Areas">
-          <p className="section-text text-blue-500 font-extrabold text-xl">
-            Building on the successful sessions from our previous year, the 2026
-            agenda focuses on high-impact sectors:
-          </p>
-          <br />
-          <ul className="section-list">
-            <li>
-              &bull; Power Sector Transformation – Renewables, Storage & Grid
-              Flexibility
-            </li>
-            <li>&bull; Decarbonising India’s Buildings & Infrastructure</li>
-            <li>
-              &bull; Metal & Mining Transition – Pathways to Low-Carbon Steel,
-              Aluminium & Critical Minerals
-            </li>
-            <li>
-              &bull; Innovation in Wind, Solar, Hydrogen, CCUS, Battery &
-              Bioenergy
-            </li>
-            <li>&bull; Digital Technology, AI & Robotics in Decarbonisation</li>
-            <li>
-              &bull; Scaling Forestry, Agroforestry & Nature-Based Carbon
-              Removal
-            </li>
-            <li>&bull; Sustainable Transportation for Net Zero World</li>
-          </ul>
-        </Section>
-
-        {/* {agenda april 1} */}
-
-        <Section title="Climate Innovation Summit 2026">
           <div className="mt-6 space-y-10 whitespace-pre-line ">
             {/* INTRO */}
             <div>
               <p>
-                Climate Innovation Summit 2026 Theme: Accelerating India’s
-                Pathways to Net-Zero for Viksit Bharat Dates: 28–29 May 2026
-                Venue: Indian Institute of Management Bangalore (IIM Bangalore)
-                Hosts: IIM Bangalore & Net Zero Think The Climate Innovation
-                Summit 2026 is a high-impact platform bringing together
+                The Summit is a high-impact platform bringing together
                 policymakers, industry leaders, investors, researchers,
                 climate-tech innovators, multilateral agencies, and startups to
                 accelerate India’s transition toward Net Zero and the vision of
@@ -338,79 +320,62 @@ export default function Climate_Innovation_Summmit() {
 
             {/* DAY 1 SLIDER */}
             <div>
-              <h2 className="text-2xl font-bold mb-4">DAY 1</h2>
+              <h2 className="text-2xl font-bold mb-4 text-green-500">
+                DAY 1 Theme (Sectoral Decarbonisation & Technology Leadership)
+              </h2>
               <div className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar">
                 {/* CARD */}
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
-                    Sectoral Decarbonisation & Technology Leadership Opening
-                    Ceremony Welcome Address by Host Organisations Special
-                    Address by Distinguished Guests Keynote Address by National
-                    & International Leaders
+                    <h1 className="text-2xl text-green-500">
+                      Opening Ceremony
+                    </h1>
+                    <li>Welcome Address by Host Organisations</li>
+                    <li>Special Address by Distinguished Guests</li>
+                    <li>Keynote Address by National & International Leaders</li>
                   </p>
                 </div>
 
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
-                    Session 1: Power Sector Transformation – Renewables, Storage
-                    & Grid Flexibility Duration: 75 Minutes India’s power sector
-                    lies at the centre of the Net Zero transition, with the
-                    country targeting 500+ GW of non-fossil capacity while
-                    ensuring reliability and affordability. This session will
-                    explore strategies to modernise India’s electricity
-                    ecosystem through renewable integration, grid-scale storage,
-                    and digital grid technologies. Focus Areas India’s 500+ GW
-                    renewable energy roadmap Utility-scale storage & grid-scale
-                    battery systems Smart grids, grid digitisation & forecasting
-                    Coal plant repurposing and transition pathways Synergies
-                    between renewables, hydro & nuclear power
+                    <h2 className="text-2xl font-bold mb-4 text-green-500">
+                      Session 1: Power Sector Transformation – Renewables,
+                      Storage & Grid Flexibility
+                    </h2>
+                    India’s power sector lies at the centre of the Net Zero
+                    transition, with the country targeting 500+ GW of non-fossil
+                    capacity while ensuring reliability and affordability. This
+                    session will explore strategies to modernise India’s
+                    electricity ecosystem through renewable integration,
+                    grid-scale storage, and digital grid technologies.
                   </p>
                 </div>
 
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
-                    Session 2: Decarbonising India’s Buildings & Infrastructure
-                    Duration: 75 Minutes With rapid urbanisation and
-                    infrastructure expansion, decarbonising the built
-                    environment is critical to sustainable growth. This session
-                    will examine how green building standards, sustainable
-                    materials, and digital technologies can transform India’s
-                    infrastructure ecosystem. Focus Areas Net-zero building
-                    codes and green building standards Low-carbon cement and
-                    sustainable materials Urban cooling and energy-efficient
-                    construction Digital twins for infrastructure planning
-                    Financing climate-resilient infrastructure
+                    <h2 className="text-2xl font-bold mb-4 text-green-500">
+                      Session 2: Decarbonising India’s Buildings &
+                      Infrastructure
+                    </h2>
+                    With rapid urbanisation and infrastructure expansion,
+                    decarbonising the built environment is critical to
+                    sustainable growth. This session will examine how green
+                    building standards, sustainable materials, and digital
+                    technologies can transform India’s infrastructure ecosystem.
                   </p>
                 </div>
 
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
-                    Session 3: Metal & Mining Transition – Pathways to
-                    Low-Carbon Steel, Aluminium & Critical Minerals Duration: 75
-                    Minutes Heavy industries such as steel and aluminium are
-                    essential to India’s development but also among the most
+                    <h2 className="text-2xl font-bold mb-4 text-green-500">
+                      Session 3: Metal & Mining Transition – Pathways to
+                      Low-Carbon Steel, Aluminium & Critical Minerals
+                    </h2>
+                    Heavy industries such as steel and aluminium are essential
+                    to India’s development but also among the most
                     carbon-intensive sectors. This session will explore emerging
                     technologies and policy pathways to enable low-carbon
-                    industrial transformation. Focus Areas Green steel standards
-                    and certification Energy efficiency, EAF expansion & scrap
-                    utilisation Innovation in critical mineral processing
-                    Hydrogen-based metallurgy & CCUS Global competitiveness and
-                    export readiness
-                  </p>
-                </div>
-
-                <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
-                  <p>
-                    High-Level Roundtable: Role of Storage for C&I Consumers
-                    Duration: 90 Minutes Energy storage is becoming a critical
-                    enabler for industries adopting renewable power. This
-                    roundtable will explore business models, policy frameworks,
-                    and financing mechanisms needed to scale storage adoption
-                    across the commercial and industrial sector. Focus Areas
-                    Business models for storage adoption in the C&I segment
-                    Policy and regulatory enablers Cost competitiveness and
-                    financing structures Integration with renewables and green
-                    hydrogen Pathways to scale distributed storage solutions
+                    industrial transformation.
                   </p>
                 </div>
               </div>
@@ -418,100 +383,69 @@ export default function Climate_Innovation_Summmit() {
 
             {/* DAY 2 SLIDER */}
             <div>
-              <h2 className="text-2xl font-bold mb-4">DAY 2</h2>
+              <h2 className="text-2xl font-bold mb-4 text-green-500">
+                DAY 2 Theme (AI, Nature-Based Solutions, Climate Finance &
+                Innovation Ecosystem)
+              </h2>
               <div className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar">
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
-                    AI, Nature-Based Solutions, Climate Finance & Innovation
-                    Ecosystem Opening Remarks & Keynote Speeches
+                    <li>DAY 1 Recap</li>
+                    <li>Opening Remarks & Keynote Speeches</li>
                   </p>
                 </div>
 
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
-                    Session 4: Innovation in Wind, Solar, Hydrogen, CCUS,
-                    Battery & Bioenergy Duration: 75 Minutes Rapid innovation
-                    across clean energy technologies will shape India’s
-                    long-term decarbonisation pathway. This session will explore
-                    emerging breakthroughs and scalable solutions across
-                    renewable energy, storage, and low-carbon fuels. Focus Areas
-                    High-efficiency solar manufacturing Offshore wind and hybrid
-                    wind–solar–storage parks Advanced battery chemistries (LFP,
-                    sodium-ion, solid-state) CCUS technologies and industrial
-                    adoption challenges Bioenergy & biofuels for industrial
-                    applications Integration of green hydrogen into renewable
-                    clusters
+                    <h2 className="text-2xl font-bold mb-4 text-green-500">
+                      Session 4: Innovation in Wind, Solar, Hydrogen, CCUS,
+                      Battery & Bioenergy
+                    </h2>
+                    Rapid innovation across clean energy technologies will shape
+                    India’s long-term decarbonisation pathway. This session will
+                    explore emerging breakthroughs and scalable solutions across
+                    renewable energy, storage, and low-carbon fuels.
                   </p>
                 </div>
 
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
-                    Session 5: Digital Technology, AI & Robotics in
-                    Decarbonisation Duration: 75 Minutes Digital technologies
-                    are rapidly transforming how industries measure, manage, and
-                    reduce emissions. This session will explore the role of AI,
-                    robotics, and data-driven systems in enabling efficient and
-                    transparent decarbonisation pathways. Focus Areas AI-driven
-                    energy optimisation and predictive maintenance Robotics for
-                    mining, inspection and monitoring Digital MRV systems for
-                    carbon markets & ESG reporting IoT platforms for net-zero
-                    industries Climate modelling and risk analytics
+                    <h2 className="text-2xl font-bold mb-4 text-green-500">
+                      Session 5: Digital Technology, AI & Robotics in
+                      Decarbonisation
+                    </h2>
+                    Digital technologies are rapidly transforming how industries
+                    measure, manage, and reduce emissions. This session will
+                    explore the role of AI, robotics, and data-driven systems in
+                    enabling efficient and transparent decarbonisation pathways.
                   </p>
                 </div>
 
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
-                    Session 6: Scaling Forestry, Agroforestry & Nature-Based
-                    Carbon Removal Duration: 75 Minutes Nature-based solutions
-                    play a critical role in enhancing carbon sinks and
-                    supporting climate resilience. This session will examine
-                    scalable models for forestry, agroforestry, and landscape
-                    restoration. Focus Areas Large-scale afforestation models
-                    Agroforestry for farmer income and carbon benefits Landscape
-                    restoration and biodiversity conservation MRV systems for
-                    nature-based carbon credits Public–private partnerships for
-                    carbon sink development
+                    <h2 className="text-2xl font-bold mb-4 text-green-500">
+                      Session 6: Scaling Forestry, Agroforestry & Nature-Based
+                      Carbon Removal
+                    </h2>
+                    Nature-based solutions play a critical role in enhancing
+                    carbon sinks and supporting climate resilience. This session
+                    will examine scalable models for forestry, agroforestry, and
+                    landscape restoration.
                   </p>
                 </div>
 
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
-                    Session 7: Sustainable Transportation for a Net Zero World
-                    Duration: 75 Minutes Transforming India’s mobility systems
-                    is essential to reduce emissions while supporting economic
-                    growth. This session will examine solutions across
-                    electrification, alternative fuels, and smart mobility
-                    infrastructure. Focus Areas Vehicle electrification and
-                    alternative fuels Charging and clean energy infrastructure
-                    Modal shift and efficient logistics Digitalisation and smart
-                    mobility Policy, regulation, and green financing
-                  </p>
-                </div>
-
-                <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
-                  <p>
-                    High-Level Roundtable: Climate Finance & Carbon Markets for
-                    India’s Net-Zero Vision Duration: 90 Minutes Achieving
-                    India’s Net Zero target will require unprecedented levels of
-                    climate finance and robust carbon market mechanisms. This
-                    roundtable will bring together policymakers, investors, and
-                    industry leaders to explore innovative financing frameworks.
-                    Focus Areas Blended climate finance mechanisms Sovereign,
-                    corporate and municipal green bonds Carbon credit frameworks
-                    for industry and agriculture Transition finance for MSMEs
-                    Investment models for hard-to-abate sectors
+                    <h2 className="text-2xl font-bold mb-4 text-green-500">
+                      Session 7: Sustainable Transportation for a Net Zero World
+                    </h2>
+                    Transforming India’s mobility systems is essential to reduce
+                    emissions while supporting economic growth. This session
+                    will examine solutions across electrification, alternative
+                    fuels, and smart mobility infrastructure.
                   </p>
                 </div>
               </div>
-            </div>
-
-            {/* CLOSING */}
-            <div>
-              <p>
-                Closing Ceremony Summary of Key Insights Announcement of
-                Collaborative Initiatives Vote of Thanks
-                ------------END----------- Page no. 2/4
-              </p>
             </div>
           </div>
         </Section>
@@ -524,16 +458,37 @@ export default function Climate_Innovation_Summmit() {
             These sessions bring together a premium network of CXOs,
             Professionals, Researchers, and Regulators to shape the discourse
             for India&apos;s Net-Zero transformation. <br /> <br />
-            Highlevel Roundtable 1: Role of Storage for C&I Consumers.
+            <h1 className="text-2xl text-blue-300">Day 1</h1>
             <br />
-            Highlevel Roundtable 2: Climate Finance & Carbon Markets for India’s
-            Net-Zero Vision.
+            <p>
+              <h2 className="text-2xl font-bold mb-4 text-green-500">
+                High-Level Roundtable: Role of Storage for C&I Consumers
+              </h2>
+              Energy storage is becoming a critical enabler for industries
+              adopting renewable power. This roundtable will explore business
+              models, policy frameworks, and financing mechanisms needed to
+              scale storage adoption across the commercial and industrial
+              sector.
+            </p>
+            <br />
+            <h1 className="text-2xl text-blue-300">Day 2</h1>
+            <br />
+            <p>
+              <h2 className="text-2xl font-bold mb-4 text-green-500">
+                High-Level Roundtable: Climate Finance & Carbon Markets for
+                India’s Net-Zero Vision
+              </h2>
+              Achieving India’s Net Zero target will require unprecedented
+              levels of climate finance and robust carbon market mechanisms.
+              This roundtable will bring together policymakers, investors, and
+              industry leaders to explore innovative financing frameworks.
+            </p>
           </p>
         </Section>
 
         {/* Speakers */}
         <Section title="Invited  Speakers & Thought Leaders ">
-          <p className="section-text text-left text-xl text-blue-500">
+          <p className="section-text text-left text-xl text-green-500">
             Join 30+ global speakers and industry pioneers.
           </p>
 
@@ -582,7 +537,7 @@ export default function Climate_Innovation_Summmit() {
 
         {/* Strategic Milestones */}
         <Section title="Strategic Milestones & Recognitions">
-          <p className="section-text text-left text-xl text-blue-500">
+          <p className="section-text text-left text-xl text-green-500">
             The Climate Innovation Summit 2026 provides a high-profile stage for
             organizations to move from commitment to action. This dedicated
             segment celebrates progress and catalyzes future breakthroughs.
@@ -606,22 +561,36 @@ export default function Climate_Innovation_Summmit() {
 
         {/* Partner with Us */}
         <Section title="Partner with Us">
-          <p className="section-text text-left text-xl text-blue-500">
+          <p className="section-text text-left text-xl ">
             Position your organization at the forefront of the climate movement.
           </p>
           <br />
 
           <ul className="section-list">
             <li>
-              <b className="text-blue-500 text-lg"> Opportunities:</b> Lead
-              Partner , Knowledge Partner , Sector Theme Partner (Power,
-              Buildings, Mining, Nature-based, Climate Finance) ,Technology &
-              Innovation Partner ,ESG/Climate Leadership Partner ,University &
-              Research Collaborators ,Media & Outreach Partners.
+              <b className="text-green-500 text-lg">
+                Partnership Opportunities:
+              </b>{" "}
+              Lead Partner (Silver, Gold, Platinum), Associate Partner , Session
+              Theme Partner (Power, Buildings ,Metal, Mining, Storage,
+              Technology, Nature-based, Climate Finance), Media & Outreach
+              Partners.
             </li>
             <br />
+            <div className="flex justify-center items-center">
+              <Link
+                className="text-2xl text-green-500 border-4 rounded-2xl px-5 "
+                href={
+                  " https://drive.google.com/file/d/1demqTT6Gvdj5Z4Z_e5-3GaK4MgQeiZv5/view?usp=sharing"
+                }
+              >
+                Click me
+              </Link>
+            </div>
+            <br />
+            <br />
             <li>
-              <b className="text-blue-500 text-lg"> Who Attends:</b> Ministries
+              <b className="text-green-500 text-lg"> Who Attends:</b> Ministries
               ,Regulators , Think Tanks , Global Climate Institutions ,
               Corporates , MSMEs , Climate-Tech Startups , Investors , NGOs ,
               Researchers , Youth Leaders , Media
@@ -669,8 +638,8 @@ export default function Climate_Innovation_Summmit() {
 
         {/* Registration */}
         <Section title="Registration">
-          <p className="section-text text-left text-xl text-blue-500">
-            Early-Bird Registration (Exclusive GST) : Available until 30th March
+          <p className="section-text text-left text-xl text-green-500">
+            Early-Bird Registration (Exclusive GST) : Available until 15th April
             2026.
           </p>
           <br />
@@ -682,7 +651,7 @@ export default function Climate_Innovation_Summmit() {
           <br />
           <div className="flex flex-col md:flex md:flex-row justify-center items-center">
             <p className="basis-1/2">
-              <span className="text-lg text-blue-500">
+              <span className="text-lg text-green-500">
                 For Account Payment Transfer
               </span>{" "}
               <br /> Account Name: Net Zero Think Private Limited <br /> Bank
@@ -700,7 +669,7 @@ export default function Climate_Innovation_Summmit() {
             />
           </div>
 
-          <p className="section-text mt-6 text-lg text-blue-500">
+          <p className="section-text mt-6 text-lg text-green-500">
             Fill the registration form.
           </p>
 
@@ -722,7 +691,7 @@ export default function Climate_Innovation_Summmit() {
 
         {/* Contact */}
         <Section title="Contact Information">
-          <p className="section-text text-xl text-blue-500">
+          <p className="section-text text-xl text-green-500">
             For Partnership and Speaking Opportunities:
           </p>
           <br />
