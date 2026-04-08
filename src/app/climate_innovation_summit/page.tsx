@@ -32,17 +32,28 @@ function Section({
 }
 
 export default function Climate_Innovation_Summmit() {
-  const speakers: Record<string, string> = {
-    "Associate Partner 1": "/speakers_partners/Associate_Partner.jpeg",
-    "Associate Partner 2": "/speakers_partners/Associate_partner_1.jpeg",
-    "Media Partner": "/speakers_partners/media_partner.jpeg",
-    "Knowledge Partner": "/speakers_partners/Knowledge_partner.jpeg",
-    "SDG Partner": "/speakers_partners/SDG_partner.jpeg",
-    "Cause Partner": "/speakers_partners/Cause_Partner.jpg",
-    "Supporting Partner 1": "/speakers_partners/Supporting_partner_.jpeg",
-    "Supporting Partner 2": "/speakers_partners/supporting_partner_2.jpeg",
-    "Supporting Partner 3": "/speakers_partners/IACCIA.jpeg",
-  };
+  const speakers: Map<string, string[]> = new Map([
+    [
+      "Associate Partners",
+      [
+        "/speakers_partners/Associate_Partner.jpeg",
+        "/speakers_partners/Associate_partner_1.jpeg",
+      ],
+    ],
+    [
+      "Supporting Partners",
+      [
+        "/speakers_partners/Supporting_partner_.jpeg",
+        "/speakers_partners/supporting_partner_2.jpeg",
+        "/speakers_partners/IACCIA.jpeg",
+        "/speakers_partners/NETRA.jpeg",
+      ],
+    ],
+    ["Media Partner", ["/speakers_partners/media_partner.jpeg"]],
+    ["Knowledge Partner", ["/speakers_partners/Knowledge_partner.jpeg"]],
+    ["SDG Partner", ["/speakers_partners/SDG_partner.jpeg"]],
+    ["Cause Partner", ["/speakers_partners/Cause_Partner.jpg"]],
+  ]);
   const banner: Record<string, string> = {
     Organiser_1: "/speakers_partners/organising_partner.jpeg",
     Organiser_2: "/speakers_partners/Event-Logos.png",
@@ -179,7 +190,7 @@ export default function Climate_Innovation_Summmit() {
       "Mr Karunakar Mardi Reddy",
       {
         url: "/speakers_partners/Mr_Karunakar_Mardi_Reddy.jpeg",
-        org: "Igniting Mind",
+        org: "Igniting Minds",
       },
     ],
     [
@@ -250,6 +261,27 @@ export default function Climate_Innovation_Summmit() {
       {
         url: "/speakers_partners/Ms_Suchi_Malhotra.jpeg",
         org: "Environmental Defense Fund (EDF)",
+      },
+    ],
+    [
+      "Mr. Binu Parthan",
+      {
+        url: "/speakers_partners/Mr_Binu_Parthan.jpeg",
+        org: "IRENA",
+      },
+    ],
+    [
+      "Mr. Soumya Prasad Garnaik",
+      {
+        url: "/speakers_partners/Mr_Soumya_Prasad_Garnaik.jpeg",
+        org: "Global Green Growth Institute",
+      },
+    ],
+    [
+      "Mr. Venugopal ",
+      {
+        url: "/speakers_partners/Mr_Venugopal.jpeg",
+        org: "Niti Aayog",
       },
     ],
   ]);
@@ -597,42 +629,48 @@ export default function Climate_Innovation_Summmit() {
             </li>
           </ul>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-12">
-            {Object.entries(speakers).map(([key, item], idx) =>
-              isMobile ? (
+          <div className="flex flex-col gap-8 mt-12">
+            {Array.from(speakers.entries()).map(([key, item]) => (
+              <div key={key}>
+                {/* Title */}
+                <span className="block text-white text-lg sm:text-xl font-semibold mb-3">
+                  {key}
+                </span>
+
+                {/* Images */}
                 <div
-                  key={idx}
-                  className="relative group overflow-hidden rounded-2xl border border-white/20 flex-col flex wrap-anywhere"
+                  className={`
+          flex flex-wrap gap-3
+          ${isMobile ? "justify-center" : "justify-start"}
+        `}
                 >
-                  <Image
-                    src={item}
-                    alt={key}
-                    width={200}
-                    height={200}
-                    className="w-full h-60 object-contain"
-                  />
-                  <div className="text-md text-white text-center basis-1/2 ">
-                    {key}
-                  </div>
+                  {item.map((url: string) => (
+                    <div
+                      key={url}
+                      className="relative group overflow-hidden rounded-xl border border-white/10 bg-white/5 p-2"
+                    >
+                      <Image
+                        src={url}
+                        alt={key}
+                        width={120}
+                        height={120}
+                        className={`
+                object-contain transition duration-300
+                ${isMobile ? "w-20 h-20" : "w-24 h-24 group-hover:scale-110"}
+              `}
+                      />
+
+                      {/* Desktop hover effect */}
+                      {!isMobile && (
+                        <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white text-xs font-semibold">
+                          {key}
+                        </div>
+                      )}
+                    </div>
+                  ))}
                 </div>
-              ) : (
-                <div
-                  key={idx}
-                  className="relative group overflow-hidden rounded-2xl border border-white/20"
-                >
-                  <Image
-                    src={item}
-                    alt={`Speaker ${item}`}
-                    width={300}
-                    height={300}
-                    className="w-full h-60 object-contain transition duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-bold">
-                    {key}
-                  </div>
-                </div>
-              ),
-            )}
+              </div>
+            ))}
           </div>
         </Section>
 
