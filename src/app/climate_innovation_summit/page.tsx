@@ -47,11 +47,11 @@ export default function Climate_Innovation_Summmit() {
         "/speakers_partners/supporting_partner_2.jpeg",
         "/speakers_partners/IACCIA.jpeg",
         "/speakers_partners/NETRA.jpeg",
+        "/speakers_partners/Knowledge_partner.jpeg",
+        "/speakers_partners/SDG_partner.jpeg",
       ],
     ],
     ["Media Partner", ["/speakers_partners/media_partner.jpeg"]],
-    ["Knowledge Partner", ["/speakers_partners/Knowledge_partner.jpeg"]],
-    ["SDG Partner", ["/speakers_partners/SDG_partner.jpeg"]],
     ["Cause Partner", ["/speakers_partners/Cause_Partner.jpg"]],
   ]);
   const banner: Record<string, string> = {
