@@ -33,11 +33,15 @@ function Section({
 
 export default function Climate_Innovation_Summmit() {
   const speakers: Map<string, string[]> = new Map([
+    ["Session Partners", ["/speakers_partners/Session_Partner.jpeg"]],
     [
       "Associate Partners",
       [
         "/speakers_partners/Associate_Partner.jpeg",
         "/speakers_partners/Associate_partner_1.jpeg",
+        "/speakers_partners/Associate_Partner_2.jpeg",
+        "/speakers_partners/Associate_partner_3.jpeg",
+        "/speakers_partners/Associate_partner_4.jpeg",
       ],
     ],
     [
@@ -55,8 +59,7 @@ export default function Climate_Innovation_Summmit() {
     ["Cause Partner", ["/speakers_partners/Cause_Partner.jpg"]],
   ]);
   const banner: Record<string, string> = {
-    Organiser_1: "/speakers_partners/organising_partner.jpeg",
-    Organiser_2: "/speakers_partners/Event-Logos.png",
+    Organiser: "/speakers_partners/Csis_logo.jpeg",
   };
 
   const Speaker_Details: Map<string, { url: string; org: string }> = new Map([
@@ -284,6 +287,27 @@ export default function Climate_Innovation_Summmit() {
         org: "Niti Aayog",
       },
     ],
+    [
+      "Mr. Ram Solaimalai",
+      {
+        url: "/speakers_partners/Mr_Ram_Solaimalai.jpeg",
+        org: "Johnson Matthey",
+      },
+    ],
+    [
+      "Mr.K.R. Raghunath ",
+      {
+        url: "/speakers_partners/Mr_K_R_Raghunath.jpeg",
+        org: "KIS Group",
+      },
+    ],
+    [
+      "Dr. Anita Gupta",
+      {
+        url: "/speakers_partners/Dr_Anita_Gupta.jpeg",
+        org: "Department of Science, Govt. Of India",
+      },
+    ],
   ]);
   const isMobile = useMediaQuery("(max-width: 768px)");
   return (
@@ -294,7 +318,7 @@ export default function Climate_Innovation_Summmit() {
       <div className="relative max-w-6xl mx-auto px-6 sm:my-50 my-10">
         {/* About the Summit */}
         <Section title="Climate Innovation Summit 2026">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 gap-6 mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-6 mt-12">
             {Object.entries(banner).map(([key, item], idx) => (
               <div
                 key={idx}
