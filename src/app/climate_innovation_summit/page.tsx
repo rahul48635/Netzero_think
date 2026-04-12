@@ -40,8 +40,8 @@ export default function Climate_Innovation_Summmit() {
         "/speakers_partners/Associate_Partner.jpeg",
         "/speakers_partners/Associate_partner_1.jpeg",
         "/speakers_partners/Associate_Partner_2.jpeg",
-        "/speakers_partners/Associate_partner_3.jpeg",
-        "/speakers_partners/Associate_partner_4.jpeg",
+        "/speakers_partners/Associate_Partner_3.jpeg",
+        "/speakers_partners/Associate_Partner_4.jpeg",
       ],
     ],
     [
