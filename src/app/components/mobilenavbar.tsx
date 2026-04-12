@@ -41,7 +41,13 @@ export const MobileNavbar = ({
                 transition={{ delay: (items.length - 1 - idx) * 0.05 }}
               >
                 <div className="border-2 rounded-2xl w-full h-full inset-0 p-1 flex flex-col items-center text-center">
-                    <Link href={item.href} className="w-5 h-5 flex items-center justify-center">{<item.logo/>}</Link>
+                  <Link
+                    href={item.href}
+                    className="w-5 h-5 flex items-center justify-center"
+                    prefetch={false}
+                  >
+                    {<item.logo />}
+                  </Link>
                 </div>
               </motion.div>
             ))}

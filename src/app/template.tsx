@@ -119,7 +119,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
       <div className="sm:lg:flex sm:lg:flex-col ">
         <div className="mt-30 absolute left-1/2 top-[-5rem] -translate-x-1/2 sm:left-[5rem] sm:translate-0 sm:md:justify-self-center z-10 bg-white/70 rounded-2xl p-2">
           <Image
-            src={"/Netzerothink.png"}
+            src={"/Netzerothink.webp"}
             alt="logo"
             width={350}
             height={350}

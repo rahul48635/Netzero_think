@@ -3,7 +3,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import useMediaQuery from "../hooks/useMediaQuery";
 import Link from "next/link";
-
+import dynamic from "next/dynamic";
+const Speakers = dynamic(() => import("../components/Speakers"), {
+  loading: () => <p>Loading ...</p>,
+  ssr: false,
+});
+import { useInView } from "react-intersection-observer";
 /* Reusable Section */
 function Section({
   title,
@@ -32,6 +37,7 @@ function Section({
 }
 
 export default function Climate_Innovation_Summmit() {
+  const { ref, inView } = useInView();
   const speakers: Map<string, string[]> = new Map([
     ["Session Partners", ["/speakers_partners/Session_Partner.jpeg"]],
     ["Cause Partner", ["/speakers_partners/Cause_Partner.jpg"]],
@@ -62,260 +68,13 @@ export default function Climate_Innovation_Summmit() {
     Organiser: "/speakers_partners/Csis_logo.jpeg",
   };
 
-  const Speaker_Details: Map<string, { url: string; org: string }> = new Map([
-    [
-      "Dr VK Saraswat",
-      {
-        url: "/speakers_partners/Dr_VK_Saraswat(Niti_Aayog).jpeg",
-        org: "Niti Aayog",
-      },
-    ],
-    [
-      "Mr Krushna Chandra Panigraphy",
-      {
-        url: "/speakers_partners/Mr_krushna_Chandra_Panigrahy.jpeg",
-        org: "Bureau of Energy Efficiency",
-      },
-    ],
-    [
-      "Mr Manu Srivastava",
-      {
-        url: "/speakers_partners/Mr_Manu_Srivastav.jpeg",
-        org: "Govt. Of Madhaya Pradesh",
-      },
-    ],
-    [
-      "Mr Bhupender Singh Bodh",
-      {
-        url: "/speakers_partners/Mr_Bhupender_Singh_Bodh.jpeg",
-        org: "REMC Ltd.",
-      },
-    ],
-    [
-      "Dr Sunil Duggal",
-      {
-        url: "/speakers_partners/Dr_Sunnil_Duggal.jpeg",
-        org: "Bhumi Ventures",
-      },
-    ],
-    [
-      "Mr Bharat Saxena",
-      {
-        url: "/speakers_partners/Mr_Bharat_Saxena.jpeg",
-        org: "Inox Clean Energy",
-      },
-    ],
-    [
-      "Mr Upendra Tripathy",
-      {
-        url: "/speakers_partners/Mr_Upendra_Tripathy.jpeg",
-        org: "International Solar Alliance",
-      },
-    ],
-    [
-      "Mr Erik Solheim",
-      {
-        url: "/speakers_partners/Erik_Solheim.jpeg",
-        org: "UNEP",
-      },
-    ],
-    [
-      "Mr Arne Lorenzen",
-      {
-        url: "/speakers_partners/Mr_Arne_Lorenzen.jpeg",
-        org: "PowerCurve ApS",
-      },
-    ],
-    [
-      "Mr. Prabodha Acharya",
-      {
-        url: "/speakers_partners/Mr_Parobodha_Archya.jpeg",
-        org: "JSW Steel",
-      },
-    ],
-    [
-      "Dr Umakant Panda",
-      {
-        url: "/speakers_partners/Dr_Umakant_Panda.jpeg",
-        org: "M.P. Electricity Regulatory Comission",
-      },
-    ],
-    [
-      "Mr D Radhakrishna",
-      {
-        url: "/speakers_partners/Mr_D.Radhakhrishnan.jpeg",
-        org: "Tripura Electricity Regulatory Comission",
-      },
-    ],
-    [
-      "Dr Vibha Dhavan",
-      {
-        url: "/speakers_partners/Dr_Vibha_Dhavan.jpeg",
-        org: "TERI",
-      },
-    ],
-    [
-      "Dr Kurian Joseph",
-      {
-        url: "/speakers_partners/Dr.Kurian_Joseph.jpeg",
-        org: "IIT Madras",
-      },
-    ],
-    [
-      "Dr Saurabh Kundu",
-      {
-        url: "/speakers_partners/Dr_Saurabh_Kundu.jpeg",
-        org: "TATA Steel",
-      },
-    ],
-    [
-      "Mr Sanjeev Paul",
-      {
-        url: "/speakers_partners/Mr_Sanjeev_Paul.jpeg",
-        org: "TATA Steel",
-      },
-    ],
-    [
-      "Mr Naveen Khandelwal",
-      {
-        url: "/speakers_partners/Mr_Naveen_khandelwal.jpeg",
-        org: "Yanara",
-      },
-    ],
-    [
-      "Mr Ratnesh Jha",
-      {
-        url: "/speakers_partners/Mr_Ratnesh_Jha.jpeg",
-        org: "UN Gobal Compact",
-      },
-    ],
-    [
-      "Mr Karunakar Mardi Reddy",
-      {
-        url: "/speakers_partners/Mr_Karunakar_Mardi_Reddy.jpeg",
-        org: "Igniting Minds",
-      },
-    ],
-    [
-      "Dr PKC BOSE",
-      {
-        url: "/speakers_partners/Dr_PKC_BOSE.jpeg",
-        org: "Enrego",
-      },
-    ],
-    [
-      "Mr Naveen Ahlawat",
-      {
-        url: "/speakers_partners/Mr_Naveen_Ahlawat.jpeg",
-        org: "Jindal Steel",
-      },
-    ],
-    [
-      "Dr Vikram Vishal",
-      {
-        url: "/speakers_partners/Dr_Vikram_Vishal.jpeg",
-        org: "IIT Bombay",
-      },
-    ],
-    [
-      "Mr.Yuvaraj Dinesh Babu Nityanandam",
-      {
-        url: "/speakers_partners/Mr_Yuvaraj_Dinesh_Babu_Nityanandam.jpeg",
-        org: "UNMAI Carbon Solutions",
-      },
-    ],
-    [
-      "Dr. Waiel S. H. Awwad",
-      {
-        url: "/speakers_partners/Dr_Waiel_S_H_Awwad.jpeg",
-        org: "India-Arab Chamber of Commerce, Industry, and Agriculture (IACCIA)",
-      },
-    ],
-    [
-      "Mr. Aditya Pyasi",
-      {
-        url: "/speakers_partners/Mr_Aditya_Pyasi.jpeg",
-        org: "Indian Wind Turbine Manufacturing Association (IWTMA)",
-      },
-    ],
-    [
-      "Ms. Umang Pathak",
-      {
-        url: "/speakers_partners/Ms_Umang_Pathak.jpeg",
-        org: "Trilegal",
-      },
-    ],
-    [
-      "Mr. Siddhartha Pakrashi",
-      {
-        url: "/speakers_partners/Mr_Siddhartha_Pakrashi.jpeg",
-        org: "Varhad Capital",
-      },
-    ],
-    [
-      "Mr. Prasad Dhapute",
-      {
-        url: "/speakers_partners/Mr_Prasad_Dhapute.jpeg",
-        org: "Varhad Capital",
-      },
-    ],
-    [
-      "Ms. Suchi Malhotra",
-      {
-        url: "/speakers_partners/Ms_Suchi_Malhotra.jpeg",
-        org: "Environmental Defense Fund (EDF)",
-      },
-    ],
-    [
-      "Mr. Binu Parthan",
-      {
-        url: "/speakers_partners/Mr_Binu_Parthan.jpeg",
-        org: "IRENA",
-      },
-    ],
-    [
-      "Mr. Soumya Prasad Garnaik",
-      {
-        url: "/speakers_partners/Mr_Soumya_Prasad_Garnaik.jpeg",
-        org: "Global Green Growth Institute",
-      },
-    ],
-    [
-      "Mr. Venugopal ",
-      {
-        url: "/speakers_partners/Mr_Venugopal.jpeg",
-        org: "Niti Aayog",
-      },
-    ],
-    [
-      "Mr. Ram Solaimalai",
-      {
-        url: "/speakers_partners/Mr_Ram_Solaimalai.jpeg",
-        org: "Johnson Matthey",
-      },
-    ],
-    [
-      "Mr.K.R. Raghunath ",
-      {
-        url: "/speakers_partners/Mr_K_R_Raghunath.jpeg",
-        org: "KIS Group",
-      },
-    ],
-    [
-      "Dr. Anita Gupta",
-      {
-        url: "/speakers_partners/Dr_Anita_Gupta.jpeg",
-        org: "Department of Science, Govt. Of India",
-      },
-    ],
-  ]);
   const isMobile = useMediaQuery("(max-width: 768px)");
   return (
-    <div className="relative min-h-screen w-full overflow-hidden bg-[url('/bg-cover/CLS_copy.png')] bg-fixed bg-cover bg-no-repeat">
+    <div className="relative min-h-screen w-full overflow-hidden bg-[url('/bg-cover/CLS_copy.webp')] bg-fixed bg-cover bg-no-repeat">
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/70 "></div>
 
-      <div className="relative max-w-6xl mx-auto px-6 sm:my-50 my-10">
+      <div className="relative max-w-6xl mx-auto px-6 sm:my-50 my-10" ref={ref}>
         {/* About the Summit */}
         <Section title="Climate Innovation Summit 2026">
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-6 mt-12">
@@ -383,9 +142,10 @@ export default function Climate_Innovation_Summmit() {
                 {/* CARD */}
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
-                    <h1 className="text-2xl text-green-500">
+                    <span className="text-2xl text-green-500">
                       Opening Ceremony
-                    </h1>
+                    </span>
+                    <br />
                     <li>Welcome Address by Host Organisations</li>
                     <li>Special Address by Distinguished Guests</li>
                     <li>Keynote Address by National & International Leaders</li>
@@ -394,10 +154,11 @@ export default function Climate_Innovation_Summmit() {
 
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
-                    <h2 className="text-2xl font-bold mb-4 text-green-500">
+                    <span className="text-2xl font-bold mb-4 text-green-500">
                       Session 1: Power Sector Transformation – Renewables,
                       Storage & Grid Flexibility
-                    </h2>
+                    </span>
+                    <br />
                     India’s power sector lies at the centre of the Net Zero
                     transition, with the country targeting 500+ GW of non-fossil
                     capacity while ensuring reliability and affordability. This
@@ -409,10 +170,11 @@ export default function Climate_Innovation_Summmit() {
 
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
-                    <h2 className="text-2xl font-bold mb-4 text-green-500">
+                    <span className="text-2xl font-bold mb-4 text-green-500">
                       Session 2: Decarbonising India’s Buildings &
                       Infrastructure
-                    </h2>
+                    </span>
+                    <br />
                     With rapid urbanisation and infrastructure expansion,
                     decarbonising the built environment is critical to
                     sustainable growth. This session will examine how green
@@ -423,10 +185,11 @@ export default function Climate_Innovation_Summmit() {
 
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
-                    <h2 className="text-2xl font-bold mb-4 text-green-500">
+                    <span className="text-2xl font-bold mb-4 text-green-500">
                       Session 3: Metal & Mining Transition – Pathways to
                       Low-Carbon Steel, Aluminium & Critical Minerals
-                    </h2>
+                    </span>
+                    <br />
                     Heavy industries such as steel and aluminium are essential
                     to India’s development but also among the most
                     carbon-intensive sectors. This session will explore emerging
@@ -453,10 +216,11 @@ export default function Climate_Innovation_Summmit() {
 
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
-                    <h2 className="text-2xl font-bold mb-4 text-green-500">
+                    <span className="text-2xl font-bold mb-4 text-green-500">
                       Session 4: Innovation in Wind, Solar, Hydrogen, CCUS,
                       Battery & Bioenergy
-                    </h2>
+                    </span>
+                    <br />
                     Rapid innovation across clean energy technologies will shape
                     India’s long-term decarbonisation pathway. This session will
                     explore emerging breakthroughs and scalable solutions across
@@ -466,10 +230,11 @@ export default function Climate_Innovation_Summmit() {
 
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
-                    <h2 className="text-2xl font-bold mb-4 text-green-500">
+                    <span className="text-2xl font-bold mb-4 text-green-500">
                       Session 5: Digital Technology, AI & Robotics in
                       Decarbonisation
-                    </h2>
+                    </span>
+                    <br />
                     Digital technologies are rapidly transforming how industries
                     measure, manage, and reduce emissions. This session will
                     explore the role of AI, robotics, and data-driven systems in
@@ -479,10 +244,11 @@ export default function Climate_Innovation_Summmit() {
 
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
-                    <h2 className="text-2xl font-bold mb-4 text-green-500">
+                    <span className="text-2xl font-bold mb-4 text-green-500">
                       Session 6: Scaling Forestry, Agroforestry & Nature-Based
                       Carbon Removal
-                    </h2>
+                    </span>
+                    <br />
                     Nature-based solutions play a critical role in enhancing
                     carbon sinks and supporting climate resilience. This session
                     will examine scalable models for forestry, agroforestry, and
@@ -492,9 +258,10 @@ export default function Climate_Innovation_Summmit() {
 
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
-                    <h2 className="text-2xl font-bold mb-4 text-green-500">
+                    <span className="text-2xl font-bold mb-4 text-green-500">
                       Session 7: Sustainable Transportation for a Net Zero World
-                    </h2>
+                    </span>
+                    <br />
                     Transforming India’s mobility systems is essential to reduce
                     emissions while supporting economic growth. This session
                     will examine solutions across electrification, alternative
@@ -514,31 +281,33 @@ export default function Climate_Innovation_Summmit() {
             These sessions bring together a premium network of CXOs,
             Professionals, Researchers, and Regulators to shape the discourse
             for India&apos;s Net-Zero transformation. <br /> <br />
-            <h1 className="text-2xl text-blue-300">Day 1</h1>
+            <span className="text-2xl text-blue-300">Day 1</span>
             <br />
-            <p>
-              <h2 className="text-2xl font-bold mb-4 text-green-500">
+            <span>
+              <br />
+              <span className="text-2xl font-bold mb-4 text-green-500">
                 High-Level Roundtable: Role of Storage for C&I Consumers
-              </h2>
+              </span>
               Energy storage is becoming a critical enabler for industries
               adopting renewable power. This roundtable will explore business
               models, policy frameworks, and financing mechanisms needed to
               scale storage adoption across the commercial and industrial
               sector.
-            </p>
+            </span>
             <br />
-            <h1 className="text-2xl text-blue-300">Day 2</h1>
+            <span className="text-2xl text-blue-300">Day 2</span>
             <br />
-            <p>
-              <h2 className="text-2xl font-bold mb-4 text-green-500">
+            <span>
+              <span className="text-2xl font-bold mb-4 text-green-500">
                 High-Level Roundtable: Climate Finance & Carbon Markets for
                 India’s Net-Zero Vision
-              </h2>
+              </span>
+              <br />
               Achieving India’s Net Zero target will require unprecedented
               levels of climate finance and robust carbon market mechanisms.
               This roundtable will bring together policymakers, investors, and
               industry leaders to explore innovative financing frameworks.
-            </p>
+            </span>
           </p>
         </Section>
 
@@ -549,46 +318,7 @@ export default function Climate_Innovation_Summmit() {
           </p>
 
           {/* IMAGE GRID (for adding leaders/speakers) */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-12">
-            {[...Speaker_Details].map(([key, val], idx) =>
-              isMobile ? (
-                <div
-                  key={idx}
-                  className="relative group overflow-hidden rounded-2xl border border-white/20 flex-col flex"
-                >
-                  <Image
-                    src={val.url}
-                    alt={key}
-                    width={300}
-                    height={300}
-                    className="w-full h-60 object-cover transition duration-500 group-hover:scale-110"
-                  />
-                  <div className="text-xl text-white text-center">
-                    {key} <br />
-                    <span className="text-center text-wrap">{`(${val.org})`}</span>
-                  </div>
-                </div>
-              ) : (
-                <div key={idx}>
-                  <div className="relative group overflow-hidden rounded-2xl border border-white/20">
-                    <Image
-                      src={val.url}
-                      alt={key}
-                      width={300}
-                      height={300}
-                      className="w-full h-60 object-cover transition duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-bold">
-                      {key}
-                    </div>
-                  </div>
-                  <span className="text-center w-full block text-white text-xl">
-                    {val.org}
-                  </span>
-                </div>
-              ),
-            )}
-          </div>
+          {inView && <Speakers />}
         </Section>
 
         {/* Strategic Milestones */}

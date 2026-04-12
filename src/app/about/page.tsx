@@ -11,15 +11,20 @@ import {
   Lightbulb,
   Shield,
 } from "lucide-react";
-import GlobalShowcase from "../components/Showcase";
+const GlobalShowcase = dynamic(() => import("../components/Showcase"), {
+  loading: () => <p>Loading ...</p>,
+  ssr: false,
+});
 import { motion } from "framer-motion";
 import useMediaQuery from "../hooks/useMediaQuery";
 import Link from "next/link";
 import { FaLinkedin } from "react-icons/fa";
+import dynamic from "next/dynamic";
+import { useInView } from "react-intersection-observer";
 
 export default function AboutPage() {
   const isMobile = useMediaQuery("(max-width:768px)");
-
+  const { ref, inView } = useInView();
   const SDG = [
     "/SDG/01.png",
     "/SDG/02.png",
@@ -111,7 +116,10 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen min-w-screen">
       {/* Hero */}
-      <section className=" px-15  text-center flex flex-col items-center justify-center w-full  self-center justify-self-center bg-[url('/bg-cover/earth.jpg')] bg-center bg-fixed bg-cover bg-no-repeat mask-b-from-99% mb-20 relative">
+      <section
+        className=" px-15  text-center flex flex-col items-center justify-center w-full  self-center justify-self-center bg-[url('/bg-cover/earth.webp')] bg-center bg-fixed bg-cover bg-no-repeat mask-b-from-99% mb-20 relative"
+        ref={ref}
+      >
         <div className="absolute inset-0 bg-black/40 -z-10"></div>
 
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-white bg-green-500 rounded-2xl w-full mt-50  md:mt-75 max-w-6xl mx-auto">
@@ -135,7 +143,7 @@ export default function AboutPage() {
           sustainability solutions.
         </p>
 
-        <GlobalShowcase />
+        {inView && <GlobalShowcase />}
       </section>
 
       <section className=" px-15  mt-20 text-center sm:w-full flex flex-col items-center justify-center  self-center justify-self-center w-full">

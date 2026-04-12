@@ -1,33 +1,33 @@
-"use client"
-import React, {  useRef, useState } from "react"
-import { motion, useMotionValueEvent, useScroll } from "framer-motion"
-import Link from "next/link"
-import type { IconType } from "react-icons"
+"use client";
+import React, { useRef, useState } from "react";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import Link from "next/link";
+import type { IconType } from "react-icons";
 
 type Item = {
-  title: string,
-  logo: IconType,
-  href: string,
-}
+  title: string;
+  logo: IconType;
+  href: string;
+};
 
 type NavbarProps = {
-  className?:string
-  items: Item[]
-}
+  className?: string;
+  items: Item[];
+};
 
-export const Navbar: React.FC<NavbarProps> = ({ items,className }) => {
-  const ref=useRef<HTMLDivElement>(null)
-  const {scrollY}=useScroll({
-    target:ref,
-    offset:["start end","end start"]
-  })
-  const [open,setOpen]=useState<boolean>(true)
-  useMotionValueEvent(scrollY,"change",(latest)=>{
-    if(latest <= 500) setOpen(true)
-    else setOpen(false)
-  })
-  
-  const [active, setActive] = useState<number | null>(null)
+export const Navbar: React.FC<NavbarProps> = ({ items, className }) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollY } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"],
+  });
+  const [open, setOpen] = useState<boolean>(true);
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    if (latest <= 500) setOpen(true);
+    else setOpen(false);
+  });
+
+  const [active, setActive] = useState<number | null>(null);
 
   return (
     <motion.nav
@@ -46,25 +46,28 @@ export const Navbar: React.FC<NavbarProps> = ({ items,className }) => {
         >
           <div className="w-20 h-25 flex items-center justify-center">
             <Link
-            href={item.href}
-            className="flex flex-col items-center font-semibold"
+              href={item.href}
+              className="flex flex-col items-center font-semibold"
+              prefetch={false}
             >
               <item.logo
                 size={30}
                 className="fill-green-700 dark:fill-white stroke-green-700 dark:stroke-white stroke-1 "
               />
-            <span className="mt-1 text-center w-20 text-[15px]">{item.title}</span>
+              <span className="mt-1 text-center w-20 text-[15px]">
+                {item.title}
+              </span>
             </Link>
           </div>
           {active === idx && (
             <motion.div
               layoutId="underline"
               className="absolute bottom-0 h-[3px] w-20 rounded-3xl bg-gradient-to-r from-cyan-500 to-blue-600  "
-              transition={{ duration:0.3,type:"keyframes" }}
+              transition={{ duration: 0.3, type: "keyframes" }}
             />
           )}
         </motion.div>
       ))}
     </motion.nav>
-  )
-}
+  );
+};

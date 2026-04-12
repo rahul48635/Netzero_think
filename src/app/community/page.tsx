@@ -103,7 +103,7 @@ export default function ClimateInnovationCommunity() {
   ];
 
   return (
-    <div className="relative min-h-screen w-full  overflow-hidden bg-[url('/bg-cover/climate.png')] bg-fixed bg-cover bg-no-repeat">
+    <div className="relative min-h-screen w-full  overflow-hidden bg-[url('/bg-cover/climate.webp')] bg-fixed bg-cover bg-no-repeat">
       <div className="absolute inset-0 bg-black/40 "></div>
 
       {/* Hero Section */}
