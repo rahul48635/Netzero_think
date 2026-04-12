@@ -34,6 +34,7 @@ function Section({
 export default function Climate_Innovation_Summmit() {
   const speakers: Map<string, string[]> = new Map([
     ["Session Partners", ["/speakers_partners/Session_Partner.jpeg"]],
+    ["Cause Partner", ["/speakers_partners/Cause_Partner.jpg"]],
     [
       "Associate Partners",
       [
@@ -51,12 +52,11 @@ export default function Climate_Innovation_Summmit() {
         "/speakers_partners/supporting_partner_2.jpeg",
         "/speakers_partners/IACCIA.jpeg",
         "/speakers_partners/NETRA.jpeg",
-        "/speakers_partners/Knowledge_partner.jpeg",
         "/speakers_partners/SDG_partner.jpeg",
       ],
     ],
     ["Media Partner", ["/speakers_partners/media_partner.jpeg"]],
-    ["Cause Partner", ["/speakers_partners/Cause_Partner.jpg"]],
+    ["Knowledge Partner", ["/speakers_partners/Knowledge_partner.jpeg"]],
   ]);
   const banner: Record<string, string> = {
     Organiser: "/speakers_partners/Csis_logo.jpeg",
@@ -543,7 +543,7 @@ export default function Climate_Innovation_Summmit() {
         </Section>
 
         {/* Speakers */}
-        <Section title="Invited  Speakers & Thought Leaders ">
+        <Section title="Confirmed Speakers & Thought Leaders">
           <p className="section-text text-left text-xl text-green-500">
             Join 30+ global speakers and industry pioneers.
           </p>
