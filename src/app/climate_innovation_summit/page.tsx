@@ -77,7 +77,7 @@ export default function Climate_Innovation_Summmit() {
       <div className="relative max-w-6xl mx-auto px-6 sm:my-50 my-10" ref={ref}>
         {/* About the Summit */}
         <Section title="Climate Innovation Summit 2026">
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 gap-6 mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-1 md:flex md:justify-center  gap-6 mt-12 ">
             {Object.entries(banner).map(([key, item], idx) => (
               <div
                 key={idx}
@@ -231,14 +231,13 @@ export default function Climate_Innovation_Summmit() {
                 <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
                   <p>
                     <span className="text-2xl font-bold mb-4 text-green-500">
-                      Session 5: Digital Technology, AI & Robotics in
-                      Decarbonisation
+                      Session 5: Sustainable Transportation for a Net Zero World
                     </span>
                     <br />
-                    Digital technologies are rapidly transforming how industries
-                    measure, manage, and reduce emissions. This session will
-                    explore the role of AI, robotics, and data-driven systems in
-                    enabling efficient and transparent decarbonisation pathways.
+                    Transforming India’s mobility systems is essential to reduce
+                    emissions while supporting economic growth. This session
+                    will examine solutions across electrification, alternative
+                    fuels, and smart mobility infrastructure.
                   </p>
                 </div>
 
@@ -253,19 +252,6 @@ export default function Climate_Innovation_Summmit() {
                     carbon sinks and supporting climate resilience. This session
                     will examine scalable models for forestry, agroforestry, and
                     landscape restoration.
-                  </p>
-                </div>
-
-                <div className="min-w-[350px] bg-white/10 p-6 rounded-2xl snap-start">
-                  <p>
-                    <span className="text-2xl font-bold mb-4 text-green-500">
-                      Session 7: Sustainable Transportation for a Net Zero World
-                    </span>
-                    <br />
-                    Transforming India’s mobility systems is essential to reduce
-                    emissions while supporting economic growth. This session
-                    will examine solutions across electrification, alternative
-                    fuels, and smart mobility infrastructure.
                   </p>
                 </div>
               </div>
@@ -367,7 +353,7 @@ export default function Climate_Innovation_Summmit() {
               <Link
                 className="text-2xl text-green-500 border-4 rounded-2xl px-5 "
                 href={
-                  " https://drive.google.com/file/d/1demqTT6Gvdj5Z4Z_e5-3GaK4MgQeiZv5/view?usp=sharing"
+                  "https://drive.google.com/file/d/1JLTvRZU-o2J0NMGtB99pUUHiHk8zZ4Ad/view"
                 }
               >
                 Click me
@@ -431,14 +417,23 @@ export default function Climate_Innovation_Summmit() {
         {/* Registration */}
         <Section title="Registration">
           <p className="section-text text-left text-xl text-green-500">
-            Early-Bird Registration (Exclusive GST) : Available until 15th April
+            Early-Bird Registration (Exclusive GST) : Available until 30th April
             2026.
           </p>
           <br />
           <ul className="section-list">
-            <li>Industry Delegate: ₹12,500/-</li>
-            <li>NGO , Researchers & Acadmia Delegates: ₹5,000/-</li>
-            <li>2+ Delegates: Special group rates available.</li>
+            <li>INR 5000 plus tax (NGO/Academia)</li>
+            <li>INR 9500 plus tax (Industry body members/Startups)</li>
+            <li>INR 12500 plus tax (Professionals & MSMEs)</li>
+            <li> INR 25000 plus tax (Corporates and others)</li>
+            <br />
+            <li className="text-yellow-500">
+              Note: Corporate Delegate registration includes a comprehensive
+              package designed to enhance your summit experience. This covers a
+              delegate kit, refreshments for both days, access to the networking
+              dinner, participation in roundtable discussions, and a certificate
+              of participation.
+            </li>
           </ul>
           <br />
           <div className="flex flex-col md:flex md:flex-row justify-center items-center">

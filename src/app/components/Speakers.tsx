@@ -1,6 +1,7 @@
 import React from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import Image from "next/image";
+import { url } from "inspector";
 export default function Speakers() {
   const isMobile = useMediaQuery("(max-width: 768px)");
 
@@ -41,6 +42,13 @@ export default function Speakers() {
       },
     ],
     [
+      "Mr_Abhishek_Nath",
+      {
+        url: "/speakers_partners/Mr_Abhishek_Nath.jpeg",
+        org: "CSTEP",
+      },
+    ],
+    [
       "Mr Bharat Saxena",
       {
         url: "/speakers_partners/Mr_Bharat_Saxena.jpeg",
@@ -69,13 +77,6 @@ export default function Speakers() {
       },
     ],
     [
-      "Mr. Prabodha Acharya",
-      {
-        url: "/speakers_partners/Mr_Parobodha_Archya.jpeg",
-        org: "JSW Steel",
-      },
-    ],
-    [
       "Dr Umakant Panda",
       {
         url: "/speakers_partners/Dr_Umakant_Panda.jpeg",
@@ -100,7 +101,7 @@ export default function Speakers() {
       "Dr Kurian Joseph",
       {
         url: "/speakers_partners/Dr.Kurian_Joseph.jpeg",
-        org: "IIT Madras",
+        org: "Anna University",
       },
     ],
     [
@@ -248,6 +249,41 @@ export default function Speakers() {
       {
         url: "/speakers_partners/Dr_Anita_Gupta.jpeg",
         org: "Department of Science, Govt. Of India",
+      },
+    ],
+    [
+      "Mr. Krishnamurthy",
+      {
+        url: "/speakers_partners/Mr_Krishnamurthy.jpeg",
+        org: "Supply Chain Consultant",
+      },
+    ],
+    [
+      "Mr_Sindhu_Sharma",
+      {
+        url: "/speakers_partners/Mr_Sindhu_Sharma.jpeg",
+        org: "NXTRA",
+      },
+    ],
+    [
+      "Mr. Saurabh Palsania",
+      {
+        url: "/speakers_partners/Mr_Saurabh_Palsania.jpeg",
+        org: "Shree Cement",
+      },
+    ],
+    [
+      "Mr. Ajeya Bandyopadhyay",
+      {
+        url: "/speakers_partners/Mr_Ajeya_Bandyopadhyay.jpeg",
+        org: "International Finance Corporation (IFC)",
+      },
+    ],
+    [
+      "Ms. Rishu Garg",
+      {
+        url: "/speakers_partners/Ms_Rishu_Garg.jpeg",
+        org: "CSTEP",
       },
     ],
   ]);
