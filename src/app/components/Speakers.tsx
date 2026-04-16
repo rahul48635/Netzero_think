@@ -6,154 +6,154 @@ export default function Speakers() {
 
   const Speaker_Details: Map<string, { url: string; org: string }> = new Map([
     [
-      "Dr VK Saraswat",
+      "Dr. VK Saraswat",
       {
         url: "/speakers_partners/Dr_VK_Saraswat(Niti_Aayog).jpeg",
         org: "Niti Aayog",
       },
     ],
     [
-      "Mr Krushna Chandra Panigraphy",
+      "Mr. Krushna Chandra Panigraphy",
       {
         url: "/speakers_partners/Mr_krushna_Chandra_Panigrahy.jpeg",
         org: "Bureau of Energy Efficiency",
       },
     ],
     [
-      "Mr Manu Srivastava",
+      "Mr. Manu Srivastava",
       {
         url: "/speakers_partners/Mr_Manu_Srivastav.jpeg",
         org: "Govt. Of Madhaya Pradesh",
       },
     ],
     [
-      "Mr Bhupender Singh Bodh",
+      "Mr. Bhupender Singh Bodh",
       {
         url: "/speakers_partners/Mr_Bhupender_Singh_Bodh.jpeg",
         org: "REMC Ltd.",
       },
     ],
     [
-      "Dr Sunil Duggal",
+      "Dr. Sunil Duggal",
       {
         url: "/speakers_partners/Dr_Sunnil_Duggal.jpeg",
         org: "Bhumi Ventures",
       },
     ],
     [
-      "Mr_Abhishek_Nath",
+      "Mr. Abhishek Nath",
       {
         url: "/speakers_partners/Mr_Abhishek_Nath.jpeg",
         org: "CSTEP",
       },
     ],
     [
-      "Mr Bharat Saxena",
+      "Mr. Bharat Saxena",
       {
         url: "/speakers_partners/Mr_Bharat_Saxena.jpeg",
         org: "Inox Clean Energy",
       },
     ],
     [
-      "Mr Upendra Tripathy",
+      "Mr. Upendra Tripathy",
       {
         url: "/speakers_partners/Mr_Upendra_Tripathy.jpeg",
         org: "International Solar Alliance",
       },
     ],
     [
-      "Mr Erik Solheim",
+      "Mr. Erik Solheim",
       {
         url: "/speakers_partners/Erik_Solheim.jpeg",
         org: "UNEP",
       },
     ],
     [
-      "Mr Arne Lorenzen",
+      "Mr. Arne Lorenzen",
       {
         url: "/speakers_partners/Mr_Arne_Lorenzen.jpeg",
         org: "PowerCurve ApS",
       },
     ],
     [
-      "Dr Umakant Panda",
+      "Dr. Umakant Panda",
       {
         url: "/speakers_partners/Dr_Umakant_Panda.jpeg",
         org: "M.P. Electricity Regulatory Comission",
       },
     ],
     [
-      "Mr D Radhakrishna",
+      "Mr. D Radhakrishna",
       {
         url: "/speakers_partners/Mr_D.Radhakhrishnan.jpeg",
         org: "Tripura Electricity Regulatory Comission",
       },
     ],
     [
-      "Dr Vibha Dhavan",
+      "Dr. Vibha Dhavan",
       {
         url: "/speakers_partners/Dr_Vibha_Dhavan.jpeg",
         org: "TERI",
       },
     ],
     [
-      "Dr Kurian Joseph",
+      "Dr. Kurian Joseph",
       {
         url: "/speakers_partners/Dr.Kurian_Joseph.jpeg",
         org: "Anna University",
       },
     ],
     [
-      "Dr Saurabh Kundu",
+      "Dr. Saurabh Kundu",
       {
         url: "/speakers_partners/Dr_Saurabh_Kundu.jpeg",
         org: "TATA Steel",
       },
     ],
     [
-      "Mr Sanjeev Paul",
+      "Mr. Sanjeev Paul",
       {
         url: "/speakers_partners/Mr_Sanjeev_Paul.jpeg",
         org: "TATA Steel",
       },
     ],
     [
-      "Mr Naveen Khandelwal",
+      "Mr. Naveen Khandelwal",
       {
         url: "/speakers_partners/Mr_Naveen_khandelwal.jpeg",
         org: "Yanara",
       },
     ],
     [
-      "Mr Ratnesh Jha",
+      "Mr. Ratnesh Jha",
       {
         url: "/speakers_partners/Mr_Ratnesh_Jha.jpeg",
         org: "UN Gobal Compact",
       },
     ],
     [
-      "Mr Karunakar Mardi Reddy",
+      "Mr. Karunakar Mardi Reddy",
       {
         url: "/speakers_partners/Mr_Karunakar_Mardi_Reddy.jpeg",
         org: "Igniting Minds",
       },
     ],
     [
-      "Dr PKC BOSE",
+      "Dr. PKC BOSE",
       {
         url: "/speakers_partners/Dr_PKC_BOSE.jpeg",
         org: "Enrego",
       },
     ],
     [
-      "Mr Naveen Ahlawat",
+      "Mr. Naveen Ahlawat",
       {
         url: "/speakers_partners/Mr_Naveen_Ahlawat.jpeg",
         org: "Jindal Steel",
       },
     ],
     [
-      "Dr Vikram Vishal",
+      "Dr. Vikram Vishal",
       {
         url: "/speakers_partners/Dr_Vikram_Vishal.jpeg",
         org: "IIT Bombay",
@@ -258,7 +258,7 @@ export default function Speakers() {
       },
     ],
     [
-      "Mr_Sindhu_Sharma",
+      "Mr. Sindhu Sharma",
       {
         url: "/speakers_partners/Mr_Sindhu_Sharma.jpeg",
         org: "NXTRA",
