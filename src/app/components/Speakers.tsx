@@ -1,7 +1,6 @@
 import React from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import Image from "next/image";
-import { url } from "inspector";
 export default function Speakers() {
   const isMobile = useMediaQuery("(max-width: 768px)");
 
