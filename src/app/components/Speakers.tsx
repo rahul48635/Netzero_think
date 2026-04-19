@@ -285,6 +285,13 @@ export default function Speakers() {
         org: "CSTEP",
       },
     ],
+    [
+      "Dr. Ajay Kumar Singh ",
+      {
+        url: "/speakers_partners/Dr_Ajay_Kumar_Singh.jpeg",
+        org: "CSIR-Central Institute of Mining and Fuel Research, Dhanbad",
+      },
+    ],
   ]);
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-12">

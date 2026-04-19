@@ -1,14 +1,5 @@
 "use client";
-import {
-  Award,
-  Users,
-  Target,
-  Briefcase,
-  ClipboardList,
-  GraduationCap,
-  UserCheck,
-  CheckCircle,
-} from "lucide-react";
+import { Briefcase, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -17,35 +8,32 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { GiArcheryTarget } from "react-icons/gi";
-import { FaCloud, FaRecycle } from "react-icons/fa";
-import { BsCoin } from "react-icons/bs";
+
 import useMediaQuery from "../hooks/useMediaQuery";
 import { Modal, ModalBody, ModalTrigger } from "@/components/ui/animated-modal";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { MdOutlinePolicy } from "react-icons/md";
 
 export default function ServicesPage() {
   const pillars = [
     {
-      title: "Transparent Pricing",
+      title: "End-to-end “Measure → Reduce → Finance → Monetize” approach",
       color: "from-green-500 to-green-700",
     },
     {
-      title: "Deep Domain Knowledge & Experience",
+      title: "Strong expertise across policy, technology & markets",
       color: "from-green-500 to-green-700",
     },
     {
-      title: "End to End Solutions",
+      title: "Focus on high-emitting sectors with maximum impact",
       color: "from-green-500 to-green-700",
     },
     {
-      title: "Certified Experts",
+      title: "Blend of advisory + implementation + digital solutions",
       color: "from-green-500 to-green-700",
     },
     {
-      title: "Global Reachout",
+      title: "Trusted by industry, academia, and global institutions",
       color: "from-green-500 to-green-700",
     },
   ];
@@ -70,113 +58,140 @@ export default function ServicesPage() {
 
   const services = [
     {
-      icon: <GiArcheryTarget className="h-8 w-8" />,
-      title: "Emissions Measurement, Reporting & Verification (MRV)",
+      title: "🌱 GHG Emissions, Scope 1–3 & SBTi Advisory",
+      subtitle: "Transform your emissions into actionable insights",
+      outcome:
+        "Outcome: Regulatory compliance + data-driven decarbonization strategy ",
       features: [
-        "Developing systematic methodologies for accurate GHG emissions (scope 1, 2 & 3) measurement and compliance reporting.",
-        "Assisting organizations in aligning with ISO 14064-3, GHG Protocol, and Science-Based Targets Initiative (SBTi) standards.",
-        "Conducting third-party verification of carbon footprint assessments for corporate sustainability disclosures.",
+        "Comprehensive GHG Inventory (Scope 1, 2 & 3)",
+        "Science-Based Targets (SBTi) strategy & validation support",
+        "Product-level carbon footprinting",
+        "Net-zero roadmap development",
+        "Digital carbon accounting tools & dashboards",
       ],
     },
     {
-      icon: <FaRecycle className="h-8 w-8" />,
-      title: "Life Cycle Assesment (LCA)",
+      title: "🌍 Sustainability, ESG, CBAM & LCA Solutions",
+      subtitle: "Stay compliant. Stay competitive globally.",
+      outcome: "Outcome: Global market access + investor-ready ESG positioning",
       features: [
-        "Life Cycle Assessment & Product Carbon Footprinting: End-to-end analysis of environmental impacts and GHG emissions across a product’s life cycle.",
-        "Environmental Product Declarations (EPDs) & Comparative LCA: Verified documentation and impact comparison to support sustainable product and process choices.",
-        "Training & Capacity Building: Customized programs to build internal expertise in LCA tools, methodologies, and applications.",
+        "ESG reporting & disclosures (BRSR, GRI, TCFD, SDGs)",
+        "CBAM readiness & reporting (EU export compliance)",
+        "Life Cycle Assessment (LCA) & embodied carbon analysis",
+        "Environmental Impact Assessment (EIA)",
+        "	Supply chain sustainability transformation",
       ],
     },
     {
-      icon: <FaCloud className="h-8 w-8" />,
-      title: "Greenhouse Gas (GHG) Accounting & Carbon Footprint Analysis",
+      title: "⚡ Energy Transition & Decarbonization Solutions",
+      subtitle: "Shift from fossil dependency to clean energy leadership.",
+      outcome:
+        "Outcome: Reduced energy cost + lower emissions + future readiness",
       features: [
-        "Conducting sector-specific GHG inventories including LCA & EPD for industries (Steel, Building etc), energy sector, transportation, and heavy manufacturing.",
-        "Developing corporate carbon footprint assessments and sustainability roadmaps for net-zero transition.",
-        "Identifying GHG reduction opportunities, energy efficiency strategies, and carbon credit monetization pathways.",
+        "Renewable energy feasibility, design & implementation",
+        "Energy audits & efficiency optimization",
+        "Green hydrogen & CCUS advisory",
+        "Hybrid energy systems (solar + storage + wind)",
+        "Industrial decarbonization pathways",
       ],
     },
     {
-      icon: <MdOutlinePolicy className="h-8 w-8" />,
-      title: "Climate & Environmental Policy Advisory",
+      title: "💰 Carbon Markets & Environmental Credits",
+      subtitle: "Turn sustainability into revenue.",
+      outcome: "Outcome: New revenue streams + improved ESG valuation",
       features: [
-        "Providing strategic guidance on climate policy compliance, including: ",
-        "Carbon Border Adjustment Mechanism (CBAM)",
-        "SEBI-BRSR, EU Taxonomy, ISSB, and ESG disclosure frameworks",
-        "Indian and international carbon trading mechanisms",
-        "Advising clients on carbon market feasibility, regulatory frameworks, and emission trading schemes (ETS).",
+        "Carbon credit project development & registration",
+        "Verification, validation & trading support",
+        "I-RECs, Renewable Energy Certificates (RECs)",
+        "Voluntary & compliance market advisory",
+        "Carbon portfolio strategy",
+        "	EPR (Extended Producer Responsibility) advisory",
       ],
     },
     {
-      icon: <BsCoin className="h-8 w-8" />,
-      title: "Environmental Credits & Sustainability Finance Advisory",
+      title: "🧑‍💼 Green Staffing & Digital Solutions",
+      subtitle: "Build internal capability at scale.",
+      outcome:
+        "Outcome: Faster execution + reduced dependency on external consultants",
       features: [
-        "Conducting feasibility studies for voluntary and compliance Environmental Credits (Carbon, Plastic, Water, EPR, REC, Green Credits).",
-        "Supporting clients in  credit verification, registry selection, and credit transactions under leading platforms.",
-        "Guiding companies on securing sustainable finance instruments, including green bonds, sustainability-linked loans, and carbon-linked investments.",
+        "Deployment of ESG & sustainability experts",
+        "Interim Chief Sustainability Officer (CSO) support",
+        "Carbon accounting software platforms",
+        "ESG dashboards & automation tools",
+        "Sustainability data management systems",
       ],
     },
     {
-      icon: <ClipboardList className="h-8 w-8" />,
-      title: "ESG Strategy & Reporting",
+      title: "📊 Research, Training & Capacity Building",
+      subtitle: "Empower your organization for long-term transformation.",
+      outcome:
+        "Outcome: Skilled workforce + organization-wide sustainability adoption",
       features: [
-        "Developing ESG strategy frameworks for businesses to align with SEBI-BRSR, TCFD, and GRI reporting requirements.",
-        "Assisting organizations in ESG risk assessment, climate impact reporting, and sustainability disclosure compliance.",
-        "Supporting integration of circular economy principles into business operations.",
-      ],
-    },
-    {
-      icon: <GraduationCap className="h-8 w-8" />,
-      title: "Capacity Building & Professional Training",
-      features: [
-        "Conducting corporate training programs and workshops on: GHG Accounting & Carbon Markets, ESG Strategy & Compliance, Climate Risk Assessment & Adaptation Planning, Carbon & Environment Credit(s)",
-        "Sector-Specific Sustainability Initiatives (e.g., Green Steel, Industrial Decarbonization, Energy Transition)",
-        "Developing professional certification programs to support industry-wide sustainability and climate transition goals",
-      ],
-    },
-    {
-      icon: <UserCheck className="h-8 w-8" />,
-      title: "Green Staffing Solution",
-      features: [
-        "Deployment of Sustainability & ESG Experts (Short-term/Long-term)",
-        "On-demand green talent recruitment",
-        "Build-Operate-Transfer (BOT) model for sustainability departments",
-        "Specialized experts for renewable energy and energy efficiency projects",
-        "Capacity building and staff augmentation for climate-tech startups and CSR initiatives",
+        "Customized corporate sustainability training",
+        "Sector-specific decarbonization workshops",
+        "Policy & market research",
+        "Leadership advisory for CXOs & Boards",
+        "Academic & institutional collaborations",
       ],
     },
   ];
 
   const expertise = [
     {
-      icon: <Award className="h-6 w-6" />,
-      title: "Energy Sector",
-      description: "Power,Oil & Gas,Renewable Energy,Storage",
+      title: "⚡ Power & Energy Sector",
+      subtitle: "Renewables | Green Hydrogen | Grid Modernization",
+      description: [
+        "Renewable energy integration (solar, wind, storage)",
+        "Green hydrogen project advisory (production to application)",
+        "CCUS (Carbon Capture, Utilization & Storage)",
+        "Smart grids & energy storage systems",
+      ],
+      value: "Value: Future-ready energy systems + decarbonized portfolios",
     },
     {
-      icon: <Users className="h-6 w-6" />,
-      title: "Infrastructure Sector ",
-      description: "Buildings",
+      title: "🔩 Mining & Metals (Iron & Steel)",
+      subtitle: "Low-Carbon Steel | Compliance | Circular Economy",
+      description: [
+        "Green steel transition strategy",
+        "Real-time emissions monitoring (Scope 1–3)",
+        "CBAM & green taxonomy compliance",
+        "Waste heat recovery & circular processes",
+      ],
+      value:
+        "Value: Export readiness + cost optimization + regulatory compliance",
     },
     {
-      icon: <Target className="h-6 w-6" />,
-      title: "Banking and Financial Institutions (BFSI)",
-      description: "Banks,Insurance & Reinsurance Company",
+      title: "🏢 Buildings & Infrastructure",
+      subtitle: "Net-Zero Buildings | Smart Cities | Low-Carbon Design",
+      description: [
+        "Net-zero building certification (LEED, IGBC, GRIHA)",
+        "Embodied carbon & lifecycle assessments",
+        "Energy-efficient retrofits",
+        "Sustainable urban infrastructure planning",
+      ],
+      value: "Value: Reduced operational cost + higher asset valuation",
     },
     {
-      icon: <Target className="h-6 w-6" />,
-      title: "Agriculture Sector",
-      description: "Forestry & Agroforestry",
+      title: "💼 Climate Finance & Green Investments",
+      subtitle: "Unlock Capital for Sustainable Growth",
+      description: [
+        "Green bonds & sustainability-linked financing",
+        "Climate risk & scenario analysis",
+        "Carbon asset development",
+        "ESG-aligned investment strategy",
+      ],
+      value: "Value: Access to global climate capital + investor confidence",
     },
     {
-      icon: <Target className="h-6 w-6" />,
-      title: "IT & Services Sector",
-      description: "Data Centers & Offices",
-    },
-    {
-      icon: <Target className="h-6 w-6" />,
-      title: "Manufacturing",
-      description: "Mining,Iron & Steel,Cement,Textile,Chemical",
+      title: "🔗 Cross-Sector Enablers",
+      subtitle: "Supporting every industry with scalable solutions:",
+      description: [
+        "Digital carbon management platforms",
+        "ESG compliance automation",
+        "Training & workforce transformation",
+        "Sustainability program management",
+      ],
+      value: "",
     },
   ];
 
@@ -335,25 +350,18 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full h-full">
             <div className={`${isMobile ? "text-center" : "text-left"}`}>
-              <p className="text-lg text-white mb-6 leading-relaxed font-bold">
-                Net Zero Think Pvt Ltd (NZT) is a leading Solution Provider
-                dedicated to driving low carbon economy transition. As a global
-                climate-focused solutions provider, we support organizations in
-                achieving net-zero emissions and long-term sustainability.
-                Headquartered in Bangalore, India, our global solution centre
-                collaborates with a network of associate partners to deliver
-                tailored climate-centric solutions & services.
+              <p className="text-3xl text-blue-300 mb-6 leading-relaxed font-extrabold ">
+                Accelerating Your Net-Zero Journey with Measurable Impact
               </p>
               <p className="text-lg text-white mb-8 leading-relaxed font-bold">
-                With a mission to assist industries, government bodies, and
-                stakeholders in meeting net-zero targets, we offer expert
-                guidance in emissions accounting & auditing, sustainability
-                strategy, and net zero initiatives. Additionally, we provide
-                Green Staffing solutions, comprehensive training and
-                capacity-building programs to equip professionals and
-                organizations with the knowledge and skills required to navigate
-                the evolving sustainability landscape and implement effective
-                climate solutions.
+                At Net Zero Think, we go beyond advisory — we deliver end-to-end
+                decarbonization solutions, enabling organizations to measure,
+                reduce, finance, and monetize their transition to net zero.
+              </p>
+              <p className="text-lg text-white mb-8 leading-relaxed font-bold">
+                From GHG Emissions to carbon markets, green technologies to
+                climate finance, we partner with you to turn sustainability into
+                a competitive advantage.
               </p>
               <div className="flex flex-wrap gap-2  ">
                 <div className="text-center bg-blue-900 rounded-2xl p-2 dark:bg-white flex-1/3 ">
@@ -385,7 +393,7 @@ export default function ServicesPage() {
             <div className="w-full h-full">
               <div className="justify-self-center self-center w-full sm:w-full h-full px-6  bg-blue-100  text-white flex flex-col items-center rounded-4xl p-5">
                 <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-12 text-blue-800 bg-transparent   rounded-2xl pb-2">
-                  Why Choose Us?
+                  Why NET ZERO THINK ?
                 </h1>
                 <div className="flex flex-col gap-5 w-full max-w-6xl">
                   <motion.div
@@ -508,14 +516,16 @@ export default function ServicesPage() {
                 id={`${index}`}
               >
                 <CardHeader className="pb-4">
-                  <div className="mb-4 p-3 bg-green-500 text-white rounded-lg w-fit">
-                    {service.icon}
-                  </div>
                   <CardTitle className="text-2xl font-bold">
                     <span className="text-blue-800">{service.title}</span>
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
+                  <h2 className="text-xl text-gray-500 font-stretch-200% font-bold  text-left">
+                    {service.subtitle}
+                  </h2>
+                  <br />
+
                   <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
                       <li
@@ -529,6 +539,10 @@ export default function ServicesPage() {
                       </li>
                     ))}
                   </ul>
+                  <br />
+                  <h2 className=" text-green-500 text-xl  font-bold contain-content">
+                    {service.outcome}
+                  </h2>
                 </CardContent>
               </Card>
             ))}
@@ -548,7 +562,7 @@ export default function ServicesPage() {
           {/* Expertise Section */}
           <div className="mb-16">
             <h3 className="text-4xl font-bold mb-8 text-center">
-              <span className="text-white">Core Expertise</span>
+              <span className="text-white">Sector Specific Solutions</span>
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {expertise.map((item, index) => (
@@ -556,9 +570,19 @@ export default function ServicesPage() {
                   key={index}
                   className="text-center p-6 bg-gradient-to-t from-blue-600 to-pink-600 text-white  dark:text-black rounded-xl"
                 >
-                  <div className="mb-4 flex justify-center">{item.icon}</div>
                   <h4 className="text-xl font-bold mb-2">{item.title}</h4>
-                  <span>{item.description}</span>
+                  <br />
+                  <h1 className="text-lg font-semibold">{item.subtitle}</h1>
+                  <br />
+                  <div className="flex flex-col">
+                    {item.description.map((el, idx) => (
+                      <span key={idx} className="text-left">
+                        •{el}
+                      </span>
+                    ))}
+                  </div>
+                  <br />
+                  <h1 className="font-bold">{item.value}</h1>
                 </div>
               ))}
             </div>

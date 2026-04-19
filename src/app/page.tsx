@@ -57,52 +57,40 @@ export default function Home() {
   const services = useMemo(
     () => [
       {
-        title: "Emissions Measurement, Reporting & Verification (MRV)",
+        title: "🌱 GHG Emissions, Scope 1–3 & SBTi Advisory",
         description:
           "We help organizations develop robust systems to measure, report, and verify greenhouse gas (GHG) emissions in line with global standards. This ensures accuracy, transparency, and compliance in sustainability disclosures and target-setting.",
-        url: "/cards/Mrv.png",
+        url: "/cards/img1.jpeg",
       },
       {
-        title: "Life Cycle Assessment (LCA)",
+        title: "🌍 Sustainability, ESG, CBAM & LCA Solutions",
         description:
           "We provide flexible and specialized green staffing solutions to help organizations meet their sustainability and ESG goals. From deploying experts and recruiting on-demand talent to building in-house teams via BOT models, we support startups, corporates, and CSR projects in scaling their climate and energy transition efforts.",
-        url: "/cards/lca4.png",
+        url: "/cards/img2.jpeg",
       },
       {
-        title: "Greenhouse Gas (GHG) Accounting & Carbon Footprint Analysis",
+        title: "⚡ Energy Transition & Decarbonization Solutions",
         description:
           "We help organizations accurately measure and analyze their greenhouse gas emissions across sectors through detailed inventories and life cycle assessments (LCA). Our service supports the creation of carbon footprints, identifies reduction opportunities, and enables businesses to transition toward net-zero through strategic roadmaps and carbon credit monetization.",
-        url: "/cards/GHG.jpg",
+        url: "/cards/img3.jpeg",
       },
       {
-        title: "Climate & Environmental Policy Advisory",
+        title: "💰 Carbon Markets & Environmental Credits",
         description:
           "We provide expert advisory on climate and environmental regulations to help organizations navigate compliance, carbon markets, and emerging sustainability frameworks. Our services ensure alignment with national and global climate policies, including CBAM, SEBI-BRSR, and emission trading systems (ETS).",
-        url: "/cards/policy.jpg",
+        url: "/cards/img4.jpeg",
       },
       {
-        title: "Environmental Credits & Sustainability Finance Advisory",
+        title: "🧑‍💼 Green Staffing & Digital Solutions",
         description:
           "We assist organizations in unlocking value from environmental credits and sustainable finance. Our services include feasibility studies, credit verification, registry navigation, and guidance on securing green bonds, sustainability-linked loans, and other climate-related investment instruments.",
-        url: "/cards/credit.jpg",
+        url: "/cards/img5.jpeg",
       },
       {
-        title: "ESG Strategy & Reporting",
+        title: "📊 Research, Training & Capacity Building",
         description:
           "We support businesses in building ESG strategies that meet global and regional standards such as SEBI-BRSR, TCFD, and GRI. Our services ensure compliance, transparency, and integration of circular economy practices for long-term sustainability.",
-        url: "/cards/esg.jpeg",
-      },
-      {
-        title: "Capacity Building & Professional Training",
-        description:
-          "We design and deliver capacity-building programs and professional training workshops focused on climate action, ESG compliance, and sustainability. These programs empower organizations and professionals with the skills and certifications needed to lead decarbonization and sustainability transitions across sectors.",
-        url: "/cards/capacity.jpeg",
-      },
-      {
-        title: "Green Staffing Solution",
-        description:
-          "We provide flexible and specialized green staffing solutions to help organizations meet their sustainability and ESG goals. From deploying experts and recruiting on-demand talent to building in-house teams via BOT models, we support startups, corporates, and CSR projects in scaling their climate and energy transition efforts.",
-        url: "/cards/Green_stafing.jpg",
+        url: "/cards/img6.jpeg",
       },
     ],
     [],
@@ -126,14 +114,14 @@ export default function Home() {
           filter={false}
         />
         <p className=" mt-10 text-base sm:text-3xl text-white rounded-2xl p-3 font-bold max-w-6xl ">
-          Net Zero Think Pvt Ltd is a global climate solutions company driving
-          the transition to a low-carbon, sustainable future. Headquartered in
+          Net Zero Think is a global climate solutions company driving the
+          transition to a low-carbon, sustainable future. Headquartered in
           Bengaluru, we partner with industries, governments, and institutions
           to accelerate their journey to net-zero through expert-led emissions
-          accounting, sustainability strategy, and climate action planning.
-          Backed by a global network of experts, we also offer green staffing
-          and cutting-edge training programs to build the capabilities needed
-          for lasting climate impact.
+          accounting, audit, sustainability strategy, and climate action
+          planning. Backed by a global network of experts, we also offer green
+          staffing and cutting-edge training programs to build the capabilities
+          needed for lasting climate impact.
         </p>
 
         <motion.div

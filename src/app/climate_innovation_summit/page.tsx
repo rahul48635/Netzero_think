@@ -260,7 +260,7 @@ export default function Climate_Innovation_Summmit() {
         </Section>
 
         {/* Exclusive Roundtables */}
-        <Section title="Exclusive Roundtables & Networking">
+        <Section title="Special Sessions, Roundtables & Networking">
           <p className="section-text text-left">
             Engage in high-impact Policy Dialogues and curated Business
             Matchmaking designed for strategic public-private partnerships.
@@ -272,8 +272,19 @@ export default function Climate_Innovation_Summmit() {
             <span>
               <br />
               <span className="text-2xl font-bold mb-4 text-green-500">
+                Special Address by Niti Aayog
+              </span>
+              <br />
+              <br />
+              <span className="text-2xl font-bold mb-4 text-green-500">
+                Special Address on Save the Soil
+              </span>
+              <br />
+              <br />
+              <span className="text-2xl font-bold mb-4 text-green-500">
                 High-Level Roundtable: Role of Storage for C&I Consumers
               </span>
+              <br />
               Energy storage is becoming a critical enabler for industries
               adopting renewable power. This roundtable will explore business
               models, policy frameworks, and financing mechanisms needed to
@@ -281,9 +292,19 @@ export default function Climate_Innovation_Summmit() {
               sector.
             </span>
             <br />
+            <br />
             <span className="text-2xl text-blue-300">Day 2</span>
             <br />
+            <br />
             <span>
+              <span className="text-2xl font-bold mb-4 text-green-500">
+                <span className="text-2xl font-bold mb-4 text-green-500">
+                  Special Address on Measurement and mitigation of methane
+                  emissions from coal mining in India
+                </span>
+                <br />
+              </span>
+              <br />
               <span className="text-2xl font-bold mb-4 text-green-500">
                 High-Level Roundtable: Climate Finance & Carbon Markets for
                 India’s Net-Zero Vision

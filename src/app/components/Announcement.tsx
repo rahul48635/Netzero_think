@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { motion, AnimatePresence,Variants } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 
 export const AnnouncementSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -13,92 +13,114 @@ export const AnnouncementSection = () => {
       name: "Mr. Arne Lorenzen",
       image: "/core_team/06.jpeg",
       announcement: "Welcome Mr. Arne Lorenzen",
-      description: "We are pleased to announce that Mr. Arne Lorenzen, an internationally respected leader in the clean energy sector, has joined the Advisory Board of Net Zero Think.",
-      details: "With his vast experience and strategic vision, Mr. Lorenzen will strengthen delivering decarbonisation solutions, and supporting industries worldwide in their net zero journey.",
-      welcomeMessage: "Join us in warmly welcoming Mr. Arne Lorenzen to the Net Zero Think family."
+      description:
+        "We are pleased to announce that Mr. Arne Lorenzen, an internationally respected leader in the clean energy sector, has joined the Advisory Board of Net Zero Think.",
+      details:
+        "With his vast experience and strategic vision, Mr. Lorenzen will strengthen delivering decarbonisation solutions, and supporting industries worldwide in their net zero journey.",
+      welcomeMessage:
+        "Join us in warmly welcoming Mr. Arne Lorenzen to the Net Zero Think family.",
     },
     {
       id: 2,
-      name: "Marketing & Social Media Intern",
-      image: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='grad2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23059669;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='200' height='200' fill='url(%23grad2)'/%3E%3Ccircle cx='100' cy='75' r='25' fill='%23374151'/%3E%3Cpath d='M100 110 C85 110, 70 125, 70 140 L70 160 L130 160 L130 140 C130 125, 115 110, 100 110 Z' fill='%23374151'/%3E%3C/svg%3E",
-      announcement: "Hiring for Marketing & Social Media Intern",
-      description: "We are looking for a creative and motivated Marketing & Social Media Intern to join our team. As an intern, you will build our online presence, engage with audience, and support marketing initiatives. This is a great opportunity to gain hands-on experience in digital marketing, content creation, and brand strategy.",
-      details: " ",
-      welcomeMessage: "Apply through Career Section"
+      name: "Join Us in Building a Net-Zero Future.",
+      image:
+        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='grad2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23059669;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='200' height='200' fill='url(%23grad2)'/%3E%3Ccircle cx='100' cy='75' r='25' fill='%23374151'/%3E%3Cpath d='M100 110 C85 110, 70 125, 70 140 L70 160 L130 160 L130 140 C130 125, 115 110, 100 110 Z' fill='%23374151'/%3E%3C/svg%3E",
+      announcement: "Hiring for Multiple Positions",
+      description:
+        "At Net Zero Think, you won’t just work on projects — you will shape industries, influence policy, and drive real climate impact.",
+      details: "Visit Our Job Portal",
+      welcomeMessage: "Apply through Career Section",
     },
-  
+    {
+      id: 3,
+      name: "Climate Innovation Summit",
+      image:
+        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='grad2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23059669;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='200' height='200' fill='url(%23grad2)'/%3E%3Ccircle cx='100' cy='75' r='25' fill='%23374151'/%3E%3Cpath d='M100 110 C85 110, 70 125, 70 140 L70 160 L130 160 L130 140 C130 125, 115 110, 100 110 Z' fill='%23374151'/%3E%3C/svg%3E",
+      announcement: "Hiring for Multiple Positions",
+      description:
+        "At Net Zero Think, you won’t just work on projects — you will shape industries, influence policy, and drive real climate impact.",
+      details: "Visit Our Job Portal",
+      welcomeMessage: "Apply through Career Section",
+    },
   ];
 
   // Auto-slide functionality
   useEffect(() => {
     const interval = setInterval(() => {
       setDirection(1);
-      setCurrentIndex((prevIndex) => 
-        prevIndex === teamMembers.length - 1 ? 0 : prevIndex + 1
+      setCurrentIndex((prevIndex) =>
+        prevIndex === teamMembers.length - 1 ? 0 : prevIndex + 1,
       );
     }, 50000); // Change slide every 5 seconds
 
     return () => clearInterval(interval);
   }, [teamMembers.length]);
 
-  const goToSlide = (index:number) => {
+  const goToSlide = (index: number) => {
     setDirection(index > currentIndex ? 1 : -1);
     setCurrentIndex(index);
   };
 
   const goToPrevious = () => {
     setDirection(-1);
-    setCurrentIndex(currentIndex === 0 ? teamMembers.length - 1 : currentIndex - 1);
+    setCurrentIndex(
+      currentIndex === 0 ? teamMembers.length - 1 : currentIndex - 1,
+    );
   };
 
   const goToNext = () => {
     setDirection(1);
-    setCurrentIndex(currentIndex === teamMembers.length - 1 ? 0 : currentIndex + 1);
+    setCurrentIndex(
+      currentIndex === teamMembers.length - 1 ? 0 : currentIndex + 1,
+    );
   };
 
   const currentMember = teamMembers[currentIndex];
 
   // Animation variants
   const slideVariants = {
-    enter: (direction:number) => ({
+    enter: (direction: number) => ({
       x: direction > 0 ? 1000 : -1000,
-      opacity: 0
+      opacity: 0,
     }),
     center: {
       zIndex: 1,
       x: 0,
-      opacity: 1
+      opacity: 1,
     },
-    exit: (direction:number) => ({
+    exit: (direction: number) => ({
       zIndex: 0,
       x: direction < 0 ? 1000 : -1000,
-      opacity: 0
-    })
+      opacity: 0,
+    }),
   };
 
-  const textVariants:Variants = {
+  const textVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
-    }
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
   };
 
-  const imageVariants:Variants = {
+  const imageVariants: Variants = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { 
-      opacity: 1, 
+    visible: {
+      opacity: 1,
       scale: 1,
-      transition: { duration: 0.6, ease: "easeOut" }
-    }
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
   };
 
   return (
-    <section className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8 rounded-2xl" id="announcements">
+    <section
+      className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8 rounded-2xl"
+      id="announcements"
+    >
       <div className="max-w-5xl mx-auto">
         {/* Section Header */}
-        <motion.div 
+        <motion.div
           className="text-center mb-12"
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -108,11 +130,12 @@ export const AnnouncementSection = () => {
             Announcements
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Stay updated with our latest team additions and company milestones as we continue to grow our mission towards a sustainable future.
+            Stay updated with our latest team additions and company milestones
+            as we continue to grow our mission towards a sustainable future.
           </p>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="bg-white rounded-lg shadow-lg overflow-hidden relative"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -128,7 +151,7 @@ export const AnnouncementSection = () => {
           >
             <ChevronLeft className="w-6 h-6 text-gray-700" />
           </motion.button>
-          
+
           <motion.button
             onClick={goToNext}
             className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white rounded-full p-2 shadow-lg"
@@ -140,7 +163,7 @@ export const AnnouncementSection = () => {
           </motion.button>
 
           <AnimatePresence mode="wait" custom={direction}>
-            <motion.div 
+            <motion.div
               key={currentMember.id}
               custom={direction}
               variants={slideVariants}
@@ -149,13 +172,13 @@ export const AnnouncementSection = () => {
               exit="exit"
               transition={{
                 x: { type: "spring", stiffness: 300, damping: 30 },
-                opacity: { duration: 0.4 }
+                opacity: { duration: 0.4 },
               }}
               className="flex flex-col lg:flex-row min-h-[400px]"
             >
               {/* Left Content Section */}
               <div className="bg-green-500 p-8 lg:w-2/3 flex flex-col justify-center">
-                <motion.h1 
+                <motion.h1
                   variants={textVariants}
                   initial="hidden"
                   animate="visible"
@@ -163,9 +186,9 @@ export const AnnouncementSection = () => {
                 >
                   {currentMember.announcement}
                 </motion.h1>
-                
+
                 <div className="text-blue-950 space-y-4">
-                  <motion.p 
+                  <motion.p
                     variants={textVariants}
                     initial="hidden"
                     animate="visible"
@@ -174,8 +197,8 @@ export const AnnouncementSection = () => {
                   >
                     {currentMember.description}
                   </motion.p>
-                  
-                  <motion.p 
+
+                  <motion.p
                     variants={textVariants}
                     initial="hidden"
                     animate="visible"
@@ -184,8 +207,8 @@ export const AnnouncementSection = () => {
                   >
                     {currentMember.details}
                   </motion.p>
-                  
-                  <motion.p 
+
+                  <motion.p
                     variants={textVariants}
                     initial="hidden"
                     animate="visible"
@@ -196,25 +219,25 @@ export const AnnouncementSection = () => {
                   </motion.p>
                 </div>
               </div>
-              
+
               {/* Right Profile Section */}
               <div className="bg-blue-900 p-8 lg:w-1/3 flex flex-col items-center justify-center text-center">
                 {/* Profile Image Container */}
-                <motion.div 
+                <motion.div
                   variants={imageVariants}
                   initial="hidden"
                   animate="visible"
                   className="mb-6"
                 >
-                  <motion.div 
+                  <motion.div
                     className="w-40 h-40 rounded-full overflow-hidden border-4 border-yellow-400 shadow-lg mx-auto"
-                    whileHover={{ 
+                    whileHover={{
                       scale: 1.05,
                       rotate: [0, -1, 1, 0],
-                      transition: { duration: 0.4 }
+                      transition: { duration: 0.4 },
                     }}
                   >
-                    <motion.img 
+                    <motion.img
                       src={currentMember.image}
                       alt={currentMember.name}
                       className="w-full h-full object-cover"
@@ -224,8 +247,8 @@ export const AnnouncementSection = () => {
                     />
                   </motion.div>
                 </motion.div>
-                
-                <motion.div 
+
+                <motion.div
                   className="text-yellow-400 font-bold text-lg mb-4"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -233,9 +256,9 @@ export const AnnouncementSection = () => {
                 >
                   {currentMember.name}
                 </motion.div>
-                
+
                 {/* Slide indicators */}
-                <motion.div 
+                <motion.div
                   className="flex space-x-2 mt-4"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -246,44 +269,50 @@ export const AnnouncementSection = () => {
                       key={index}
                       onClick={() => goToSlide(index)}
                       className={`w-3 h-3 rounded-full ${
-                        index === currentIndex 
-                          ? 'bg-yellow-400' 
-                          : 'bg-yellow-400/50'
+                        index === currentIndex
+                          ? "bg-yellow-400"
+                          : "bg-yellow-400/50"
                       }`}
                       whileHover={{ scale: 1.2 }}
                       whileTap={{ scale: 0.9 }}
-                      animate={{ 
+                      animate={{
                         scale: index === currentIndex ? 1.25 : 1,
-                        opacity: index === currentIndex ? 1 : 0.6
+                        opacity: index === currentIndex ? 1 : 0.6,
                       }}
-                      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 300,
+                        damping: 20,
+                      }}
                     />
                   ))}
                 </motion.div>
               </div>
             </motion.div>
           </AnimatePresence>
-          
+
           {/* Bottom accent bar */}
-          <motion.div 
+          <motion.div
             className="h-2 bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-400"
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
             style={{ transformOrigin: "left" }}
           />
-          
+
           {/* Progress bar */}
-          <motion.div 
+          <motion.div
             className="absolute bottom-0 left-0 h-1 bg-yellow-600"
             initial={{ width: 0 }}
-            animate={{ width: `${((currentIndex + 1) / teamMembers.length) * 100}%` }}
+            animate={{
+              width: `${((currentIndex + 1) / teamMembers.length) * 100}%`,
+            }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
           />
         </motion.div>
-        
+
         {/* Slide counter */}
-        <motion.div 
+        <motion.div
           className="text-center mt-4 text-gray-600"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

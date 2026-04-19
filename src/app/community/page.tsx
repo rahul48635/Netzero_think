@@ -194,7 +194,7 @@ export default function ClimateInnovationCommunity() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="text-blue-800 leading-relaxed">
+                    <CardDescription className="text-white text-lg leading-relaxed">
                       {benefit.description}
                     </CardDescription>
                   </CardContent>
