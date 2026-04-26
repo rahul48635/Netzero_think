@@ -34,13 +34,12 @@ export const AnnouncementSection = () => {
     {
       id: 3,
       name: "Climate Innovation Summit",
-      image:
-        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='grad2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2310b981;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23059669;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='200' height='200' fill='url(%23grad2)'/%3E%3Ccircle cx='100' cy='75' r='25' fill='%23374151'/%3E%3Cpath d='M100 110 C85 110, 70 125, 70 140 L70 160 L130 160 L130 140 C130 125, 115 110, 100 110 Z' fill='%23374151'/%3E%3C/svg%3E",
-      announcement: "Hiring for Multiple Positions",
+      image: "/speakers_partners/Csis_logo.jpeg",
+      announcement: "Climate Innovation Summit 2026",
       description:
-        "At Net Zero Think, you won’t just work on projects — you will shape industries, influence policy, and drive real climate impact.",
-      details: "Visit Our Job Portal",
-      welcomeMessage: "Apply through Career Section",
+        "The Climate Innovation Summit 2026 is a premier two-day event designed to accelerate India’s pathway toward Net Zero for Viksit Bharat. This summit serves as a critical catalyst for clean technology adoption, industrial decarbonization, and green economic growth.\n Dates: 28–29 May 2026 \n Venue: Indian Institute of Management Bangalore (IIM Bangalore) \n Hosts: Net Zero Think & IIM Bangalore ",
+      details: "Visit Our Cis 2026 Page fpr more info",
+      welcomeMessage: "Apply through CIS 2026 page",
     },
   ];
 
@@ -240,7 +239,7 @@ export const AnnouncementSection = () => {
                     <motion.img
                       src={currentMember.image}
                       alt={currentMember.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
                       initial={{ scale: 1.2, opacity: 0 }}
                       animate={{ scale: 1, opacity: 1 }}
                       transition={{ duration: 0.6, ease: "easeOut" }}

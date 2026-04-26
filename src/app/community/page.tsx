@@ -84,7 +84,7 @@ export default function ClimateInnovationCommunity() {
   const academia_card = [
     {
       title: "upcoming Course",
-      pic: "/bg-cover/corp.png",
+      pic: "/bg-cover/corp.webp",
     },
   ];
 
