@@ -325,7 +325,7 @@ export default function Climate_Innovation_Summmit() {
               compliance, and capability gaps, while highlighting best practices
               and innovations that enable enterprises to drive sustainability,
               resilience, and long-term business value through effective ESG
-              implementation. sector.
+              implementation.
             </span>
           </p>
         </Section>
