@@ -230,13 +230,6 @@ export default function Speakers() {
       },
     ],
     [
-      "Mr. Ram Solaimalai",
-      {
-        url: "/speakers_partners/Mr_Ram_Solaimalai.jpeg",
-        org: "Johnson Matthey",
-      },
-    ],
-    [
       "Mr.K.R. Raghunath ",
       {
         url: "/speakers_partners/Mr_K_R_Raghunath.jpeg",
@@ -296,7 +289,7 @@ export default function Speakers() {
       "Dr. G. Sateesh Reddy",
       {
         url: "/speakers_partners/Dr_G_Sateesh_Reddy.jpeg",
-        org: "CSIR-Central Institute of Mining and Fuel Research, Dhanbad",
+        org: "DRDO",
       },
     ],
   ]);

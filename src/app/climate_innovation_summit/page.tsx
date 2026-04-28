@@ -280,6 +280,14 @@ export default function Climate_Innovation_Summmit() {
               <br />
               <br />
               <span className="text-2xl font-bold mb-4 text-green-500">
+                <span className="text-2xl font-bold mb-4 text-green-500">
+                  Special Address on Measurement and mitigation of methane
+                  emissions from coal mining in India
+                </span>
+                <br />
+              </span>
+              <br />
+              <span className="text-2xl font-bold mb-4 text-green-500">
                 High-Level Roundtable: Role of Storage for C&I Consumers
               </span>
               <br />
@@ -289,17 +297,9 @@ export default function Climate_Innovation_Summmit() {
               scale storage adoption across the commercial and industrial
               sector.
             </span>
+            <br />
+            <br />
             <span>
-              <span className="text-2xl font-bold mb-4 text-green-500">
-                <br />
-                <br />
-                <span className="text-2xl font-bold mb-4 text-green-500">
-                  Special Address on Measurement and mitigation of methane
-                  emissions from coal mining in India
-                </span>
-                <br />
-              </span>
-              <br />
               <span className="text-2xl font-bold mb-4 text-green-500">
                 High-Level Roundtable: Climate Finance & Carbon Markets for
                 India’s Net-Zero Vision
