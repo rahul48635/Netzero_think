@@ -40,28 +40,28 @@ export default function Climate_Innovation_Summmit() {
   const { ref, inView } = useInView();
   const speakers: Map<string, string[]> = new Map([
     ["Session Partners", ["/speakers_partners/Session_Partner.jpeg"]],
-    ["Cause Partner", ["/speakers_partners/Cause_Partner.jpg"]],
+    ["Cause Partner", ["/speakers_partners/Cause_Partner_1.jpg"]],
     [
       "Associate Partners",
       [
         "/speakers_partners/Associate_Partner.jpeg",
-        "/speakers_partners/Associate_partner_1.jpeg",
-        "/speakers_partners/Associate_Partner_2.jpeg",
-        "/speakers_partners/Associate_Partner_3.jpeg",
-        "/speakers_partners/Associate_Partner_4.jpeg",
+        "/speakers_partners/Associate_partner_1.png",
+        "/speakers_partners/Associate_Partner_2.png",
+        "/speakers_partners/Associate_Partner_3.jpg",
+        "/speakers_partners/Associate_Partner_4.jpg",
       ],
     ],
     [
       "Supporting Partners",
       [
-        "/speakers_partners/Supporting_partner_.jpeg",
-        "/speakers_partners/supporting_partner_2.jpeg",
-        "/speakers_partners/IACCIA.jpeg",
+        "/speakers_partners/Supporting_partner_1.png",
+        "/speakers_partners/supporting_partner_2.jpg",
+        "/speakers_partners/supporting_partner_3.jpg",
         "/speakers_partners/NETRA.jpeg",
         "/speakers_partners/SDG_partner.jpeg",
       ],
     ],
-    ["Media Partner", ["/speakers_partners/media_partner.jpeg"]],
+    ["Media Partner", ["/speakers_partners/media_partner.jpg"]],
     ["Knowledge Partner", ["/speakers_partners/Knowledge_partner.jpeg"]],
   ]);
   const banner: Record<string, string> = {
@@ -267,8 +267,6 @@ export default function Climate_Innovation_Summmit() {
             These sessions bring together a premium network of CXOs,
             Professionals, Researchers, and Regulators to shape the discourse
             for India&apos;s Net-Zero transformation. <br /> <br />
-            <span className="text-2xl text-blue-300">Day 1</span>
-            <br />
             <span>
               <br />
               <span className="text-2xl font-bold mb-4 text-green-500">
@@ -291,13 +289,10 @@ export default function Climate_Innovation_Summmit() {
               scale storage adoption across the commercial and industrial
               sector.
             </span>
-            <br />
-            <br />
-            <span className="text-2xl text-blue-300">Day 2</span>
-            <br />
-            <br />
             <span>
               <span className="text-2xl font-bold mb-4 text-green-500">
+                <br />
+                <br />
                 <span className="text-2xl font-bold mb-4 text-green-500">
                   Special Address on Measurement and mitigation of methane
                   emissions from coal mining in India
@@ -314,6 +309,23 @@ export default function Climate_Innovation_Summmit() {
               levels of climate finance and robust carbon market mechanisms.
               This roundtable will bring together policymakers, investors, and
               industry leaders to explore innovative financing frameworks.
+            </span>
+            <br />
+            <br />
+            <span>
+              <span className="text-2xl font-bold mb-4 text-green-500">
+                High-Level Roundtable: ESG implementation Journey of Enterprises
+              </span>
+              <br />
+              From Intent to Impact: The roundtable explores how organizations
+              translate ESG commitments into measurable outcomes. The roundtable
+              will cover strategy alignment, operational integration, ESG data
+              and reporting systems, financing mechanisms, and the role of
+              technology. It will address key challenges such as cost,
+              compliance, and capability gaps, while highlighting best practices
+              and innovations that enable enterprises to drive sustainability,
+              resilience, and long-term business value through effective ESG
+              implementation. sector.
             </span>
           </p>
         </Section>

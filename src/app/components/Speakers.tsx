@@ -13,7 +13,7 @@ export default function Speakers() {
       },
     ],
     [
-      "Mr. Krushna Chandra Panigraphy",
+      "Mr. Krushna Chandra Panigrahy",
       {
         url: "/speakers_partners/Mr_krushna_Chandra_Panigrahy.jpeg",
         org: "Bureau of Energy Efficiency",
@@ -289,6 +289,13 @@ export default function Speakers() {
       "Dr. Ajay Kumar Singh ",
       {
         url: "/speakers_partners/Dr_Ajay_Kumar_Singh.jpeg",
+        org: "CSIR-Central Institute of Mining and Fuel Research, Dhanbad",
+      },
+    ],
+    [
+      "Dr. G. Sateesh Reddy",
+      {
+        url: "/speakers_partners/Dr_G_Sateesh_Reddy.jpeg",
         org: "CSIR-Central Institute of Mining and Fuel Research, Dhanbad",
       },
     ],
