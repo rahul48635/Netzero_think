@@ -59,7 +59,7 @@ export default function Climate_Innovation_Summmit() {
         "/speakers_partners/supporting_partner_3.jpg",
         "/speakers_partners/NETRA.jpeg",
         "/speakers_partners/SDG_partner.jpeg",
-        "/speakers_partners/Supporting_partner_4.jpeg",
+        "/speakers_partners/supporting_partner_4.jpeg",
       ],
     ],
     ["Media Partner", ["/speakers_partners/media_partner.jpg"]],
