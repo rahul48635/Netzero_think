@@ -292,6 +292,13 @@ export default function Speakers() {
         org: "DRDO",
       },
     ],
+    [
+      "Mr. Yashodhan Ramteke",
+      {
+        url: "/speakers_partners/Mr_Yashodhan_Ramteke.jpeg",
+        org: "Ecoguard",
+      },
+    ],
   ]);
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-12">

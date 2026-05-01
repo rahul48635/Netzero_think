@@ -59,6 +59,7 @@ export default function Climate_Innovation_Summmit() {
         "/speakers_partners/supporting_partner_3.jpg",
         "/speakers_partners/NETRA.jpeg",
         "/speakers_partners/SDG_partner.jpeg",
+        "/speakers_partners/Supporting_partner_4.jpeg",
       ],
     ],
     ["Media Partner", ["/speakers_partners/media_partner.jpg"]],
@@ -77,18 +78,18 @@ export default function Climate_Innovation_Summmit() {
       <div className="relative max-w-6xl mx-auto px-6 sm:my-50 my-10" ref={ref}>
         {/* About the Summit */}
         <Section title="Climate Innovation Summit 2026">
-          <div className="grid grid-cols-1 sm:grid-cols-1 md:flex md:justify-center  gap-6 mt-12 ">
+          <div className="grid grid-cols-1 sm:grid-cols-1 sm:w-full md:flex md:justify-center  gap-6 mt-12 ">
             {Object.entries(banner).map(([key, item], idx) => (
               <div
                 key={idx}
-                className="relative group overflow-hidden rounded-2xl border border-white/20"
+                className="relative group overflow-hidden rounded-2xl border border-white/20 "
               >
                 <Image
                   src={item}
                   alt={`Speaker ${item}`}
-                  width={300}
+                  width={500}
                   height={300}
-                  className="w-full h-60 object-contain transition duration-500 group-hover:scale-110"
+                  className="w-[70rem] h-70 object-fill transition duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center text-white font-bold">
                   {key}
@@ -386,7 +387,7 @@ export default function Climate_Innovation_Summmit() {
               <Link
                 className="text-2xl text-green-500 border-4 rounded-2xl px-5 "
                 href={
-                  "https://drive.google.com/file/d/1JLTvRZU-o2J0NMGtB99pUUHiHk8zZ4Ad/view"
+                  "https://drive.google.com/file/d/12vXJllvXZ2rwYsCQq8C35FzFuldWctfv/view?usp=drive_link"
                 }
               >
                 Click me
@@ -450,15 +451,13 @@ export default function Climate_Innovation_Summmit() {
         {/* Registration */}
         <Section title="Registration">
           <p className="section-text text-left text-xl text-green-500">
-            Early-Bird Registration (Exclusive GST) : Available until 30th April
-            2026.
+            Registration (Exclusive GST)
           </p>
           <br />
           <ul className="section-list">
-            <li>INR 5000 plus tax (NGO/Academia)</li>
-            <li>INR 9500 plus tax (Industry body members/Startups)</li>
-            <li>INR 12500 plus tax (Professionals & MSMEs)</li>
-            <li> INR 25000 plus tax (Corporates and others)</li>
+            <li>INR 5000 plus tax (NGO/Academia/Startup)</li>
+            <li>INR 9500 plus tax (Industry body members/MSME)</li>
+            <li>INR 15000 plus tax (Corporate)</li>
             <br />
             <li className="text-yellow-500">
               Note: Corporate Delegate registration includes a comprehensive

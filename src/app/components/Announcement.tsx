@@ -37,9 +37,10 @@ export const AnnouncementSection = () => {
       image: "/speakers_partners/Csis_logo.jpeg",
       announcement: "Climate Innovation Summit 2026",
       description:
-        "The Climate Innovation Summit 2026 is a premier two-day event designed to accelerate India’s pathway toward Net Zero for Viksit Bharat. This summit serves as a critical catalyst for clean technology adoption, industrial decarbonization, and green economic growth.\n Dates: 28–29 May 2026 \n Venue: Indian Institute of Management Bangalore (IIM Bangalore) \n Hosts: Net Zero Think & IIM Bangalore ",
-      details: "Visit Our Cis 2026 Page fpr more info",
-      welcomeMessage: "Apply through CIS 2026 page",
+        "The Climate Innovation Summit 2026 is a premier two-day event designed to accelerate India’s pathway toward Net Zero for Viksit Bharat. This summit serves as a critical catalyst for clean technology adoption, industrial decarbonization, and green economic growth.",
+      details:
+        "Date : 28-29 May/Venue: IIM Bangalore/Host : IIMB and Net Zero Think",
+      welcomeMessage: "Register via CIS 2026 page",
     },
   ];
 
