@@ -64,6 +64,7 @@ export default function Climate_Innovation_Summmit() {
     ],
     ["Media Partner", ["/speakers_partners/media_partner.jpg"]],
     ["Knowledge Partner", ["/speakers_partners/Knowledge_partner.jpeg"]],
+    ["Gold Partner", ["/speakers_partners/GOLD_Partner.jpeg"]],
   ]);
   const banner: Record<string, string> = {
     Organiser: "/speakers_partners/Csis_logo.jpeg",

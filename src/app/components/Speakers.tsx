@@ -142,7 +142,7 @@ export default function Speakers() {
       "Dr. PKC BOSE",
       {
         url: "/speakers_partners/Dr_PKC_BOSE.jpeg",
-        org: "Enrego",
+        org: "CAMBI Group Norway",
       },
     ],
     [
@@ -297,6 +297,48 @@ export default function Speakers() {
       {
         url: "/speakers_partners/Mr_Yashodhan_Ramteke.jpeg",
         org: "Ecoguard",
+      },
+    ],
+    [
+      "Ms. Shreeya Shukla",
+      {
+        url: "/speakers_partners/Ms_Shreeya_Shukla.jpeg",
+        org: "Pi-Green Innovation",
+      },
+    ],
+    [
+      "Mr. Prasad Borge ",
+      {
+        url: "/speakers_partners/Mr_Prasad_Borge.jpeg",
+        org: "Pi-Green Innovation",
+      },
+    ],
+    [
+      "Mr. S.V. Patil",
+      {
+        url: "/speakers_partners/Mr_S_V_Patil.jpeg",
+        org: "CEO The India Cement Limited",
+      },
+    ],
+    [
+      "Mr. Pravin Dongre",
+      {
+        url: "/speakers_partners/Mr_Pravin_Dongre.jpeg",
+        org: "IOCL",
+      },
+    ],
+    [
+      "Mr. Vijay Kumar",
+      {
+        url: "/speakers_partners/Mr_Vijay_Kumar.jpeg",
+        org: "Carbonetics Carbon Capture",
+      },
+    ],
+    [
+      "Mr. Debi Prasad Dash",
+      {
+        url: "/speakers_partners/Mr_Debi_Prasad_Dash.jpeg",
+        org: "NETRA",
       },
     ],
   ]);
