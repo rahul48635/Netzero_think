@@ -39,6 +39,7 @@ function Section({
 export default function Climate_Innovation_Summmit() {
   const { ref, inView } = useInView();
   const speakers: Map<string, string[]> = new Map([
+    ["Gold Partner", ["/speakers_partners/GOLD_Partner.jpeg"]],
     ["Session Partners", ["/speakers_partners/Session_Partner.jpeg"]],
     ["Cause Partner", ["/speakers_partners/Cause_Partner_1.jpg"]],
     [
@@ -64,7 +65,6 @@ export default function Climate_Innovation_Summmit() {
     ],
     ["Media Partner", ["/speakers_partners/media_partner.jpg"]],
     ["Knowledge Partner", ["/speakers_partners/Knowledge_partner.jpeg"]],
-    ["Gold Partner", ["/speakers_partners/GOLD_Partner.jpeg"]],
   ]);
   const banner: Record<string, string> = {
     Organiser: "/speakers_partners/Csis_logo.jpeg",
