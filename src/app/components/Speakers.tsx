@@ -317,7 +317,7 @@ export default function Speakers() {
       "Mr. S.V. Patil",
       {
         url: "/speakers_partners/Mr_S_V_Patil.jpeg",
-        org: "CEO The India Cement Limited",
+        org: "India Cement Limited",
       },
     ],
     [
@@ -331,7 +331,7 @@ export default function Speakers() {
       "Mr. Vijay Kumar",
       {
         url: "/speakers_partners/Mr_Vijay_Kumar.jpeg",
-        org: "Carbonetics Carbon Capture",
+        org: "Brigade Enterprises Limited",
       },
     ],
     [
@@ -346,6 +346,27 @@ export default function Speakers() {
       {
         url: "/speakers_partners/Mr_Yash_Agarwal.jpeg",
         org: "Carbonetics Carbon Capture",
+      },
+    ],
+    [
+      "Dr. Satish Mishra",
+      {
+        url: "/speakers_partners/Dr_Satish_Mishra.jpeg",
+        org: "Trident Group",
+      },
+    ],
+    [
+      "Mr. Pavan Shah",
+      {
+        url: "/speakers_partners/Mr_Pavan_Shah.jpeg",
+        org: "International Financial Services Authority",
+      },
+    ],
+    [
+      "Mr. Kishore Nair",
+      {
+        url: "/speakers_partners/Mr_Kishore_Nair.jpeg",
+        org: "Avaada Energy",
       },
     ],
   ]);
