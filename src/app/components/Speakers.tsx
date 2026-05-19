@@ -6,6 +6,20 @@ export default function Speakers() {
 
   const Speaker_Details: Map<string, { url: string; org: string }> = new Map([
     [
+      "Mr. Santosh Kumar Joginapalli",
+      {
+        url: "/speakers_partners/Mr_Santosh_Kumar_Joginapalli.jpeg",
+        org: "India's Forest Guardian",
+      },
+    ],
+    [
+      "Group Captain Shubhanshu Shukla",
+      {
+        url: "/speakers_partners/Group_Captain_Shubhanshu_Shukla.jpeg",
+        org: "ISRO",
+      },
+    ],
+    [
       "Dr. VK Saraswat",
       {
         url: "/speakers_partners/Dr_VK_Saraswat(Niti_Aayog).jpeg",
@@ -367,6 +381,34 @@ export default function Speakers() {
       {
         url: "/speakers_partners/Mr_Kishore_Nair.jpeg",
         org: "Avaada Energy",
+      },
+    ],
+    [
+      "Mr. Joginapalli Santosh Kumar",
+      {
+        url: "/speakers_partners/Mr_Joginapalli_Santosh_Kumar.jpeg",
+        org: "India's Forest Guardian",
+      },
+    ],
+    [
+      "Mr. Pratyush Thakur",
+      {
+        url: "/speakers_partners/Mr_Pratyush_Thakur.jpeg",
+        org: "Blueleaf Energy",
+      },
+    ],
+    [
+      "Lt. Col. Monish Ahuja",
+      {
+        url: "/speakers_partners/Lt_Col_Monish_Ahuja.jpeg",
+        org: "PRESPL",
+      },
+    ],
+    [
+      "Mr. Chandrashekhar Chincholkar",
+      {
+        url: "/speakers_partners/Mr_Chandrashekhar_Chincholkar.jpeg",
+        org: "CMK Advisors LLP",
       },
     ],
   ]);
