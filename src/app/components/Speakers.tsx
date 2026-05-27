@@ -19,13 +19,7 @@ export default function Speakers() {
         org: "ISRO",
       },
     ],
-    [
-      "Dr. VK Saraswat",
-      {
-        url: "/speakers_partners/Dr_VK_Saraswat(Niti_Aayog).jpeg",
-        org: "Niti Aayog",
-      },
-    ],
+
     [
       "Mr. Krushna Chandra Panigrahy",
       {
@@ -61,13 +55,7 @@ export default function Speakers() {
         org: "CSTEP",
       },
     ],
-    [
-      "Mr. Bharat Saxena",
-      {
-        url: "/speakers_partners/Mr_Bharat_Saxena.jpeg",
-        org: "Inox Clean Energy",
-      },
-    ],
+
     [
       "Mr. Upendra Tripathy",
       {
@@ -75,13 +63,7 @@ export default function Speakers() {
         org: "International Solar Alliance",
       },
     ],
-    [
-      "Mr. Erik Solheim",
-      {
-        url: "/speakers_partners/Erik_Solheim.jpeg",
-        org: "UNEP",
-      },
-    ],
+
     [
       "Mr. Arne Lorenzen",
       {
@@ -138,13 +120,7 @@ export default function Speakers() {
         org: "Yanara",
       },
     ],
-    [
-      "Mr. Ratnesh Jha",
-      {
-        url: "/speakers_partners/Mr_Ratnesh_Jha.jpeg",
-        org: "UN Gobal Compact",
-      },
-    ],
+
     [
       "Mr. Karunakar Mardi Reddy",
       {
@@ -159,13 +135,7 @@ export default function Speakers() {
         org: "CAMBI Group Norway",
       },
     ],
-    [
-      "Mr. Naveen Ahlawat",
-      {
-        url: "/speakers_partners/Mr_Naveen_Ahlawat.jpeg",
-        org: "Jindal Steel",
-      },
-    ],
+
     [
       "Dr. Vikram Vishal",
       {
@@ -173,20 +143,7 @@ export default function Speakers() {
         org: "IIT Bombay",
       },
     ],
-    [
-      "Mr.Yuvaraj Dinesh Babu Nityanandam",
-      {
-        url: "/speakers_partners/Mr_Yuvaraj_Dinesh_Babu_Nityanandam.jpeg",
-        org: "UNMAI Carbon Solutions",
-      },
-    ],
-    [
-      "Dr. Waiel S. H. Awwad",
-      {
-        url: "/speakers_partners/Dr_Waiel_S_H_Awwad.jpeg",
-        org: "India-Arab Chamber of Commerce, Industry, and Agriculture (IACCIA)",
-      },
-    ],
+
     [
       "Mr. Aditya Pyasi",
       {
@@ -278,13 +235,7 @@ export default function Speakers() {
         org: "Shree Cement",
       },
     ],
-    [
-      "Mr. Ajeya Bandyopadhyay",
-      {
-        url: "/speakers_partners/Mr_Ajeya_Bandyopadhyay.jpeg",
-        org: "International Finance Corporation (IFC)",
-      },
-    ],
+
     [
       "Ms. Rishu Garg",
       {
@@ -369,13 +320,7 @@ export default function Speakers() {
         org: "Trident Group",
       },
     ],
-    [
-      "Mr. Pavan Shah",
-      {
-        url: "/speakers_partners/Mr_Pavan_Shah.jpeg",
-        org: "International Financial Services Authority",
-      },
-    ],
+
     [
       "Mr. Kishore Nair",
       {
@@ -383,13 +328,7 @@ export default function Speakers() {
         org: "Avaada Energy",
       },
     ],
-    [
-      "Mr. Joginapalli Santosh Kumar",
-      {
-        url: "/speakers_partners/Mr_Joginapalli_Santosh_Kumar.jpeg",
-        org: "India's Forest Guardian",
-      },
-    ],
+
     [
       "Mr. Pratyush Thakur",
       {
@@ -409,6 +348,20 @@ export default function Speakers() {
       {
         url: "/speakers_partners/Mr_Chandrashekhar_Chincholkar.jpeg",
         org: "CMK Advisors LLP",
+      },
+    ],
+    [
+      "Mr. Ashish Tiwari",
+      {
+        url: "/speakers_partners/Mr_Ashish_Tiwari.jpeg",
+        org: "Renewable Energy Expert",
+      },
+    ],
+    [
+      "Mr. Ranjith Nair",
+      {
+        url: "/speakers_partners/Mr_Ranjith_Nair.jpeg",
+        org: "Kshema Power",
       },
     ],
   ]);

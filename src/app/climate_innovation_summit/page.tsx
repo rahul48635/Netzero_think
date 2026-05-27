@@ -55,9 +55,7 @@ export default function Climate_Innovation_Summmit() {
     [
       "Supporting Partners",
       [
-        "/speakers_partners/Supporting_partner_1.png",
         "/speakers_partners/supporting_partner_2.jpg",
-        "/speakers_partners/supporting_partner_3.jpg",
         "/speakers_partners/NETRA.jpeg",
         "/speakers_partners/SDG_partner.jpeg",
         "/speakers_partners/supporting_partner_4.jpeg",
@@ -270,16 +268,6 @@ export default function Climate_Innovation_Summmit() {
             Professionals, Researchers, and Regulators to shape the discourse
             for India&apos;s Net-Zero transformation. <br /> <br />
             <span>
-              <br />
-              <span className="text-2xl font-bold mb-4 text-green-500">
-                Special Address by Niti Aayog
-              </span>
-              <br />
-              <br />
-              <span className="text-2xl font-bold mb-4 text-green-500">
-                Special Address on Save the Soil
-              </span>
-              <br />
               <br />
               <span className="text-2xl font-bold mb-4 text-green-500">
                 <span className="text-2xl font-bold mb-4 text-green-500">
