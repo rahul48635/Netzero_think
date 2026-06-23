@@ -1,14 +1,14 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import { motion } from 'framer-motion';
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import { motion } from "framer-motion";
 import {
   FaFacebook,
   // FaInstagram,
   FaLinkedin,
   // FaTwitter,
   FaYoutube,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
 export type items = {
   head: string;
@@ -23,9 +23,12 @@ export default function Footer({ items }: { items: items }) {
   const socials: social = {
     // "https://www.instagram.com/netzerothink_india/": <FaInstagram fill='#ff006e'/>,
     // "https://x.com/NetZeroThink_": <FaTwitter fill='#00b4d8' />,
-    "https://www.youtube.com/@netzerothink": <FaYoutube fill='red' />,
-    "https://www.facebook.com/p/NET-ZERO-THINK-100078446962916/?paipv=0&eav=AfbufXp8uGtISCG_iy2czsdtQ26X2s_mPiSk8kf5sPQoy09ZH2yUGQvIi02y_AzhYFU&_rdr": <FaFacebook fill='blue'/>,
-    "https://www.linkedin.com/company/net-zero-think/": <FaLinkedin fill='#03045e' />,
+    "https://www.youtube.com/@netzerothink": <FaYoutube fill="red" />,
+    "https://www.facebook.com/p/NET-ZERO-THINK-100078446962916/?paipv=0&eav=AfbufXp8uGtISCG_iy2czsdtQ26X2s_mPiSk8kf5sPQoy09ZH2yUGQvIi02y_AzhYFU&_rdr":
+      <FaFacebook fill="blue" />,
+    "https://www.linkedin.com/company/net-zero-think/": (
+      <FaLinkedin fill="#03045e" />
+    ),
   };
 
   return (
@@ -33,7 +36,7 @@ export default function Footer({ items }: { items: items }) {
       <div className="w-full flex flex-col md:flex-row md:h-[15rem] rounded-t-3xl justify-evenly items-center gap-6 p-6">
         <div className="flex-shrink-0">
           <Image
-            src="/Netzerothink.png"
+            src="/netzerothinklogo.png"
             alt="logo"
             width={300}
             height={300}
@@ -74,7 +77,7 @@ export default function Footer({ items }: { items: items }) {
         </h1>
         <div className="flex gap-4 text-xl ">
           {Object.entries(socials).map(([key, value], idx) => (
-            <Link href={key} key={idx}  target="_blank">
+            <Link href={key} key={idx} target="_blank">
               {value}
             </Link>
           ))}
