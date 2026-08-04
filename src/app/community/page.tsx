@@ -21,8 +21,8 @@ export default function ClimateInnovationCommunity() {
 
   const academia_card = [
     {
-      title: "upcoming Course",
-      pic: "/bg-cover/corp.webp",
+      title: "The Net Zero Journey",
+      pic: "/academia/Book.jpeg",
     },
   ];
 
@@ -138,16 +138,9 @@ export default function ClimateInnovationCommunity() {
 
                     <div className="space-y-4 text-lg text-white">
                       <p>
-                        The Climate Innovation Community (CIC) is a social
-                        initiative by Net Zero Think to bring together
-                        sustainability champions, green innovators, and
-                        conscious organizations working towards a low-carbon
-                        future.
-                      </p>
-
-                      <p className="font-semibold text-amber-400">
-                        As of now, 500+ active members are part of this growing
-                        community.
+                        Bring together sustainability champions, green
+                        innovators, and conscious organizations working towards
+                        a low-carbon future.
                       </p>
                     </div>
                   </section>
@@ -340,10 +333,68 @@ export default function ClimateInnovationCommunity() {
                       className="rounded self-center justify-self-center w-full"
                     />
                     <Button
+                      onClick={() =>
+                        window.open(
+                          "https://docs.google.com/forms/d/e/1FAIpQLScN2wsThLL2fZxybyqKw6YffzdjHuVcb4s98giAtEIH8FlTCg/viewform",
+                        )
+                      }
+                      variant={"default"}
+                      className="self-center justify-self-center w-full mt-5 bg-blue-500 cursor-pointer"
+                    >
+                      Take Assessment
+                    </Button>
+                    <Button
+                      onClick={() =>
+                        window.open(
+                          "https://www.amazon.com/dp/B0HCLGVTT3/ref=sr_1_1?crid=2ZKULZ0GPS1Q1&dib=eyJ2IjoiMSJ9.CI4bw2nh6U8a1YWKDqi7jrOwetThJhgWFx_WqzwVW3ypYNC7wHdh53Lw7AvyNkjJsNsoEIquQYBwhz13pfxUg0UrzSVnhlR4dIeQ5SRgBiELQKmohP8-zdsGEF1KZG0T-LIXChQrX1oadDSpU2ItmWjvBsEjC8yz5ZqGHkif0a84aOHAKXlplbDkau2IGAhRDJPk96yzbcHUcN2htBRQomacPTvvW9MC4JoBWDiFTsc.zHNUgBv9W0ERqjraKodAuIrxBkHBJf5QrzQD-YkCxv8&dib_tag=se&keywords=the+net+zero+journey&qid=1785774605&sprefix=net+zero+journey%2Caps%2C811&sr=8-1",
+                        )
+                      }
                       variant={"default"}
                       className="self-center justify-self-center w-full mt-5 bg-green-500 cursor-pointer"
                     >
-                      Learn More
+                      Amazon.com
+                    </Button>
+                    <Button
+                      onClick={() =>
+                        window.open("https://www.amazon.in/dp/9375004686")
+                      }
+                      variant={"default"}
+                      className="self-center justify-self-center w-full mt-5 bg-green-500 cursor-pointer"
+                    >
+                      Amazon.in
+                    </Button>
+                    <Button
+                      onClick={() =>
+                        window.open(
+                          "https://www.flipkart.com/net-zero-journey-practical-guide-individuals-businesses-nations-build-sustainable-future/p/itm068750ed7c75d?pid=9789375004684&lid=LSTBOK9789375004684C6PS7U&marketplace=FLIPKART&q=the+net+zero+journey+book&store=bks&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=3cf59d33-a0ba-4eab-8945-3112541de699.9789375004684.SEARCH&ppt=sp&ppn=sp&ssid=lhu6hx3h8g0000001785312327882&qH=48a9eae8cfc6c0a6&ov_redirect=true&ov_redirect=true",
+                        )
+                      }
+                      variant={"default"}
+                      className="self-center justify-self-center w-full mt-5 bg-green-500 cursor-pointer"
+                    >
+                      FlipKart
+                    </Button>
+                    <Button
+                      onClick={() =>
+                        window.open(
+                          "https://play.google.com/store/books/details?id=r5L6EQAAQBAJ&rdid=book-r5L6EQAAQBAJ&rdot=1&source=gbs_vpt_read&pcampaignid=books_booksearch_viewport",
+                        )
+                      }
+                      variant={"default"}
+                      className="self-center justify-self-center w-full mt-5 bg-green-500 cursor-pointer"
+                    >
+                      Google Ebook
+                    </Button>
+                    <Button
+                      onClick={() =>
+                        window.open(
+                          "https://ziffybees.com/products/the-net-zero-journey-a-practical-guide-for-individuals-businesse-5262107786",
+                        )
+                      }
+                      variant={"default"}
+                      className="self-center justify-self-center w-full mt-5 bg-green-500 cursor-pointer"
+                    >
+                      ZiffyBees
                     </Button>
                   </CardContent>
                 </Card>
